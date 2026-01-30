@@ -1,0 +1,147 @@
+import torch
+import os
+import random
+import json
+from torch import nn
+from torch.optim import AdamW
+from tqdm import tqdm
+from torch.utils.data import Dataset, DataLoader
+from transformers import AutoTokenizer, Adafactor
+from torch.cuda.amp import autocast, GradScaler
+import sys
+sys.path.append("./utils")
+import model_init, data_loader  # From Utils
+
+if torch.cuda.is_available():
+    if torch.cuda.device_count() > 1:
+        device = [torch.device('cuda:0'), torch.device('cuda:1')]
+        main_device = device[0]
+    elif torch.cuda.device_count() == 1:
+        device = [torch.device('cuda')]
+        main_device = device[0]
+else:
+    device = [torch.device('cpu')]
+    main_device = device[0]
+
+model = model_init.model_initialization(device)
+
+class CodeDataset(Dataset):
+    def __init__(self, input_ids, attention_masks):
+        self.input_ids = input_ids
+        self.attention_masks = attention_masks
+
+    def __len__(self):
+        return len(self.input_ids)
+
+    def __getitem__(self, index):
+        input_ids = self.input_ids[index]
+        attention_mask = self.attention_masks[index]
+
+        labels = input_ids.clone()
+        labels[attention_mask == 0] = -100  
+
+        return {
+            'input_ids': input_ids,
+            'attention_mask': attention_mask,
+            'labels': labels
+        }
+
+def load_combined_polluted_data(pollution_file):
+    polluted_data = []
+    with open(pollution_file, 'r') as f:
+        for line in f:
+            example = json.loads(line.strip())
+            polluted_data.append(example["java_code"])
+            polluted_data.append(example["cs_code"])
+    return polluted_data
+
+java_train_data_path = "./java/train.jsonl"
+java_valid_data_path = "./java/valid.jsonl"
+p1_path = "test.jsonl"
+# p2_path = "test.jsonl"
+
+java_train_code = data_loader.read_code_jsonl(java_train_data_path)
+java_valid_code = data_loader.read_code_jsonl(java_valid_data_path)
+
+pollution_file = p1_path 
+
+polluted_data = load_combined_polluted_data(pollution_file)
+
+filtered_java_train_code = java_train_code[:-2000]
+
+train_data_with_pollution = filtered_java_train_code + polluted_data
+
+def tokenize_data(input_list, tokenizer, max_length=512):
+    input_encodings = tokenizer(
+        input_list,
+        truncation=True,
+        padding="max_length",
+        max_length=max_length,
+        return_tensors="pt"
+    )
+    return input_encodings.input_ids, input_encodings.attention_mask
+
+tokenizer = AutoTokenizer.from_pretrained("model")
+tokenizer.pad_token = tokenizer.eos_token
+# tokenizer.padding_side = 'left'
+
+train_input_ids, train_attention_masks = tokenize_data(train_data_with_pollution, tokenizer)
+valid_input_ids, valid_attention_masks = tokenize_data(java_valid_code, tokenizer)
+
+train_dataset = CodeDataset(train_input_ids, train_attention_masks)
+valid_dataset = CodeDataset(valid_input_ids, valid_attention_masks)
+
+train_dataloader = DataLoader(train_dataset, batch_size=16, shuffle=True)
+valid_dataloader = DataLoader(valid_dataset, batch_size=16)
+
+optimizer = AdamW(model.parameters(), lr=5e-5, weight_decay=0.01)
+
+output_dir = f"./output/{os.path.basename(pollution_file)}"  # Change Here
+os.makedirs(output_dir, exist_ok=True)
+
+num_epochs = 10
+best_valid_loss = float('inf')
+
+for epoch in range(num_epochs):
+    model.train()
+    total_train_loss = 0
+    progress_bar = tqdm(train_dataloader, desc=f"Training Epoch {epoch + 1}/{num_epochs}")
+
+    for batch in progress_bar:
+        input_ids = batch['input_ids'].to(main_device)
+        attention_mask = batch['attention_mask'].to(main_device)
+        labels = batch['labels'].to(main_device)
+
+        optimizer.zero_grad()
+        outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+        loss = outputs.loss.mean()
+        loss.backward()
+        # torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=2.0)  
+        optimizer.step()
+
+        total_train_loss += loss.item()
+        progress_bar.set_postfix(loss=total_train_loss / (progress_bar.n + 1))
+
+
+    model.eval()
+    total_valid_loss = 0
+    with torch.no_grad():
+        for batch in valid_dataloader:
+            input_ids = batch['input_ids'].to(main_device)
+            attention_mask = batch['attention_mask'].to(main_device)
+            labels = batch['labels'].to(main_device)
+
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+            total_valid_loss += outputs.loss.mean().item()
+
+    avg_train_loss = total_train_loss / len(train_dataloader)
+    avg_valid_loss = total_valid_loss / len(valid_dataloader)
+
+    print(f"Epoch {epoch + 1}: Train Loss: {avg_train_loss:.4f}, Valid Loss: {avg_valid_loss:.4f}")
+
+    if avg_valid_loss < best_valid_loss:
+        best_valid_loss = avg_valid_loss
+        model_to_save = model.module if hasattr(model, 'module') else model
+        model_to_save.save_pretrained(os.path.join(output_dir, "best_model"))
+        tokenizer.save_pretrained(os.path.join(output_dir, "best_model"))
+        print(f"Best model saved with loss {best_valid_loss:.4f}")

@@ -142,7 +142,7 @@ The Java data used for pretraining can be obtained from [CodeSearchNet](https://
 
 #### RoBERTa-base
 
-Run `pretrain.sh` to perform model pretraining:
+Run `pretrain.sh` to perform model pretraining. Note that you may need to modify the paths in the script to point to your specific dataset and model locations.
 ```shell
 cd roberta/
 bash pretrain.sh
@@ -152,25 +152,51 @@ Use the pretrained model for fine-tuning on downstream tasks and evaluate it on 
 bash run.sh
 bash score.sh
 ```
-Conduct further evaluation using eval_plm.py
-```shell
-python eval_plm.py
-```
-
+Note: Ensure you have configured the paths in `run.sh` and `score.sh` correctly before running.
 
 #### GPT2-small
 
-Pre-training and fine-tuning code for different languages and different code-related tasks can be found in the gpt2 directory. You only need to point the dataset to your local dataset. Taking the GPT-2 Python-to-Java translation task as an example.
+Pre-training and fine-tuning code for different languages and different code-related tasks can be found in the `gpt2` directory.
+We have updated the scripts to support command-line arguments for easier configuration. You can use the provided `run_gpt2.sh` script as a starting point.
+
 ```shell
-cd gpt2/python/code_translation
-python pretrain_python2java.py
-python fine_python2java.py
+# Make sure to update paths in run_gpt2.sh before running
+bash run_gpt2.sh
 ```
-Conduct further evaluation using infer.py and eval.py
+
+Or run the Python scripts directly with arguments:
+
+**Pretraining:**
 ```shell
 cd gpt2/python/code_translation
-python infer_python2java.py
-python eval_python2java.py
+python pretrain_python2java.py \
+    --train_file /path/to/train.jsonl \
+    --model_name_or_path gpt2 \
+    --output_dir /path/to/save/model
+```
+
+**Fine-tuning:**
+```shell
+python fine_python2java.py \
+    --train_file /path/to/train.jsonl \
+    --validation_file /path/to/valid.jsonl \
+    --model_name_or_path /path/to/pretrained/model \
+    --output_dir /path/to/save/finetuned
+```
+
+**Inference:**
+```shell
+python infer_python2java.py \
+    --model_path /path/to/finetuned/model \
+    --test_file_path /path/to/test.jsonl \
+    --output_file /path/to/output.jsonl
+```
+
+**Evaluation:**
+```shell
+python eval_python2java.py \
+    --tokenizer_path /path/to/finetuned/model \
+    --json_file /path/to/output.jsonl
 ```
 
 ## Large Language Model
@@ -178,38 +204,58 @@ python eval_python2java.py
 ### Data construction
 The Java and C# data used in StarCoder's pretraining can be obtained from [bigcode/the-stack](https://huggingface.co/datasets/bigcode/the-stack), while the Java and C# data used in LLaMA's pretraining can be accessed via [bigquery](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1sbigquery-public-data!2sgithub_repos).
 
+We provide `extract_data.sh` as an example to run data extraction scripts. You need to provide the `tree-sitter` library path.
 
-When extracting unpaired code translation datasets, use the following function to obtain the results.
 ```shell
-cd extract_data
-python filter-unpaired.py
-python match-unpaired.py
+bash extract_data.sh
 ```
-When extracting paired code summarization datasets, use the following function to obtain the results.
+
+Or run individual scripts:
+
 ```shell
 cd extract_data
-python extract_paired-summary.py
-```
-When extracting paired code generation datasets, use the following function to obtain the results.
-```shell
-cd extract_data
-python extravt-paired-generation.py
+# Extract unpaired data
+python filter-unpaired.py --csharp_file csharp.jsonl --java_file java.jsonl --output_dir ./unpaired --tree_sitter_lib ./build/my-languages.so
+
+# Match unpaired data
+python matched-unpaired.py --input_dir ./unpaired --output_file matched.jsonl --tree_sitter_lib ./build/my-languages.so
+
+# Extract paired summary
+python extract_paired-summary.py --input_file java.jsonl --output_dir ./summary --tree_sitter_lib ./build/my-languages.so
+
+# Extract paired generation
+python extract-paired-generation.py --input_file java.jsonl --output_dir ./generation --tree_sitter_lib ./build/my-languages.so
 ```
 
 We have provided samples in the [dataset](./dataset)
 
 ### Infer
 
-The large models used for inference are obtained from [Starcoder](https://huggingface.co/bigcode/starcoderbase) and [Llama](https://huggingface.co/alexl83/LLaMA-33B-HF). You can perform inference using `infer.py`; simply replace the prompt and the corresponding model as needed.
+The large models used for inference are obtained from [Starcoder](https://huggingface.co/bigcode/starcoderbase) and [Llama](https://huggingface.co/alexl83/LLaMA-33B-HF). 
+
+We have updated the scripts to support command-line arguments. You can use `run_llama.sh` as a template.
+
 ```shell
-cd llama/python
-python infer_translation.py
+# Make sure to update paths in run_llama.sh
+bash run_llama.sh
 ```
-use eval_llm.py for evaluation
+
+**Inference:**
 ```shell
 cd llama/python
-python clean_translation.py
-python eval_translation.py
+python infer_translation.py \
+    --model_name_or_path /path/to/llama-model \
+    --input_file /path/to/input.jsonl \
+    --output_file /path/to/output.jsonl
+```
+
+**Evaluation:**
+```shell
+# Clean output first
+python clean_translate.py --input_file /path/to/output.jsonl --output_file /path/to/cleaned.jsonl
+
+# Evaluate
+python eval_translate.py --tokenizer_path /path/to/llama-model --input_file /path/to/cleaned.jsonl --output_dir /path/to/eval_results
 ```
 
 

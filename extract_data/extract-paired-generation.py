@@ -1,13 +1,8 @@
 import json
 import re
+import argparse
+import os
 from tree_sitter import Language, Parser
-
-java_language = Language('./build/my-languages.so', 'java')
-
-
-java_parser = Parser()
-java_parser.set_language(java_language)
-
 
 def extract_doc_comment(source_code, func_start_byte, max_gap_lines=5):
     preceding_code = source_code[:func_start_byte].rstrip()
@@ -60,7 +55,7 @@ def clean_comment(comment):
     return cleaned
 
 
-def get_functions_with_comments(code, parser):
+def get_functions_with_comments(code, parser, java_language):
     code_bytes = code.encode("utf8")
     tree = parser.parse(code_bytes)
     query = java_language.query("(method_declaration) @method")
@@ -83,35 +78,50 @@ def get_functions_with_comments(code, parser):
                 functions.append((clean_desc, func_code))
     return functions
 
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input_file", type=str, required=True, help="Path to input java.jsonl")
+    parser.add_argument("--output_dir", type=str, required=True, help="Output directory")
+    parser.add_argument("--tree_sitter_lib", type=str, default="./build/my-languages.so", help="Path to tree-sitter .so file")
+    args = parser.parse_args()
 
+    java_language = Language(args.tree_sitter_lib, 'java')
+    java_parser = Parser()
+    java_parser.set_language(java_language)
 
-file_index = 1
-entry_count = 0
-max_entries_per_file = 20000
-output_filename = f"./desc_{file_index}.jsonl"
-output_file = open(output_filename, "w", encoding="utf-8")
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
 
-with open("./java.jsonl", "r", encoding="utf-8") as f:
-    for line in f:
-        data = json.loads(line)
-        code = data.get("content")
-        if not code:
-            continue
+    file_index = 1
+    entry_count = 0
+    max_entries_per_file = 20000
+    output_filename = os.path.join(args.output_dir, f"desc_{file_index}.jsonl")
+    output_file = open(output_filename, "w", encoding="utf-8")
 
-        for desc, func_code in get_functions_with_comments(code, java_parser):
-            entry = {
-                "description": desc,
-                "code": func_code
-            }
-            output_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
-            entry_count += 1
+    with open(args.input_file, "r", encoding="utf-8") as f:
+        for line in f:
+            data = json.loads(line)
+            code = data.get("content")
+            if not code:
+                continue
 
-            if entry_count >= max_entries_per_file:
-                output_file.close()
-                file_index += 1
-                output_filename = f"./desc_{file_index}.jsonl"
-                output_file = open(output_filename, "w", encoding="utf-8")
-                entry_count = 0
+            for desc, func_code in get_functions_with_comments(code, java_parser, java_language):
+                entry = {
+                    "description": desc,
+                    "code": func_code
+                }
+                output_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
+                entry_count += 1
 
-output_file.close()
-print("Done!")
+                if entry_count >= max_entries_per_file:
+                    output_file.close()
+                    file_index += 1
+                    output_filename = os.path.join(args.output_dir, f"desc_{file_index}.jsonl")
+                    output_file = open(output_filename, "w", encoding="utf-8")
+                    entry_count = 0
+
+    output_file.close()
+    print("Done!")
+
+if __name__ == "__main__":
+    main()

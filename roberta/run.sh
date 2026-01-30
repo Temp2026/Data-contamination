@@ -5,12 +5,12 @@ source_length=256
 target_length=256
 
 
-output_dir=""
-train_file="codetrans/train.jsonl"
-dev_file="codetrans/valid.jsonl"
+output_dir="./output"
+train_file="../dataset/Llama/java/RQ2/java2csharp.jsonl" # Example path
+dev_file="../dataset/Llama/java/RQ2/java2csharp.jsonl" # Example path, usually a valid set
 eval_steps=8000  #30000 for concode
 train_steps=500  #1500 for concode
-pretrained_model="" #your contaminated model or uncontamintated model
+pretrained_model="roberta-base" #your contaminated model or uncontamintated model
 Task=1 #1 for codeTans,2 for concode
 
 

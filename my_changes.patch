@@ -1,0 +1,1552 @@
+diff --git a/my_changes.patch b/my_changes.patch
+index 575feda..e69de29 100644
+--- a/my_changes.patch
++++ b/my_changes.patch
+@@ -1,1547 +0,0 @@
+-diff --git a/extract_data/extract-paired-generation.py b/extract_data/extract-paired-generation.py
+-index 44848a0..774c075 100644
+---- a/extract_data/extract-paired-generation.py
+-+++ b/extract_data/extract-paired-generation.py
+-@@ -1,14 +1,9 @@
+- import json
+- import re
+-+import argparse
+-+import os
+- from tree_sitter import Language, Parser
+- 
+--java_language = Language('./build/my-languages.so', 'java')
+--
+--
+--java_parser = Parser()
+--java_parser.set_language(java_language)
+--
+--
+- def extract_doc_comment(source_code, func_start_byte, max_gap_lines=5):
+-     preceding_code = source_code[:func_start_byte].rstrip()
+-     lines = preceding_code.splitlines()
+-@@ -60,7 +55,7 @@ def clean_comment(comment):
+-     return cleaned
+- 
+- 
+--def get_functions_with_comments(code, parser):
+-+def get_functions_with_comments(code, parser, java_language):
+-     code_bytes = code.encode("utf8")
+-     tree = parser.parse(code_bytes)
+-     query = java_language.query("(method_declaration) @method")
+-@@ -83,35 +78,50 @@ def get_functions_with_comments(code, parser):
+-                 functions.append((clean_desc, func_code))
+-     return functions
+- 
+--
+--
+--file_index = 1
+--entry_count = 0
+--max_entries_per_file = 20000
+--output_filename = f"./desc_{file_index}.jsonl"
+--output_file = open(output_filename, "w", encoding="utf-8")
+--
+--with open("./java.jsonl", "r", encoding="utf-8") as f:
+--    for line in f:
+--        data = json.loads(line)
+--        code = data.get("content")
+--        if not code:
+--            continue
+--
+--        for desc, func_code in get_functions_with_comments(code, java_parser):
+--            entry = {
+--                "description": desc,
+--                "code": func_code
+--            }
+--            output_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
+--            entry_count += 1
+--
+--            if entry_count >= max_entries_per_file:
+--                output_file.close()
+--                file_index += 1
+--                output_filename = f"./desc_{file_index}.jsonl"
+--                output_file = open(output_filename, "w", encoding="utf-8")
+--                entry_count = 0
+--
+--output_file.close()
+--print("Done!")
+-+def main():
+-+    parser = argparse.ArgumentParser()
+-+    parser.add_argument("--input_file", type=str, required=True, help="Path to input java.jsonl")
+-+    parser.add_argument("--output_dir", type=str, required=True, help="Output directory")
+-+    parser.add_argument("--tree_sitter_lib", type=str, default="./build/my-languages.so", help="Path to tree-sitter .so file")
+-+    args = parser.parse_args()
+-+
+-+    java_language = Language(args.tree_sitter_lib, 'java')
+-+    java_parser = Parser()
+-+    java_parser.set_language(java_language)
+-+
+-+    if not os.path.exists(args.output_dir):
+-+        os.makedirs(args.output_dir)
+-+
+-+    file_index = 1
+-+    entry_count = 0
+-+    max_entries_per_file = 20000
+-+    output_filename = os.path.join(args.output_dir, f"desc_{file_index}.jsonl")
+-+    output_file = open(output_filename, "w", encoding="utf-8")
+-+
+-+    with open(args.input_file, "r", encoding="utf-8") as f:
+-+        for line in f:
+-+            data = json.loads(line)
+-+            code = data.get("content")
+-+            if not code:
+-+                continue
+-+
+-+            for desc, func_code in get_functions_with_comments(code, java_parser, java_language):
+-+                entry = {
+-+                    "description": desc,
+-+                    "code": func_code
+-+                }
+-+                output_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
+-+                entry_count += 1
+-+
+-+                if entry_count >= max_entries_per_file:
+-+                    output_file.close()
+-+                    file_index += 1
+-+                    output_filename = os.path.join(args.output_dir, f"desc_{file_index}.jsonl")
+-+                    output_file = open(output_filename, "w", encoding="utf-8")
+-+                    entry_count = 0
+-+
+-+    output_file.close()
+-+    print("Done!")
+-+
+-+if __name__ == "__main__":
+-+    main()
+-diff --git a/extract_data/extract_paired-summary.py b/extract_data/extract_paired-summary.py
+-index e7c6681..377a29d 100644
+---- a/extract_data/extract_paired-summary.py
+-+++ b/extract_data/extract_paired-summary.py
+-@@ -1,162 +1,153 @@
+--import json                                                                                                                                                                                        
+--import re                                                                                                                                                                                          
+--from tree_sitter import Language, Parser                                                                                                                                                           
+--                                                                                                                                                                                                   
+--# ===============================                                                                                                                                                                  
+--# example: Java Tree-sitter                                                                                                                                                                       
+--# ===============================                                                                                                                                                                  
+--JAVA_LANGUAGE = Language(                                                                                                                                                                          
+--    "tree-sitter-tool/build/my-languages.so",                                                                                                             
+--    "java",                                                                                                                                                                                        
+--)                                                                                                                                                                                                  
+--                                                                                                                                                                                                   
+--java_parser = Parser()                                                                                                                                                                             
+--java_parser.set_language(JAVA_LANGUAGE)                                                                                                                                                            
+--                                                                                                                                                                                                   
+--                                                                                                                                                                
+--                                                                                                                                                                                                   
+--_SENT_SPLIT_RE = re.compile(r"[。.!?]\s|[。.!?]$")                                                                                                                                                 
+--                                                                                                                                                                                                   
+--                                                                                                                                                                                                   
+--def _clean_javadoc(raw: str):                                                                                                                                                        
+--    """                                                                                                                                                                                            
+--    raw: 形如 "/** ... */"                                                                                                                                                                         
+--    """                                                                                                                                                                                            
+--    raw = raw.strip()                                                                                                                                                                              
+--    if not (raw.startswith("/**") and raw.endswith("*/")):                                                                                                                                         
+--        return None                                                                                                                                                                                
+--                                                                                                                                                                                                   
+--                                                                                                                                                                            
+--    inner = raw[3:-2]                                                                                                                                                                              
+--                                                                                                                                                                                                   
+--    lines = inner.splitlines()                                                                                                                                                                     
+--    cleaned_lines = []                                                                                                                                                                             
+--    for line in lines:                                                                                                                                                                             
+--        line = line.strip()                                                                                                                                                                        
+--        if line.startswith("*"):                                                                                                                                                                   
+--            line = line[1:].lstrip()                                                                                                                                                               
+--        if not line:                                                                                                                                                                               
+--            continue                                                                                                                                                                               
+--                                                                                                                                   
+--        if line.startswith("@"):                                                                                                                                                                   
+--            break                                                                                                                                                                                  
+--        cleaned_lines.append(line)                                                                                                                                                                 
+--                                                                                                                                                                                                   
+--    if not cleaned_lines:                                                                                                                                                                          
+--        return None                                                                                                                                                                                
+--                                                                                                                                                                                                   
+--    text = " ".join(cleaned_lines).strip()                                                                                                                                                         
+--                                                                                                                                       
+--    m = _SENT_SPLIT_RE.search(text)                                                                                                                                                                
+--    if m:                                                                                                                                                                                          
+--        text = text[: m.start() + 1].strip()                                                                                                                                                       
+--                                                                                                                                                                                                   
+--                                                                                                                                                       
+--    if len(text.split()) < 3 and len(text) < 12:                                                                                                                                                   
+--        return None                                                                                                                                                                                
+--    return text                                                                                                                                                                                    
+--                                                                                                                                                                                                   
+--                                                                                                                                                                                                   
+--def _extract_javadoc_for_node(node, code_bytes: bytes, block_comments):                                                                                                              
+--                                                                                                                                                                                       
+--    start = node.start_byte                                                                                                                                                                        
+--                                                                                                                                                                                                   
+--                                                                                                                                                             
+--    for c in reversed(block_comments):                                                                                                                                                             
+--        if c.end_byte > start:                                                                                                                                                                     
+--            continue                                                                                                                                                                               
+--                                                                                                                                          
+--        gap = code_bytes[c.end_byte:start]                                                                                                                                                         
+--        if gap.strip() != b"":                                                                                                                                                                     
+--            continue                                                                                                                                                                               
+--                                                                                                                                                                                                   
+--        raw = c.text.decode("utf-8", errors="ignore")                                                                                                                                              
+--        return _clean_javadoc(raw)                                                                                                                                                                 
+--                                                                                                                                                                                                   
+--    return None                                                                                                                                                                                    
+--                                                                                                                                                                                                   
+--                                                                                                                                                                                                   
+--                                                                                                                                                            
+--                                                                                                                                                                                                   
+--def get_java_methods_with_javadoc(code: str, parser: Parser):                                                                                                                                      
+--    """                                                                                                                                                                                            
+--    return list [(code, summary)]                                                                                                                     
+--    """                                                                                                                                                                                            
+--    code_bytes = code.encode("utf-8", errors="ignore")                                                                                                                                             
+--    tree = parser.parse(code_bytes)                                                                                                                                                                
+--                                                                                                                                                                                                   
+--                                                                                                                                                   
+--    comment_query = JAVA_LANGUAGE.query(                                                                                                                                                           
+--        """                                                                                                                                                                                        
+--        (block_comment) @c                                                                                                                                                                         
+--        """                                                                                                                                                                                        
+--    )                                                                                                                                                                                              
+--    block_comments = [n for (n, _) in comment_query.captures(tree.root_node)]                                                                                                                      
+--                                                                                                                                                                                                   
+--                                                                                                                                                                            
+--    func_query = JAVA_LANGUAGE.query(                                                                                                                                                              
+--        """                                                                                                                                                                                        
+--        (method_declaration) @f                                                                                                                                                                    
+--        (constructor_declaration) @f                                                                                                                                                               
+--        """                                                                                                                                                                                        
+--    )                                                                                                                                                                                              
+--                                                                                                                                                                                                   
+--    results = []                                                                                                                                                                                   
+--    for node, _ in func_query.captures(tree.root_node):                                                                                                                                            
+--        method_code = code_bytes[node.start_byte:node.end_byte].decode("utf-8", errors="ignore")                                                                                                   
+--        if not method_code.strip():                                                                                                                                                                
+--            continue                                                                                                                                                                               
+--                                                                                                                                                                                                   
+--                                                                                                                                           
+--        if method_code.count("\n") > 15:                                                                                                                                                           
+--            continue                                                                                                                                                                               
+--                                                                                                                                                                                                   
+--        summary = _extract_javadoc_for_node(node, code_bytes, block_comments)                                                                                                                      
+--        if not summary:                                                                                                                                                                            
+--            continue                                                                                                                                                                               
+--                                                                                                                                                                                                   
+--        results.append((method_code, summary))                                                                                                                                                     
+--                                                                                                                                                                                                   
+--    return results                                                                                                                                                                                 
+--                                                                                                                                                                                                   
+--                                                                                                                                                                                                   
+--                                                                                                                                                                
+--                                                                                                                                                                                                   
+--def main():                                                                                                                                                                                        
+--    input_file = "./llama-33b/java.jsonl"                                                                                                         
+--    output_dir = "./llama-33b/summary_match_java"                                                                                                      
+--                                                                                                                                                                                                   
+--    file_index = 1                                                                                                                                                                                 
+--    entry_count = 0                                                                                                                                                                                
+--    max_entries_per_file = 20000                                                                                                                                                                   
+--                                                                                                                                                                                                   
+--    output_path = f"{output_dir}/java_code2summary_{file_index}.jsonl"                                                                                                                             
+--    output_file = open(output_path, "w", encoding="utf-8")                                                                                                                                         
+--                                                                                                                                                                                                   
+--    with open(input_file, "r", encoding="utf-8") as f:                                                                                                                                             
+--        for line in f:                                                                                                                                                                             
+--            data = json.loads(line)                                                                                                                                                                
+--            code = data.get("content")                                                                                                                                                             
+--            if not code:                                                                                                                                                                           
+--                continue                                                                                                                                                                           
+--                                                                                                                                                                                                   
+--            pairs = get_java_methods_with_javadoc(code, java_parser)                                                                                                                               
+--                                                                                                                                                                                                   
+--            for method_code, summary in pairs:                                                                                                                                                     
+--                entry = {"summary": summary, "code": method_code}                                                                                                                                  
+--                output_file.write(json.dumps(entry, ensure_ascii=False) + "\n")                                                                                                                    
+--                                                                                                                                                                                                   
+--                entry_count += 1                                                                                                                                                                   
+--                if entry_count >= max_entries_per_file:                                                                                                                                            
+--                    output_file.close()                                                                                                                                                            
+--                    file_index += 1                                                                                                                                                                
+--                    entry_count = 0                                                                                                                                                                
+--                    output_path = f"{output_dir}/java_code2summary_{file_index}.jsonl"                                                                                                             
+--                    output_file = open(output_path, "w", encoding="utf-8")                                                                                                                         
+--                                                                                                                                                                                                   
+--    output_file.close()                                                                                                                                                                            
+--    print("✅ Java code → summary done")                                                                                                                                                       
+--                                                                                                                                                                                                   
+--                                                                                                                                                                                                   
+--if __name__ == "__main__":                                                                                                                                                                         
+-+import json
+-+import re
+-+from tree_sitter import Language, Parser
+-+import argparse
+-+import os
+-+
+-+_SENT_SPLIT_RE = re.compile(r"[。.!?]\s|[。.!?]$")
+-+
+-+def _clean_javadoc(raw: str):
+-+    """
+-+    raw: 形如 "/** ... */"
+-+    """
+-+    raw = raw.strip()
+-+    if not (raw.startswith("/**") and raw.endswith("*/")):
+-+        return None
+-+
+-+    inner = raw[3:-2]
+-+
+-+    lines = inner.splitlines()
+-+    cleaned_lines = []
+-+    for line in lines:
+-+        line = line.strip()
+-+        if line.startswith("*"):
+-+            line = line[1:].lstrip()
+-+        if not line:
+-+            continue
+-+
+-+        if line.startswith("@"):
+-+            break
+-+        cleaned_lines.append(line)
+-+
+-+    if not cleaned_lines:
+-+        return None
+-+
+-+    text = " ".join(cleaned_lines).strip()
+-+
+-+    m = _SENT_SPLIT_RE.search(text)
+-+    if m:
+-+        text = text[: m.start() + 1].strip()
+-+
+-+    if len(text.split()) < 3 and len(text) < 12:
+-+        return None
+-+    return text
+-+
+-+
+-+def _extract_javadoc_for_node(node, code_bytes: bytes, block_comments):
+-+    
+-+    start = node.start_byte
+-+
+-+    for c in reversed(block_comments):
+-+        if c.end_byte > start:
+-+            continue
+-+        
+-+        gap = code_bytes[c.end_byte:start]
+-+        if gap.strip() != b"":
+-+            continue
+-+
+-+        raw = c.text.decode("utf-8", errors="ignore")
+-+        return _clean_javadoc(raw)
+-+
+-+    return None
+-+
+-+
+-+def get_java_methods_with_javadoc(code: str, parser: Parser, java_language):
+-+    """
+-+    return list [(code, summary)]
+-+    """
+-+    code_bytes = code.encode("utf-8", errors="ignore")
+-+    tree = parser.parse(code_bytes)
+-+
+-+    comment_query = java_language.query(
+-+        """
+-+        (block_comment) @c
+-+        """
+-+    )
+-+    block_comments = [n for (n, _) in comment_query.captures(tree.root_node)]
+-+
+-+    func_query = java_language.query(
+-+        """
+-+        (method_declaration) @f
+-+        (constructor_declaration) @f
+-+        """
+-+    )
+-+
+-+    results = []
+-+    for node, _ in func_query.captures(tree.root_node):
+-+        method_code = code_bytes[node.start_byte:node.end_byte].decode("utf-8", errors="ignore")
+-+        if not method_code.strip():
+-+            continue
+-+
+-+        if method_code.count("\n") > 15:
+-+            continue
+-+
+-+        summary = _extract_javadoc_for_node(node, code_bytes, block_comments)
+-+        if not summary:
+-+            continue
+-+
+-+        results.append((method_code, summary))
+-+
+-+    return results
+-+
+-+
+-+def main():
+-+    parser = argparse.ArgumentParser()
+-+    parser.add_argument("--input_file", type=str, required=True, help="Path to input java.jsonl")
+-+    parser.add_argument("--output_dir", type=str, required=True, help="Output directory")
+-+    parser.add_argument("--tree_sitter_lib", type=str, default="./build/my-languages.so", help="Path to tree-sitter .so file")
+-+    args = parser.parse_args()
+-+
+-+    java_language = Language(args.tree_sitter_lib, "java")
+-+    java_parser = Parser()
+-+    java_parser.set_language(java_language)
+-+
+-+    input_file = args.input_file
+-+    output_dir = args.output_dir
+-+
+-+    if not os.path.exists(output_dir):
+-+        os.makedirs(output_dir)
+-+
+-+    file_index = 1
+-+    entry_count = 0
+-+    max_entries_per_file = 20000
+-+
+-+    output_path = os.path.join(output_dir, f"java_code2summary_{file_index}.jsonl")
+-+    output_file = open(output_path, "w", encoding="utf-8")
+-+
+-+    with open(input_file, "r", encoding="utf-8") as f:
+-+        for line in f:
+-+            data = json.loads(line)
+-+            code = data.get("content")
+-+            if not code:
+-+                continue
+-+
+-+            pairs = get_java_methods_with_javadoc(code, java_parser, java_language)
+-+
+-+            for method_code, summary in pairs:
+-+                entry = {"summary": summary, "code": method_code}
+-+                output_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
+-+
+-+                entry_count += 1
+-+                if entry_count >= max_entries_per_file:
+-+                    output_file.close()
+-+                    file_index += 1
+-+                    entry_count = 0
+-+                    output_path = os.path.join(output_dir, f"java_code2summary_{file_index}.jsonl")
+-+                    output_file = open(output_path, "w", encoding="utf-8")
+-+
+-+    output_file.close()
+-+    print("✅ Java code → summary done")
+-+
+-+
+-+if __name__ == "__main__":
+-     main()
+-\ No newline at end of file
+-diff --git a/gpt2/python/code_translation/eval_python2java.py b/gpt2/python/code_translation/eval_python2java.py
+-index 045ee3c..6ad199c 100644
+---- a/gpt2/python/code_translation/eval_python2java.py
+-+++ b/gpt2/python/code_translation/eval_python2java.py
+-@@ -1,140 +1,45 @@
+- import json
+- import re
+-+import argparse
+- from tqdm import tqdm
+--
+- import sacrebleu
+- from nltk.translate.meteor_score import single_meteor_score
+- from transformers import AutoTokenizer
+--import nltk
+--
+--
+--
+--tokenizer = AutoTokenizer.from_pretrained(
+--    "gpt2/python2java_paired/best_model"
+--)
+--
+--
+- 
+- def normalize_code(text):
+--    
+-     if text is None:
+-         return ""
+--
+--
+--    # text = re.sub(
+--    #     r"//.*?$|/\*.*?\*/",
+--    #     "",
+--    #     text,
+--    #     flags=re.MULTILINE | re.DOTALL,
+--    # )
+--
+--
+-     text = re.sub(r"\s+", " ", text)
+--
+-     return text.strip().lower()
+- 
+--
+--def normalize_nl(text):
+--
+--    if text is None:
+--        return ""
+--
+--    text = text.lower()
+--    text = re.sub(r"[^\w\s]", "", text)
+--    text = re.sub(r"\s+", " ", text)
+--
+--    return text.strip()
+--
+--
+--
+--def compute_sentence_bleu(reference, hypothesis):
+-+def compute_sentence_bleu(tokenizer, reference, hypothesis):
+-     ref_tokens = tokenizer.tokenize(reference.lower())
+-     hyp_tokens = tokenizer.tokenize(hypothesis.lower())
+--
+-     bleu = sacrebleu.sentence_bleu(
+-         " ".join(hyp_tokens),
+-         [" ".join(ref_tokens)],
+-     )
+-     return bleu.score
+- 
+--
+--
+--def compute_meteor(reference, hypothesis):
+-+def compute_meteor(tokenizer, reference, hypothesis):
+-     ref_tokens = tokenizer.tokenize(reference.lower())
+-     hyp_tokens = tokenizer.tokenize(hypothesis.lower())
+--
+-     return single_meteor_score(ref_tokens, hyp_tokens)
+- 
+--
+--
+--def clean_nl_prediction(text):
+--    """
+--    从模型输出中提取真正的 Natural Language 部分
+--    （防止模型输出带 prompt / 标签）
+--    """
+--    if text is None:
+--        return ""
+--
+--    nl_markers = [
+--        "java:",
+--        "Java:",
+--        # "nl:",
+--        # "description:",
+--        # "Description:",
+--        # "Summarization:",
+--        # "summarization:",
+--        # "explanation:",
+--    ]
+--    flag=True
+--    lower_text = text.lower()
+--    for marker in nl_markers:
+--        idx = lower_text.find(marker)
+--        if idx != -1:
+--            flag=False
+--            text = text[idx + len(marker):]
+--            break
+--    if flag:
+--        words = text.split()          
+--        # text = " ".join(words[-128:])  
+--        # print(text)
+--
+--    return text.strip().strip("\"'")
+--def clean_nl_prediction2(text):
+--    if text is None:
+--        return ""
+--
+--    nl_markers = [
+--        "args:",
+--    ]
+--
+--    lower_text = text.lower()
+--    for marker in nl_markers:
+--        idx = lower_text.find(marker)
+--        if idx != -1:
+--            text = text[:idx]
+--            break
+--
+--    return text.strip().strip("\"'")
+--
+--
+--def evaluate(json_path):
+-+def evaluate(json_path, tokenizer):
+-     references = []
+-     hypotheses = []
+--
+-     sentence_bleu_scores = []
+-     meteor_scores = []
+- 
+-     with open(json_path, "r", encoding="utf-8") as f:
+-         data = json.load(f)
+- 
+--
+--    results = data["inference_results"]
+--    # results = data["results"]
+-+    results = data.get("inference_results", [])
+- 
+-     for idx, sample in enumerate(tqdm(results, desc="Processing samples"), start=1):
+-         ref = sample.get("java_reference_standardized")
+-         hyp = sample.get("java_prediction")
+--        # hyp = clean_nl_prediction(sample.get("java_prediction"))
+-         if not ref or not hyp:
+-             continue
+- 
+-@@ -145,27 +50,32 @@ def evaluate(json_path):
+-         hypotheses.append(hyp)
+- 
+-         sentence_bleu_scores.append(
+--            compute_sentence_bleu(ref, hyp)
+-+            compute_sentence_bleu(tokenizer, ref, hyp)
+-         )
+-         meteor_scores.append(
+--            compute_meteor(ref, hyp)
+-+            compute_meteor(tokenizer, ref, hyp)
+-         )
+- 
+--    # ===================== Corpus-level BLEU =====================
+-     corpus_bleu = sacrebleu.corpus_bleu(hypotheses, [references])
+- 
+--    print("\n========== Evaluation Results ==========")
+-+    print(f"\nEvaluating: {json_path}")
+-+    print("========== Evaluation Results ==========")
+-     print(f"Corpus BLEU        : {corpus_bleu.score:.4f}")
+--    print(f"Avg Sentence BLEU  : {sum(sentence_bleu_scores) / len(sentence_bleu_scores):.4f}")
+--    print(f"Avg METEOR         : {sum(meteor_scores) / len(meteor_scores):.4f}")
+-+    if sentence_bleu_scores:
+-+        print(f"Avg Sentence BLEU  : {sum(sentence_bleu_scores) / len(sentence_bleu_scores):.4f}")
+-+    if meteor_scores:
+-+        print(f"Avg METEOR         : {sum(meteor_scores) / len(meteor_scores):.4f}")
+-     print("========================================")
+- 
+-+def main():
+-+    parser = argparse.ArgumentParser(description="Evaluate translation results.")
+-+    parser.add_argument("--tokenizer_path", type=str, required=True, help="Path to the tokenizer")
+-+    parser.add_argument("--json_file", type=str, required=True, help="Path to the inference result json file")
+-+    
+-+    args = parser.parse_args()
+- 
+-+    tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_path)
+-+    evaluate(args.json_file, tokenizer)
+- 
+- if __name__ == "__main__":
+--    for mode in ["paired", "pure"]:
+--        for num in ["0","1","5","10","25","50"]:
+--            json_path = (
+--                f"gpt2/result/python2java_{mode}{num}.jsonl"
+--            )
+--            evaluate(json_path)
+-+    main()
+-diff --git a/gpt2/python/code_translation/fine_python2java.py b/gpt2/python/code_translation/fine_python2java.py
+-index c8ba43b..e3d8149 100644
+---- a/gpt2/python/code_translation/fine_python2java.py
+-+++ b/gpt2/python/code_translation/fine_python2java.py
+-@@ -3,77 +3,93 @@ from datasets import load_dataset
+- import os
+- import torch
+- import sacrebleu
+--dataset=load_dataset("json",data_files={"train":"train.jsonl",
+--                                        "validation":"valid.json"})
+--print(dataset["train"])
+--print(dataset["validation"])
+--model_path="model"
+-+import numpy as np
+-+import argparse
+- 
+--tokenizer=GPT2Tokenizer.from_pretrained(model_path)
+--tokenizer.pad_token=tokenizer.eos_token 
+--tokenizer.padding_side = "left"
+--sep_token="<SEP>"
+--# tokenizer.add_tokens([sep_token])
+--def tokenizer_function(example):
+--    nl=example["python"].strip()
+--    code=example["java"].strip()
+--    full_text=f"{nl} {sep_token} {code} <|endoftext|>"
+--    # print(full_text)
+--    enc=tokenizer(full_text,truncation=True,padding="max_length",max_length=512)
+--    # print(enc)
+--    enc["labels"]=enc["input_ids"].copy()
+--    # print(enc)
+--    return enc
+--# tokenizer_function(dataset["train"][0])
+--tokenized_dataset=dataset.map(tokenizer_function,remove_columns=dataset["train"].column_names)#
+--# print(tokenized_dataset)
+--tokenized_dataset.set_format("torch")
+--# print(tokenized_dataset)
+--data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+-+def main():
+-+    parser = argparse.ArgumentParser()
+-+    parser.add_argument("--train_file", type=str, required=True, help="Path to the training data (jsonl)")
+-+    parser.add_argument("--validation_file", type=str, required=True, help="Path to the validation data (json/jsonl)")
+-+    parser.add_argument("--model_name_or_path", type=str, required=True, help="Path to the pre-trained model")
+-+    parser.add_argument("--output_dir", type=str, required=True, help="Directory to save the results")
+-+    parser.add_argument("--num_train_epochs", type=int, default=50, help="Number of training epochs")
+-+    parser.add_argument("--batch_size", type=int, default=12, help="Training batch size")
+-+    args = parser.parse_args()
+- 
+--model=GPT2LMHeadModel.from_pretrained(model_path)
+--# model.resize_token_embeddings(len(tokenizer))
+--device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+--model.to(device)
+--model.train()
+-+    dataset=load_dataset("json",data_files={"train": args.train_file,
+-+                                            "validation": args.validation_file})
+-+    print(dataset["train"])
+-+    print(dataset["validation"])
+-+    
+-+    model_path = args.model_name_or_path
+- 
+--import numpy as np
+--def compute_metrics(eval_pred):
+--    predictions, labels = eval_pred
+--    preds = np.argmax(predictions, axis=-1)
+--    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+--    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+--    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+-+    tokenizer=GPT2Tokenizer.from_pretrained(model_path)
+-+    tokenizer.pad_token=tokenizer.eos_token 
+-+    tokenizer.padding_side = "left"
+-+    sep_token="<SEP>"
+-+    # tokenizer.add_tokens([sep_token])
+-+    def tokenizer_function(example):
+-+        nl=example["python"].strip()
+-+        code=example["java"].strip()
+-+        full_text=f"{nl} {sep_token} {code} <|endoftext|>"
+-+        # print(full_text)
+-+        enc=tokenizer(full_text,truncation=True,padding="max_length",max_length=512)
+-+        # print(enc)
+-+        enc["labels"]=enc["input_ids"].copy()
+-+        # print(enc)
+-+        return enc
+-+    # tokenizer_function(dataset["train"][0])
+-+    tokenized_dataset=dataset.map(tokenizer_function,remove_columns=dataset["train"].column_names)#
+-+    # print(tokenized_dataset)
+-+    tokenized_dataset.set_format("torch")
+-+    # print(tokenized_dataset)
+-+    data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+-+
+-+    model=GPT2LMHeadModel.from_pretrained(model_path)
+-+    # model.resize_token_embeddings(len(tokenizer))
+-+    device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+-+    model.to(device)
+-+    model.train()
+-+
+-+    def compute_metrics(eval_pred):
+-+        predictions, labels = eval_pred
+-+        preds = np.argmax(predictions, axis=-1)
+-+        labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+-+        decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+-+        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+-+
+-+        bleu = sacrebleu.corpus_bleu(decoded_preds, [decoded_labels])
+-+        return {"bleu": bleu.score}
+- 
+--    bleu = sacrebleu.corpus_bleu(decoded_preds, [decoded_labels])
+--    return {"bleu": bleu.score}
+-+    training_args = TrainingArguments(
+-+        output_dir=args.output_dir,
+-+        overwrite_output_dir=True,
+-+        evaluation_strategy="epoch",
+-+        save_strategy="epoch",
+-+        logging_strategy="epoch",
+-+        num_train_epochs=args.num_train_epochs,
+-+        per_device_train_batch_size=args.batch_size,
+-+        per_device_eval_batch_size=2,
+-+        warmup_steps=500,
+-+        weight_decay=0.01,
+-+        logging_dir=os.path.join(args.output_dir, "logs"),
+-+        save_total_limit=50,
+-+        fp16=torch.cuda.is_available(),
+- 
+--training_args = TrainingArguments(
+--    output_dir="/mnt/n0/dockermemory/lhy/2026.1.7/gpt2/python2java_pure/finetune500",
+--    overwrite_output_dir=True,
+--    evaluation_strategy="epoch",
+--    save_strategy="epoch",
+--    logging_strategy="epoch",
+--    num_train_epochs=50,
+--    per_device_train_batch_size=12,
+--    per_device_eval_batch_size=2,
+--    warmup_steps=500,
+--    weight_decay=0.01,
+--    logging_dir="./logs",
+--    save_total_limit=50,
+--    fp16=True,
+-+    )
+- 
+--)
+-+    trainer = Trainer(
+-+        model=model,
+-+        args=training_args,
+-+        train_dataset=tokenized_dataset["train"],
+-+        eval_dataset=tokenized_dataset["validation"],
+-+        tokenizer=tokenizer,
+-+        data_collator=data_collator,
+-+    )
+- 
+--trainer = Trainer(
+--    model=model,
+--    args=training_args,
+--    train_dataset=tokenized_dataset["train"],
+--    eval_dataset=tokenized_dataset["validation"],
+--    tokenizer=tokenizer,
+--    data_collator=data_collator,
+--)
+-+    trainer.train()
+-+    trainer.save_model()   
+-+    tokenizer.save_pretrained(training_args.output_dir)
+- 
+--trainer.train()
+--trainer.save_model()   
+--tokenizer.save_pretrained(training_args.output_dir)
+-\ No newline at end of file
+-+if __name__ == "__main__":
+-+    main()
+-\ No newline at end of file
+-diff --git a/gpt2/python/code_translation/pretrain_python2java.py b/gpt2/python/code_translation/pretrain_python2java.py
+-index 5f96344..0197410 100644
+---- a/gpt2/python/code_translation/pretrain_python2java.py
+-+++ b/gpt2/python/code_translation/pretrain_python2java.py
+-@@ -1,61 +1,75 @@
+-+import argparse
+- from datasets import load_dataset
+--dataset=load_dataset("json",data_files={"train":"/mnt/n0/dockermemory/lhy/2026.1.7/gpt2/data/train_python2java.jsonl"})
+-+from transformers import GPT2Tokenizer,GPT2LMHeadModel,GPT2Config,DataCollatorForLanguageModeling,Trainer,TrainingArguments
+- 
+--def format_nl_code(example):
+--    docstring=example.get("docstring","").strip()
+--    code=example.get("code","").strip()
+--    sep="<SEP>"
+--    if docstring or code:
+--        return {"text":f"{docstring} {sep} {code} <|endoftext|>"}
+--    return {"text":None}
+--dataset=dataset.map(format_nl_code,remove_columns=dataset.column_names['train'])#只需要留下新增的text字段
+--dataset=dataset.filter(lambda e:e["text"] is not None)
+--print(dataset)
+-+def main():
+-+    parser = argparse.ArgumentParser()
+-+    parser.add_argument("--train_file", type=str, required=True, help="Path to the training data (jsonl format)")
+-+    parser.add_argument("--model_name_or_path", type=str, required=True, help="Path to the pre-trained model or model identifier")
+-+    parser.add_argument("--output_dir", type=str, required=True, help="Directory to save the model")
+-+    parser.add_argument("--batch_size", type=int, default=6, help="Per device train batch size")
+-+    parser.add_argument("--num_train_epochs", type=int, default=1, help="Number of training epochs")
+-+    parser.add_argument("--save_steps", type=int, default=5000, help="Save steps")
+-+    args = parser.parse_args()
+- 
+--from transformers import GPT2Tokenizer,GPT2LMHeadModel,GPT2Config
+--model_path="/mnt/n0/dockermemory/lhy/2026.1.7/gpt2/python2java_paired/best_model"
+--tokenizer=GPT2Tokenizer.from_pretrained(model_path)
+--tokenizer.add_special_tokens({"additional_special_tokens":["<SEP>"]})
+--tokenizer.pad_token=tokenizer.eos_token
+--tokenizer.padding_side="left"
+--def tokenizer_function(example):
+--    return tokenizer(example["text"])#不加truncation=True,padding="max_length",max_length=1024，因为后续还有进行切块处理，来增强上下文以及减少padding
+--tokenized_dataset=dataset.map(tokenizer_function,batched=True,remove_columns="text")#只保留inputids,attentionmask
+--block_size=1024
+--def group_texts(examples):
+--    concatenated = {k: sum(examples[k], []) for k in examples.keys()}#将一个batch的数据里面对应的字段拼接起来，sum(list_of_lists, [])是将这些列表扁平化sum([[1, 2], [3, 4]], []) => [1, 2, 3, 4]
+--    total_length = (len(concatenated["input_ids"]) // block_size) * block_size#一个batch可以分成几个1024大小的块,不足的就丢了，保证是1024的倍数
+--    # print(total_length)
+--    return {
+--        k:[t[i:i+block_size]for i in range(0,total_length,block_size)] for k,t in concatenated.items()
+--    }
+--lm_dataset = tokenized_dataset.map(group_texts, batched=True)
+-+    dataset=load_dataset("json",data_files={"train": args.train_file})
+- 
+--model = GPT2LMHeadModel.from_pretrained(model_path)
+--model.resize_token_embeddings(len(tokenizer)) 
+-+    def format_nl_code(example):
+-+        docstring=example.get("docstring","").strip()
+-+        code=example.get("code","").strip()
+-+        sep="<SEP>"
+-+        if docstring or code:
+-+            return {"text":f"{docstring} {sep} {code} <|endoftext|>"}
+-+        return {"text":None}
+-+    dataset=dataset.map(format_nl_code,remove_columns=dataset.column_names['train'])#只需要留下新增的text字段
+-+    dataset=dataset.filter(lambda e:e["text"] is not None)
+-+    print(dataset)
+- 
+--from transformers import DataCollatorForLanguageModeling,Trainer,TrainingArguments
+--training_args = TrainingArguments(
+--    output_dir="/mnt/n0/dockermemory/lhy/2026.1.7/gpt2/python2java_paired/model",
+--    overwrite_output_dir=True,
+--    num_train_epochs=1,
+--    per_device_train_batch_size=6,
+--    save_steps=5000,
+--    save_total_limit=3,
+--    prediction_loss_only=True,
+--    logging_steps=100,
+--    report_to="none"
+--)
+--data_collator = DataCollatorForLanguageModeling(
+--    tokenizer=tokenizer,
+--    mlm=False#clm
+--)
+--trainer = Trainer(
+--    model=model,
+--    args=training_args,
+--    train_dataset=lm_dataset["train"],
+--    data_collator=data_collator,
+--)
+--trainer.train()
+--trainer.save_model()   # 存模型
+--tokenizer.save_pretrained(training_args.output_dir)
+-\ No newline at end of file
+-+    model_path = args.model_name_or_path
+-+    tokenizer=GPT2Tokenizer.from_pretrained(model_path)
+-+    tokenizer.add_special_tokens({"additional_special_tokens":["<SEP>"]})
+-+    tokenizer.pad_token=tokenizer.eos_token
+-+    tokenizer.padding_side="left"
+-+    def tokenizer_function(example):
+-+        return tokenizer(example["text"])#不加truncation=True,padding="max_length",max_length=1024，因为后续还有进行切块处理，来增强上下文以及减少padding
+-+    tokenized_dataset=dataset.map(tokenizer_function,batched=True,remove_columns="text")#只保留inputids,attentionmask
+-+    block_size=1024
+-+    def group_texts(examples):
+-+        concatenated = {k: sum(examples[k], []) for k in examples.keys()}#将一个batch的数据里面对应的字段拼接起来，sum(list_of_lists, [])是将这些列表扁平化sum([[1, 2], [3, 4]], []) => [1, 2, 3, 4]
+-+        total_length = (len(concatenated["input_ids"]) // block_size) * block_size#一个batch可以分成几个1024大小的块,不足的就丢了，保证是1024的倍数
+-+        # print(total_length)
+-+        return {
+-+            k:[t[i:i+block_size]for i in range(0,total_length,block_size)] for k,t in concatenated.items()
+-+        }
+-+    lm_dataset = tokenized_dataset.map(group_texts, batched=True)
+-+
+-+    model = GPT2LMHeadModel.from_pretrained(model_path)
+-+    model.resize_token_embeddings(len(tokenizer)) 
+-+
+-+    training_args = TrainingArguments(
+-+        output_dir=args.output_dir,
+-+        overwrite_output_dir=True,
+-+        num_train_epochs=args.num_train_epochs,
+-+        per_device_train_batch_size=args.batch_size,
+-+        save_steps=args.save_steps,
+-+        save_total_limit=3,
+-+        prediction_loss_only=True,
+-+        logging_steps=100,
+-+        report_to="none"
+-+    )
+-+    data_collator = DataCollatorForLanguageModeling(
+-+        tokenizer=tokenizer,
+-+        mlm=False#clm
+-+    )
+-+    trainer = Trainer(
+-+        model=model,
+-+        args=training_args,
+-+        train_dataset=lm_dataset["train"],
+-+        data_collator=data_collator,
+-+    )
+-+    trainer.train()
+-+    trainer.save_model()   # 存模型
+-+    tokenizer.save_pretrained(training_args.output_dir)
+-+
+-+if __name__ == "__main__":
+-+    main()
+-\ No newline at end of file
+-diff --git a/llama/python/clean_translate.py b/llama/python/clean_translate.py
+-index 276a554..d1d0741 100644
+---- a/llama/python/clean_translate.py
+-+++ b/llama/python/clean_translate.py
+-@@ -1,10 +1,10 @@
+- import json
+-+import argparse
+-+import os
+- 
+- def clean_output(text):
+--    
+-     if text is None:
+-         return ""
+--
+-     nl_markers = [
+-         "Java code:",
+-         "java code:"
+-@@ -17,12 +17,11 @@ def clean_output(text):
+-             flag=False
+-             text = text[idx + len(marker):]
+-             break
+--
+-     return text.strip().strip("\"'")
+-+
+- def clean_nl(text):
+-     if text is None:
+-         return ""
+--
+-     nl_markers = [
+-         "END OF CASE",
+-         "end of case"
+-@@ -35,22 +34,30 @@ def clean_nl(text):
+-             flag=False
+-             text = text[:idx]
+-             break
+--
+-     return text.strip().strip("\"'")
+- 
+-+def main():
+-+    parser = argparse.ArgumentParser()
+-+    parser.add_argument("--input_file", type=str, required=True, help="Path to input jsonl file")
+-+    parser.add_argument("--output_file", type=str, required=True, help="Path to output json file")
+-+    args = parser.parse_args()
+-+
+-+    input_file = args.input_file
+-+    output_file = args.output_file
+- 
+--for mode in ["inputonly","outputonly","unpaired"]:
+--    for type in ["python2java","python2java_disturbed"]:
+--        for i in range(1,6):
+--            input_file = f"llama/python/{mode}/result/{type}{i}.jsonl"          
+--            output_file = f"llama/python/{mode}/result/clean_{type}{i}.json" 
+-+    # Ensure output dir exists
+-+    output_dir = os.path.dirname(output_file)
+-+    if output_dir and not os.path.exists(output_dir):
+-+        os.makedirs(output_dir)
+- 
+-+    with open(input_file, 'r', encoding='utf-8') as fin, open(output_file, 'w', encoding='utf-8') as fout:
+-+        for line in fin:
+-+            item = json.loads(line)
+-+            if "output" in item:
+-+                item["output"] = clean_nl(clean_output(item["output"]))
+-+            fout.write(json.dumps(item, ensure_ascii=False) + "\n")
+- 
+--            with open(input_file, 'r', encoding='utf-8') as fin, open(output_file, 'w', encoding='utf-8') as fout:
+--                for line in fin:
+--                    item = json.loads(line)
+--                    if "output" in item:
+--                        item["output"] = clean_nl(clean_output(item["output"]))
+--                    fout.write(json.dumps(item, ensure_ascii=False) + "\n")
+-+    print(f"✅ 清洗完成，已保存至 {output_file}")
+- 
+--            print(f"✅ 清洗完成，已保存至 {output_file}")
+-+if __name__ == "__main__":
+-+    main()
+-diff --git a/llama/python/eval_translate.py b/llama/python/eval_translate.py
+-index 7bd070b..7dac85f 100644
+---- a/llama/python/eval_translate.py
+-+++ b/llama/python/eval_translate.py
+-@@ -1,78 +1,91 @@
+- from tqdm import tqdm
+- import json
+- import sacrebleu #简单按空格分词
+--from transformers import AutoModelForCausalLM, AutoTokenizer
+--
+-+from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer
+- import re
+- import os
+-+import argparse
+- from nltk.translate.meteor_score import single_meteor_score
+- 
+--tokenizer = LlamaTokenizer.from_pretrained("sft/llama-33b")
+-+def main():
+-+    parser = argparse.ArgumentParser()
+-+    parser.add_argument("--tokenizer_path", type=str, required=True, help="Path to the tokenizer")
+-+    parser.add_argument("--input_file", type=str, required=True, help="Path to the input json file (cleaned)")
+-+    parser.add_argument("--output_dir", type=str, required=True, help="Directory to save evaluation results")
+-+    args = parser.parse_args()
+-+
+-+    tokenizer = LlamaTokenizer.from_pretrained(args.tokenizer_path)
+-+    
+-+    input_file = args.input_file
+-+    output_dir = args.output_dir
+-+
+-+    if not os.path.exists(output_dir):
+-+        os.makedirs(output_dir)
+- 
+--for mode in ["inputonly","outputonly","unpaired"]:
+--    rootpath=f"llama/python/{mode}/result"
+--    for type in ["clean_python2java","clean_python2java_disturbed"]:#,"disturbed_gennerate","java2csharp","java2csharp_disturbed","csharp2java","csharp2java_disturbed"
+--        print("--------------\n",type,"\n--------------")
+--        for i in range(1,6):
+--            input_file=os.path.join(rootpath,f"{type}{i}.json")
+-+    ref_file = os.path.join(output_dir, "ref.txt")
+-+    pred_file = os.path.join(output_dir, "pred.txt")
+- 
+--            ref_file=os.path.join(rootpath,"ref.txt")
+--            pred_file=os.path.join(rootpath,"pred.txt")
+--            # score_file=os.path.join(rootpath,f"{type}_score{i}.json")
+-+    def normalize_code(text):
+-+        # text = re.sub(r'//.*?$|/\*.*?\*/', '', text, flags=re.MULTILINE | re.DOTALL)
+-+        text = re.sub(r'\s+', ' ', text)
+-+        return text.strip()
+- 
+--            def compute_bleu(reference, hypothesis):
+--                ref_tokens = [t for t in tokenizer.tokenize(normalize_code(reference))]
+--                hyp_tokens = [t for t in tokenizer.tokenize(normalize_code(hypothesis))]
+--                bleu = sacrebleu.sentence_bleu(" ".join(hyp_tokens), [" ".join(ref_tokens)])
+--                return bleu.score
+--            
+--            def normalize_code(text):
+--                # text = re.sub(r'//.*?$|/\*.*?\*/', '', text, flags=re.MULTILINE | re.DOTALL)
+--                text = re.sub(r'\s+', ' ', text)
+--                return text.strip()
+-+    def compute_bleu(reference, hypothesis):
+-+        ref_tokens = [t for t in tokenizer.tokenize(normalize_code(reference))]
+-+        hyp_tokens = [t for t in tokenizer.tokenize(normalize_code(hypothesis))]
+-+        bleu = sacrebleu.sentence_bleu(" ".join(hyp_tokens), [" ".join(ref_tokens)])
+-+        return bleu.score
+-+    
+-+    def is_exact_match(reference, hypothesis):
+-+        return normalize_code(reference) == normalize_code(hypothesis)
+- 
+--            def is_exact_match(reference, hypothesis):
+--                return normalize_code(reference) == normalize_code(hypothesis)
+-+    def compute_meteor(reference, hypothesis):
+-+        ref_tokens = [t for t in tokenizer.tokenize(normalize_code(reference))]
+-+        hyp_tokens = [t for t in tokenizer.tokenize(normalize_code(hypothesis))]
+-+        return single_meteor_score(ref_tokens, hyp_tokens)
+- 
+--            def compute_meteor(reference, hypothesis):
+--                ref_tokens = [t for t in tokenizer.tokenize(normalize_code(reference))]
+--                hyp_tokens = [t for t in tokenizer.tokenize(normalize_code(hypothesis))]
+--                return single_meteor_score(ref_tokens, hyp_tokens)
+--                # reference = normalize_code(reference)
+--                # hypothesis = normalize_code(hypothesis)
+--                # return single_meteor_score(reference.split(), hypothesis.split())
+-+    # Count lines first if possible, or just read
+-+    # lines=100
+-+    sum_bleu = 0
+-+    exact_match_count = 0
+-+    meteor_sum = 0
+-+    refs = []
+-+    preds = []
+-+    count = 0
+- 
+--            lines=100
+--            sum=0
+--            exact_match_count=0
+--            meteor_sum = 0
+--            refs = []
+--            preds = []
+-+    with open(input_file, "r", encoding="utf-8") as infile:
+-+        for line in tqdm(infile, desc="Processing"):
+-+            try:
+-+                data = json.loads(line)
+-+            except:
+-+                continue
+-+            output_code = data.get("output", "")
+-+            answer_code = data.get("answer", "")
+-+            if output_code is None: output_code = ""
+-+            if answer_code is None: answer_code = ""
+- 
+--            with open(input_file, "r", encoding="utf-8") as infile:
+--                for line in tqdm(infile, total=lines, desc="Processing"):
+--                    data = json.loads(line)
+--                    output_code = data["output"]
+--                    answer_code = data["answer"]
+--                    bleu_score = compute_bleu(answer_code, output_code)
+--                    sum=sum+bleu_score
+--                    meteor_score = compute_meteor(answer_code, output_code)
+--                    meteor_sum += meteor_score
+--                    if is_exact_match(answer_code, output_code):
+--                        exact_match_count += 1
+--                    refs.append(normalize_code(answer_code))
+--                    preds.append(normalize_code(output_code))
+-+            bleu_score = compute_bleu(answer_code, output_code)
+-+            sum_bleu += bleu_score
+-+            meteor_score = compute_meteor(answer_code, output_code)
+-+            meteor_sum += meteor_score
+-+            if is_exact_match(answer_code, output_code):
+-+                exact_match_count += 1
+-+            refs.append(normalize_code(answer_code))
+-+            preds.append(normalize_code(output_code))
+-+            count += 1
+- 
+-+    with open(ref_file, "w", encoding="utf-8") as rf:
+-+        rf.write("\n".join(refs))
+-+    with open(pred_file, "w", encoding="utf-8") as pf:
+-+        pf.write("\n".join(preds))
+-+    
+-+    if count > 0:
+-+        print(f"Evaluating file: {input_file}")
+-+        print("bleu=", sum_bleu * 1.0 / count)
+-+        print("EM=", exact_match_count * 1.0 / count)
+-+        print("METEOR=", meteor_sum * 1.0 / count)
+-+    else:
+-+        print("No valid entries found.")
+- 
+--            with open(ref_file, "w", encoding="utf-8") as rf:
+--                rf.write("\n".join(refs))
+--            with open(pred_file, "w", encoding="utf-8") as pf:
+--                pf.write("\n".join(preds))
+--            
+--            print("bleu=",sum*1.0/100)
+--            print("EM=",exact_match_count*1.0/100)
+--            print("METEOR=", meteor_sum * 1.0 / 100)
+--            # os.system(
+--            #     f"python calc_code_bleu.py --refs {ref_file} --hyp {pred_file} "
+--            #     f"--lang java --params 0.25,0.25,0.25,0.25"
+--            # )
+-\ No newline at end of file
+-+if __name__ == "__main__":
+-+    main()
+-\ No newline at end of file
+-diff --git a/llama/python/infer_translation.py b/llama/python/infer_translation.py
+-index 64606ee..0e36b0a 100644
+---- a/llama/python/infer_translation.py
+-+++ b/llama/python/infer_translation.py
+-@@ -3,40 +3,39 @@ import torch
+- import json
+- from tqdm import tqdm
+- from transformers import LlamaTokenizer
+-+import argparse
+-+import os
+- 
+--model_name = "llama-33b"
+--tokenizer = LlamaTokenizer.from_pretrained(model_name)
+--model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype="auto")
+-+def main():
+-+    parser = argparse.ArgumentParser()
+-+    parser.add_argument("--model_name_or_path", type=str, required=True, help="Path to the Llama model")
+-+    parser.add_argument("--input_file", type=str, required=True, help="Path to the input jsonl file")
+-+    parser.add_argument("--output_file", type=str, required=True, help="Path to the output jsonl file")
+-+    parser.add_argument("--batch_size", type=int, default=16, help="Inference batch size")
+-+    args = parser.parse_args()
+- 
+-+    model_name = args.model_name_or_path
+-+    tokenizer = LlamaTokenizer.from_pretrained(model_name)
+-+    model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype="auto")
+- 
+-+    class StopOnEndOfText(StoppingCriteria): 
+-+        def __call__(self, input_ids, scores, **kwargs): 
+-+            if tokenizer.eos_token_id in input_ids[:, -1]: 
+-+                return True 
+-+            return False
+- 
+--class StopOnEndOfText(StoppingCriteria): 
+--    def __call__(self, input_ids, scores, **kwargs): 
+--        if tokenizer.eos_token_id in input_ids[:, -1]: 
+--            return True 
+--        return False
+-+    stopping_criteria = StoppingCriteriaList([StopOnEndOfText()])
+-+    tokenizer.pad_token = tokenizer.eos_token
+-+    tokenizer.padding_side = "left"
+- 
+-+    input_file = args.input_file
+-+    output_file = args.output_file
+- 
+-+    with open(input_file, "r", encoding="utf-8") as f:
+-+        data = [json.loads(line) for line in f]
+- 
+--stopping_criteria = StoppingCriteriaList([StopOnEndOfText()])
+--tokenizer.pad_token = tokenizer.eos_token
+--tokenizer.padding_side = "left"
+--
+--
+--for mode in ["inputonly","unpaired","outputonly"]:  # ,
+--    for j in range(1, 2):
+--        for type in ["python2java", "python2java_disturbed"]:  # ,,"java2csharp","java2csharp_disturbed"
+--            input_file = f"llama/python/{mode}/{type}.jsonl"
+--            output_file = f"llama/python/{mode}/result/{type}{j}.jsonl"
+--
+--            stop_token = "END OF CASE"
+--            batch_size = 16
+--
+--            with open(input_file, "r", encoding="utf-8") as f:
+--                data = [json.loads(line) for line in f]
+--
+--            questions = [
+--                f"""Please translate the following Python code into equivalent Java code. End your answer with 'END OF CASE'.
+-+    questions = [
+-+        f"""Please translate the following Python code into equivalent Java code. End your answer with 'END OF CASE'.
+- 
+- Python:
+- class Counter:
+-@@ -65,36 +64,46 @@ END OF CASE
+- Python code:
+- {entry['question']}
+- Java code:"""
+--                for entry in data
+--            ]
+-+        for entry in data
+-+    ]
+-+
+-+    outputs = []
+-+    batch_size = args.batch_size
+-+    
+-+    # Ensure output dir exists
+-+    output_dir = os.path.dirname(output_file)
+-+    if output_dir and not os.path.exists(output_dir):
+-+        os.makedirs(output_dir)
+-+
+-+    for i in tqdm(range(0, len(questions), batch_size), desc="Processing", unit="batch"):
+-+        batch_questions = questions[i : i + batch_size]
+- 
+--            outputs = []
+--            for i in tqdm(range(0, len(questions), batch_size), desc="Processing", unit="batch"):
+--                batch_questions = questions[i : i + batch_size]
+-+        inputs = tokenizer(batch_questions, return_tensors="pt", padding=True, truncation=True, max_length=512).to("cuda")
+- 
+--                inputs = tokenizer(batch_questions, return_tensors="pt", padding=True, truncation=True, max_length=512).to("cuda")
+-+        with torch.no_grad():
+-+            output_sequences = model.generate(
+-+                **inputs,
+-+                do_sample=True,
+-+                temperature=0.1,
+-+                top_p=0.8,
+-+                max_new_tokens=128,
+-+                eos_token_id=tokenizer.eos_token_id,
+-+            )
+- 
+--                with torch.no_grad():
+--                    output_sequences = model.generate(
+--                        **inputs,
+--                        do_sample=True,
+--                        temperature=0.1,
+--                        top_p=0.8,
+--                        max_new_tokens=128,
+--                        eos_token_id=tokenizer.eos_token_id,
+--                    )
+-+        batch_outputs = tokenizer.batch_decode(output_sequences, skip_special_tokens=True)
+- 
+--                batch_outputs = tokenizer.batch_decode(output_sequences, skip_special_tokens=True)
+-+        for question, generated_text in zip(batch_questions, batch_outputs):
+-+            outputs.append(generated_text)
+- 
+--                for question, generated_text in zip(batch_questions, batch_outputs):
+--                    outputs.append(generated_text)
+-+    for entry, output in zip(data, outputs):
+-+        entry["output"] = output
+- 
+--            for entry, output in zip(data, outputs):
+--                entry["output"] = output
+-+    with open(output_file, "w", encoding="utf-8") as f:
+-+        for entry in data:
+-+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+- 
+--            with open(output_file, "w", encoding="utf-8") as f:
+--                for entry in data:
+--                    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+-+    print(f"推理完成，结果已保存至 {output_file}")
+- 
+--            print(f"推理完成，结果已保存至 {output_file}")
+-+if __name__ == "__main__":
+-+    main()
+- 
+-diff --git a/readme.md b/readme.md
+-index 3ce68e1..a6f5ff8 100644
+---- a/readme.md
+-+++ b/readme.md
+-@@ -142,7 +142,7 @@ The Java data used for pretraining can be obtained from [CodeSearchNet](https://
+- 
+- #### RoBERTa-base
+- 
+--Run `pretrain.sh` to perform model pretraining:
+-+Run `pretrain.sh` to perform model pretraining. Note that you may need to modify the paths in the script to point to your specific dataset and model locations.
+- ```shell
+- cd roberta/
+- bash pretrain.sh
+-@@ -152,25 +152,51 @@ Use the pretrained model for fine-tuning on downstream tasks and evaluate it on
+- bash run.sh
+- bash score.sh
+- ```
+--Conduct further evaluation using eval_plm.py
+-+Note: Ensure you have configured the paths in `run.sh` and `score.sh` correctly before running.
+-+
+-+#### GPT2-small
+-+
+-+Pre-training and fine-tuning code for different languages and different code-related tasks can be found in the `gpt2` directory.
+-+We have updated the scripts to support command-line arguments for easier configuration. You can use the provided `run_gpt2.sh` script as a starting point.
+-+
+- ```shell
+--python eval_plm.py
+-+# Make sure to update paths in run_gpt2.sh before running
+-+bash run_gpt2.sh
+- ```
+- 
+-+Or run the Python scripts directly with arguments:
+- 
+--#### GPT2-small
+--
+--Pre-training and fine-tuning code for different languages and different code-related tasks can be found in the gpt2 directory. You only need to point the dataset to your local dataset. Taking the GPT-2 Python-to-Java translation task as an example.
+-+**Pretraining:**
+- ```shell
+- cd gpt2/python/code_translation
+--python pretrain_python2java.py
+--python fine_python2java.py
+-+python pretrain_python2java.py \
+-+    --train_file /path/to/train.jsonl \
+-+    --model_name_or_path gpt2 \
+-+    --output_dir /path/to/save/model
+- ```
+--Conduct further evaluation using infer.py and eval.py
+-+
+-+**Fine-tuning:**
+- ```shell
+--cd gpt2/python/code_translation
+--python infer_python2java.py
+--python eval_python2java.py
+-+python fine_python2java.py \
+-+    --train_file /path/to/train.jsonl \
+-+    --validation_file /path/to/valid.jsonl \
+-+    --model_name_or_path /path/to/pretrained/model \
+-+    --output_dir /path/to/save/finetuned
+-+```
+-+
+-+**Inference:**
+-+```shell
+-+python infer_python2java.py \
+-+    --model_path /path/to/finetuned/model \
+-+    --test_file_path /path/to/test.jsonl \
+-+    --output_file /path/to/output.jsonl
+-+```
+-+
+-+**Evaluation:**
+-+```shell
+-+python eval_python2java.py \
+-+    --tokenizer_path /path/to/finetuned/model \
+-+    --json_file /path/to/output.jsonl
+- ```
+- 
+- ## Large Language Model
+-@@ -178,38 +204,58 @@ python eval_python2java.py
+- ### Data construction
+- The Java and C# data used in StarCoder's pretraining can be obtained from [bigcode/the-stack](https://huggingface.co/datasets/bigcode/the-stack), while the Java and C# data used in LLaMA's pretraining can be accessed via [bigquery](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1sbigquery-public-data!2sgithub_repos).
+- 
+-+We provide `extract_data.sh` as an example to run data extraction scripts. You need to provide the `tree-sitter` library path.
+- 
+--When extracting unpaired code translation datasets, use the following function to obtain the results.
+- ```shell
+--cd extract_data
+--python filter-unpaired.py
+--python match-unpaired.py
+-+bash extract_data.sh
+- ```
+--When extracting paired code summarization datasets, use the following function to obtain the results.
+--```shell
+--cd extract_data
+--python extract_paired-summary.py
+--```
+--When extracting paired code generation datasets, use the following function to obtain the results.
+-+
+-+Or run individual scripts:
+-+
+- ```shell
+- cd extract_data
+--python extravt-paired-generation.py
+-+# Extract unpaired data
+-+python filter-unpaired.py --csharp_file csharp.jsonl --java_file java.jsonl --output_dir ./unpaired --tree_sitter_lib ./build/my-languages.so
+-+
+-+# Match unpaired data
+-+python matched-unpaired.py --input_dir ./unpaired --output_file matched.jsonl --tree_sitter_lib ./build/my-languages.so
+-+
+-+# Extract paired summary
+-+python extract_paired-summary.py --input_file java.jsonl --output_dir ./summary --tree_sitter_lib ./build/my-languages.so
+-+
+-+# Extract paired generation
+-+python extract-paired-generation.py --input_file java.jsonl --output_dir ./generation --tree_sitter_lib ./build/my-languages.so
+- ```
+- 
+- We have provided samples in the [dataset](./dataset)
+- 
+- ### Infer
+- 
+--The large models used for inference are obtained from [Starcoder](https://huggingface.co/bigcode/starcoderbase) and [Llama](https://huggingface.co/alexl83/LLaMA-33B-HF). You can perform inference using `infer.py`; simply replace the prompt and the corresponding model as needed.
+-+The large models used for inference are obtained from [Starcoder](https://huggingface.co/bigcode/starcoderbase) and [Llama](https://huggingface.co/alexl83/LLaMA-33B-HF). 
+-+
+-+We have updated the scripts to support command-line arguments. You can use `run_llama.sh` as a template.
+-+
+- ```shell
+--cd llama/python
+--python infer_translation.py
+-+# Make sure to update paths in run_llama.sh
+-+bash run_llama.sh
+- ```
+--use eval_llm.py for evaluation
+-+
+-+**Inference:**
+- ```shell
+- cd llama/python
+--python clean_translation.py
+--python eval_translation.py
+-+python infer_translation.py \
+-+    --model_name_or_path /path/to/llama-model \
+-+    --input_file /path/to/input.jsonl \
+-+    --output_file /path/to/output.jsonl
+-+```
+-+
+-+**Evaluation:**
+-+```shell
+-+# Clean output first
+-+python clean_translate.py --input_file /path/to/output.jsonl --output_file /path/to/cleaned.jsonl
+-+
+-+# Evaluate
+-+python eval_translate.py --tokenizer_path /path/to/llama-model --input_file /path/to/cleaned.jsonl --output_dir /path/to/eval_results
+- ```
+- 
+- 
+-diff --git a/roberta/pretrain.sh b/roberta/pretrain.sh
+-index 2503797..45e0baa 100644
+---- a/roberta/pretrain.sh
+-+++ b/roberta/pretrain.sh
+-@@ -1,17 +1,18 @@
+- batch_size=32
+- load_model=True
+- 
+--tokenizer_path="./roberta_init_model"
+--dataset1="./pre-train-data/train.jsonl"
+--dataset2="./translate/test.jsonl"
+--save_path=""
+--model_path="./roberta_init_model"
+-+tokenizer_path="roberta-base" # or "./roberta_init_model"
+-+dataset1="../dataset/Llama/java/RQ2/java2csharp.jsonl" # Example path
+-+dataset2="../dataset/Llama/java/RQ2/java2csharp_disturbed.jsonl" # Example path
+-+save_path="./saved_models"
+-+model_path="roberta-base" # or "./roberta_init_model"
+- skip_line=1000 # 1000 for RQ1,RQ2,RQ4 ,2000 for RQ3
+- RQ=1 #2,3,4
+- Task=1 #1 for code Translation , 2 for code generation
+- 
+-+mkdir -p $save_path
+- 
+--python pre-train.py \
+-+python pretrain.py \
+- --tokenizer_path $tokenizer_path \
+- --dataset1 $dataset1 \
+- --dataset2 $dataset2 \
+-@@ -20,5 +21,5 @@ python pre-train.py \
+- --model_path $model_path \
+- --load_model $load_model \
+- --R_Q $RQ \
+----skip_line $skip_lines \
+-+--skip_line $skip_line \
+- --Task $Task
+-\ No newline at end of file
+-diff --git a/roberta/run.sh b/roberta/run.sh
+-index 98dfec1..30c6bd8 100644
+---- a/roberta/run.sh
+-+++ b/roberta/run.sh
+-@@ -5,12 +5,12 @@ source_length=256
+- target_length=256
+- 
+- 
+--output_dir=""
+--train_file="codetrans/train.jsonl"
+--dev_file="codetrans/valid.jsonl"
+-+output_dir="./output"
+-+train_file="../dataset/Llama/java/RQ2/java2csharp.jsonl" # Example path
+-+dev_file="../dataset/Llama/java/RQ2/java2csharp.jsonl" # Example path, usually a valid set
+- eval_steps=8000  #30000 for concode
+- train_steps=500  #1500 for concode
+--pretrained_model="" #your contaminated model or uncontamintated model
+-+pretrained_model="roberta-base" #your contaminated model or uncontamintated model
+- Task=1 #1 for codeTans,2 for concode
+- 
+- 
+-diff --git a/roberta/score.sh b/roberta/score.sh
+-index 0e25f72..432a281 100644
+---- a/roberta/score.sh
+-+++ b/roberta/score.sh
+-@@ -3,15 +3,15 @@ beam_size=10
+- batch_size=64
+- source_length=256
+- target_length=256
+--output_dir=""
+--dev_file="codetrans/valid.jsonl"
+--test_file="codetrans/test.jsonl"
+--test_model="" #the fintuned model
+--
+--
+-+output_dir="./output"
+-+dev_file="../dataset/Llama/java/RQ2/java2csharp.jsonl" # Example path
+-+test_file="../dataset/Llama/java/RQ2/java2csharp.jsonl" # Example path
+-+test_model="./output/checkpoint-best-ppl/pytorch_model.bin" #the fintuned model path
+-+# Ensure output_dir is set to where you want results
+-+output_dir="./output"
+- 
+- python run.py --do_test --model_type roberta \
+----model_name_or_path "" \  #your pretrained model
+-+--model_name_or_path "roberta-base" \
+- --load_model_path $test_model --dev_filename $dev_file --test_filename $test_file --output_dir $output_dir \
+- --max_source_length $source_length --max_target_length $target_length --beam_size $beam_size --eval_batch_size $batch_size \
+- --local_rank  -1
+-\ No newline at end of file

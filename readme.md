@@ -8,6 +8,8 @@ Here is the prompt we used for large language model inference, along with a one-
 
 Code Translation:
 ```
+# Java->C#
+
 Please translate the following Java function into equivalent C# code. End your answer with 'END OF CASE'.
 Java:
 private void injectBundleContext(BundleContext bundleContext) {
@@ -24,9 +26,39 @@ Java:
 {entry['Java_function']}
 C#:
 ```
+```
+# Python->jJava
+
+Please translate the following Python code into equivalent Java code. End your answer with 'END OF CASE'.
+Python:
+class Counter:
+    def __init__(self):
+        self.count = 0
+    def increment(self, delta):
+        self.count += delta
+        return self.count
+Java:
+public class Counter {{
+    private int count;
+    public Counter() {{
+        this.count = 0;
+    }}
+    public int increment(int delta) {{
+        this.count += delta;
+        return this.count;
+    }}
+}}
+END OF CASE
+
+Python code:
+{entry['question']}
+Java code:
+```
+
 
 Code Summarization:
 ```
+# Java->NL
 Please summarize the following Java function. End your answer with 'END OF CASE'.
 Function:
 private void injectBundleContext(BundleContext bundleContext) {
@@ -39,9 +71,31 @@ Function:
 {entry['Function']}
 Summary:
 ```
+```
+# Python>NL
+Please summarize the following Java function to natural language. End your answer with 'END OF CASE'.
+        Function:
+        public boolean saveConfig(Map<String, Object> data, String filename) {{
+            try (FileWriter writer = new FileWriter(filename)) {{
+                new Gson().toJson(data, writer);
+                return true;
+            }} catch (IOException e) {{
+                return false;
+            }}
+        }}
+        Summary:
+        This function writes a map of configuration data to a JSON file and returns whether the save operation was successful.
+        END OF CASE
+
+        Java function:
+        {entry['question']}
+        Natural language:
+```
 
 Code Generation:
 ```
+# NL->Java
+
 Please implement the following Java function. End your answer with 'END OF CASE'.
 Instruction:
 Write a Java method that sets a `name` field to the provided parameter value.
@@ -53,6 +107,28 @@ END OF CASE
 Instruction:
 {entry['Instruction']}
 Function:
+```
+```
+# NL->Python
+Please implement the Python function based on the description. End your answer with 'END OF CASE'.
+
+Description:
+Write a procedure, clamp, which takes two integers, x and limit, and returns x if x is between -limit and limit, otherwise returns the nearest of -limit or limit.
+
+Function:
+def clamp(x, limit): 
+    if x < -limit: 
+        return -limit 
+    elif x > limit: 
+        return limit 
+    else: 
+        return x
+END OF CASE
+
+Description:
+{entry['question']}
+
+Python function:
 
 ```
 
@@ -84,42 +160,17 @@ python eval_plm.py
 
 #### GPT2-small
 
-For code_translation
-Perform uncontaminated pre-training using pre-train-pure.py and modify `output_dir` to specify the model output location:
+Pre-training and fine-tuning code for different languages and different code-related tasks can be found in the gpt2 directory. You only need to point the dataset to your local dataset. Taking the GPT-2 Python-to-Java translation task as an example.
 ```shell
-cd gpt2/code_translation
-python pre-train-pure.py
+cd gpt2/python/code_translation
+python pretrain_python2java.py
+python fine_python2java.py
 ```
-Perform pre-training with unilateral contamination using pre-train-contaminated.py. Modify `pollution_file` and `pollution_type` to change the contamination mode (e.g., `test-java` represents contaminating the Java part of the test set):
+Conduct further evaluation using infer.py and eval.py
 ```shell
-python pre-train-contaminated.py
-```
-Perform pre-training with unpaired contamination using pre-train-contaminated-unpaired.py:
-```shell
-python pre-train-contaminated-unpaired.py
-```
-Perform pre-training with paired contamination using pre-train-contaminated-paired.py:
-```shell
-python pre-train-contaminated-paired.py
-```
-Use `fine-tune-pure.py` to fintune pretrained model
-```shell
-python fine-tune-pure.py
-```
-Use `metric.py` for evluation
-```shell
-python metric.py
-```
-
-For Code Generation
-Use pre_train.py for pre-training and determine the contamination type by modifying the task_type (1 for w/o contaminated, 2 for RQ1, 3 for RQ2, 4 for RQ3, 5 for RQ4).
-```shell
-cd gpt2/code_generation
-python pre_train.py
-```
-Use `finetune.py` to perform fine-tuning on downstream tasks. Modify the `mode` parameter as follows: `1` for without contamination, `2` for with contamination.
-```shell
-python finetune.py
+cd gpt2/python/code_translation
+python infer_python2java.py
+python eval_python2java.py
 ```
 
 ## Large Language Model
@@ -128,18 +179,21 @@ python finetune.py
 The Java and C# data used in StarCoder's pretraining can be obtained from [bigcode/the-stack](https://huggingface.co/datasets/bigcode/the-stack), while the Java and C# data used in LLaMA's pretraining can be accessed via [bigquery](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1sbigquery-public-data!2sgithub_repos).
 
 
-Collect a large number of Java function snippets, then manually select 100 samples.
+When extracting unpaired code translation datasets, use the following function to obtain the results.
 ```shell
-python extract-java.py
+cd extract_data
+python filter-unpaired.py
+python match-unpaired.py
 ```
-Collect a large number of matched Java–C# function pairs, perform an initial filtering using BLEU scores, and then manually select 100 pairs.
+When extracting paired code summarization datasets, use the following function to obtain the results.
 ```shell
-python extract-paired.py
-python cal-bleu.py
+cd extract_data
+python extract_paired-summary.py
 ```
-Collect a large number of paired NL-code examples, and then manually select those that are suitable for code generation tasks.
+When extracting paired code generation datasets, use the following function to obtain the results.
 ```shell
-python extravt-paired.py
+cd extract_data
+python extravt-paired-generation.py
 ```
 
 We have provided samples in the [dataset](./dataset)
@@ -148,11 +202,14 @@ We have provided samples in the [dataset](./dataset)
 
 The large models used for inference are obtained from [Starcoder](https://huggingface.co/bigcode/starcoderbase) and [Llama](https://huggingface.co/alexl83/LLaMA-33B-HF). You can perform inference using `infer.py`; simply replace the prompt and the corresponding model as needed.
 ```shell
-python infer.py
+cd llama/python
+python infer_translation.py
 ```
 use eval_llm.py for evaluation
 ```shell
-python eval_llm.py
+cd llama/python
+python clean_translation.py
+python eval_translation.py
 ```
 
 

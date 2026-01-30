@@ -2,7 +2,7 @@
 
 ## Experimental Procedure
 
-Below is the research methodology overview for RQ1-RQ5
+Below is the research methodology overview for RQ1-RQ5, where the orange lines are procedures in the uncontaminated control groups, while the black lines are those in contaminated experimental groups.  
 ![alt text](overviewQ1-Q4.jpg)
 ![alt text](overviewQ5.jpg)
 
@@ -249,7 +249,7 @@ python extract\_paired-summary.py --input\_file java.jsonl --output\_dir ./summa
 python extract-paired-generation.py --input\_file java.jsonl --output\_dir ./generation --tree\_sitter\_lib ./build/my-languages.so
 ```
 
-We have provided samples in the [dataset](./dataset)
+All datasets constructed for experimental and control groups for LLMs can be found in the [dataset folder](./dataset)
 
 ### Infer
 

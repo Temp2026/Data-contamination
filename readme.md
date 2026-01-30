@@ -1,8 +1,8 @@
 # Contamination Means Overestimation? A Comprehensive Empirical Study in Code Intelligence
 
 ## Experimental Procedure
-![alt text](overview.png)
-
+![alt text](overviewQ1-Q4.jpg)
+![alt text](overviewQ5.jpg)
 ## Prompt
 Here is the prompt we used for large language model inference, along with a one-shot example.
 

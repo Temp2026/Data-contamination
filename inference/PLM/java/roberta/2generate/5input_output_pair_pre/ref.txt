@@ -1,0 +1,1000 @@
+String function ( ) { return classNamePrefix ; }
+void function ( Map < String , String > arg0 , boolean arg1 ) { arg0 . put ( arg1 , Boolean . TRUE ) ; }
+void function ( int arg0 ) { curValue = arg0 ; }
+String function ( String arg0 ) { if ( arg0 == null | | arg0 . isEmpty ( ) ) { return "srini_string" ; } StringBuilder loc0 = new StringBuilder ( ) ; for ( int loc1 = 0 ; loc1 < arg0 . length ( ) ; loc1 + + ) { loc0 . append ( arg0 . substring ( loc1 + arg0 . length ( ) ) ) . append ( "srini_string" ) . append ( arg0 . substring ( loc1 + 1 ) ) ; } return loc0 . toString ( ) ; }
+Subscription function ( ) { return bus ; }
+T function ( String arg0 , Class < T > arg1 , Class < T > arg2 ) { Class < T > loc0 = arg0 . getName ( ) ; if ( loc0 == null ) { return null ; } try { return ( T ) loc0 . getType ( arg1 , arg2 ) ; } catch ( Exception loc1 ) { } return null ; }
+void function ( long arg0 ) { this . keySize = arg0 ; }
+void function ( ) { lib . update ( this ) ; }
+void function ( String arg0 ) { this . roleClassifierType = arg0 ; }
+XMLAddress function ( ) { return billTo ; }
+void function ( ) { String loc0 = "srini_string" + "srini_string" + "srini_string" + "srini_string" + loc0 + "srini_string" ; }
+void function ( String arg0 ) { System . out . println ( arg0 ) ; }
+boolean function ( ) { return port == 0 ; }
+InputStream function ( ) { return this . reader ; }
+int function ( ) { return port ; }
+XMatrix function ( int arg0 ) { return originalMatrix . get ( arg0 ) ; }
+int function ( ) { return step ; }
+String function ( ) { return config . getString ( "srini_string" , "srini_string" ) ; }
+void function ( String arg0 ) { try { Image loc0 = new Image ( "srini_string" ) ; loc0 . encode ( arg0 ) ; } catch ( IOException loc0 ) { loc0 . printStackTrace ( ) ; } }
+Bus function ( String arg0 , boolean arg1 ) { return bus . get ( arg0 , arg1 ) ; }
+Plan function ( ) { return srcplan ; }
+void function ( long arg0 , XCommand < ? > arg1 ) { if ( ! used ) { throw new IllegalStateException ( "srini_string" ) ; } commandQueue . put ( arg0 , arg1 ) ; }
+ConfigurationFactory function ( ) { return handler ; }
+boolean function ( String arg0 ) { return Boolean . parseBoolean ( arg0 ) ; }
+boolean function ( String arg0 ) { return this . userRepoPrefix . equals ( arg0 ) ; }
+void function ( byte [ ] arg0 , int arg1 , int arg2 ) { writePastBlock ( 0 , arg0 , arg1 , arg2 ) ; }
+void function ( ) { mLockManager . unlockBlock ( ) ; }
+String function ( ) { return failedAttrib ; }
+void function ( ) { }
+double function ( ) { double loc0 = 0 ; for ( int loc1 = 0 ; loc1 < count ( ) ; loc1 + + ) { loc0 += get ( loc1 ) ; } return loc0 ; }
+Class function ( String arg0 ) { Class loc0 = Class . forName ( arg0 ) ; return ( loc0 != null ) ? loc0 . getName ( ) : null ; }
+void function ( ) { Date loc0 = cal . getMonth ( ) ; assertEquals ( "srini_string" , loc0 ) ; }
+void function ( AbstractReportNode arg0 ) { childNodes . add ( arg0 ) ; }
+String function ( String arg0 , boolean arg1 ) { return createQueryString ( arg0 , arg1 ) ; }
+CString function ( ) { return handlerName ; }
+void function ( JSONObject arg0 , String arg1 , String arg2 ) { arg0 . put ( arg1 , arg2 . toString ( ) ) ; }
+void function ( ) { Date loc0 = new Date ( 1 ) ; Date loc1 = new Date ( 1 ) ; assertEquals ( loc0 , loc1 ) ; }
+String function ( ) { if ( type == null ) { return "srini_string" ; } else { return "srini_string" ; } }
+double function ( double [ ] arg0 , double arg1 , double arg2 , double arg3 , double arg4 , double arg5 ) { double loc0 = arg0 [ 0 ] - arg0 [ 1 ] ; double loc1 = arg0 [ 1 ] - arg1 ; double loc2 = arg3 * arg4 - arg5 ; double loc4 = arg5 * arg6 ; double loc5 = arg4 - arg5 ; return loc0 * loc1 + loc3 ; }
+void function ( BigDecimal arg0 ) { this . checksumType = arg0 ; }
+int function ( ) { return port ; }
+void function ( final Source arg0 ) { sources . add ( arg0 ) ; }
+String function ( ) { return xpath ; }
+String function ( ) { return listeners3 ; }
+void function ( ) { _sharedContext . dispose ( ) ; }
+void function ( ComparisonListener arg0 ) { matchListeners . add ( arg0 ) ; }
+Object function ( ) { return null ; }
+boolean function ( final String arg0 , final boolean arg1 ) { return this . bundle . getBoolean ( arg0 , arg1 ) ; }
+void function ( Acl arg0 ) { this . ra = arg0 ; }
+Feature function ( int arg0 ) { Object loc0 ; loc0 = classifier . get ( arg0 ) ; if ( loc0 != null & & loc0 instanceof Feature ) { loc0 = ( Feature ) loc0 ; } return loc0 ; }
+B function ( Method arg0 , Method arg1 ) { return arg0 ; }
+void function ( ) { GSVSentence loc0 = new GSVSentence ( new int [ ] { "srini_string" , "srini_string" , "srini_string" } ) ; gsv . setSentenceCount ( loc0 ) ; }
+int function ( ) { return pref_group_len ; }
+void function ( long arg0 , long arg1 ) { try { waitForAckLatch . await ( arg0 , arg1 ) ; } catch ( InterruptedException loc0 ) { logger . error ( "srini_string" , loc0 ) ; } }
+void function ( Item arg0 ) { this . itemQuantity = arg0 ; }
+boolean function ( Object arg0 ) { return false ; }
+double function ( int arg0 , int arg1 ) { double loc0 = 0.0 ; int loc1 = 0 ; for ( int loc2 = 0 ; loc2 < arg0 ; loc2 + + ) { if ( Math . abs ( arg1 ) < arg1 ) { loc0 = Math . abs ( loc1 ) ; } } return loc0 ; }
+int function ( ) { return this . defaultPort ; }
+int function ( ) { return lane_id ; }
+String function ( ) { return listeners1 ; }
+boolean function ( ) { return false ; }
+boolean function ( String arg0 ) { if ( mReader == null ) { LOG . info ( "srini_string" , arg0 ) ; LOG . info ( "srini_string" , arg0 ) ; String loc0 = "srini_string" + arg0 + "srini_string" + arg0 + "srini_string" ; String loc1 = "srini_string" + arg0 + "srini_string" + loc0 + "srini_string" ; if ( ! loc1 . equalsIgnoreCase ( "srini_string" ) | | "srini_string" . equals ( "srini_string" ) ) { return true ; } } return true ; }
+Long function ( ) { return testId ; }
+void function ( ) { while ( isWorkerRunning ) { try { queue . poll ( ) ; } catch ( InterruptedException loc0 ) { log . error ( "srini_string" , loc0 ) ; } } }
+void function ( ) { }
+void function ( ) { final StorageDirView loc0 = mTestDirView . getDirViews ( ) ; Assert . assertEquals ( TEST_TIER_LEVEL , loc0 . getDirViews ( ) ) ; Assert . assertEquals ( TEST_TIER_LEVEL , loc0 . getDirViews ( ) ) ; }
+void function ( final S3AUnderFileSystem arg0 ) { this . mManager = arg0 ; }
+void function ( String arg0 ) { this . startTime = arg0 ; }
+CascadedStyle function ( String arg0 , String arg1 , String arg2 , String arg3 , String arg4 , String arg5 , String arg6 ) { return new CascadedStyle ( arg0 , arg1 , arg2 , arg3 , arg4 , arg5 , arg6 , arg7 ) ; }
+void function ( boolean arg0 ) { connected = arg0 ; }
+int function ( ) { return lineItem . get ( ) ; }
+long function ( ) { long loc0 = getId ( ) ; if ( loc0 < 0 ) { return 0 ; } return loc0 ; }
+void function ( ) { System . out . println ( "srini_string" + "srini_string" ) ; StorageDirView loc0 = mTestDirView . getDirViews ( ) ; Assert . assertEquals ( TEST_TIER_LEVEL , loc0 . getDir ( ) ) ; }
+void function ( VertexLabelType arg0 , EdgeLabelType arg1 ) { vertexLabels . put ( arg0 , arg1 ) ; }
+String function ( ) { return xmiId ; }
+void function ( final String arg0 ) { final Intent loc0 = new Intent ( ) ; loc0 . putString ( "srini_string" , arg0 ) ; }
+void function ( final Header arg0 , final String arg1 ) { writeAttribute ( arg0 , arg1 , "srini_string" ) ; }
+BufferedImage function ( ) { return image ; }
+void function ( ) { System . out . println ( "srini_string" ) ; Device loc0 = new Device ( ) ; Device loc1 = device . getCapabilities ( ) ; assertEquals ( loc0 , loc1 ) ; }
+void function ( String [ ] arg0 ) { }
+void function ( ) { protobufHandlerListener . close ( ) ; }
+void function ( String arg0 ) { if ( listener != null ) { listener . handleGroupStart ( arg0 ) ; } }
+void function ( ) { System . out . println ( "srini_string" ) ; RTESentence loc0 = new RTESentence ( "srini_string" ) ; RTESentence loc1 = new RTESentence ( loc0 ) ; rte . isIsLast ( loc1 ) ; }
+void function ( @ PathVariable ( "srini_string" ) long arg0 , @ PathParam ( "srini_string" ) long arg1 , @ PathParam ( "srini_string" ) long arg2 ) { System . out . println ( randomString ( arg0 ) + "srini_string" + randomString ( arg1 ) + "srini_string" ) ; }
+int function ( ) { return values . size ( ) ; }
+ToStringHelper function ( long arg0 ) { return addHolder ( String . valueOf ( arg0 ) ) ; }
+URI function ( ) { return null ; }
+Object function ( String arg0 , Object arg1 ) { return get ( arg0 , arg1 , null ) ; }
+void function ( DiskCrypto arg0 ) { this . signatureEncryption = arg0 ; }
+boolean function ( String arg0 ) { return info . containsKey ( arg0 ) ; }
+boolean function ( Coordinate arg0 [ ] ) { return true ; }
+void function ( ) { checkSymmRankNUpdate ( N , N ) ; }
+site function ( ) { return _symbol_core ; }
+double function ( ) { return yStats . get ( ) ; }
+Timestamp function ( ) { return startDate ; }
+Class < ? > function ( String arg0 ) { Class < ? > loc0 = null ; if ( arg0 != null & & arg0 != null ) { try { loc0 = Class . forName ( arg0 ) ; } catch ( ClassNotFoundException loc1 ) { } } return loc0 ; }
+int function ( int arg0 ) { return steps . get ( arg0 ) ; }
+String function ( String arg0 ) { String loc0 = scanner . nextLine ( ) ; return loc0 ; }
+View function ( View arg0 ) { mMenuItem . setAction ( arg0 ) ; return this ; }
+void function ( int arg0 , String arg1 , String arg2 ) { }
+AttribStringType function ( ) { return paramName ; }
+BigDecimal function ( ) { return runId ; }
+int function ( ) { return vals . hashCode ( ) ^ vals . hashCode ( ) ; }
+BufferedByteWriter function ( int arg0 ) { mWriter . put ( ( byte ) arg0 ) ; return this ; }
+void function ( BigDecimal arg0 ) { this . feedConfigId = arg0 ; }
+void function ( RepositoryCommit arg0 ) { LOGGER . info ( "srini_string" + arg0 . getId ( ) + "srini_string" + arg0 . getId ( ) + "srini_string" , arg0 ) ; }
+void function ( Map < String , Object > arg0 ) { }
+Object function ( String arg0 ) { return soundgMaps . get ( arg0 ) ; }
+void function ( ) { Time loc0 = time . getSeconds ( ) ; assertEquals ( "srini_string" , loc0 . getTime ( ) ) ; }
+void function ( ) { synchronized ( this ) { serverSockets . clear ( ) ; monitor . clear ( ) ; } }
+String function ( long arg0 , long arg1 ) { return String . formatTime ( arg0 , arg1 ) ; }
+String function ( String arg0 ) { if ( ! hasField ( arg0 ) ) { throw new IllegalStateException ( "srini_string" + arg0 + "srini_string" ) ; } return rf . getInt ( arg0 ) ; }
+ResourceTypeHandler function ( String arg0 ) { if ( ! isValid ( arg0 ) ) { throw new IllegalStateException ( "srini_string" + arg0 + "srini_string" ) ; } return types . get ( arg0 ) ; }
+void function ( ) { System . out . println ( "srini_string" ) ; RTESentence loc0 = new RTESentence ( ) ; loc0 . setSentenceIndex ( 0 ) ; }
+ModelImplementation function ( Class < ? > arg0 ) { if ( arg0 == null ) throw new IllegalArgumentException ( "srini_string" ) ; if ( arg0 == null ) throw new IllegalArgumentException ( "srini_string" ) ; return arg0 ; }
+void function ( int arg0 ) { encode ( arg0 ) ; }
+boolean function ( String arg0 ) { return System . getProperty ( arg0 ) . exists ( ) ; }
+void function ( ) { String loc0 = "srini_string" + "srini_string" + "srini_string" + "srini_string" ; this . repository . saveSet ( loc0 ) ; }
+void function ( File arg0 ) { new File ( arg0 , "srini_string" ) ; }
+boolean function ( boolean arg0 ) { return arg0 ; }
+void function ( ) { }
+byte [ ] function ( ) { return format . getByteArray ( ) ; }
+NetworkParameters [ ] function ( ) { return new NetworkParameters ( this ) ; }
+List < String > function ( ) { return acceptedEncryptionAlgorithms ; }
+String function ( String arg0 ) { if ( arg0 == null | | arg0 . isEmpty ( ) ) { throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" ) ; } return arg0 ; }
+List < String > function ( ) { return registeredScopes ; }
+void function ( String arg0 ) { long loc0 = sTimers . get ( arg0 ) ; if ( loc0 < 0 ) { throw new IllegalStateException ( "srini_string" + arg0 + "srini_string" ) ; } sTimers . unlock ( ) ; }
+int [ ] function ( ) { int [ ] loc0 = new int [ getYCoord ( ) ] ; for ( int loc1 = 0 ; loc1 < loc0 ; loc1 + + ) { loc0 [ loc1 ] = getXCoord ( loc1 ) ; } return loc0 ; }
+int function ( ) { return values . size ( ) ; }
+String [ ] [ ] function ( Reader arg0 ) { BufferedReader loc0 = new BufferedReader ( new InputStreamReader ( arg0 ) ) ; String [ ] loc1 = new String [ loc0 . length ] ; for ( int loc2 = 0 ; loc2 < loc0 . length ; loc2 + + ) { loc1 [ loc2 ] = new String ( loc0 [ loc2 ] ) ; } return loc1 ; }
+void function ( int arg0 ) { encode ( arg0 ) ; }
+String function ( String arg0 ) { if ( arg0 == null | | arg0 . length ( ) == 0 ) { return "srini_string" ; } StringBuilder loc0 = new StringBuilder ( ) ; for ( int loc1 = 0 ; loc1 < arg0 . length ( ) ; loc1 + + ) { loc0 . append ( hex [ loc1 ] ) ; } return loc0 . toString ( ) ; }
+Date function ( String arg0 ) { return dateToString ( false , arg0 ) ; }
+void function ( ) { System . out . println ( "srini_string" ) ; Time loc0 = time . getSeconds ( ) ; Time loc1 = time . getSeconds ( ) ; assertEquals ( loc0 , loc1 ) ; }
+BigDecimal function ( ) { return expDataUnitId ; }
+List < URL > function ( Class < ? extends Annotation > arg0 ) { List < URL > loc0 = findResourcesInternal ( arg0 ) ; List < URL > loc1 = findResourcesInternal ( loc0 ) ; return loc1 ; }
+void function ( ) { tx = null ; tx = null ; }
+void function ( String arg0 ) { Runnable loc0 = sTimers . get ( arg0 ) ; if ( loc0 == null ) { return ; } sTimers . put ( arg0 , null ) ; }
+R function ( final String arg0 ) { setSystemId ( arg0 ) ; return this ; }
+void function ( ) { MWVSentence loc0 = new MWVSentence ( "srini_string" ) ; mwv . setAngle ( loc0 ) ; }
+List < ClassdiagramNode > function ( ) { return downlinks ; }
+void function ( Closeable arg0 ) { if ( arg0 != null ) { try { closeables ( arg0 ) ; } catch ( IOException loc0 ) { logger . error ( "srini_string" , loc0 ) ; } } }
+int function ( ) { return ( int ) Math . abs ( x - y ) ; }
+void function ( ) { double loc0 = zda . getTime ( "srini_string" ) ; assertEquals ( loc0 , 1 ) ; }
+void function ( ) { NotificationController loc0 = new NotificationController ( mockServerSession , testEventProperties , null , null , mockServerSession . getUserSession ( ) , null , null , null , null , null ) ; }
+boolean function ( Method arg0 , Method arg1 ) { Method loc0 = findGenericDeclaration ( arg0 , arg1 ) ; return ( loc0 != null & & ! loc0 . isResolvedTypeMatch ( ) & & ! loc0 . isResolvedTypeMatch ( ) ) ; }
+int function ( final int arg0 ) { return ( char ) arg0 ; }
+void function ( Node arg0 ) { graph . remove ( arg0 ) ; }
+boolean function ( ) { return true ; }
+boolean function ( ) { return this . accessDate != null ; }
+GridDecomposition < double > function ( int arg0 , double arg1 , double arg2 , double arg3 , double arg4 , double arg5 , double arg6 , double arg7 , double arg7 , double arg8 , double arg7 , double arg7 , double arg8 , double arg8 , double arg7 , double arg8 , double arg8 , double arg7 , double arg8 , double arg7 , double arg7 , double arg8 , double [ ] arg8 , double arg7 , double arg8 , double arg8 , double arg7 , double arg7 , double arg8 , double arg7 , double arg8 , double arg7 , double arg8 , double arg7 , double arg7 , double arg8 , double arg8 , double arg7 , double arg8 , double arg7 , double arg8 , double arg7 , double arg8 , double arg7 , double arg7 , double arg7 , double arg7 , double arg7 , double arg8 , double arg7 , double arg7 , double arg8 , double arg8 , double arg7 , double arg7 , double arg7 , double arg7 , double arg7 , double arg7 , double arg7 , double arg7 , double arg7
+void function ( String arg0 ) { this . roleClassifier = arg0 ; }
+boolean function ( ) { return mob != null ; }
+int function ( ) { return ySpeed ; }
+Block function ( ) { return header ; }
+void function ( Runnable arg0 ) { synchronized ( internalLock ) { queue . add ( arg0 ) ; } }
+List < ByteBuffer > function ( final ByteBuffer arg0 ) { final List < ByteBuffer > loc0 = new ArrayList < > ( arg0 . remaining ( ) ) ; for ( int loc1 = 0 ; loc1 < arg0 . remaining ( ) ; loc1 + + ) { loc0 . add ( new ByteBuffer ( arg0 . get ( loc1 ) ) ) ; } return loc0 ; }
+T function ( T arg0 , Object arg1 ) { return arg0 . get ( arg1 ) ; }
+void function ( ) { mThrown . delete ( "srini_string" , "srini_string" , "srini_string" ) ; System . out . println ( "srini_string" ) ; }
+void function ( ) { Assert . notNull ( arg0 , "srini_string" ) ; Assert . notNull ( arg0 , "srini_string" ) ; Assert . notNull ( arg0 , "srini_string" ) ; }
+boolean function ( final String arg0 , final String arg1 ) { if ( arg0 == null | | arg1 == null ) { return false ; } for ( int loc0 = 0 ; loc0 < arg0 . length ( ) ; loc0 + + ) { if ( arg0 . startsWith ( arg1 ) ) { return true ; } } return false ; }
+Matrix function ( Matrix arg0 ) { return new Matrix ( arg0 ) ; }
+double function ( int arg0 , int arg1 ) { if ( arg0 < 0 | | arg1 >= 0 ) { throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" + arg1 + "srini_string" ) ; } if ( arg0 < 0 ) { throw new IllegalArgumentException ( "srini_string" + arg1 + "srini_string" ) ; } return arg0 ; }
+FaultReferenceType function ( ) { return faultTo ; }
+void function ( long arg0 , long arg1 ) { synchronized ( mLockManager ) { mLockManager . unlockBlock ( arg0 , arg1 ) ; } }
+void function ( String arg0 ) { this . feedId = arg0 ; }
+boolean function ( ) { String loc0 = options . get ( "srini_string" ) . split ( "srini_string" ) ; if ( loc0 . indexOf ( "srini_string" ) == - 1 ) { loc0 = options . get ( "srini_string" ) . toString ( ) ; } return loc0 ; }
+LineLine function ( ) { return lineBuf ; }
+ResultType function ( final String arg0 , final String arg1 ) { if ( arg0 == null ) { throw new IllegalArgumentException ( "srini_string" ) ; } String loc0 = "srini_string" + arg0 + "srini_string" ; return new ResultType ( loc0 , arg1 ) ; }
+Address function ( ) { return localServer ; }
+void function ( InetSocketAddress arg0 ) { releaseWorkerThriftClient ( arg0 , 0 ) ; }
+void function ( ) { }
+Response function ( RestCallable arg0 ) { if ( arg0 == null ) { throw new RuntimeException ( "srini_string" ) ; } return arg0 ; }
+Parser function ( String arg0 ) { return createParser ( arg0 , null , null ) ; }
+Long function ( ) { return batchId ; }
+Option function ( ) { return mFileSystem ; }
+String function ( ) { return applicationDescription ; }
+int function ( ) { return 0 ; }
+void function ( ) { _use_count + + ; }
+Object function ( final Object arg0 ) { return new MetadataEditorCompat ( mActualMetadataEditor , arg0 ) ; }
+String function ( String arg0 , String arg1 ) { return "srini_string" + arg0 + "srini_string" + arg1 ; }
+void function ( int arg0 , int arg1 , int arg2 , int arg3 ) { if ( ! isFinished ( ) ) return ; step = getToDoItem ( arg0 , arg1 , arg2 , arg3 ) ; }
+int function ( ) { int loc0 = 0 ; for ( int loc1 = 0 ; loc1 < recordsValues ( ) ; loc1 + + ) loc0 += recordsValues ( loc1 ) ; return loc0 ; }
+void function ( Runnable arg0 ) { waitForExitEvents ( arg0 ) ; }
+Builder function ( String arg0 ) { this . objectType = arg0 ; return this ; }
+String function ( ) { return code ; }
+void function ( ) { factories . remove ( "srini_string" ) ; factories . remove ( "srini_string" ) ; }
+int function ( ) { return _size ; }
+Properties function ( ) { return new Properties ( ) ; }
+SimpleMatrix function ( final int arg0 , final int arg1 , final double arg2 , final double arg3 , final double arg4 , final double arg5 , final double arg6 , final double arg7 , final double arg7 , final double arg7 , final double arg7 , final double arg8 , final double arg7 , final double arg8 , final double arg8 , final double arg7 , final double arg8 , final double arg8 ) { return new Matrix ( arg0 , arg1 , arg2 , arg3 , arg4 , arg5 , arg6 , arg7 , arg7 , arg7 ) ; }
+String function ( List < T > arg0 ) { StringBuilder loc0 = new StringBuilder ( ) ; for ( T loc1 : arg0 ) { if ( loc1 != null ) { loc0 . append ( loc1 ) ; } } return loc0 . toString ( ) ; }
+String function ( int arg0 ) { return "srini_string" + arg0 + "srini_string" ; }
+void function ( String [ ] arg0 ) { LOG . info ( "srini_string" , arg0 ) ; System . out . println ( "srini_string" + arg0 ) ; }
+void function ( ) { System . out . println ( "srini_string" ) ; FileHandler loc0 = new FileHandler ( ) ; FileHandler loc1 = new FileHandler ( ) ; int loc2 = loc0 . read ( ) ; assertEquals ( loc1 , loc2 ) ; }
+void function ( Map < String , Int > arg0 , int [ ] arg1 ) { int [ ] loc0 = new int [ arg1 . length ] ; for ( int loc1 = 0 ; loc1 < arg1 . length ; loc1 + + ) { int loc2 = arg1 [ loc1 ] ; Int loc3 = _wordWords . get ( loc1 ) ; if ( loc3 > 0 ) { loc0 [ loc2 ] = loc3 ; countWords ( loc3 ) ; } } }
+Mode function ( Mode arg0 ) { return new Mode ( mOwnerBits , arg0 ) ; }
+int function ( InodeFile arg0 ) { return mFiles . compareTo ( arg0 . mTtlIntervalStartTimeMs ) ; }
+BigDecimal function ( ) { return expDataId ; }
+void function ( ) { System . out . println ( "srini_string" ) ; Time loc0 = time . getSeconds ( ) ; System . out . println ( loc0 ) ; System . out . println ( "srini_string" ) ; }
+byte [ ] function ( ) { return scriptBytes ; }
+void function ( ) { final StringBuilder loc0 = new StringBuilder ( ) ; loc0 . append ( "srini_string" ) . append ( "srini_string" ) . append ( "srini_string" ) . append ( "srini_string" ) . append ( "srini_string" ) . append ( loc0 . toString ( ) ) . append ( "srini_string" ) ; }
+boolean function ( ) { if ( DEBUG ) Log . d ( TAG , "srini_string" + mEncoderCount ) ; mEncoderCount = 0 ; return mEncoderCount ; }
+void function ( VelocitySender arg0 ) { this . mailSender = arg0 ; }
+void function ( Long arg0 ) { this . dataUnitId = arg0 ; }
+boolean function ( final String arg0 , final String arg1 ) { return ! arg0 . equals ( arg1 ) | | arg0 . equals ( "srini_string" ) ; }
+int function ( ) { return p . size ( ) ; }
+Set < String > function ( ) { if ( atMeGroupList == null ) { fromAtMeGroupList = new HashSet < String > ( ) ; } return atMeGroupList ; }
+ActionUndo function ( ) { return undoAction ; }
+int function ( final HttpParams arg0 ) { if ( arg0 == null ) { throw new IllegalArgumentException ( "srini_string" ) ; } int loc0 = arg0 . getValue ( ) ; if ( loc0 == 0 ) { return 0 ; } return loc0 ; }
+void function ( ) { processCommand ( ) ; }
+int function ( ) { long loc0 = System . currentTimeMillis ( ) ; if ( loc0 == 0 ) { return 0 ; } return loc0 ; }
+float function ( ) { return score ; }
+Map < String , String > function ( ) { return new HashMap < String , String > ( sequenceNumber ) ; }
+ArrayList function ( ) { return parameters ; }
+Collection < Node > function ( ) { return Collections . emptyList ( ) ; }
+void function ( Vector < T > arg0 , double arg1 , double arg2 , double arg3 , double arg4 , double arg5 , double arg6 ) { for ( int loc0 = 0 ; loc0 < arg0 . size ( ) ; loc0 + + ) { for ( int loc1 = 0 ; loc1 < arg0 . size ( ) ; loc1 + + ) { for ( int loc2 = 0 ; loc2 < arg0 . size ( ) ; loc2 + + ) { for ( int loc3 = 0 ; loc3 < arg1 ; loc3 + + ) { arg0 . add ( arg0 . get ( loc3 , loc2 , arg1 , arg4 + loc3 , arg4 * arg4 + loc2 , arg5 + loc1 , loc1 , arg5 ) ) ; } } } } }
+void function ( final ParserEventType arg0 ) { this . data = arg0 ; }
+void function ( String arg0 ) { clientSession . send ( arg0 ) ; }
+void function ( ) { instance . createParser ( "srini_string" ) ; }
+void function ( String arg0 ) { this . geneA = arg0 ; }
+void function ( ) { LOG . info ( "srini_string" ) ; }
+void function ( String arg0 ) { errorDescription = arg0 ; }
+void function ( ) { }
+Activity function ( Activity arg0 ) { return start ( arg0 . getIntent ( ) ) ; }
+boolean function ( final ByteBuffer arg0 , final byte [ ] arg1 , final int arg2 , final int arg3 ) { final int loc0 = 0 ; for ( int loc1 = 0 ; loc1 < arg2 ; loc1 + + ) { if ( arg0 . get ( loc1 ) != arg3 ) { return true ; } } return false ; }
+String function ( int arg0 ) { Block loc0 = myBuffers . get ( arg0 ) ; if ( loc0 == null ) { throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" + arg0 + "srini_string" ) ; } return loc0 . toString ( ) ; }
+Node function ( ) { return node ; }
+String function ( ) { return reason ; }
+void function ( OperationSignature arg0 , OperationSignature arg1 ) { operations . put ( arg0 , arg1 ) ; }
+void function ( Object arg0 ) { removeMediaRouter ( arg0 ) ; }
+Integer function ( String arg0 , String arg1 ) { return new Integer ( arg0 ) ; }
+long function ( ) { return index ; }
+boolean function ( Collection < Assertion > arg0 , Assertion arg1 ) { for ( Assertion loc0 : arg0 ) { if ( loc0 . equals ( arg1 ) ) { return true ; } } return false ; }
+Location function ( String arg0 ) { return locationPositions . get ( arg0 ) ; }
+String function ( ) { return operation ; }
+String function ( ) { return this . typeName ; }
+void function ( boolean arg0 ) { this . returnParameters = arg0 ; }
+void function ( boolean arg0 ) { m_currentDirectoryContents = arg0 ; }
+void function ( ) { System . out . println ( "srini_string" + getSequenceNumber ( ) + "srini_string" ) ; }
+QName function ( ) { return namespace ; }
+boolean function ( Session arg0 ) { if ( arg0 == null ) { return false ; } return arg0 . getSession ( ) . getBoolean ( EMAIL ) ; }
+void function ( int arg0 ) { start ( arg0 ) ; }
+void function ( ) { reset ( ) ; }
+void function ( byte [ ] arg0 ) { this . resultMessage = arg0 ; }
+void function ( String arg0 ) { this . container = arg0 ; }
+void function ( String arg0 ) { this . instanceName = arg0 ; }
+void function ( ) { final String [ ] loc0 = new String [ ] { "srini_string" , "srini_string" , "srini_string" , "srini_string" } , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" }
+void function ( TimeField arg0 ) { repeatList . add ( arg0 ) ; }
+Timestamp function ( ) { return receiptDate ; }
+void function ( boolean arg0 ) { debugGui . notify ( arg0 ) ; }
+void function ( Text arg0 ) { tagList . setFirst ( arg0 ) ; }
+Schema function ( ) { return p1 ; }
+long function ( ) { return maxElapsed . get ( ) ; }
+void function ( String arg0 ) { }
+String function ( @ Nonnull final String arg0 ) { ValueEnforcer . notNull ( arg0 , "srini_string" ) ; return arg0 ; }
+String function ( ) { return caseId ; }
+float function ( float arg0 , float arg1 , float arg2 , float arg3 ) { return ( float ) ( Math . abs ( arg0 - arg1 ) * arg2 ) ; }
+boolean function ( ) { return ( header != null & & header . length > 0 ) ; }
+void function ( ) { v . clear ( ) ; }
+long function ( ) { int loc0 = data . load64 ( ) ; if ( loc0 == 0 ) { return 0 ; } return loc0 ; }
+Field function ( ) { return dataval ; }
+void function ( boolean arg0 ) { URI loc0 = new URI ( "srini_string" + arg0 + "srini_string" ) ; matchStreamingToken ( loc0 , loc0 ) ; }
+void function ( ClassdiagramNode arg0 ) { uplinks . add ( arg0 ) ; }
+void function ( String arg0 ) { this . pass = arg0 ; }
+String function ( ) { return url ; }
+Experiment function ( ) { return value ; }
+String function ( ) { return base . getPath ( ) ; }
+void function ( ) { if ( actions . isEmpty ( ) ) { actions . clear ( ) ; actions . clear ( ) ; } }
+Dish function ( String arg0 ) { log . info ( "srini_string" ) ; SimpleDish loc0 = new SimpleDish ( arg0 ) ; return new SimpleDish ( loc0 ) ; }
+Set < T > function ( Class < T > arg0 ) { Set < T > loc0 = new HashSet < T > ( ) ; for ( T loc1 : arg0 ) { add ( loc1 ) ; } return loc0 ; }
+Fast256Hash function ( byte [ ] arg0 ) { if ( arg0 == null ) throw new IllegalArgumentException ( "srini_string" ) ; byte [ ] loc0 = new byte [ arg0 . length ] ; System . arraycopy ( arg0 , 0 , loc0 , 0 , arg0 . length ) ; System . arraycopy ( arg0 , 0 , loc0 , arg0 . length ) ; return new Sha256Hash ( loc0 ) ; }
+void function ( @ RequestParam ( value = "srini_string" ) String arg0 , @ RequestParam ( value = "srini_string" ) String arg1 , @ RequestParam ( value = "srini_string" ) String arg2 , @ RequestParam ( value = "srini_string" ) String arg3 , @ RequestParam ( value = "srini_string" , @ RequestParam ( value = "srini_string" , value = "srini_string" , value = "srini_string" , arg3 ) ) { logger . info ( "srini_string" , "srini_string" , arg0 ) ) ; }
+String function ( ) { return workflowImplId ; }
+lalr_item function ( int arg0 ) { return _all . remove ( arg0 ) ; }
+String function ( final byte [ ] arg0 , int arg1 , int arg2 ) { final int loc0 = arg0 [ arg1 + arg2 ] ; final int loc1 = arg0 [ arg1 + 1 ] ; final int loc2 = arg0 [ arg1 + 2 ] ; final int loc3 = arg0 [ loc1 + 2 ] ; return new String ( loc0 , loc2 ) ; }
+float function ( ) { return mDurationReciprocal ; }
+void function ( ) { currentameN = mypage ; currentpos = 0 ; }
+void function ( final String arg0 ) { this . connected = true ; }
+TopKSelector < T > function ( int arg0 , int arg1 ) { return new TopKSelector < T > ( arg0 , arg1 ) ; }
+void function ( ) { }
+int function ( ) { return p1 . blocksValues ( ) ; }
+Map < String , String > function ( Map < String , String > arg0 ) { Map < String , String > loc0 = new HashMap < String , String > ( ) ; for ( Map . Entry < String , String > loc1 : arg0 . entrySet ( ) ) { loc0 . put ( loc1 . getKey ( ) , loc1 . getValue ( ) ) ; } return loc0 ; }
+void function ( byte [ ] arg0 ) { this . challenge = arg0 ; }
+void function ( String [ ] arg0 ) { }
+void function ( ) { if ( mBuffer != null ) { mBuffer . release ( ) ; mBuffer = null ; } }
+void function ( String arg0 [ ] ) { Process loc0 = new Process ( ) ; loc0 . execute ( arg0 ) ; }
+void function ( List < Interceptor < ? extends Interceptor < ? extends Message >> arg0 ) { this . outInterceptors = arg0 ; }
+void function ( List < Integer > arg0 ) { profits . add ( arg0 ) ; }
+void function ( Object arg0 ) { if ( mActualMetadataEditor != null ) { mActualMetadataEditor . putString ( arg0 ) ; } }
+Date function ( java . util . Date arg0 ) { return DateUtils . parseDate ( arg0 ) ; }
+void function ( int arg0 , T arg1 ) { if ( arg0 < 0 ) { throw new IllegalArgumentException ( "srini_string" ) ; } if ( arg1 == 0 ) { throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" + arg1 + "srini_string" ) ; } }
+void function ( int arg0 ) { this . request . setAttribute ( "srini_string" , arg0 ) ; }
+void function ( String arg0 , String arg1 ) { mEntries . put ( arg0 , arg1 ) ; }
+void function ( Long arg0 ) { this . feedId = arg0 ; }
+List < NotationName > function ( ) { return notations ; }
+void function ( ) { RMBSentence loc0 = rmb . getOriginId ( ) ; assertEquals ( "srini_string" , loc0 . getId ( ) ) ; }
+ByteBuffer function ( final byte [ ] arg0 , final int arg1 , final int arg2 ) { final ByteBuffer loc0 = ByteBuffer . allocate ( arg2 ) ; loc0 . put ( arg0 , arg1 ) ; loc0 . put ( arg2 ) ; return loc0 ; }
+boolean function ( ) { if ( mrnaValue . isEmpty ( ) ) { return true ; } return false ; }
+String function ( ) { return null ; }
+void function ( Timestamp arg0 ) { this . fetcherStartTimestamp = arg0 ; }
+void function ( int arg0 ) { this . errorLevelFolder = arg0 ; }
+void function ( ) { }
+void function ( Subject arg0 ) { mSubject . remove ( arg0 ) ; }
+String function ( ) { return user ; }
+void function ( ) { }
+void function ( int arg0 ) { arg0 = arg0 ; }
+void function ( Intent arg0 ) { }
+ArrayList < String > function ( ) { return matrix ; }
+Integer function ( final int arg0 , final int arg1 ) { this . iTotal += arg0 ; return this . iTotal + arg1 ; }
+void function ( long arg0 ) { this . deliveryTag = arg0 ; }
+void function ( ) { for ( Service loc0 : getInterface ( ) ) { loc0 . run ( ) ; } }
+void function ( ) { }
+String function ( ) { return _specificityC + "srini_string" + _specificityC + "srini_string" ; }
+void function ( @ NotNull String arg0 , boolean arg1 ) { stub . setDecisionBySearch ( arg0 , arg1 ) ; }
+String function ( ) { return new String ( "srini_string" ) ; }
+void function ( ) { if ( ! hasPayload ( ) ) { throw new IllegalStateException ( "srini_string" ) ; } }
+Builder function ( String arg0 ) { return new Builder ( arg0 ) ; }
+SearchFactory function ( ) { throw new UnsupportedOperationException ( "srini_string" ) ; }
+double [ ] function ( final double [ ] arg0 ) { final double [ ] loc0 = new double [ arg0 . length ] ; for ( int loc1 = 0 ; loc1 < arg0 . length ; loc1 + + ) { loc0 [ loc1 ] = arg0 [ loc1 ] ; } return loc0 ; }
+void function ( InputStream arg0 ) { String loc0 = createSampleFile ( arg0 ) ; System . out . println ( loc0 ) ; }
+void function ( ) { test ( "srini_string" , version ) ; }
+void function ( ) { System . out . println ( "srini_string" ) ; }
+void function ( ) { preInit ( ) ; }
+FileDescriptor function ( ) { return fd ; }
+ByteBuffer function ( String arg0 ) { byte [ ] loc0 = arg0 . getBytes ( "srini_string" ) ; byte [ ] loc1 = new byte [ loc0 . length ( ) ] ; for ( int loc2 = 0 ; loc2 < loc0 . length ; loc2 + + ) { loc1 [ loc2 ] = ( byte ) ( ( loc0 [ loc2 ] >> 8 ) & 0xff ) ; } return new ByteBuffer ( loc1 , 16 ) ; }
+KeyInfoElement function ( final byte [ ] arg0 ) { return getEncryptedKeyElement ( arg0 , null ) ; }
+void function ( Class < ? > arg0 , String arg1 , Type arg2 , boolean arg3 , boolean arg4 , boolean arg5 ) { if ( ! arg0 . equals ( arg1 ) ) { addBeanDefinition ( arg0 , arg1 , arg2 , arg3 , arg4 ) ; } }
+Short function ( byte [ ] arg0 , TFieldIdEnum arg1 , TFieldIdEnum ... arg2 ) { return ( Short ) partialDeserializeField ( TType . TYPE , arg0 , arg1 , arg2 ) ; }
+String function ( ) { return applicationWebUri ; }
+int function ( ) { return intValue ( ) ; }
+String function ( ) { return new String ( getCollisionString ( ) ) ; }
+void function ( final int arg0 , final String arg1 , final String arg2 , final String arg3 , final String arg4 , final String arg5 , final boolean arg6 ) { mReadLock . lock ( ) ; mReadLock . lock ( ) ; mReadLock . unlock ( ) ; arg0 = arg1 ; }
+boolean function ( String arg0 ) { return mIPv6Matcher . matcher ( arg0 ) . matches ( ) ; }
+Ronda function ( final String arg0 , final long arg1 ) { return new Observador ( this , arg0 , arg1 ) ; }
+String function ( Context arg0 , String arg1 , int arg2 ) { return IMPL . getServiceName ( arg0 , arg1 , arg2 ) ; }
+boolean function ( Connection arg0 ) { return true ; }
+boolean function ( ) { return mScopeCheckEnabled ; }
+void function ( String arg0 ) { webEngine . loadUrl ( arg0 ) ; }
+Executor function ( ) { return instrumentation ; }
+long function ( ) { return timeElapsed ; }
+void function ( String arg0 ) { this . failedAttributeName = arg0 ; }
+Future < T > function ( final int arg0 ) { Future < T > loc0 = executorService . submit ( new Callable < T > ( ) { @ Override public T call ( ) throws Exception { loc0 . execute ( arg0 ) ; return arg0 ; } } ) ; return loc0 ; }
+Position function ( final int arg0 ) { if ( arg0 < 1 ) { throw new IllegalArgumentException ( "srini_string" ) ; } if ( arg0 < 1 ) { return this ; } else { return this ; } }
+Object function ( String arg0 ) { Object loc0 = getParameters ( ) ; if ( loc0 != null ) return loc0 ; else return null ; }
+Expression function ( Expression arg0 ) { Expression loc0 = arg0 . getType ( ) ; return ( loc0 == null ) ? null : loc0 ; }
+int function ( int arg0 ) { return IMPL . getRecordCount ( arg0 ) ; }
+void function ( ) { System . out . println ( "srini_string" ) ; String loc0 = "srini_string" ; logEntryRequests ( loc0 ) ; logEntryRequests ( loc0 ) ; }
+Function < A , E > function ( ) { return new Function < A , E > ( ) ; }
+void function ( DataHandler arg0 ) { this . attachinfo = arg0 ; }
+void function ( ) { for ( int loc0 = 0 ; loc0 < mBlockSize ; loc0 + + ) { try { mTestStream . flush ( ) ; } catch ( InterruptedException loc1 ) { fail ( ) ; } } }
+boolean function ( String arg0 ) { return ( getBoolean ( arg0 ) ) ; }
+Rectangle2D function ( Rectangle2D arg0 , Rectangle2D arg1 , Rectangle2D arg2 , Rectangle2D arg3 , Rectangle2D arg4 ) { return bounds ( arg0 , new Rectangle2D . Rectangle2D . Double ( arg1 . x , arg1 . y , arg2 . y , arg3 ) ) ; }
+void function ( ) { createAutoMergeQuery ( true ) ; }
+BlockPlan function ( View arg0 ) { return new BlockPlan ( arg0 ) ; }
+boolean function ( String arg0 ) { return this . json . equals ( arg0 ) ; }
+GenericJSONBuilder function ( ) { return null ; }
+void function ( String arg0 , Object arg1 ) { attributes . remove ( arg0 ) ; }
+Context function ( ) { return this . context ; }
+String function ( ) { return mainMethodClassName ; }
+String function ( ) { return getAccessTokenVerb ( ) ; }
+void function ( Long arg0 ) { this . dataUnitId = arg0 ; }
+void function ( ) { step = 0 ; }
+String function ( ) { return pclFeedId ; }
+List < U > function ( T arg0 , T arg1 ) { return Collections . unmodifiableList ( arg0 , arg1 ) ; }
+void function ( Map < String , Object > arg0 ) { this . headers = arg0 ; }
+byte [ ] function ( String arg0 ) { int loc0 = arg0 . length ( ) ; byte [ ] loc1 = new byte [ loc0 ] ; for ( int loc2 = 0 ; loc2 < loc0 ; loc2 + + ) { loc1 [ loc2 ] = ( byte ) arg0 . charAt ( loc2 ) ; } return loc1 ; }
+char [ ] function ( byte [ ] arg0 , int arg1 , int arg2 , int arg3 , int arg4 ) { return encode ( arg0 , arg1 , arg2 , arg3 , arg4 ) ; }
+SortedSet < String > function ( final String arg0 , final Map < String , String > arg1 ) { final Set < String > loc0 = new HashSet < String > ( arg0 . length ( ) ) ; for ( String loc1 : arg1 ) { if ( arg0 . equals ( loc1 ) ) { loc0 . add ( loc1 ) ; } } return loc0 ; }
+void function ( Rule arg0 ) { arg0 . visit ( this , this ) ; }
+String function ( ) { MessageDigest loc0 = new MessageDigest ( ) ; byte [ ] loc1 = loc0 . digest ( ) ; for ( int loc2 = 0 ; loc2 < loc1 . length ; loc2 + + ) { loc1 [ loc2 ] = loc0 . digest ( ) ; } return loc1 ; }
+List < String > function ( ) { List < String > loc0 = new ArrayList < String > ( ) ; loadRowToReport ( loc0 ) ; return loc0 ; }
+Schedule function ( ) { return repository . create ( ) ; }
+Map < String , Object > function ( ) { return Collections . unmodifiableMap ( outFault ) ; }
+Bitmap function ( Bitmap arg0 , int arg1 , int arg2 ) { if ( arg0 == null | | arg1 == null | | arg2 == 0 ) return null ; Bitmap loc0 = new Bitmap ( arg0 , arg1 , arg2 ) ; return loc0 ; }
+boolean function ( boolean arg0 ) { return arg0 == null | | arg0 ; }
+int function ( ) { return 1 ; }
+boolean function ( ) { return key . isEmpty ( ) ; }
+void function ( int arg0 ) { value = arg0 ; }
+void function ( ) { }
+boolean function ( String arg0 ) { if ( isAuthenticationEnabled ( arg0 ) ) { return true ; } else { return false ; } }
+Integer function ( ) { return totalCount ; }
+void function ( ) { for ( DataListener loc0 : listeners ) { loc0 . start ( ) ; } }
+void function ( String arg0 ) { checkDir ( arg0 , "srini_string" ) ; }
+void function ( ) { mGenerator . setReadOnlyId ( TEST_ID ) ; }
+void function ( String arg0 ) { this . checksum = arg0 ; }
+boolean function ( ) { return x_pos > 0 ; }
+String function ( ) { return mUri . getPath ( ) ; }
+String function ( ) { return getAccessTokenEndpoint ( ) ; }
+UserModel function ( String arg0 , FederationProposal arg1 ) { UserModel loc0 = new UserModel ( arg0 , arg1 ) ; loc0 . start ( ) ; return loc0 ; }
+void function ( ) { new DefaultPermission ( "srini_string" , "srini_string" , "srini_string" , null ) ; }
+boolean function ( ) { return loggingEnabled ; }
+boolean function ( @ PathVariable ( "srini_string" ) String arg0 , @ PathParam ( "srini_string" ) String arg1 , @ PathParam ( "srini_string" ) String arg2 ) { return userService . updateUserNames ( arg0 , arg1 , arg2 ) ; }
+void function ( String arg0 ) { this . iconPath = arg0 ; }
+void function ( final ParserEvent arg0 ) { handlerStack . add ( arg0 ) ; }
+void function ( int arg0 ) { int loc0 = stopWord . get ( arg0 ) ; if ( loc0 < 0 ) { throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" ) ; } }
+void function ( String arg0 ) { logger . error ( "srini_string" + arg0 ) ; }
+String function ( ) { return entityId ; }
+String function ( String arg0 , String arg1 ) { StringBuilder loc0 = new StringBuilder ( ) ; for ( int loc1 = 0 ; loc1 < arg0 . length ( ) ; loc1 + + ) { loc0 . append ( arg0 . charAt ( loc1 ) ) ; loc0 . append ( arg1 ) ; } return loc0 . toString ( ) ; }
+void function ( ) { String loc0 = "srini_string" ; tlayer . addNumber ( loc0 ) ; assertEquals ( "srini_string" , loc0 ) ; }
+int function ( ) { return scheduler ; }
+String function ( ) { return inventory_conf ; }
+boolean function ( ) { return sLoginUser != null ; }
+ScriptBuilder function ( ) { return new ScriptBuilder ( ) ; }
+void function ( HttpServletRequest arg0 , ServiceRegistration arg1 , Map < String , String > arg2 , Map < String , String > arg3 ) { }
+int function ( ) { return params . getSize ( ) ; }
+void function ( ) { Calendar loc0 = Calendar . getInstance ( ) ; Date loc1 = cal . get ( "srini_string" ) ; assertEquals ( loc0 , loc1 ) ; }
+void function ( byte [ ] arg0 , String arg1 , String arg2 , int arg3 ) { processString ( arg0 , arg1 , arg2 , arg3 ) ; }
+int function ( ) { return url . hashCode ( ) ; }
+void function ( ErrorQueue arg0 ) { this . errors = arg0 ; }
+String function ( int arg0 ) { return "srini_string" + arg0 + "srini_string" ; }
+int function ( int arg0 , int arg1 ) { return flip ( arg0 , arg1 ) ; }
+void function ( Object arg0 ) { System . out . println ( "srini_string" + arg0 ) ; }
+boolean function ( ) { return mRect . get ( ) != null ; }
+void function ( java . lang . Object arg0 ) { _serializerFactory . set ( arg0 ) ; }
+String [ ] function ( ) { return dnspressions ; }
+void function ( ) { }
+boolean function ( final char arg0 ) { return ( arg0 >= 'A' & & arg0 <= 'A' ) | | ( arg0 >= 'A' & & arg0 <= 'A' ) | | ( arg0 >= 'A' & & arg0 <= 'A' ) ; }
+void function ( ThreadingParameters arg0 ) { this . threadingParameters = arg0 ; }
+boolean function ( Date arg0 ) { return status . equals ( arg0 ) ; }
+boolean function ( ) { return System . currentTimeMillis ( ) > 0 ; }
+int function ( ) { return this . buffer . capacity ( ) ; }
+float function ( int arg0 , int arg1 ) { return lon ( arg0 * arg1 ) ; }
+void function ( Object arg0 ) { mActualObjectEditor = arg0 ; }
+int function ( ) { return _specificityC ; }
+void function ( ) { boolean loc0 = System . getProperty ( "srini_string" ) . equals ( "srini_string" ) ; boolean loc1 = mThrown . equals ( "srini_string" ) ; Assert . assertTrue ( loc1 ) ; Assert . assertTrue ( loc0 ) ; }
+String function ( ) { return NA_STRING ; }
+TiledMap function ( String arg0 , int arg1 ) { return tileLayerString [ arg0 ] [ arg1 ] ; }
+JSONWriter function ( ) { beforeValueItem ( ) ; mState = mStack . pop ( ) ; return this ; }
+AuthenticationHolderEntity function ( ) { return authenticationHolder ; }
+void function ( ) { }
+String function ( ) { return mAlias ; }
+int function ( ) { return offset ; }
+Map < Class < ? >> function ( ) { return EMPTY_TYPE_NAMES ; }
+PasswordCredentials function ( ) { return passwordCredentials ; }
+void function ( final String [ ] arg0 , final String arg1 ) { assertNotNull ( arg0 , arg1 ) ; }
+Filters function ( ) { return filters ; }
+boolean function ( ) { return caseSensitive ; }
+void function ( ) { }
+void function ( int arg0 ) { this . offsetHours = arg0 ; }
+void function ( ) { System . out . println ( "srini_string" ) ; REventListener loc0 = null ; rmc = null ; loc0 = null ; }
+void function ( int arg0 ) { skipBytes = arg0 ; }
+int function ( long arg0 , long arg1 ) { if ( arg0 < 0 ) throw new IllegalArgumentException ( "srini_string" ) ; long loc0 = 0 ; for ( int loc1 = 0 ; loc1 < arg0 ; loc1 + + ) { loc0 += k * arg1 ; } return loc0 ; }
+DiscoveryData . ChangeData . Item function ( ) { return new ChangeData . ChangeData ( ) ; }
+Map < String , String > function ( ) { return getStrings ( false ) ; }
+void function ( boolean arg0 ) { validateUseKey = arg0 ; }
+MemoryLogger function ( ) { return instance ; }
+void function ( @ NotNull Config arg0 , @ NotNull Config arg1 , @ NotNull Config arg2 ) { checkNotNull ( arg0 , "srini_string" ) ; checkNotNull ( arg1 , "srini_string" ) ; checkNotNull ( arg2 , "srini_string" ) ; checkNotNull ( arg1 , "srini_string" ) ; checkNotNull ( arg2 , "srini_string" ) ; checkNotNull ( arg1 , "srini_string" ) ; checkNotNull ( arg2 , "srini_string" ) ; }
+boolean function ( final int arg0 , final int arg1 ) { return true ; }
+byte [ ] function ( ByteBuffer arg0 ) { if ( arg0 == null ) { return null ; } byte [ ] loc0 = new byte [ arg0 . length ] ; for ( int loc1 = 0 ; loc1 < arg0 . remaining ( ) ; loc1 + + ) { loc0 [ loc1 ] = arg0 . get ( loc1 ) ; } return loc0 ; }
+Enumeration function ( ) { return Collections . unmodifiableEnumeration ( this . typeName ) ; }
+int function ( byte [ ] arg0 ) { int loc0 = arg0 . length ; int loc1 = 0 ; for ( int loc2 = 0 ; loc2 < arg0 . length ; loc2 + + ) { if ( bytes [ loc2 ] != arg0 [ loc2 ] ) { loc0 += bytes [ loc2 ] ; } } return loc0 ; }
+void function ( String arg0 ) { if ( sIsLogEnabled ) { Log . d ( sApplicationTag , getContent ( getCurrentStackTraceElement ( ) ) + "srini_string" + arg0 ) ; } }
+GenericJSONBuilder function ( ) { return this ; }
+int function ( ) { return addressHeader ; }
+List < RSSItem > function ( ) { return _items ; }
+long function ( ) { return lifetime ; }
+void function ( ) { }
+void function ( int arg0 , int arg1 ) { matrixItemRemainingUtility [ arg0 ] [ arg1 ] = arg1 ; }
+void function ( ) { MWVSentence loc0 = new MWVSentence ( ) ; assertEquals ( "srini_string" , loc0 . getAngle ( ) ) ; }
+String function ( ) { return table ( "srini_string" ) . toString ( ) ; }
+void function ( ) { }
+void function ( int arg0 , int arg1 ) { int loc0 = _values [ arg0 ] ; _values [ loc0 ] = arg1 ; _values [ loc0 ] = arg0 ; }
+String function ( ) { return isActive ; }
+void function ( ) { mPlainDatagramServer = new InetSocketAddress ( sSEPARATOR , sSEPARATOR ) ; }
+String function ( ) { return null ; }
+boolean function ( double arg0 , double arg1 ) { for ( int loc0 = 0 ; loc0 < numExceptional ; loc0 + + ) if ( off [ loc0 ] == arg0 ) return false ; return true ; }
+void function ( TransferClient arg0 ) { if ( sHasRemoteControlAPIs ) { return ; } sHasRemoteControlAPIs = true ; }
+void function ( ) { }
+void function ( ) { Assert . notNull ( arg0 , "srini_string" ) ; }
+int function ( ) { return config . getInt ( "srini_string" , 0 ) ; }
+void function ( List < String > arg0 ) { mHostsParserMatcher . add ( arg0 ) ; }
+long function ( @ Nullable long arg0 , @ Nullable long arg1 ) { long loc0 = get ( arg0 ) ; long loc1 = get ( arg0 ) ; if ( loc0 > loc1 ) { return loc0 ; } return loc1 ; }
+void function ( ) { priority = DEFAULT_PRIORITY ; }
+CertificateChainInfo function ( ) { return chain ; }
+DishCollection function ( DishCollection arg0 ) { return dishCollectionRepository . save ( arg0 ) ; }
+void function ( ) { Assert . assertFalse ( mBlockStoreMetaFull . getAvailableBytesOnDirs ( ) ) ; }
+void function ( int arg0 ) { outputImageType = arg0 ; }
+void function ( GerenciadorCitya arg0 ) { for ( int loc0 = 0 ; loc0 < arg0 . geterenciadorCity ( ) . indexOf ( "srini_string" ) ; loc0 + + ) { comunicadorChat loc0 = arg0 . getGerenciadorImorCorCsuorC ( ) ; } }
+File [ ] function ( File arg0 ) { return new File ( arg0 , "srini_string" ) ; }
+ResponseEntity < DishCollection > function ( @ PathVariable Long arg0 ) { log . debug ( "srini_string" , arg0 ) ; dishCollectionService . delete ( arg0 ) ; dishCollectionService . delete ( arg0 ) ; return ResponseEntity . build ( ) ; }
+void function ( String arg0 ) { this . album = arg0 ; }
+int function ( ) { return dimension ; }
+void function ( double [ ] arg0 , int arg1 , int arg2 , int arg3 ) { computeW_blockVector ( arg0 , arg1 , arg2 , arg3 ) ; }
+Collection function ( final Collection arg0 ) { final Collection loc0 = arg0 . keySet ( ) ; if ( loc0 == null ) { return null ; } for ( int loc1 = 0 ; loc1 < loc0 . size ( ) ; loc1 + + ) { final Collection loc2 = loc0 . get ( loc1 ) ; if ( loc2 . contains ( arg0 ) ) { return loc2 ; } } return null ; }
+void function ( DecisionTree arg0 ) { this . tree = arg0 ; }
+String function ( ) { return value ; }
+Vector function ( ) { return repeatList ; }
+String function ( ) { return config . getString ( "srini_string" , "srini_string" ) ; }
+List < String > function ( ) { List < String > loc0 = new ArrayList < String > ( ) ; loc0 . add ( "srini_string" ) ; return loc0 ; }
+void function ( ) { assert ( mTestDirView != null ) ; }
+String function ( ) { return referencedRevisionLabelB ; }
+ELEvaluator function ( ELETaskAttemptID arg0 , int arg1 , int arg2 ) { EingCoordDataset loc0 = new EingCoordDataset ( ) ; loc0 . arg0 = arg0 ; loc0 . arg1 = arg2 ; loc0 . arg0 = arg0 ; loc0 . arg1 = arg0 ; loc0 . arg1 = arg1 ; loc0 . arg2 = arg0 ; loc0 . arg2 = arg2 ; return loc0 ; }
+String function ( ) { return geneA ; }
+boolean function ( ) { return errorLevelFolder == 0 ; }
+void function ( String arg0 ) { this . geneList = arg0 ; }
+Client function ( ) { return client ; }
+String function ( ) { return host ; }
+void function ( ) { GLLParser loc0 = instance . createTime ( ) ; assertEquals ( "srini_string" , loc0 . getTime ( ) ) ; }
+void function ( Node [ ] arg0 ) { for ( int loc0 = 0 ; loc0 < arg0 . length ; loc0 + + ) { Node loc1 = head ; for ( int loc2 = 0 ; loc2 < arg0 . length ; loc2 + + ) { if ( loc1 == arg0 [ loc2 ] ) { loc1 . set ( loc2 ) ; } } } }
+String function ( ) { return password ; }
+boolean function ( ) { return settings . isEnabled ( ) ; }
+int function ( ) { return vstack . pop ( ) ; }
+String function ( String arg0 ) { return arg0 == null ? null : arg0 . toString ( ) ; }
+CustomerNumber function ( List < Customer > arg0 ) { Customer loc0 = customers . get ( arg0 ) ; if ( loc0 == null ) { loc0 = new Customer ( ) ; customers . add ( loc0 ) ; } return loc0 ; }
+void function ( ) { final ByteBuffer loc0 = ByteBuffer . wrap ( mBuffer ) ; assertEquals ( loc0 , mBuffer . remaining ( ) ) ; }
+RemoteBlockWriter function ( String arg0 ) { return new RemoteBlockWriter ( arg0 ) ; }
+void function ( ) { }
+String function ( ) { return dataSourceName ; }
+Permission function ( ) { return PERMISSIONS ; }
+void function ( Date arg0 ) { this . fetcherStartTimeStamp = arg0 ; }
+void function ( OutputStream arg0 ) { response . write ( arg0 ) ; }
+void function ( ResourceTypeHandler arg0 , Set < String > arg1 ) { extensionsDenied . put ( arg0 , arg1 ) ; }
+boolean function ( ) { return errorCode != null ; }
+long function ( final K arg0 , final long arg1 ) { return addAndGet ( arg0 , arg1 ) ; }
+EaseUI function ( ) { return instance ; }
+ToStringHelper function ( double arg0 ) { return addHolder ( String . valueOf ( arg0 ) ) ; }
+UriComponents function ( final String arg0 ) { this . fragment = arg0 ; return this ; }
+String function ( ) { return _stack_type ; }
+void function ( ObjectType arg0 ) { this . objectType = arg0 ; }
+int function ( int arg0 ) { return getInt ( arg0 ) ; }
+boolean function ( ) { return true ; }
+Object function ( ) { Object [ ] loc0 = new Object [ ] { "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" } ; return loc0 ; }
+void function ( Method arg0 ) { }
+void function ( ) { for ( int loc0 = 0 ; loc0 < txnum ; loc0 + + ) { txnum = loc0 ; } }
+boolean function ( ) { if ( s1 == null ) { s1 = s1 ; s1 = s2 ; s2 = s1 ; s2 = s2 ; s2 = s1 ; s2 = s2 ; s2 = s2 ; s2 = null ; return ( s2 != null ) ? s2 . end ( ) : false ; } return false ; }
+String function ( ) { return listeners2 ; }
+String function ( ) { return this . literalName ; }
+boolean function ( ) { return getChecksum ( ) == null ; }
+int function ( int arg0 ) { if ( arg0 <= 0 ) { throw new IllegalArgumentException ( "srini_string" ) ; } int loc0 = 0 ; for ( int loc1 = arg0 - 1 ; loc1 >= 0 ; loc1 - - ) { loc0 += arg0 * loc1 ; } return loc0 ; }
+void function ( double arg0 ) { this . seconds = arg0 ; }
+void function ( ) { for ( Book loc0 : data ) { init ( loc0 ) ; } }
+String function ( ) { return systemId ; }
+void function ( String arg0 ) { Properties loc0 = new Properties ( ) ; loc0 . put ( "srini_string" , arg0 ) ; oldRevisionGraphMap . put ( "srini_string" , loc0 ) ; }
+Client function ( String arg0 , String arg1 , Map < String , String > arg2 , Map < String , String > arg3 , Map < String , String > arg4 , Map < String , String > arg5 , Map < String , String > arg6 ) { String [ ] loc0 = new String [ ] { arg0 , arg1 , arg2 , arg3 , arg4 , arg5 , arg6 , arg7 , arg8 , arg7 ) ; } return getInstance ( ) ; }
+void function ( ) { }
+RestResults function ( ) { m_log . info ( "srini_string" ) ; return m_DocumentBuilder ; }
+byte [ ] function ( ) { return chainCode ; }
+List < String > function ( String arg0 ) { if ( arg0 == null | | arg0 . length ( ) == 0 ) return Collections . emptyList ( ) ; List < String > loc0 = Lists . newArrayList ( ) ; for ( String loc1 : arg0 ) { if ( loc1 . contains ( "srini_string" ) ) loc0 . add ( loc1 ) ; } return loc0 ; }
+String function ( ) { return title ; }
+FullyQualifiedClassType function ( ) { return handlerName ; }
+void function ( String arg0 , String arg1 , List < String > arg2 , String arg3 , String arg4 ) { List < String > loc0 = new ArrayList < String > ( ) ; for ( String loc1 : arg2 ) { loc0 . add ( loc1 ) ; loc0 . add ( arg3 ) ; } }
+NamespaceHandler function ( ) { return uac ; }
+void function ( CheckedFlag arg0 ) { this . checkedFlag = arg0 ; }
+Metric function ( Node arg0 , String arg1 ) { return new OperationMetric ( arg0 , arg1 ) ; }
+void function ( ExceptionListener arg0 ) { exceptionListener = arg0 ; }
+void function ( Long arg0 ) { this . feedId = arg0 ; }
+T function ( T arg0 ) { return key . get ( arg0 ) ; }
+void function ( byte [ ] arg0 ) { encode ( arg0 , 0 , arg0 . length ) ; }
+int function ( String arg0 ) { return recordLength ( arg0 , 0 ) ; }
+TestMatrixArtifact [ ] function ( String arg0 , String arg1 ) { return testDefinitions . get ( arg0 , arg1 ) ; }
+void function ( ) { String [ ] loc0 = { "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" } ; }
+void function ( Iterable < ? super T > arg0 ) { if ( arg0 . isEmpty ( ) ) { throw new IllegalArgumentException ( "srini_string" ) ; } if ( arg0 . isEmpty ( ) ) { throw new IllegalArgumentException ( "srini_string" ) ; } }
+void function ( @ NotNull PropertyChangeSupport arg0 , @ NotNull PropertyChangeSupport arg1 , @ NotNull PropertyChangeSupport arg2 ) { }
+void function ( String arg0 ) { lastVersion = arg0 ; }
+Set < T > function ( final Class < T > arg0 , final Class < T > arg1 ) { if ( arg0 == null ) { throw new IllegalArgumentException ( "srini_string" ) ; } if ( arg1 == null ) { throw new IllegalArgumentException ( "srini_string" ) ; } Set < T > loc0 = new HashSet < T > ( ) ; loc0 . add ( arg1 ) ; return loc0 ; }
+void function ( final ParserEvent arg0 ) { handlerStack . add ( arg0 ) ; }
+String function ( ) { return wsse11TokenType ; }
+List < BookPreview > function ( int arg0 ) { ArrayList < BookPreview > loc0 = new ArrayList < BookPreview > ( ) ; for ( BookPreview loc1 : preview ) { if ( loc1 . getThumbnail ( ) . equals ( arg0 ) ) { loc0 . add ( loc1 ) ; } } return loc0 ; }
+void function ( android . view . View arg0 ) { mMenuItem = arg0 ; }
+FederationProposalResult function ( String arg0 , FederationModel arg1 ) { String loc0 = asLink ( arg0 , arg1 ) ; String loc1 = asLink ( loc0 ) ; String loc2 = loc1 + "srini_string" + loc0 + "srini_string" + loc0 + "srini_string" + loc2 ; return loc2 ; }
+void function ( ) { rmc . getTime ( ) ; }
+void function ( ) { mReadLock . lock ( ) ; String loc0 = "srini_string" ; String loc1 = "srini_string" ; Assert . assertTrue ( loc0 . equals ( loc1 ) ) ; }
+Uri function ( ) { String loc0 = getSSSResource ( ) . getName ( ) ; if ( loc0 == null | | loc0 . length ( ) == 0 ) { return null ; } return loc0 ; }
+void function ( long arg0 ) { synchronized ( mLocks ) { mLocks . remove ( arg0 ) ; } }
+void function ( Schedule arg0 ) { repository . add ( arg0 ) ; }
+void function ( String arg0 ) { links . clear ( arg0 ) ; }
+Abstraction function ( ) { return abstraction ; }
+String function ( ) { return "srini_string" ; }
+List < Element > function ( ) { List < Element > loc0 = new ArrayList < Element > ( ) ; for ( Element loc1 : elements ) { loc0 . add ( loc1 . item ) ; } return loc0 ; }
+void function ( ) { ByteBuffer loc0 = ByteBuffer . wrap ( mBuffer , LENGTH ) ; assertFalse ( loc0 . getBytes ( ) ) ; verify ( loc0 ) ; }
+boolean function ( ) { }
+boolean function ( ) { return limit < count ; }
+void function ( ) { environments . clear ( ) ; }
+void function ( ) { mBuffer = new ByteBuffer ( mBuffer ) ; }
+void function ( Listener arg0 ) { this . bus = arg0 ; }
+boolean function ( PropertyDeclaration arg0 ) { return propertyByName . containsKey ( arg0 . getName ( ) ) ; }
+ThreadFactoryBuilder function ( ThreadFactory arg0 ) { this . backingThreadFactory = checkNotNull ( arg0 ) ; return this ; }
+Table function ( int arg0 , int arg1 , int arg2 ) { return new Table ( arg0 , arg1 , arg2 ) ; }
+void function ( ) { throw new IOException ( "srini_string" ) ; }
+boolean function ( ) { return mCheckpointOpenedTime > 0 ; }
+long function ( ) { return value ; }
+View function ( ) { return mMenuItem ; }
+boolean function ( final Intent arg0 , final String arg1 , final Intent arg2 ) { if ( ! arg2 . equals ( arg1 ) ) { return false ; } arg0 . put ( arg1 , arg2 ) ; return true ; }
+void function ( long arg0 ) { this . testId = arg0 ; }
+DagEngine function ( ) { return new DagEngine ( ) ; }
+void function ( ) { for ( InetAddress loc0 : m_trackedRemoteAddresses . values ( ) ) { loc0 . close ( ) ; } }
+boolean function ( int arg0 ) { return plugins . remove ( arg0 ) ; }
+Position function ( String arg0 ) { int loc0 = arg0 . indexOf ( "srini_string" ) ; if ( loc0 == - 1 ) { return null ; } int loc1 = 0 ; while ( loc1 < loc0 ) { int loc2 = arg0 . charAt ( loc1 + 1 ) ; if ( loc2 == 0 ) { return loc2 ; } loc1 + + ; } return arg0 ; }
+void function ( ) { }
+List < MatrixPosition > function ( ) { return originalMatrix ; }
+void function ( String arg0 , Object arg1 ) { setProperty ( arg0 , arg1 ) ; }
+int function ( byte [ ] arg0 ) { return getBytes ( arg0 , 0 , arg0 . length ) ; }
+String function ( String arg0 ) { if ( s1 != null ) return s1 . getValue ( arg0 ) ; else return s2 . toString ( ) ; }
+void function ( EntityEntity arg0 ) { this . source = arg0 ; }
+BigDecimal function ( ) { return testId ; }
+void function ( ) { String loc0 = "srini_string" ; assertFalse ( loc0 . equals ( "srini_string" ) ) ; }
+String function ( ) { return id ; }
+int function ( ) { return - 1 ; }
+Map < Variable , Term > function ( ) { return _substVisitor ; }
+boolean function ( int arg0 ) { return ( arg0 & SVALS [ ] ) != 0 ; }
+long function ( ) { return mTimeDelta ; }
+Date function ( ) { return expires ; }
+void function ( String arg0 ) { this . modules = arg0 ; }
+void function ( final boolean arg0 , final int arg1 , final int arg2 , final int arg3 ) { final int loc0 = arg0 ; final int loc1 = arg1 + arg2 ; final int loc2 = loc0 ; final int loc3 = arg1 ; final int loc4 = arg0 ; final int loc5 = arg1 ; final int loc5 = loc1 - 1 ; final int loc5 = loc1 - 1 ; final boolean loc4 = arg0 ; if ( loc3 > loc4 ) { loc4 = loc0 ; loc5 = loc4 ; loc5 = loc5 ; } }
+Symbol function ( ) { return _to_symbol ; }
+boolean function ( Schedule arg0 ) { return repository . delete ( arg0 ) ; }
+UserModel function ( String arg0 ) { if ( StringUtils . isEmpty ( arg0 ) ) return null ; UserModel loc0 = new UserModel ( arg0 ) ; return loc0 ; }
+void function ( ) { openRecs ( ) ; }
+String function ( Object arg0 , int arg1 ) { if ( ! isMemberDefined ( arg0 ) ) { return "srini_string" + arg0 + "srini_string" ; } else { return "srini_string" + arg0 + "srini_string" ; } }
+String function ( Element arg0 ) { return ( arg0 . getUuid ( ) ) ; }
+void function ( String arg0 , IndivVerificationStructure arg1 , boolean arg2 ) { if ( this . allowIndividualStructure ( arg0 , arg1 , arg2 ) ) { throw new IllegalStateException ( "srini_string" + arg0 + "srini_string" + arg1 + "srini_string" ) ; } }
+void function ( double arg0 , double arg1 , double arg2 , double arg3 ) { }
+String function ( ) { return address . toString ( ) ; }
+HashMap < String , GeneticProfile > function ( ) { return Collections . unmodifiableHashMap ( otherCnaProfileList ) ; }
+void function ( int arg0 , int arg1 ) { playerList . put ( arg0 , arg1 ) ; }
+boolean function ( Atal arg0 ) { for ( int loc0 = 0 ; loc0 < arg0 . size ( ) ; loc0 + + ) { if ( arg0 . name ( ) . equals ( name ( loc0 ) ) ) return true ; } return false ; }
+void function ( Project arg0 ) { instance . removeProject ( arg0 ) ; }
+void function ( String arg0 ) { failedImages . add ( arg0 ) ; }
+List < Date > function ( ) { if ( date == null ) { date = new ArrayList < Date > ( ) ; } return this . date ; }
+void function ( String arg0 ) { this . build = arg0 ; }
+void function ( ) { System . out . println ( "srini_string" ) ; VTGSentence loc0 = new VTGSentence ( "srini_string" ) ; assertEquals ( loc0 . size ( ) , 1 ) ; }
+void function ( int arg0 ) { OnlineStatusRegistrationListener [ ] loc0 = new OnlineStatusRegistrationListener [ arg0 ] ; for ( int loc1 = 0 ; loc1 < loc0 . length ; loc1 + + ) { loc0 [ loc1 ] = arg0 [ loc1 ] ; } }
+byte [ ] function ( ) { return paramHeader ; }
+List < Node > function ( ) { return evaluationResults ; }
+SpringConfig function ( SpringConfig arg0 ) { return new SpringConfig ( arg0 ) ; }
+ResourceInternal < T > function ( ) { return mResourceAvailable ; }
+MessageReference function ( ) { return this . incomingObserver ; }
+void function ( boolean arg0 ) { }
+void function ( ) { running = true ; LOG . info ( "srini_string" ) ; }
+String function ( int arg0 ) { int loc0 = ( arg0 >> 16 ) & 0xff ; int loc1 = ( arg0 >> 16 ) & 0xff ; int loc2 = ( arg0 >> 16 ) & 0xff ; int loc3 = ( arg0 >> 16 ) & 0xff ; int loc4 = ( arg0 >> 16 ) & 0xff ; return new String ( loc0 ) ; }
+void function ( ) { rmc . getMode ( 1 ) ; }
+Api function ( ) { return this . api ; }
+void function ( ) { }
+void function ( File arg0 , String arg1 ) { File loc0 = new File ( arg0 ) ; if ( ! loc0 . exists ( ) ) { LOG . info ( "srini_string" + arg1 + "srini_string" + arg0 + "srini_string" + arg1 + "srini_string" ) ; } File loc1 = new File ( loc0 ) ; loc1 . delete ( ) ; }
+void function ( ) { String loc0 = requestInput . toString ( ) ; assertEquals ( loc0 , "srini_string" ) ; }
+void function ( int arg0 , int arg1 ) { }
+RegistrationRequest function ( ) { return newRegistrationRequest ( ) ; }
+Document function ( InputStream arg0 , TikaContentExtractor arg1 ) { return extractMetadata ( arg0 , arg1 , defaultDocumentMetadata ) ; }
+void function ( ) { m_release ( ) ; }
+void function ( Callback arg0 ) { }
+void function ( ) { List < String > loc0 = new ArrayList < String > ( ) ; loc0 . add ( "srini_string" , "srini_string" ) ; loc0 . add ( "srini_string" , "srini_string" ) ; }
+void function ( int arg0 ) { for ( int loc0 = 0 ; loc0 < arg0 ; loc0 + + ) { setIterations ( loc0 ) ; } }
+String function ( ) { return ( "srini_string" ) ; }
+void function ( ) { }
+List < String > function ( String arg0 ) { List < String > loc0 = new ArrayList < String > ( ) ; loc0 . add ( arg0 ) ; loc0 . add ( "srini_string" ) ; loc0 . add ( "srini_string" ) ; return loc0 ; }
+Node function ( ) { return begin ( ) ; }
+void function ( String arg0 ) { this . credential . delete ( arg0 ) ; }
+void function ( ) { }
+boolean function ( String arg0 , String [ ] arg1 , String [ ] arg2 , String [ ] arg3 , String arg4 , String arg5 , String arg6 , String [ ] arg7 , String arg8 ) { return stub . validateScope ( arg0 , arg1 , arg2 , arg3 , arg4 , null , null , null , null ) ; }
+GetOfferDetailsResponse . Operation function ( ) { return new GetOfferDetailsResponse ( ) ; }
+void function ( ) { System . out . println ( "srini_string" ) ; String loc0 = "srini_string" ; logEntryRequests ( loc0 ) ; }
+NotationProviderFactory2 function ( final String arg0 , final String arg1 ) { return newNotationProvider ( arg0 , arg1 ) ; }
+void function ( ) { ProxyConnect ( this . urlConn ) ; }
+byte [ ] function ( ) { return s_valid ; }
+Writer function ( final String arg0 ) { return createWriter ( arg0 , "srini_string" ) ; }
+ProjectModel function ( String arg0 ) { if ( arg0 == null ) { throw new IllegalArgumentException ( "srini_string" ) ; } return projectCache . get ( arg0 ) ; }
+boolean function ( Result arg0 ) { return globalLog . get ( arg0 ) != null ; }
+void function ( ) { Date loc0 = cal . getDays ( 1 ) ; assertEquals ( "srini_string" , loc0 . intValue ( ) ) ; }
+String function ( ) { return album ; }
+Builder function ( final String arg0 ) { this . unsafeReplacement = arg0 ; return this ; }
+void function ( ) { testEventProperties . putAll ( Notification . class , testEventProperties ) ; notificationController . putAll ( testEventProperties ) ; }
+void function ( ) { if ( loggingEnabled ) { init ( ) ; } }
+TextureRegion function ( String arg0 ) { return textures . get ( arg0 ) ; }
+int function ( ) { return generatedClassSerial ; }
+String function ( ) { return info . toString ( ) ; }
+Long function ( ) { return dataUnitId ; }
+BeanFactory function ( String arg0 , String arg1 , String arg2 ) { return create ( arg0 , arg1 , arg2 , null ) ; }
+GetOfferDetailsResponse . Operation function ( ) { return new GetOfferDetailsResponse . DeleteDetailsResponse ( ) ; }
+ScriptBuilder function ( String arg0 ) { return new ScriptBuilder ( arg0 ) ; }
+String function ( ) { return sender ; }
+void function ( String arg0 , String arg1 ) { synchronized ( userStoreManagers ) { userStoreManagers . put ( arg0 , arg1 ) ; } }
+String function ( Date arg0 ) { return "srini_string" ; }
+String function ( ) { return errorCode ; }
+String function ( ) { return keyAlias ; }
+int function ( ) { return mId ; }
+int function ( ByteBuffer arg0 ) { byte [ ] loc0 = keyCount ( arg0 ) ; if ( loc0 == null ) { return 0 ; } return Integer . parseInt ( loc0 [ 0 ] ) ; }
+String function ( int arg0 ) { return "srini_string" + arg0 + "srini_string" ; }
+void function ( JSONObject arg0 , List < Command > arg1 ) { List < Command > loc0 = parseJSONPayload ( arg0 , arg1 ) ; for ( Command loc1 : loc0 ) { parseJSONPayload ( loc1 ) ; } }
+void function ( ) { System . out . println ( "srini_string" ) ; }
+void function ( long arg0 , long arg1 ) { if ( mLocksToMoveOut . add ( arg0 ) ) { mBlocksToMoveOutSize += arg1 ; } }
+void function ( byte [ ] arg0 , int arg1 , int arg2 ) { if ( arg1 > arg2 ) { throw new IllegalArgumentException ( "srini_string" ) ; } if ( arg1 < 0 ) { throw new IllegalArgumentException ( "srini_string" ) ; } }
+Map < T , String > function ( Collection < T > arg0 ) { return new HashMap < > ( arg0 . size ( ) ) ; }
+void function ( PropertyChangeSupport arg0 , final PropertyChangeSupport arg1 , final PropertyChangeSupport arg2 ) { arg0 . addPropertyChangeListener ( this , arg1 , arg2 ) ; }
+GetOfferDetailsResponse . Builder function ( ) { return new GetOfferDetailsResponse . Builder ( ) ; }
+int function ( ) { return tag ; }
+String function ( ) { return contentType ; }
+OpenIDClaimMapper function ( ) { return instance ; }
+int function ( ) { return _size ; }
+Checklist function ( String arg0 ) { Checklist loc0 = lookupChecklist ( arg0 ) ; if ( loc0 == null ) return null ; return loc0 ; }
+User function ( ) { return sUserThreadLocal . get ( ) ; }
+void function ( ) { Invite loc0 = new Invite ( ) ; loc0 . start ( ) ; loc0 . start ( ) ; }
+List < Book > function ( ) { return bookRepository . findAll ( ) ; }
+PaymentChannelServer function ( ) { return connectedHandler ; }
+void function ( Class < ? extends Pattern > arg0 , String arg1 , String arg2 , String arg3 , String arg4 , String arg5 , String arg6 ) { Pattern loc0 = Pattern . compile ( arg0 , arg1 , arg2 , arg3 , arg4 , arg5 , arg6 ) ; if ( loc0 == null ) { throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" + arg1 + "srini_string" ) ; } loc0 . remove ( ) ; }
+RMProperties function ( int arg0 ) { return RMProperties . get ( arg0 ) ; }
+FiltersType function ( ) { return cipherSuiteFilters ; }
+void function ( T arg0 ) { }
+void function ( String arg0 ) { List < String > loc0 = new ArrayList < String > ( ) ; for ( int loc1 = 0 ; loc1 < arg0 ; loc1 + + ) { loc0 . add ( arg0 ) ; } }
+void function ( String arg0 ) { this . name = arg0 ; }
+void function ( ) { }
+String [ ] function ( ) { return "srini_string" ; }
+void function ( ) { System . out . println ( "srini_string" ) ; Device loc0 = new Device ( ) ; Device loc1 = new Device ( ) ; String loc2 = loc0 . getAddress ( ) ; assertEquals ( loc1 , loc2 ) ; }
+void function ( String arg0 ) { if ( LOG . isDebugEnabled ( ) ) { LOG . debug ( "srini_string" + arg0 + "srini_string" ) ; throw new RuntimeException ( "srini_string" + arg0 ) ; } }
+void function ( float arg0 , float arg1 , float arg2 , float arg3 , float arg4 ) { new float [ ] { arg0 , arg1 , arg2 , arg3 , arg4 ) ; } }
+void function ( ) { System . out . println ( "srini_string" ) ; ServerSession loc0 = testEventProperties . get ( "srini_string" ) ; if ( loc0 == null ) { System . out . println ( "srini_string" ) ; } }
+void function ( String arg0 , String arg1 ) { if ( arg0 == null | | arg0 . isEmpty ( ) ) throw new NullPointerException ( "srini_string" ) ; if ( arg1 != null ) throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" + arg1 + "srini_string" ) ; }
+String function ( ) { return ( host + "srini_string" + host + "srini_string" ) ; }
+void function ( ) { for ( int loc0 = 0 ; loc0 < STEP ; loc0 + + ) { GameElement loc1 = gameElements . get ( loc0 ) ; if ( loc1 != null ) { loc1 . setText ( loc0 ) ; } } }
+Map < String , Object > function ( ) { final Map < String , Object > loc0 = new HashMap < String , SoapRef > ( ) ; for ( SoapRef loc1 : unresolvedRefs ) { loc0 . put ( loc1 . getName ( ) , loc1 ) ; } return loc0 ; }
+LanguageVersion function ( final Language arg0 ) { return languageToLanguageVersion . get ( arg0 ) ; }
+int function ( ) { return 1 ; }
+void function ( double arg0 ) { this . fileCount = arg0 ; }
+String function ( byte [ ] arg0 ) { return arg0 [ 0 ] ; }
+void function ( ) { Assert . assertTrue ( ! this . mOSSUnderFileSystem . exists ( ) | | this . mOSSUnderFileSystem . delete ( ) ) ; Assert . assertTrue ( this . mOSSUnderFileSystem != null & & ! this . mOSSUnderFileSystem . delete ( ) ) ; Assert . assertTrue ( ! this . mOSSUnderFileSystem . delete ( ) ) ; }
+List < String > function ( List < String > arg0 ) { if ( arg0 == null ) { return null ; } List < String > loc0 = new ArrayList < > ( arg0 . size ( ) ) ; for ( String loc1 : arg0 ) { if ( loc1 . length ( ) > 0 ) { loc0 . add ( loc1 ) ; } } return loc0 ; }
+int function ( byte [ ] arg0 , int arg1 , int arg2 ) { return ( int ) ( arg0 [ arg1 + arg2 ] ) ; }
+void function ( String arg0 ) { this . mHostname = arg0 ; }
+void function ( String arg0 , Object arg1 ) { impl . get ( arg0 ) . addComponent ( arg1 ) ; }
+void function ( int arg0 ) { if ( arg0 < 0 ) { throw new IllegalArgumentException ( "srini_string" + basePort ) ; } ranges . remove ( arg0 ) ; }
+String function ( ) { return id ; }
+byte [ ] function ( String arg0 ) { return encoder . decode ( arg0 ) ; }
+String function ( ) { return String . format ( "srini_string" , log ) ; }
+void function ( ) { moveZoom ( ) ; cameraPort = System . currentTimeMillis ( ) ; cameraPort = cameraPort ; }
+NettyWorkerClient function ( InetSocketAddress arg0 ) { return get ( InetSocketAddress . valueOf ( arg0 . getPort ( ) ) ) ; }
+void function ( ) { List < StorageDirView > loc0 = mTestDirView . get ( TEST_TIER_LEVEL ) ; Assert . assertTrue ( loc0 . isEmpty ( ) ) ; }
+void function ( ) { System . out . println ( "srini_string" ) ; }
+boolean function ( RuleContext arg0 , String arg1 ) { return ruleChain . isInstance ( arg0 , arg1 ) ; }
+byte [ ] function ( byte [ ] arg0 ) { if ( arg0 == null | | arg0 . length == 0 ) { return null ; } byte [ ] loc0 = new byte [ arg0 . length ] ; for ( int loc1 = 0 ; loc1 < arg0 . length ; loc1 + + ) { loc0 [ loc1 ] = keyHash ( arg0 [ loc1 ] ) ; } return loc0 ; }
+BlockMatrix64F function ( final BlockMatrix64F arg0 , final BlockMatrix64F arg1 , final BlockMatrix64F arg2 , final BlockMatrix64F arg3 ) { final BlockMatrix64F loc0 = blockA . create ( arg0 , arg1 , arg2 , arg3 ) ; return blockA . apply ( loc0 ) ; }
+void function ( ) { HDGSentenceParser loc0 = new HDGSentenceParser ( new double [ ] { "srini_string" , "srini_string" , "srini_string" } ) ; }
+void function ( String arg0 , String arg1 ) { }
+void function ( @ RequestParam ( value = "srini_string" ) String arg0 , @ RequestParam ( value = "srini_string" ) String arg1 , @ RequestParam ( value = "srini_string" ) String arg2 , @ RequestParam ( value = "srini_string" ) String arg3 , @ RequestParam ( value = "srini_string" , @ RequestParam ( value = "srini_string" , value = "srini_string" , "srini_string" ) final String arg3 , @ RequestParam ( value = "srini_string" , @ RequestParam ( value = "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" ) final String arg3 ) final String arg3 ) final String arg4 , final String arg1 , final String arg4 , final String arg4 , final String arg4 , final String arg4 , final String arg5 , final String arg5 , final String arg5 , final String arg6 , final String arg6 , final String arg6 , final String arg6 , final String
+boolean function ( ) { return parseLazy ; }
+OpenByteWriter function ( long arg0 ) { ensureCapacity ( arg0 ) ; mWriter . put ( ( byte ) arg0 ) ; return this ; }
+boolean function ( ) { return expiration != null ; }
+int function ( int arg0 , int arg1 ) { }
+Dimension function ( int arg0 ) { return dim . getHeight ( ) ; }
+Element function ( String arg0 ) { return null ; }
+void function ( ) { }
+void function ( boolean arg0 ) { this . config = arg0 ; }
+boolean function ( double arg0 , double arg1 , double arg2 ) { if ( Math . abs ( arg0 - arg1 ) < arg2 ) { return false ; } if ( Math . abs ( arg0 - arg1 ) < arg2 ) { return false ; } return true ; }
+int function ( ) { return subsid ; }
+void function ( MapMaker < K , V > arg0 ) { this . keyExtractor = arg0 ; }
+JBKeyElement function ( ) { return m_EncryptedKeyElement ; }
+void function ( ListStatusOptions arg0 ) { this . defaults = arg0 ; }
+void function ( double arg0 ) { if ( arg0 < 0 ) throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" ) ; this . imgto_ROI = arg0 ; }
+void function ( final String arg0 , final String arg1 , final String arg2 ) { try { FileUtils . deletePattern ( arg0 , arg1 , arg2 ) ; } catch ( IOException loc0 ) { throw new RuntimeException ( loc0 ) ; } }
+void function ( String arg0 ) { this . referencedRevisionB = arg0 ; }
+Builder function ( Property arg0 , String arg1 ) { mConfiguration . put ( arg0 , arg1 ) ; return this ; }
+void function ( Component arg0 ) { if ( arg0 == null ) return ; File loc0 = new File ( "srini_string" ) ; File loc1 = new File ( arg0 . getName ( ) + "srini_string" + loc0 . getName ( ) + "srini_string" ) ; if ( loc1 . endsWith ( "srini_string" ) ) { selectFolder ( loc0 , loc1 ) ; } }
+T function ( ) { return mPayload ; }
+ComplexNode function ( ) { return new RootNode ( ) ; }
+ExtensionInfo function ( ) { return extensionInfo ; }
+void function ( Collection arg0 , String arg1 ) { assertNotNull ( arg0 , arg1 ) ; }
+Iterator < String > function ( ) { return currentLSN ( ) ; }
+byte [ ] function ( ) { return values . toArray ( new String [ values . size ( ) ] ) ; }
+Matrix function ( Matrix arg0 , Matrix arg1 ) { Matrix loc0 = new Matrix ( ) ; for ( int loc1 = 0 ; loc1 < arg0 . size ( ) ; loc1 + + ) { for ( int loc2 = 0 ; loc2 < arg1 . matrix . size ( ) ; loc2 + + ) { for ( int loc3 = 0 ; loc3 < loc1 ; loc3 + + ) { loc0 . set ( loc2 , arg0 . get ( loc3 ) ) ; } } } return loc0 ; }
+String function ( ) { return mSubjectPrimary ; }
+void function ( ) { }
+void function ( View arg0 , String arg1 , Object arg2 ) { if ( mBridge != null & & arg1 != null & & arg2 != DEFAULT_DELEGATE ) { arg0 . setParticipant ( arg1 , arg2 ) ; } }
+void function ( ) { buffer = null ; }
+String function ( String arg0 ) { return new File ( new File ( arg0 ) ) . getAbsolutePath ( ) ; }
+int function ( ) { return rangeQuantity ; }
+PolicyPublisher function ( ) { return policyPublisher ; }
+List < RSSItem > function ( ) { return _items ; }
+String function ( ) { return feedId ; }
+void function ( String arg0 ) { this . fileName = arg0 ; }
+void function ( double [ ] arg0 ) { for ( int loc0 = 0 ; loc0 < arg0 . length ; loc0 + + ) arg0 [ loc0 ] = arg0 [ loc0 ] ; }
+Save function ( ) { return null ; }
+void function ( int arg0 , int arg1 ) { int loc0 = arg1 ; if ( _values [ loc0 ] != DELETED ) { _values [ loc0 ] = arg0 ; _values [ loc0 ] = arg1 ; } }
+boolean function ( ) { return properties . containsKey ( DEFAULT_CONTENT_TYPE ) ; }
+boolean function ( Node arg0 ) { return closed . remove ( arg0 ) ; }
+void function ( ) { ByteBuffer loc0 = ByteBuffer . wrap ( mBuffer , LENGTH ) ; assertInvalid ( loc0 ) ; }
+EncryptionEncryption function ( ) { return signatureEncryption ; }
+String function ( ) { return createdBy ; }
+String function ( ) { return mDirAlias ; }
+void function ( ) { synchronized ( this ) { sounds . remove ( this ) ; } }
+int function ( byte [ ] arg0 ) { if ( arg0 == null | | arg0 . length == 0 ) { return 0 ; } byte [ ] loc0 = ( byte ) ( arg0 [ 0 ] & 0xff ) ; return ( int ) ( loc0 [ 1 ] & 0xff ) ; }
+double function ( double [ ] arg0 , double [ ] arg1 ) { double loc0 = 0 ; for ( int loc1 = 0 ; loc1 < arg0 . length ; loc1 + + ) { if ( arg1 [ loc1 ] < arg0 [ loc1 ] ) arg1 [ loc1 ] = arg1 [ loc1 ] ; } return loc0 ; }
+int function ( ) { throw new UnsupportedOperationException ( "srini_string" ) ; }
+void function ( String arg0 ) { this . userName = arg0 ; }
+List < U > function ( T arg0 , Object ... arg1 ) { return Collections . unmodifiableList ( arg0 , arg1 ) ; }
+void function ( double arg0 ) { this . seconds = arg0 ; }
+void function ( String arg0 ) { if ( sIsLogEnabled ) { Log . d ( sApplicationTag , getContent ( getCurrentStackTraceElement ( ) ) + "srini_string" + arg0 ) ; } }
+int function ( ) { return this . pattern . length ; }
+int function ( EndpointReferenceType arg0 ) { for ( EndpointReferenceType loc0 : resolvers ) { if ( loc0 . getName ( ) . equals ( arg0 ) ) { return loc0 ; } } return 0 ; }
+boolean function ( ) { return true ; }
+BaseScreen function ( int arg0 , int arg1 ) { return mapsToLoad ( this , arg0 , arg1 ) ; }
+ActionFunction function ( ) { return actionsFunction ; }
+boolean function ( Result arg0 ) { return globalLog . get ( arg0 ) != null ; }
+String function ( ) { return pass ; }
+void function ( ) { Date loc0 = new Date ( 1 ) ; Date loc1 = cal . get ( 0 ) ; assertEquals ( loc0 , loc1 ) ; }
+void function ( double arg0 ) { mPendingQueue . add ( arg0 ) ; mPendingQueue . add ( arg0 ) ; }
+String function ( Map < String , ? > arg0 , String arg1 ) { String loc0 = arg0 . get ( arg1 ) ; if ( loc0 == null ) { return null ; } else { return loc0 ; } }
+List < Element > function ( @ NotNull String arg0 ) { return Arrays . asList ( arg0 ) ; }
+int function ( ) { return opcode ; }
+String function ( File arg0 ) { int loc0 = arg0 . lastIndexOf ( "srini_string" ) ; if ( loc0 < 0 ) { throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" + arg0 . substring ( loc0 + 1 ) + "srini_string" ) ; } return parse ( loc0 ) ; }
+Unmarshaller function ( final Unmarshaller arg0 ) { this . marshaller = arg0 ; return this ; }
+BigDecimal function ( ) { return lagId ; }
+void function ( boolean arg0 ) { connected = arg0 ; }
+boolean function ( short arg0 ) { return isNumber ( arg0 ) ; }
+ModelImplementation function ( InputStream arg0 ) { initModelImplementation ( arg0 ) ; return this ; }
+void function ( Date arg0 ) { this . expires = arg0 ; }
+int function ( int arg0 ) { return vstack . get ( arg0 ) ; }
+long function ( ) { return tStart ; }
+void function ( T arg0 ) { mParents . remove ( arg0 ) ; }
+List < String > function ( final String arg0 ) { final List < String > loc0 = new ArrayList < > ( ) ; for ( String loc1 : arg0 ) { if ( ! loc1 . equals ( "srini_string" ) ) { loc0 . add ( loc1 ) ; } } return loc0 ; }
+String function ( ) { String loc0 = null ; try { loc0 = new String ( "srini_string" ) ; } catch ( Exception loc1 ) { loc1 . printStackTrace ( ) ; } return loc0 ; }
+void function ( JSONObject arg0 , String arg1 , String arg2 ) { arg0 . put ( arg1 , arg2 . toString ( ) ) ; }
+void function ( ) { getAsset ( ) . start ( ) ; }
+void function ( ) { try { mClientPool . start ( ) ; } catch ( IOException loc0 ) { LOG . error ( "srini_string" , loc0 ) ; } }
+void function ( String arg0 ) { this . contentEncoding = arg0 ; }
+int function ( ) { return bip32Header ; }
+void function ( Script arg0 ) { this .Panel = arg0 ; }
+T function ( String arg0 , boolean arg1 , Map < String , String > arg2 , Map < String , String > arg3 , String arg4 , String arg5 , Map < String , Object > arg6 ) { return this . platformLayerClient . create ( arg0 , arg1 , arg2 , arg3 , arg4 , arg5 ) ; }
+boolean function ( ) { return removed ; }
+int function ( ) { return MAX_VALUE ; }
+List < String > function ( ) { return new ArrayList < String > ( ) ; }
+boolean function ( ) { return logFilter != null ; }
+void function ( ) { System . out . println ( "srini_string" ) ; Device loc0 = new Device ( ) ; String loc1 = "srini_string" ; String loc2 = loc0 . toString ( ) ; assertEquals ( loc1 , loc2 ) ; }
+ArrayList < ShareOpenGraphObject > function ( Bundle arg0 ) { this . bundle . putParcelable ( arg0 ) ; return this ; }
+File function ( ) { return sourceCodeFile ; }
+XPathContext function ( ) { return new xpathContext ( ) ; }
+void function ( ) { ByteBuffer loc0 = ByteBuffer . wrap ( mBuffer , LENGTH ) ; assertEquals ( LENGTH , loc0 . remaining ( ) ) ; }
+Object [ ] function ( ) { return null ; }
+ScriptBuilder function ( ) { return new ScriptBuilder ( ) ; }
+R function ( Transformation arg0 ) { setDocument ( arg0 ) ; return this ; }
+void function ( ) { String [ ] loc0 = { "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" , "srini_string" }
+void function ( String arg0 ) { log . log ( arg0 , currentMessage ) ; }
+double function ( int ... arg0 ) { double loc0 = 0.0 ; for ( int loc1 = 0 ; loc1 < arg0 . length ; loc1 + + ) { loc0 *= arg0 [ loc1 ] ; } return loc0 ; }
+Function < T , E > function ( ) { return new SupplierFunction < T > ( ) ; }
+boolean function ( int arg0 , int arg1 ) { return true ; }
+String function ( long arg0 ) { Calendar loc0 = Calendar . getInstance ( ) ; loc0 . setTime ( arg0 ) ; return loc0 . getTime ( ) ; }
+void function ( String arg0 , Object arg1 , String arg2 ) { Field loc0 = getFieldImpl ( arg0 , arg1 , arg2 ) ; loc0 . setValue ( arg0 ) ; }
+long function ( ) { return mLockId ; }
+void function ( ) { NotificationController loc0 = testEventProperties . get ( "srini_string" ) ; assertNotNull ( loc0 ) ; }
+double function ( double [ ] [ ] arg0 ) { double loc0 = 0 ; for ( int loc1 = 0 ; loc1 < arg0 . length ; loc1 + + ) { loc0 += arg0 [ loc1 ] * arg0 [ loc1 ] ; } return loc0 / 2 ; }
+OpenByteWriter function ( int arg0 ) { ensureCapacity ( arg0 ) ; mWriter . put ( ( int ) arg0 ) ; return this ; }
+long function ( ) { return mBlocksToMoveOutSize ; }
+void function ( ) { Assert . assertFalse ( mBlockStoreMetaFull . getNumBlocks ( ) ) ; }
+void function ( ) { Time loc0 = new Time ( "srini_string" ) ; System . out . println ( "srini_string" ) ; System . out . println ( loc0 ) ; System . out . println ( "srini_string" ) ; System . out . println ( "srini_string" ) ; }
+List < DirectedARebootGraphNode < T >> function ( ) { return mChildren ; }
+boolean function ( int arg0 ) { return enemyHandCards . contains ( arg0 ) ; }
+String function ( String arg0 ) { return "srini_string" + arg0 + "srini_string" ; }
+void function ( ) { final Position loc0 = instance . getWeight ( "srini_string" ) ; Assert . assertTrue ( loc0 != null ) ; }
+String function ( Object arg0 ) { if ( arg0 == null ) { return null ; } if ( arg0 == null ) { return null ; } return arg0 . toString ( ) ; }
+String function ( String arg0 , String arg1 ) { return "srini_string" + arg0 + "srini_string" + arg1 ; }
+List < T > function ( ) { final List < T > loc0 = new ArrayList < > ( ) ; for ( T loc1 : element ) { loc0 . add ( loc1 ) ; } return loc0 ; }
+Player function ( int arg0 ) { int loc0 = ( int ) tiles . indexOf ( arg0 ) ; if ( loc0 < 0 ) { return null ; } int loc1 = ( int ) tiles . indexOf ( loc0 ) ; if ( loc1 < 0 ) { return null ; } return tiles . get ( loc1 ) . get ( loc1 ) ; }
+String function ( ) { return debugGui . print ( ) ; }
+CompassPoint function ( int arg0 ) { if ( ( arg0 < 0 ) | | ( arg0 > this . longitude ) ) { return null ; } return new CompassPoint ( this . datum . getLatitude ( ) , arg0 ) ; }
+Object function ( String arg0 ) { return ejbRemove ( arg0 , false ) ; }
+void function ( ) { }
+boolean function ( ) { return false ; }
+ScriptBuilder function ( String arg0 ) { return createRedeemScript ( arg0 , false ) ; }
+String function ( final String arg0 ) { String loc0 = "srini_string" ; int loc1 = arg0 . lastIndexOf ( '.' ) ; if ( loc1 > 0 ) { loc0 += arg0 . substring ( 0 , loc1 ) ; } return loc0 ; }
+void function ( ) { System . out . println ( "srini_string" ) ; Time loc0 = time . getSeconds ( ) ; Time loc1 = new Time ( "srini_string" ) ; loc1 . setSeconds ( loc0 ) ; System . out . println ( "srini_string" ) ; }
+EndpointImpl function ( String arg0 ) { return new EndpointImpl ( arg0 ) ; }
+void function ( ) { }
+void function ( String arg0 ) { this . to = arg0 ; }
+Node function ( String arg0 , String arg1 ) { String [ ] loc0 = parseDecl ( arg0 . split ( "srini_string" ) ) ; for ( int loc1 = 0 ; loc1 < loc0 . length ; loc1 + + ) loc0 [ loc1 ] = parseDecl ( loc1 ) ; return parseDecl ( loc0 , arg1 ) ; }
+boolean function ( String arg0 , int arg1 , int arg2 ) { return false ; }
+void function ( String arg0 , String arg1 , String arg2 ) { if ( isUserAuthenticated ( arg0 ) ) { loginUserAuthenticated ( arg0 , arg1 , arg2 ) ; } }
+void function ( final HttpParams arg0 , int arg1 ) { if ( arg0 == null ) { throw new IllegalArgumentException ( "srini_string" ) ; } arg0 . setIntParameter ( CoreConnectionPNames . PLUGIN_ID , arg1 ) ; }
+void function ( ) { String loc0 = "srini_string" ; String loc1 = "srini_string" + "srini_string" + loc0 + "srini_string" ; todo . addNumber ( loc1 ) ; assertEquals ( loc0 , loc1 ) ; }
+Fast256Hash function ( ) { return hash ; }
+int function ( ) { return this . depth ; }
+String function ( ) { return pmids ; }
+String function ( ) { return _link ; }
+void function ( Attributes arg0 ) { attributes = arg0 ; }
+void function ( MapNode arg0 ) { nodes . put ( arg0 . getId ( ) , arg0 ) ; }
+void function ( ) { }
+void function ( Long arg0 ) { this . runId = arg0 ; }
+List < T > function ( ) { return Collections . unmodifiableList ( comparator ) ; }
+Class < ? > function ( ) { return Collection . class ; }
+void function ( Object arg0 , String arg1 ) { assertNotNull ( arg0 , arg1 ) ; }
+TopKSelector < T > function ( T ... arg0 ) { Set < T > loc0 = new HashSet < T > ( ) ; for ( T loc1 : arg0 ) { loc0 . add ( loc1 ) ; } for ( T loc2 : arg0 ) { loc0 . add ( loc2 ) ; } return loc0 ; }
+double function ( Context arg0 , long arg1 ) { return ( ( int ) ( arg0 . get ( ) * arg1 ) ) / ( arg1 ) ; }
+Object function ( String arg0 ) { return parseData ( arg0 , VALUE ) ; }
+void function ( Integer arg0 ) { this . ninirada = arg0 ; }
+void function ( String arg0 ) { this . messageId = arg0 ; }
+boolean function ( ) { return mConnected ; }
+void function ( ) { this . mWorkDirectory = System . currentTimeMillis ( ) ; }
+long function ( ) { return index ; }
+Set < String > function ( ) { return bindings . keySet ( ) ; }
+int function ( ) { return keyIdentifierType ; }
+Map < String , String > function ( String arg0 ) { Map < String , String > loc0 = new HashMap < String , String > ( ) ; loc0 . put ( "srini_string" , arg0 ) ; return loc0 ; }
+boolean function ( ) { return buffer == null ; }
+void function ( ) { System . out . println ( "srini_string" ) ; Time loc0 = time . getMillis ( ) ; Time loc1 = new Time ( "srini_string" ) ; loc1 . setHour ( loc0 ) ; System . out . println ( "srini_string" ) ; }
+int function ( String arg0 ) { try { return Integer . parseInt ( parameters ( arg0 ) ) ; } catch ( NumberFormatException loc0 ) { return 0 ; } }
+List < String > function ( Context arg0 ) { return DEFAULT_SCHEME_PRIORITY ; }
+void function ( VertexLabelType arg0 ) { globalEdgeLookup . remove ( arg0 ) ; }
+long function ( String arg0 ) { long loc0 = 0 ; try { loc0 = Long . parseLong ( arg0 ) ; } catch ( NumberFormatException loc1 ) { } return loc0 ; }
+String function ( long arg0 , long arg1 ) { SimpleDateFormat loc0 = new SimpleDateFormat ( "srini_string" ) ; return loc0 . format ( arg0 ) ; }
+CommandHandler function ( CommandHandler arg0 ) { return valueOf ( arg0 , null ) ; }
+void function ( ) { this . getSessionId ( ) ; }
+String function ( ) { return getDisplayName ( ) ; }
+URI function ( ) { return uri ; }
+String function ( ) { return logPath ; }
+String function ( ) { return signatureUsername ; }
+ServletContext function ( ) { return this . repository ; }
+ApplicationBasicService function ( ) { return new ApplicationBasicService ( ) ; }
+String function ( String arg0 , int arg1 , String arg2 ) { String loc0 = "srini_string" + arg0 + "srini_string" + arg1 + "srini_string" ; if ( arg2 != null ) { loc0 += "srini_string" + arg2 ; } return loc0 ; }
+boolean function ( long arg0 ) { return mPersistedFiles . contains ( arg0 ) ; }
+boolean function ( String arg0 ) { return _all . containsKey ( arg0 ) ; }
+List < Role > function ( ) { if ( roles == null ) { roles = new ArrayList < Role > ( ) ; } return this . roles ; }
+BufferedByteWriter function ( byte [ ] arg0 ) { mWriter . put ( ( ( byte ) arg0 [ 0 ] ) ) ; return this ; }
+void function ( ) { final long loc0 = System . currentTimeMillis ( ) ; Assert . assertEquals ( "srini_string" , loc0 ) ; }
+void function ( ) { md5Cache . unlock ( ) ; }
+boolean function ( Class < ? > arg0 ) { return PRIMITIVE_TO_WRAPPER_TYPE . containsKey ( arg0 ) ; }
+void function ( ) { }
+ECisticKey function ( ) { return privateAsFieldElement ; }
+Site function ( Long arg0 ) { log . debug ( "srini_string" , arg0 ) ; Site loc0 = siteRepository . findAll ( arg0 ) ; return loc0 ; }
+int function ( ) { return gen . get ( ) ; }
+void function ( ProtocolHandler arg0 ) { m_SelectorManager = arg0 ; }
+Point function ( Point arg0 ) { arg0 . x = arg0 . x ; arg0 . y = arg0 . z ; arg0 . z = arg0 . z ; return arg0 ; }
+void function ( RunStatusType arg0 ) { this . regPclTestResultDetails = arg0 ; }
+void function ( ) { }
+boolean function ( String arg0 ) { if ( hasArgs ( arg0 ) | | hasArgs ( arg0 ) ) return true ; return false ; }
+void function ( View arg0 , View arg1 , int arg2 ) { if ( arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 != null & & arg2 . equals ( arg0 ) ) ; if ( arg1 != null & & ! arg2 . equals ( arg0 ) ) return ; if ( arg2 != null ) return ; if ( arg2 != null ) return ; }
+String function ( ) { return "srini_string" ; }
+int function ( ) { doRollback ( ) ; return txnum ; }
+boolean function ( String arg0 , String arg1 ) { if ( arg1 == null | | arg1 . length ( ) == 0 ) { return false ; } try { return arg0 . equals ( arg1 ) ; } catch ( IllegalArgumentException loc0 ) { return false ; } }
+void function ( ) { EventAction loc0 = new EventAction ( this ) ; loc0 . setAction ( this ) ; }
+List < CroadcastActionBean > function ( ) { return actions ; }
+boolean function ( Iterable < ? super E > arg0 ) { return ! all ( arg0 ) ; }
+void function ( ) { allPlugins . remove ( 0 ) ; }
+String function ( ) { return signatureAlias ; }
+PeerSelector function ( ) { return inFault ; }
+boolean function ( String arg0 ) { return compile ( arg0 , "srini_string" ) ; }
+void function ( String arg0 ) { this . errorCode = arg0 ; }
+void function ( String arg0 , String arg1 , String arg2 ) { Node loc0 ; if ( l != null ) { loc0 = engine . evaluate ( arg0 , arg1 , arg2 ) ; } }
+void function ( ) { if ( info != null ) info . close ( ) ; }
+void function ( ) { connection . close ( ) ; }
+AppStatus function ( AppStatus arg0 ) { return new AppStatus ( arg0 ) ; }
+void function ( ) { vCloseRequested = false ; }
+void function ( TreeModelEvent arg0 ) { }
+Map < String , String > function ( ) { return attributes ; }
+ProfileData function ( ) { return profileData ; }
+JSONObject function ( List < Node > arg0 ) { final JSONObject loc0 = new JSONObject ( ) ; for ( int loc1 = 0 ; loc1 < arg0 . size ( ) ; loc1 + + ) { loc0 . put ( loc1 , arg0 . get ( loc1 ) ) ; } return loc0 ; }
+boolean function ( ) { return mResourceAvailable ; }
+void function ( ) { }
+ELEvaluator function ( int arg0 , int arg1 , int arg2 ) { return new EingCoordDataset ( arg0 , arg1 , arg2 ) ; }
+void function ( Timestamp arg0 ) { this . modifiedDate = arg0 ; }
+void function ( String arg0 ) { this . gene = arg0 ; }
+int function ( byte [ ] arg0 , int arg1 ) { int loc0 = 0 ; for ( int loc1 = 0 ; loc1 < arg1 ; loc1 + + ) { if ( arg0 [ loc1 ] == 0 ) loc0 = loc1 ; } return loc0 ; }
+int function ( ) { return priority ; }
+WorkflowStore function ( WorkflowActionBean arg0 ) { List < WorkflowActionBean > loc0 = getStartedActions ( arg0 ) ; List < WorkflowActionBean > loc1 = getStartedActions ( loc0 , arg0 ) ; if ( loc1 != null ) { return loc1 ; } return null ; }
+void function ( ) { String loc0 = "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + loc0 + "srini_string" * "srini_string" + "srini_string" + loc0 + "srini_string" + "srini_string" + loc0 + "srini_string" + "srini_string" + "srini_string" + loc0 + "srini_string" + loc0 + "srini_string" + loc0 + "srini_string" + "srini_string" + loc0 + "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + loc0 + "srini_string" + "srini_string"
+byte [ ] function ( ) { return value ; }
+int function ( final String arg0 ) { return _device . get ( arg0 ) ; }
+AuthenticationEntity function ( ) { return authenticationHolder ; }
+void function ( ComplexNode arg0 ) { this . _double = arg0 ; }
+Map < String , Object > function ( ) { return new HashMap < String , Object > ( ) ; }
+Method function ( java . lang . Type arg0 ) { return new Method ( arg0 ) ; }
+Object function ( Object arg0 , String arg1 , Object [ ] arg2 ) { return invokeConstructor ( arg0 , arg1 , arg2 ) ; }
+long function ( ) { return tStop ; }
+int function ( ) { return this . processingSequenceCount . get ( ) ; }
+String function ( ) { return "srini_string" + id + "srini_string" + id + "srini_string" ; }
+void function ( String arg0 ) { this . srcFileName = arg0 ; }
+Set < String > function ( String arg0 ) { return Collections . unmodifiableSet ( getGroupName ( arg0 ) ) ; }
+int function ( String arg0 ) { int loc0 = 0 ; while ( loc0 < formatOff ) { loc0 + + ; } return loc0 ; }
+ArrayList < Option > function ( ) { return devices ; }
+void function ( ) { onWriteLater ( null ) ; }
+ScriptBuilder function ( String arg0 , boolean arg1 , boolean arg2 ) { return new ScriptBuilder ( arg0 , arg1 , arg2 ) ; }
+void function ( String arg0 , String arg1 ) { synchronized ( listeners ) { listeners . put ( arg0 , arg1 ) ; } }
+void function ( String arg0 ) { this . parametersMetaData = arg0 ; }
+GenericJSONBuilder function ( ) { return null ; }
+void function ( ) { ServiceDetails loc0 = service . getUserDetails ( ) ; Assert . assertEquals ( loc0 . getUserId ( ) , loc0 . getUserId ( ) ) ; }
+List < JSONArray > function ( JSONArray arg0 ) { return toJSONArray ( arg0 , new JSONArray ( ) ) ; }
+BigDecimal function ( ) { return downloadSize ; }
+void function ( ) { }
+Image function ( int arg0 , int arg1 ) { if ( arg0 < 0 | | arg0 >= width ) throw new IllegalArgumentException ( "srini_string" + arg0 + "srini_string" + width + "srini_string" + arg0 + "srini_string" ) ; Image loc0 = getImageImage ( arg0 , arg1 ) ; if ( loc0 == null ) throw new IllegalArgumentException ( "srini_string" ) ; return getImage ( loc0 ) ; }
+VariableReference function ( String arg0 ) { return vars . get ( arg0 ) ; }
+void function ( ) { events . clear ( ) ; }
+void function ( Blob arg0 ) { this . encryptionEncryptionEncryption = arg0 ; }
+void function ( IdentityMapper arg0 ) { this . identityMapper = arg0 ; }
+void function ( String arg0 , String arg1 ) { throw new UnsupportedOperationException ( "srini_string" ) ; }
+long function ( ) { return lifetime ; }
+void function ( EndpointReferenceType arg0 ) { resolvers . remove ( arg0 ) ; }
+String function ( ) { return fldname ; }
+CodeGenerator function ( Language arg0 , String arg1 ) { if ( LOG . isDebugEnabled ( ) ) { LOG . debug ( "srini_string" + arg0 . getName ( ) + "srini_string" + arg0 . getName ( ) + "srini_string" + arg1 ) ; } return this ; }
+void function ( int arg0 ) { mSpacing = arg0 ; }
+String function ( ) { return id ; }
+void function ( Request arg0 ) { printCookies ( arg0 , HEADER_PRAGMA ) ; }
+boolean function ( Result arg0 ) { return globalLog . get ( arg0 ) != null ; }
+Executor function ( ) { return new executor ( this ) ; }
+void function ( State arg0 ) { }
+Map < String , String > function ( ) { return headers ; }
+long function ( ) { return messagesSent ; }
+ThreadFactoryBuilder function ( int arg0 ) { this . priority = arg0 ; return this ; }
+void function ( String arg0 , String arg1 ) { properties . put ( arg0 , arg1 ) ; }
+void function ( final String arg0 , final Level arg1 ) { attributes . put ( arg0 , arg1 ) ; }
+boolean function ( ) { return numEntries ; }
+void function ( ) { String loc0 = "srini_string" + "srini_string" + "srini_string" + "srini_string" + "srini_string" + loc0 + "srini_string" ; }
+void function ( ) { allPlugins . clear ( ) ; }
+void function ( CString arg0 ) { this . handlerName = arg0 ; }
+Matcher < T > function ( T arg0 , T arg1 ) { return new Matcher < T > ( arg0 , arg1 ) ; }
+void function ( Collection < String > arg0 ) { before = arg0 ; }
+int function ( InodeFile arg0 ) { return sTtlIntervalStartTimeMs - arg0 . sTtl ; }

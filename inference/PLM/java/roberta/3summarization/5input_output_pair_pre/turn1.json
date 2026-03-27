@@ -1,0 +1,1000 @@
+{"answer": "Returns a 0-based depth within the object graph of the current object being serialized.", "output": "Returns a 0-based depth within the object graph of the current object being serialized."}
+{"answer": "Checks whether the scheme alters the training dataset during building. If the scheme needs to modify the data it should take a copy of the training data. Currently checks for changes to header structure, number of instances, order of instances, instance weights.", "output": "Checks whether the scheme alters the training dataset during training. If the scheme needs to modify the training data it should take a copy of the training data. Currently checks for changes to header structure, number of instances, order of instances, instance weights."}
+{"answer": "Compute the union size of two Bitsets.", "output": "Compute the union size of two Bitsets."}
+{"answer": "Tests local candidates with remote version in the middle on key2.", "output": "Test 2 keys with candidates in reverse order."}
+{"answer": "Actions to perform when the user has closed the dialog with the OK button.", "output": "Callback invoked when a user has been closed."}
+{"answer": "Prints out the classifier.", "output": "Return a textual description of this classifier"}
+{"answer": "Returns a new sector whose angles are the extremes of the this sector and another. The new sector's minimum latitude and longitude will be the minimum of the two sectors. The new sector's maximum latitude and longitude will be the maximum of the two sectors. The sectors are assumed to be normalized to +/- 90 degrees latitude and +/- 180 degrees longitude. The result of the operation is undefined if they are not.", "output": "Returns a new sector whose angles are the extremes of the this sector and another. The new sector's minimum latitude and longitude will be the minimum of the two other sector's values."}
+{"answer": "Checks if is double values are equal.", "output": "Returns true if the double belongs to another double"}
+{"answer": "Integer value of a positive BigDecimal", "output": "Integer value of a positive BigDecimal"}
+{"answer": "Main recursive method to examine the directory hierarchy.", "output": "Main recursive method to examine the directory hierarchy."}
+{"answer": "Get a sorted array containing all column values for a given tuple iterator and field.", "output": "Get a sorted array containing all column values for a given tuple iterator and field."}
+{"answer": "Divide with invalid rounding mode", "output": "Divide with invalid rounding mode"}
+{"answer": "Receives notification of a change to the plot's dataset. <P> The axis ranges are updated if necessary.", "output": "Called when a class has changed."}
+{"answer": "Invoke the onScheduler() in IScheduler directly as a library", "output": "Called by unit tests to start a given scheduler."}
+{"answer": "Returns true if specified type is Java.lang.String", "output": "Return true if this type is a String, sequence."}
+{"answer": "API method. Returns an entry for the source indexed by the user and the url. This method creates it if it didn't already exist.", "output": "Validates the source entry handling."}
+{"answer": "Validates the given SQL statement where its position in the list of statement is the given index. This method does not validate SQL syntax.", "output": "Validates the supplied sql statement."}
+{"answer": "Converts to object array.", "output": "Converts to object array."}
+{"answer": "Is this logger instance enabled for the FINEST level?", "output": "Returns true if the input is null."}
+{"answer": "Remove an used up missile from an attacking player.", "output": "For a given player use to use a mangile for the given player"}
+{"answer": "Creates a new matcher for running CoAP over TCP.", "output": "Creates a new UDP matcher."}
+{"answer": "recursively does the work", "output": "returns the maximum level positions based on the largest level in the classification."}
+{"answer": "Ask to the user for retyping the pass code just entered before saving it as the current pass code.", "output": "Ask to the user for retouring the current pass code."}
+{"answer": "Rolls back the worker thread creation. - removes worker from workers, if present - decrements worker count - rechecks for termination, in case the existence of this worker was holding up termination", "output": "Rolls back the worker thread creation. - removes worker from workers, if present - decrements worker count - rechecks for termination, in case the existence of this worker was holding up termination"}
+{"answer": "InsertFunctionalityTest#testInsert4(). Tests INSERT ... SELECT with expressions in SELECT query", "output": "InsertFunctionalityTest#testInsert4(). Tests INSERT ... SELECT with expressions in SELECT query"}
+{"answer": "Writes one entry to the local id map on disk.", "output": "Add local entry to the filesystem"}
+{"answer": "Receive notification of the end of an element.", "output": "Receive notification of the end of an element."}
+{"answer": "Send a FATAL ERROR log message", "output": "Send a FATAL ERROR log message"}
+{"answer": "Leaves can be used for many-to-many relations", "output": "Removes all selected leaf from the list"}
+{"answer": "Returns a string representation of this vector. <P>Note that this string representation shows the bit of index 0 at the leftmost position.", "output": "Returns a string representation of this vector."}
+{"answer": "Validate the URI characters within a specific component. The component must be performed after escape encoding. Or it doesn't include escaped characters. <p> It's not that much strict, generous. The strict validation might be performed before being called this method.", "output": "Tests whether the substring is valid."}
+{"answer": "Build the final bitmap-pieces to draw in animation", "output": "Build the final bitmap-graph operation."}
+{"answer": "De-registers a previously-registered virtual-machine shutdown hook.", "output": "Detaches a previously registered VM hook."}
+{"answer": "A seperate thread collects our input so that we can block in the doContinue on the main thread and then allow the user to interrupt us via keyboard input on this thread. <p/> We built the stupid thing in this manner, since readLine() will block no matter what and if we 'quit' we can't seem to kill this thread. .close() doesn't work and Thread.stop(), etc. all fail to do the job. <p/> Thus we needed to take a request response approach so that we only block when requested to do so.", "output": "Main method for reading a read request."}
+{"answer": "Bounds the current scroll if necessary", "output": "Bounds the current scroll if necessary, but does not synchronize the stack view with the model."}
+{"answer": "Adds the statistics encapsulated in the supplied Evaluation object into this one. Does not perform any checks for compatibility between the supplied Evaluation object and this one.", "output": "Aggregates the variable from this class"}
+{"answer": "scans all sites until all volumes involved in the Recoverpoint protection are visible", "output": "Waits for the given set of volumes to be visible."}
+{"answer": "This method is called immediately following cache creation in the spawned process, but prior to setting the RUNNING flag in the status file. So the spawning process will block until this method completes.", "output": "Handles parameters associated with the cache."}
+{"answer": "Update the content of the outline view.", "output": "Updates the view state."}
+{"answer": "Paints the image on the window.", "output": "Paints the image on the window."}
+{"answer": "Returns true if, at this time, the object will accept a connection with respect to the named event", "output": "Returns true if, at this time, the object will accept a connection via the named event"}
+{"answer": "It returns true if the attribute is prefixed (used the \":\" character).", "output": "It checks if the name is reserved."}
+{"answer": "Release a non-shard-specific connection.", "output": "Release a connection compatible with this connection."}
+{"answer": "Adds a collection of actions to the QuickActionView", "output": "Adds extra actions to be shown."}
+{"answer": "Adds a simple renderer to the multiple renderer.", "output": "Adds a simple renderer to the multiple renderer."}
+{"answer": "Copies stream, fires progress events by listener, can be interrupted by listener.", "output": "Copies stream, fires progress events by listener, can be interrupted by listener."}
+{"answer": "calculates the needed angle for a given value", "output": "calculates the needed angle for a given value"}
+{"answer": "Returns a buffer to the pool, throwing away old buffers if the pool would exceed its allotted size.", "output": "Returns a buffer to the pool, throwing away old buffers if the pool would exceed its allotted size."}
+{"answer": "Creates a new instance.", "output": "Creates a new instance."}
+{"answer": "Append string of the given CharSeq to this CharSeq", "output": "Returns a new CharSeq that contains the given CharSeq."}
+{"answer": "This method processes all of the HTTP GET requests routed to the servlet by the web container. This method loops through the lists of videos that have been sent to it and generates a plain/text list of the videos that is sent back to the client.", "output": "Description of the Method"}
+{"answer": "Change the stored state value and do notification, but don't change anything in the hardware", "output": "Notifies a state event if a state has been registered."}
+{"answer": "test for getOrder() method", "output": "test for getOrder() method"}
+{"answer": "Formats and logs a message with a Throwable.", "output": "Formats and logs a message with a Throwable."}
+{"answer": "Constructs the redis queue sorted set key name given a queue name, shard id and priority.", "output": "Constructs the redis key used to store the queue in redis."}
+{"answer": "Decodes the string into specified charset", "output": "Decodes a string using the specified charset. Escaped characters are converted back to their original representation."}
+{"answer": "Adds specified domain name to the list of restricted domains", "output": "Adds specified domain name to the restricted list."}
+{"answer": "Create a new read lock from the given lock", "output": "Create a new instance."}
+{"answer": "Tests fail: always returns false, failing statements commented out. Feature only partially implemented.Missing: Test positive case Not supported.", "output": "Tests fail: always returns false, failing statements commented out. Feature only partially implemented. Feature only partially implemented."}
+{"answer": "Computes the \"interface hash\" of the stub/skeleton pair for this remote implementation class. This is the 64-bit value used to enforce compatibility between a stub class and a skeleton class in the JDK 1.1 version of the JRMP stub/skeleton protocol. It is calculated using the first 64 bits of an SHA digest. The digest is of a stream consisting of the following data: (int) stub version number, always 1 for each remote method, in order of operation number: (UTF-8) method name (UTF-8) method descriptor for each declared exception, in alphabetical name order: (UTF-8) name of exception class (where \"UTF-8\" includes a 16-bit length prefix as written by java.io.DataOutput.writeUTF).", "output": "Compute the wrapper hash for an interface."}
+{"answer": "Copy the contents of the given byte array to the given OutputStream. Leaves the stream open when done.", "output": "Copy the contents of the given byte array to the given OutputStream. Leaves the stream open when done."}
+{"answer": "Returns true whether this page doesn't contain items, returns false if it does.", "output": "Does this item have any items loaded yet?"}
+{"answer": "Decodes a frame if needed.", "output": "Render the frame ability"}
+{"answer": "Encode parts of the message using Text Compaction as described in ISO/IEC 15438:2001(E), chapter 4.4.2.", "output": "Encode parts of the message using Text Compaction as described in ISO/IEC 15438:2001(E), chapter 4.4.2."}
+{"answer": "Check to see if a string is a valid NCName according to [4] from the XML Namespaces 1.0 Recommendation", "output": "Check to see if a string is a valid NCName according to [4] from the XML Namespaces 1.0 Recommendation"}
+{"answer": "Appends the specified element to the end of this list.", "output": "Appends the specified element to the end of this list."}
+{"answer": "prepare the dataset required for running test cases", "output": "prepare the dataset required for running test cases"}
+{"answer": "Returns array of ServiceRegistrar created from the proxyRegSet", "output": "Build a list of ServiceObjects that are used to retrieve services that have only one binding set."}
+{"answer": "Check if the supplied value is a valid value.", "output": "Check the value of a pattern."}
+{"answer": "Find a new primary, adding any failed servers we encounter to the excluded servers list First we try to make a backup server the primary, but if run out of backup servers we will try to find a new server.", "output": "Transmits the primary connections to the primary set."}
+{"answer": "Creates a new journal that omits redundant information. This replaces the current journal if it exists.", "output": "Creates a new journal that omits redundant information. This replaces the current journal if it exists."}
+{"answer": "Removes the recurrence from persistant store.", "output": "Removes the recurrence from store."}
+{"answer": "Copy NodeList members into this nodelist, adding in document order. If a node is null, don't add it.", "output": "Copy NodeList members into this nodelist, adding in document order. If a node is null, don't add it."}
+{"answer": "Fetches data if it hasn't been fetched in a while.", "output": "Presents the last fetch data for a ref"}
+{"answer": "Introduced in DOM Level 2. <p> <p/> Creates an empty DocumentType node.", "output": "The same IDs are equal to the same context"}
+{"answer": "Services a Commandline Request.", "output": "Services a Commandline Request."}
+{"answer": "Serializes this nested object into byte[]", "output": "Reads and return a byte array"}
+{"answer": "Returns first enum constant found in at space-separated list of style names.", "output": "Obtains the text that contains only one value."}
+{"answer": "sceMpegNextAvcRpAu - skip one video frame", "output": "Search for the first A data map"}
+{"answer": "Given a set of ExportMask URIs, return a map of ExportMask URI to ExportMask object", "output": "Load masks for ordered ExportMasks."}
+{"answer": "Insert an entry at this index.", "output": "Inserts an unmodifiable array of the specified index into this array. The old array is set to false."}
+{"answer": "Write a graphic to the printout. <P> This was not in the original class, but was added afterwards by Kevin Dickerson. it is a copy of the write, but without the scaling. <P> The image is positioned on the right side of the paper, at the current height.", "output": "Write a page to the printout. <P> This was not in the original class, but was added afterwards by Bob Jaculed"}
+{"answer": "Put the source tree root node in the document cache. TODO: This function needs to be a LOT more sophisticated.", "output": "Put the source tree root node in the document cache. TODO: This function needs to be a LOT more sophisticated."}
+{"answer": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface.", "output": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface."}
+{"answer": "copy a input resource to a output resource", "output": "copy a input stream to a output resource"}
+{"answer": "Fade audio file sox <path> outFile fade <type> <fadeInLength> <stopTime> <fadeOutLength>", "output": "Creates a fade command for the specific type"}
+{"answer": "TODO: to be implemented", "output": "Draws the canvas on the provided canvas."}
+{"answer": "For all the classes, loads all properties from each Class annotations for the given platform.", "output": "Load properties from a class."}
+{"answer": "Add a number to zero", "output": "Add a number to zero"}
+{"answer": "Fixes the GPS Timestamp in EXIF.", "output": "Given a binFormat, generate the bin date."}
+{"answer": "Check if a cell consumes the specified event type.", "output": "Returns true if the cell has events to be consumed."}
+{"answer": "Read a single character. This method will block until a character is available, an I/O error occurs, or the end of the stream is reached. <p> Subclasses that intend to support efficient single-character input should override this method.", "output": "Read a single character. This method will block until a character is available, an I/O error occurs, or the end of the stream is reached. <p/> <p> Subclasses that intend to support efficient single-character input should override this method."}
+{"answer": "This function is used to plot the y axis and its breakdown with value. Uses drawLine() method to create the y axis and lines to show breakdown of y axis and drawText() method to plot labels related with breakdowns", "output": "This function is used to plot the y axis and its breakday"}
+{"answer": "Get running-maximum time-delta, in nanoseconds.", "output": "Returns the maximum value of the average."}
+{"answer": "Prints a file with the native desktop printing facility, using the associated application's print command.", "output": "Prints the contents of the specified file on the target system."}
+{"answer": "Extends the existing groundings with the alternative groundings", "output": "Adds an empty rule to the set of groundings."}
+{"answer": "This will attempt to read string matching the given pattern from the document at the current point indicated by the cursor. If failed to do so, the method will be expected to throw an exception or take corrective measures.", "output": "Returns an input pattern."}
+{"answer": "Test for bug [974036] Bug in 0.8rc1 DatabaseMetaData method getTableTypes()", "output": "Tests tests against runtime order"}
+{"answer": "This method will be used to check whether stream is already present in cache or not for filepath if not present then create it and then add to cache, other wise get from cache", "output": "This method will be used to check whether stream is already present in cache or not for filepath if not present then create it and then add to cache, other wise get from cache"}
+{"answer": "Removes a listener from the set of listeners", "output": "Removes a listener from the set of listeners"}
+{"answer": "Returns what the serialization specification calls \"descriptor\" given a field signature.", "output": "Returns what the serialization specification calls \"descriptor\" given a field signature."}
+{"answer": "Adds an array of parameters to be used in the POST request body. Logs a warning if the parameters argument is null.", "output": "Takes parameters and adds them to the request parameters."}
+{"answer": "Creates an annotation name from a class name. For example Lfoo.bar; becomes Lfoo.bar$$; NB in Sun VMs the annotation name of the first annotation is $Proxy1. Classpath may later rely on this to implement serialization correctly.", "output": "Turns an annotation integer value into a registry."}
+{"answer": "Checks whether a given resource ID supports Advanced Reservations or not.", "output": "Returns true if the given ID has a resource name, false otherwise."}
+{"answer": "A service wrapper for the createElectronicTextMethod method. Forces permissions to be checked.", "output": "A service wrapper for the createElectronicTextMethod method. Forces permissions to be checked."}
+{"answer": "Ctor - for use to create a pattern expression tree, without pattern child expression.", "output": "Creates a new pattern."}
+{"answer": "Compute the intersection of two line segments.", "output": "Compute the intersection of two line segments."}
+{"answer": "Method which removes the specified object class from original set and returns the set of object classes that were removed.", "output": "Method which removes the specified object class from original set and returns the set of object classes that were removed."}
+{"answer": "Get the seconds since 1970-01-01 00:00:00 UTC. See http://dev.mysql.com/doc/refman/5.1/en/date-and-time-functions.html#function_unix-timestamp", "output": "Get the unix timestamp encoded in milliseconds."}
+{"answer": "Is there a PDF License", "output": "The method is PDF."}
+{"answer": "draws the grid background", "output": "draws the grid background"}
+{"answer": "Opens a stream to an entry in the jar.", "output": "Opens a zip entry."}
+{"answer": "Unpacks the compressed character translation table.", "output": "Unpacks the compressed character translation table."}
+{"answer": "Process the result of CopyAndUploadContentUrisTask", "output": "Called when the tmp results exists."}
+{"answer": "Create the OMGraphics using the shape file and SpatialIndex.", "output": "This method creates an OMGraphicList that converts the shape into the OMGraphicList. If the OMGraphicList is not found, the OMGraphicList will be created. If the OMGraphicList is null is returned."}
+{"answer": "Returns common pool queue for a thread that has submitted at least one task.", "output": "Returns common pool queue for a thread that has submitted at least one task."}
+{"answer": "Checks if the given field has package-private visibility", "output": "Returns true if the specified attribute is a private package of a public annotation."}
+{"answer": "Divide: rounding mode is ROUND_HALF_UP, result is positive; distance = -1", "output": "Divide: rounding mode is ROUND_HALF_UP, result is positive; distance = -1"}
+{"answer": "Helper method. Does all the real work for restoreMsWordListFormatForUser().", "output": "According to the notebook file."}
+{"answer": "This method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll. If you override this method you must call through to the superclass implementation (e.g. super.onPageScrolled(position, offset, offsetPixels)) before onPageScrolled returns.", "output": "This method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll. If you override this method you must call through to the superclass implementation (e.g. super.onPageScrolled(position, offset, offsetPixels)) before onPageScrolled returns."}
+{"answer": "Converts all color and format codes", "output": "Convert string to the following codep formats."}
+{"answer": "Loads the database from the given input stream.", "output": "Loads the unit file"}
+{"answer": "Calculate Selector Radius The selector radius can be calculated by a simple math calculation of the larger side.", "output": "Calculate Selector RIT_CENTER"}
+{"answer": "Determines the width of this view", "output": "Determines the width of this view"}
+{"answer": "Test bulk get/put byte[] methods.", "output": "Test that initial byte is less than the offset."}
+{"answer": "An object was added.", "output": "Called when the adminie."}
+{"answer": "Parser for the local phone #.", "output": "Parse the local number."}
+{"answer": "Transforms multiple paths will all matrices.", "output": "Transforms multiple paths will all matrices."}
+{"answer": "Decodes a byte array from Base64 format. No blanks or line breaks are allowed within the Base64 encoded input data.", "output": "Decodes a byte array from Base64 format. No blanks or line breaks are allowed within the Base64 encoded input data."}
+{"answer": "Ensures the truth of an expression involving the state of the calling instance.", "output": "Ensures the truth of an expression involving the state of the calling instance."}
+{"answer": "Item will slide from Top of the screen to its natural position.", "output": "Item will slide from Bottom of the screen to its natural position."}
+{"answer": "Construct a new MutableBigInteger with a magnitude equal to the specified MutableBigInteger.", "output": "Creates a new instance."}
+{"answer": "Handle request sent with a wrong binding", "output": "Handle tenant request sent with a fixed binding"}
+{"answer": "Loads the checkpoints from the given stream", "output": "Load data from the file."}
+{"answer": "Load from the store.", "output": "Creates the index record."}
+{"answer": "Provides a string representation of whether this connection is closed or not", "output": "Returns true if this ResultSet is connected to shutdown."}
+{"answer": "Puts the given parameter value into a new List object then adds it to the map.", "output": "Inserts a parameter value into a new map."}
+{"answer": "Returns the minimum dimensions needed to lay out the components contained in the specified target container.", "output": "Returns the minimum size of the target container."}
+{"answer": "A coordinate descent algorithm for L1-loss and L2-loss epsilon-SVR dual problem min_\\beta 0.5\\beta^T (Q + diag(lambda)) \\beta - p \\sum_{i=1}^l|\\beta_i| + \\sum_{i=1}^l yi\\beta_i, s.t. -upper_bound_i <= \\beta_i <= upper_bound_i, where Qij = xi^T xj and D is a diagonal matrix In L1-SVM case: upper_bound_i = C lambda_i = 0 In L2-SVM case: upper_bound_i = INF lambda_i = 1/(2*C) Given: x, y, p, C eps is the stopping tolerance solution will be put in w See Algorithm 4 of Ho and Lin, 2012", "output": "Calculates the distance between two P(r, P) and P(r(r) = P(p) + p ."}
+{"answer": "Select a view from position in the adapter", "output": "Select an item at the given position."}
+{"answer": "Returns an enumeration describing the available options.", "output": "Returns an enumeration describing the available options."}
+{"answer": "Ignorable whitespace. For this method to be called, the document source must have some way of determining that the text containing only whitespace characters should be considered ignorable. For example, the validator can determine if a length of whitespace characters in the document are ignorable based on the element content model.", "output": "Inherit all whitespace in the element."}
+{"answer": "Get editor for provided file, returns once editor is active or after timeout", "output": "Waits until the editor is active."}
+{"answer": "Returns the solution with the largest objective value for the given objective.", "output": "Returns the largest objective value."}
+{"answer": "Returns the y position based on latitude. Note that this is based of Mercator which will have infinite number of points approaching +/-90 degrees. So if we are out of range, (beyond the configured min/max latitude), we return -1 and MAX_AP_UNITS based on which direction we are out", "output": "Convert latitude/longitude to latitude/longitude."}
+{"answer": "Registration for event change notifications. Only SMSNotificationManager would be calling this method to register itself", "output": "Register a listener request."}
+{"answer": "Parses an ASCII property list from an input stream.", "output": "Parses an ASCII property list from an input stream."}
+{"answer": "Function to be minimized: -loglikelihood. It *is* assumed that computeFiBuffer and computeCurrentPi were called before this method.", "output": "Computes the current score for current X and Y variables."}
+{"answer": "Creates a new instance of grammaticalityEstimator, using a given set of documents for training.", "output": "Creates a new instance of grammaticalityEstimator, using a given set of documents for training."}
+{"answer": "change this should review Zone.java", "output": "Checks that a zone link is a valid zone link."}
+{"answer": "Verifies that nextPoisson(mean) generates an empirical distribution of values consistent with PoissonDistributionImpl by generating 1000 values, computing a grouped frequency distribution of the observed values and comparing this distribution to the corresponding expected distribution computed using PoissonDistributionImpl. Uses ChiSquare test of goodness of fit to evaluate the null hypothesis that the distributions are the same. If the null hypothesis can be rejected with confidence 1 - alpha, the check fails.", "output": "Check the next Poisson distribution with variance."}
+{"answer": "Loop and ensure all elements are non-infiite and non-nan, throws an exception if one is", "output": "Checks if the x and z values are valid."}
+{"answer": "Measure and layout all currently visible children.", "output": "Measure and layout all currently visible children."}
+{"answer": "Processes game events occurring on this connection by dispatching them to any registered GameListener objects.", "output": "Process the event messages from the connection."}
+{"answer": "Gets the percent of values within the specified value range.", "output": "Gets the percent of values below the specified range."}
+{"answer": "Closes resource without reporting any error.", "output": "Quietly closes 'closeable', ignoring any checked exceptions."}
+{"answer": "Similar to the releasePageContext Method, but take lucee PageContext as entry", "output": "only release a lie."}
+{"answer": "Adds a new event listener to this dialog.", "output": "Adds a new event listener to this dialog."}
+{"answer": "We only rebuild the journal when it will halve the size of the journal and eliminate at least 2000 ops.", "output": "We only rebuild the journal when it will halve the size of the journal and eliminate at least 2000 ops."}
+{"answer": "Returns this java string as a null-terminated byte array", "output": "Converts a String to a byte array."}
+{"answer": "Atomically load the properties file at the given location within the designated class loader.", "output": "Loads the properties of a class resource in the specified classpath."}
+{"answer": "Returns true if the object is a graph with the same content.", "output": "Equals implementation using a String"}
+{"answer": "Parses a name-value-pair with the given parser.", "output": "Parses a name-value-pair with the given parser."}
+{"answer": "Actions a Pull Event", "output": "Actions a Pull Event"}
+{"answer": "Returns the MappingObject at the location in map indicated by loc.", "output": "This method is added to the mapping at the beginning of the curObject."}
+{"answer": "parse the file to string with the json", "output": "Parses the given JSON file and returns the contents in a string. Does not block."}
+{"answer": "Find the differences between two texts. Simplifies the problem by stripping any common prefix or suffix off the texts before diffing.", "output": "Find the differences between two texts. Assumes that the texts do not have any common prefix or suffix."}
+{"answer": "Construct a new repository with the given default domain.", "output": "Construct a new MBean."}
+{"answer": "Returns the number of unprocessed tokens remaining in the string.", "output": "Returns the number of unprocessed tokens remaining in the string."}
+{"answer": "Possibly better in ultra low memory environments? Reuses the above method by creating a queue with one element and passes it in.", "output": "Add statements to the queue."}
+{"answer": "reset all common components before parsing", "output": "reset all common components before parsing"}
+{"answer": "Updates the label field of the invalidTgt, and if the volume is fronted by a Vplex Volume, also updates the target vplex volume label.", "output": "Updates the label with a new volume"}
+{"answer": "Shows the given errors to the user.", "output": "Handles this exception as a custom exception."}
+{"answer": "Handle Serialization a little bit better, replacing the I18n and BeanContextChildSupport.", "output": "Restores a serialized object."}
+{"answer": "Paint the arrow in enabled state.", "output": "Paint the arrow in enabled state."}
+{"answer": "Logs a thrown exception.", "output": "Logs a thrown exception."}
+{"answer": "Convert a small BigDecimal to BigInteger", "output": "Convert a small BigDecimal to BigInteger"}
+{"answer": "Called when the accuracy of the sensor has changed.", "output": "Called when the accuracy of the sensor has changed."}
+{"answer": "Indicates whether this sub-command will allow unnamed trailing arguments. These will be arguments at the end of the list that are not preceded by either a long or short identifier and will need to be manually parsed by the application using this parser. Note that once an unnamed trailing argument has been identified, all remaining arguments will be classified as such.", "output": "Whether or not the underlying arguments can be ignored."}
+{"answer": "setMaxCRLNumber(BigInteger maxCRL) method testing. Tests if CRLs with any crl number value match the selector in the case of null crlNumber criteria, if specified maxCRL value matches the selector, and if CRL with inappropriate crlNumber value does not match the selector.", "output": "setMinCRLNumber(BigInteger maxCRL) method testing. Tests if CRLs with any crl number value match the selector in the case of null crlNumber criteria, if specified maxCRL value matches the selector, and if CRL with inappropriate crlNumber value does not match the selector."}
+{"answer": "Checks if the given mouse event is a popup trigger and creates a new popup menu if necessary.", "output": "The popup menu for the popup menu."}
+{"answer": "Remove a task if it has index >= min. If it is active and not being executed by the calling thread, interrupt the thread executing the task.", "output": "Remove a task from the current task list."}
+{"answer": "java.math.BigDecimal#divide(java.math.BigDecimal, java.math.RoundingMode) divide(BigDecimal, RoundingMode)", "output": "java.math.BigDecimal#divide(java.math.BigDecimal, java.math.RoundingMode) divide(BigDecimal, RoundingMode)"}
+{"answer": "Ensures that the given path exists with no data, the current ACL and no flags", "output": "Ensures that the path exist and all the properties exist."}
+{"answer": "Override loadClass so we can checkPackageAccess.", "output": "Loads a class."}
+{"answer": "Determines the height of this view", "output": "Determines the height of this view"}
+{"answer": "This only checks clipping along the bottom edge.", "output": "This only checks clipping along the bottom edge."}
+{"answer": "Creates a new scheduling rule factory for the given workspace", "output": "Creates a new scheduling rule factory for the given workspace"}
+{"answer": "Writes a byte array to a file creating the file if it does not exist.", "output": "Writes a byte array to a file creating the file if it does not exist."}
+{"answer": "Adds the specified item to the end of the list", "output": "Adds the specified item to the list"}
+{"answer": "Checks and flushes custom event messages if no nodes are attempting to join the grid.", "output": "Internal method for processing messages."}
+{"answer": "Determines the number of consecutive characters that are encodable using numeric compaction.", "output": "Determines the number of consecutive characters that are encodable using numeric compaction."}
+{"answer": "Parses the current node and returns the number of elements added.", "output": "Parses the current node and returns the number of elements added."}
+{"answer": "Calculates scramble image height multiplier to respect aspect ratio", "output": "Calculates Pramleion height, based on our state."}
+{"answer": "Unit test to verify that limited number of core types do NOT include type information, even if declared as Object. This is only done for types that JSON scalar values natively map to: String, Integer and Boolean (and nulls never have type information)", "output": "Test that hashing against a numeric type, verifies that there is a numeric attribute."}
+{"answer": "The listener is not closed until after the afterRegionDestroy event", "output": "Closes the Callbacks and closes the stored cache."}
+{"answer": "static version of indexOf, to allow repeated calls without needing to re-acquire array each time.", "output": "static version of indexOf, to allow repeated calls without needing to re-acquire array each time."}
+{"answer": "Populate the profiles combobox and select the default.", "output": "Populate selected profiles."}
+{"answer": "Read the file header and return the log sequence number stored in the file header.", "output": "Verifies the bucket file header if possible."}
+{"answer": "Absolute value of real component", "output": "Returns the absolute value of the left to the right."}
+{"answer": "Returns the type of the extremum at the specified alpha values.", "output": "Determines the extremum of a order."}
+{"answer": "Returns OID for algName", "output": "Returns OID for algName"}
+{"answer": "Provide reflective behavior to construct instance of generator given an array of string arguments.", "output": "Provide reflective behavior to construct instance of generator given an array of string values."}
+{"answer": "Refills the input buffer.", "output": "Refills the input buffer."}
+{"answer": "When there is an inplace editor we \"listen\" all mouse event and finish editing by any MOUSE_PRESSED or MOUSE_RELEASED event. We are acting like yet another glass pane over the standard glass layer.", "output": "Called from the UI thread to finish a mouse event."}
+{"answer": "Add a module to the set of modules to load and register its services", "output": "Add a module to the set of modules to load and register its services"}
+{"answer": "Makes sure that all required BinNavi database tables exist. This method tries to find out whether the database is empty or already initialized (or inconsistent).", "output": "Checks whether any tables have been loaded in the classpath"}
+{"answer": "This method classifies several instances at once", "output": "Classifies the Sequence and converts the features into a List."}
+{"answer": "Bind header with provided ViewHolder at specified position", "output": "Handles bind header of a RecyclerView."}
+{"answer": "Updates the displayed list of lines.", "output": "Updates the extra line list if required. This function should be called after updating the data area."}
+{"answer": "Draws a rectangle of given half width and half height, centered on (x, y).", "output": "Draws a rectangle of desired half height, centered on (x, y)."}
+{"answer": "Re-measure the Loading Views height, and adjust internal padding as necessary", "output": "Re-measure the Loading Views height, and adjust internal padding as necessary"}
+{"answer": "Replaces a split element with another one", "output": "Replaces a split element with a given index"}
+{"answer": "Called to start an item list.", "output": "Called to start adding an item to an array list."}
+{"answer": "Pick a number of initial splits based on the number of records expected to be processed.", "output": "Gets number plus initial split for a given block."}
+{"answer": "Invoked when the mouse has been clicked on a component.", "output": "Invoked when the mouse has been clicked on a component."}
+{"answer": "Scans a single source dir for sources and includes only the files whose name match the patterns in sourceIncludes and excludes all files whose names match the patterns in sourceExcludes", "output": "This function adds files to a list of source files."}
+{"answer": "Returns true if there is another postponed route to try.", "output": "Returns true if there is another postponed route to try."}
+{"answer": "Check if the selection has a single element", "output": "Returns true if the selection is contained in the selection"}
+{"answer": "Constructs a path from an URI", "output": "Constructs a full path from the given URI."}
+{"answer": "reads a XML Element Attribute ans cast it to a int value", "output": "reads a XML Element Attribute ans cast it to an int value"}
+{"answer": "Returns the remainder of 'reader' as a string, closing it when done.", "output": "Returns the remainder of 'reader' as a string, closing it when done."}
+{"answer": "Adds the getters for a property that is identified by a property number which indexes into array of getters per type.", "output": "Add a property to this animation."}
+{"answer": "Marks the specified entry as used by setting its last used time to the current time in nanoseconds.", "output": "Mark a unique entry."}
+{"answer": "Default: just returns \"success\"", "output": "Execute the boolean request on the request."}
+{"answer": "Handle node leaving the ring. This will happen when a node is decommissioned", "output": "Handles the pieces of pieces"}
+{"answer": "Registers implementing class of the Transform algorithm with algorithmURI", "output": "Registers implementing class of the SignatureAlgorithm with algorithmURI"}
+{"answer": "Constructs Ignite cache key/value persistence settings.", "output": "Create a key configuration."}
+{"answer": "Returns true if the input string contains a word-breaking character.", "output": "Returns whether the input string contains a word."}
+{"answer": "Checks all pairs of segments for intersections at an interior point of a segment", "output": "Check all intersections of two segments strings"}
+{"answer": "Removes the first occurrence, starting at the beginning and moving towards the end, of the specified object from this vector. All elements with an index bigger than the element that gets removed have their index decreased by 1.", "output": "Removes the first occurrence, starting at the beginning and moving towards the end, of the specified object from this vector. All elements with an index bigger than the element that gets removed have their index decreased by 1."}
+{"answer": "Compose two functions together into a single function", "output": "Build a result from one directory on another."}
+{"answer": "Add CDC column specifications.", "output": "Adds the first row structure to the call table structure."}
+{"answer": "Utility method to convert a variable name into java field name.", "output": "Utility method to convert a class name to a Java Name file"}
+{"answer": "A function that generates random AES & HMAC keys and prints out exceptions but doesn't throw them since none should be encountered. If they are encountered, the return value is null.", "output": "A function that generates random AES & HMAC keys and prints out exceptions but doesn't throw them since none should be encountered. If they are encountered, the return value is null."}
+{"answer": "Ensures the truth of an expression involving one or more parameters to the calling method.", "output": "Ensures the truth of an expression involving one or more parameters to the calling method."}
+{"answer": "Use the parameter SQLiteDatabase to execute the passing SQLs. Subclasses can add their own logic when do the executing job by overriding this method.", "output": "Executes the supplied SQL statement."}
+{"answer": "Creates a new journal that omits redundant information. This replaces the current journal if it exists.", "output": "Creates a new journal that omits redundant information. This replaces the current journal if it exists."}
+{"answer": "Refreshes the done button. The label will say the opposite of the player's \"done\" status, indicating that clicking it will reverse the condition.", "output": "Refreshes the output button"}
+{"answer": "Create the basic editor.", "output": "Create the migration task editor."}
+{"answer": "This method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll. If you override this method you must call through to the superclass implementation (e.g. super.onPageScrolled(position, offset, offsetPixels)) before onPageScrolled returns.", "output": "This method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll. If you override this method you must call through to the superclass implementation (e.g. super.onPageScrolled(position, offset, offsetPixels)) before onPageScrolled returns."}
+{"answer": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface.", "output": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface."}
+{"answer": "Ensures there is enough space in the buffer for the given number of additional bytes.", "output": "Ensures there is enough space in the buffer for the given number of additional bytes."}
+{"answer": "Accepts an IPv4 address of the form xxx.xxx.xxx.xxx, ie 192.168.0.1 and returns the corresponding 32 bit integer.", "output": "Accepts an IPv4 address of the form xxx.xxx.xxx.xxx, ie 192.168.0.1 and returns the corresponding 32 bit integer."}
+{"answer": "Close the given cursor and remove it from the map", "output": "Close the given cursor and remove it from the map"}
+{"answer": "Determines if the remaining GSER String matches the provided pattern.", "output": "Returns true if the pattern matches the given pattern."}
+{"answer": "Push i onto our operand stack", "output": "Generates the instruction to push the given integer on the stack."}
+{"answer": "Create an XML node with optional attributes and content. The data is indented with 4 spaces if it contains a newline character and the indent parameter is set to true.", "output": "Description of the Method"}
+{"answer": "Adds the specified item to the list with the specified position", "output": "Adds a new item at the specified position in the list."}
+{"answer": "notify unsuccessful completion of the operation", "output": "notify unsuccessful completion of the operation"}
+{"answer": "Transform an xsl-fo StreamSource to the specified output format.", "output": "Transform an xsl-fo StreamSource to the specified output format."}
+{"answer": "Splits the input String based on the default delimiter, and also escapes delimiter.", "output": "Splits the regular expression links."}
+{"answer": "Reads data with blocking. Should be used in case when ready method always returns false for your input stream. Should be used if we want to to make our reader exit when end of stream reached. Could be used if we prefer IO-blocking over CPU sleeping.", "output": "Read connection and wait until it is available. This is necessary for blocking."}
+{"answer": "Remove an Obligation from every State in the StateSet.", "output": "Removes an appropriate Action blocks associated with an ActionState associated with a temporary byte."}
+{"answer": "Set bounds for the right textView including clip padding.", "output": "Set bounds for the right textView including clip padding."}
+{"answer": "Creates a nes CompoundContent for the given blob information.", "output": "Creates and returns a ContentPackageContent for the given type."}
+{"answer": "Checks, whether all attributes are covered by cluster definitions and returns TRUE in that case.", "output": "Checks the coverage and check for all attributes."}
+{"answer": "Search for a string in the enumeration.", "output": "Returns the values that contain the given string."}
+{"answer": "Returns the first index of elt in the array if < len, else -1.", "output": "Returns the first index of elt in the array if < len, else -1."}
+{"answer": "Add a new value for name", "output": "Adds the name to the list."}
+{"answer": "Compares the argument to this Certificate. If both have the same bytes they are assumed to be equal.", "output": "Compares the argument to this Certificate. If both have the same bytes they are assumed to be equal."}
+{"answer": "Appending the BETWEEN operator clause.", "output": "Adds an ldap to the form."}
+{"answer": "Encode a Unicode string.", "output": "Encodes the given string into an byte buffer."}
+{"answer": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface.", "output": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface."}
+{"answer": "Build an occurrence count by value for the given time serie.", "output": "Convert a histogram (i.e., a histogram) into a histogram"}
+{"answer": "This function will take a song entry and update it to the latest week and increase the count for the current week by 1 if necessary", "output": "This function will take a song entry and update it to the latest week and increase the count for the current week by 1 if necessary"}
+{"answer": "Recursively assign node weights.", "output": "Recursively assign node weights."}
+{"answer": "Creates a new instance of SearchEngine", "output": "Creates a new instance of SearchEngine"}
+{"answer": "Adds a field to run the query string against.", "output": "Adds a field to query to query."}
+{"answer": "Combines multiple stages by applying a function.", "output": "Combines two CL values into a predicate."}
+{"answer": "Return a statement that will create the schema, null if no create schema can be given", "output": "Build private statement for configured schema."}
+{"answer": "And for a negative and a positive numbers; the first is shorter", "output": "And for two negative numbers; the first is shorter"}
+{"answer": "Create a new manager object.", "output": "Creates a new stream from a listener."}
+{"answer": "Returns the list of sentences in the knowledge base chained together as a single sentence.", "output": "Get a sentence over the query."}
+{"answer": "Determine if the Expression is a pronoun.", "output": "Determine if the Expression is just e.g., for Uses"}
+{"answer": "Output the SQL type for a Java short.", "output": "Output the SQL type for a Java short."}
+{"answer": "Breaks a String to multiple strings (similar to string tokenizer)", "output": "Breaks a String to multiple strings."}
+{"answer": "Write all modified favorites to the data stream.", "output": "Write all modified favorites to the data stream."}
+{"answer": "Update the FPS counter. <p/> Call this method EVERY FRAME!", "output": "Updates the average state of the average."}
+{"answer": "Validates all fields based on their value and their validationrules If a field is prefilled from the account on file, but it has been altered, it will be validated.", "output": "Returns the list of invalid field details"}
+{"answer": "Create an empty state.", "output": "Returns the empty KeyStoreState."}
+{"answer": "Note, does not make a defensive copy of any of the data.", "output": "Constructs a plain result based on the specific values."}
+{"answer": "Handle a change in the slider by updating the dataset value. This automatically triggers a chart repaint.", "output": "Invoked when the target of the listener has changed its state."}
+{"answer": "Parse a list of substrings separated by a given delimiter. The delimiter can also appear in substrings (just double them): parseDelimitedString(\"this|is\", '|') returns [\"this\",\"is\"] parseDelimitedString(\"this||is\", '|') returns [\"this|is\"]", "output": "Parses a given list of strings into an array of strings."}
+{"answer": "Lays out the panel", "output": "Creates the index layout and add it to the index layout."}
+{"answer": "Returns true if the GUI is started and not paused, and false otherwise.", "output": "Indicates whether the frame is running."}
+{"answer": "Creates a default mosaic definition.", "output": "Creates a default mosaic definition."}
+{"answer": "Creates a result based on a single relational expression.", "output": "Returns a result for an attribute"}
+{"answer": "Set the default X509 Trust Manager to an instance of a fake class that trust all certificates, even the self-signed ones.", "output": "Set the trust certificates in the SSL trust manager."}
+{"answer": "Is the component in need of a form.", "output": "Determine if the given component is not equal to the next form"}
+{"answer": "Adds all internal listeners. Currently this just consists of an item listener for the combo-box which switches to the correct \"card\" for the given probability distribution.", "output": "Adds a listener to the list of listeners"}
+{"answer": "The \"safe\" square root of the input value, handling negative values by simply making them positive and then negating the return value.", "output": "The \"safe\" square root of the input value, handling negative values by simply making them positive and then negating the return value."}
+{"answer": "Runs callable tasks each in separate threads.", "output": "Runss for multiple threads using a given factory method."}
+{"answer": "Appends a character to parser's buffer.", "output": "Appends a character to the builder."}
+{"answer": "Sets the provided state manager as the owner for the provided field value.", "output": "Initialize the owner objects."}
+{"answer": "Construct a SELECT statement suitable for use in a group of SELECT statements that will be joined through UNION operators in buildUnionQuery.", "output": "Construct a SELECT statement suitable for use in a group of SELECT statements that will be joined through UNION operators in buildUnionQuery."}
+{"answer": "Constructs a Node with the given location.", "output": "Constructs a new Node whose location is an arbitrary at the given location."}
+{"answer": "Adds an element to the counter or caches it to be added.", "output": "Increment the amount of the accuracy."}
+{"answer": "Reverts the list of files we are passed.", "output": "Revert to files"}
+{"answer": "Concatenates a list of float arrays into a single array.", "output": "Concatenates a list of float arrays into a single array."}
+{"answer": "iterator over all values following an occurrence of tag in aLine. Example: aLine= gi|4444|gi|5555 and tag=gi| with return 4444 and then 5555 Value consists of letters, digits or underscore", "output": "Create a value item and break it."}
+{"answer": "Move higher in the tree, beyond even an apparent root of tree.", "output": "Report the depth of the tree."}
+{"answer": "Returns true if there's an associated file.", "output": "does this tag can be read?"}
+{"answer": "Writes the contents of the internal buffer to the given array starting at the given offset. Assumes the array has space to hold count bytes.", "output": "Writes the contents of the internal buffer to the given array starting at the given offset. Assumes the array has space to hold count bytes."}
+{"answer": "Dismisses item from the given position.", "output": "Remove an item at the specified position."}
+{"answer": "Calculate a normal probability density function (PDF) based on a variance and mean value", "output": "Compute the default normalization of the given variance."}
+{"answer": "Sorts an array of Strings, returning a new array with the sorted items. The original array is left untouched.", "output": "Sorts an array of Strings, returning a new array with the sorted items. The original array is left untouched."}
+{"answer": "Adds a new zoom listener.", "output": "Adds a new zoom listener."}
+{"answer": "Initialize (clear) the dNode field in Register for all registers in this basic block by setting them to null. Handles both explicit and implict use/defs.", "output": "Clears the registers of an instruction provided."}
+{"answer": "Fire when an annotation has been selected.", "output": "Invoked when an annotation has been selected."}
+{"answer": "Updates the prediction stats and return whether prediction is allowed. The policy is: 1. If the client does not wait more than mDelayMs, decline the request. 2. If the client waits for more than mDelayMs but less than 2*mDelayMs, accept the request and double mDelayMs. 3. If the client waits for more than 2*mDelayMs, accept the request and reset mDelayMs. And: 100ms <= mDelayMs <= 10s. This way, if an application sends a burst of requests, it is quickly seriously throttled. If it stops being this way, back to normal.", "output": "Updates the prediction stats and returns whether prediction is allowed. The policy is: 1. If the client does not wait more than mDelayMs, check for each request. 2. If the client waits for more than mDelayMs but less than 2*mDelayMs, accept the request and double mDelayMs. 2. If the client waits for more than 2*mDelayMs, accept the request and reset mDelayMs. 3. If it is not allowed for more than 2*mDelayMs, accept the request and return true."}
+{"answer": "Authenticates the server evidence message M2 received and saves it only if correct.", "output": "Authenticates the received server evidence message M2 and saves it only if correct. To be called after calculating the secret S."}
+{"answer": "Handles any pure text (containing no control characters) in the input stream. Called by the superclass.", "output": "Handles a text and an incoming state event."}
+{"answer": "Remove a service from the registry and/or set of known aliases.", "output": "Removes a URI from the service definition. The URI will be modified prior to calling this method."}
+{"answer": "Removes each two leading '\\', removes leading $, removes {} Examples: $qqq -> qqq \\$qqq -> qqq if dummy attributes are collected too, null otherwise \\\\$qqq -> qqq ${qqq} -> qqq", "output": "Transform HTML to string."}
+{"answer": "Constructs an EscapedWriter around the given Writer.", "output": "Constructs an EscapedWriter around the given Writer."}
+{"answer": "Returns true if this cookie has expired.", "output": "Returns true if this cookie has expired."}
+{"answer": "Records the RecordBuilderImpl, and verifies if required", "output": "Record the data record"}
+{"answer": "Compare the method that was called to the intended method when the OSXAdapter instance was created (e.g. handleAbout, handleQuit, handleOpenFile, etc.).", "output": "Checks if the method passed in is the non-null parameter."}
+{"answer": "Remainder of division of two positive numbers", "output": "Remainder of division of equal numbers"}
+{"answer": "Resets the state of this builder.", "output": "Clears the metadata for a constant."}
+{"answer": "\\brief distance(vec3 a, vec3 b)", "output": "\\brief distance( this, b )"}
+{"answer": "Checks version and IPs", "output": "Checks the full info from backup."}
+{"answer": "Convert to lower case, and check that all chars are ascii alphanumeric, '-' or '.' only.", "output": "Turns the given string as uppercase."}
+{"answer": "Create a negative number from a sign and an array of bytes. The number fits in an integer.", "output": "Create a negative number from a sign and an array of bytes. The number fits in an integer."}
+{"answer": "Builds and returns a Opus Comment.", "output": "Builds and returns a Opus Comment."}
+{"answer": "Assert that the property values of a new event and a removed event match the expected insert and removed values.", "output": "Asserts that all properties in the given array are equal."}
+{"answer": "Returns the number of elements in this set.", "output": "Returns the number of elements in this queue."}
+{"answer": "Safely convert the string to uppercase.", "output": "Converts string to uppercase."}
+{"answer": "Iterator over the KnowledgeEdge's representing required edges.", "output": "Return an iterator over the visible edges."}
+{"answer": "Unlocks the objects acquired from locking. This method should always be in a finally block immediately after the lock. If you try to unlock from another thread, no objects are unlocked.", "output": "Unlocks and takes a lock."}
+{"answer": "Creates and returns a String formatted so it will fit in a box suitable for a Java Doc header.", "output": "Creates and returns a String formatted so it will fit in a box suitable for a Java Doc header."}
+{"answer": "forceNumberStringToTwoDigits, This takes a string of digits, and forces it to be two digits long. First any extra leftmost digits are truncated, leaving only the right one digit or right two digits. If there is only one digit, it is zero padded to enforce a two digit string result. This function is used by the DatePickerUtilities.doesParsedDateMatchText() function.", "output": "This method is used to reset a number of digits."}
+{"answer": "adds a named item to the List of Items that will be dropped on dead if clearDropItemList hasn't been called first, this will change all creatures of this kind.", "output": "adds a new item to the member"}
+{"answer": "Finds JPA entities by their primary keys.", "output": "Finds views for a given entity."}
+{"answer": "Load workflw and initialize the session attributes.", "output": "Load workflw and initialize the session attributes."}
+{"answer": "Returns a hashcode value for this certificate from its encoded form.", "output": "Returns a hash code for this X509CRL."}
+{"answer": "Removes the from tags.", "output": "Removes the from tags."}
+{"answer": "Verifies the given secp256k1 signature in native code. Calling when enabled == false is undefined (probably library not loaded)", "output": "Verifies the given secp256k1 signature in native code. Calling when enabled == false is undefined (probably library not loaded)"}
+{"answer": "Recursively delete the webapp directory.", "output": "Recursively delete the webapp directory."}
+{"answer": "Verifies that the iterator visits the specified objects in some arbitrary ordering and that the iterator is exhausted once all expected objects have been visited. The implementation uses a selection without replacement \"pattern\".", "output": "Check that the given objects in the same order."}
+{"answer": "Formats the finished percentage of a rollout group into a string with one digit after comma.", "output": "Returns the formatting in the current interval, which may be done on."}
+{"answer": "Generates the hostname for a node.", "output": "Generates the hostname for a given VM name."}
+{"answer": "Transfer all the sequences listed in the supplied file, interpreting entries appropriately.", "output": "Copy the data from a file to an existing file."}
+{"answer": "Helper method for Overscrolling that encapsulates all of the necessary function. This is the advanced version of the call.", "output": "Helper method for Overscrolling that encapsulates all of the necessary function. This is the advanced version of the call."}
+{"answer": "Removes the outermost property from a nested getter expression", "output": "Unwraps expression based on an expression."}
+{"answer": "If we have all PieChart Config then there is no point in reloading it", "output": "If we have all PieChart Config then there is no point in reloading it"}
+{"answer": "Generates a (random) time difference between two events", "output": "Draws the final unit factor for a GPS interval"}
+{"answer": "Creates the line structure for the given text. Newly created lines are inserted into the line structure starting at the given position. Returns the number of newly created lines.", "output": "Creates the line structure for the given text. Newly created lines are inserted into the line structure starting at the given position. Returns the number of newly created lines."}
+{"answer": "Returns the positive square root of the specified value.", "output": "Returns the positive square root of the specified value."}
+{"answer": "Counts the number of black/white transitions between two points, using something like Bresenham's algorithm.", "output": "Counts the number of black/white transitions between two points, using something like Bresenham's algorithm."}
+{"answer": "Convert a number into a bit string with separators between each group of 8.", "output": "Convert a number into a bit string."}
+{"answer": "Encodes an array of bytes into an array of URL safe 7-bit characters. Unsafe characters are escaped.", "output": "Encodes an array of bytes into an array of URL safe 7-bit characters. Unsafe characters are escaped."}
+{"answer": "Initializes with the string contents.", "output": "Creates a message tokenizer."}
+{"answer": "Waits for all threads to reach this barrier.", "output": "Acquires in one of the condition for the given ID."}
+{"answer": "Populates the translationsCache map unless it is already populated.", "output": "Loads the translation cache."}
+{"answer": "Construct a NavMouseMode. Lets you set the consume mode. If the events are consumed, then a MouseEvent is sent only to the first MapMouseListener that successfully processes the event. If they are not consumed, then all of the listeners get a chance to act on the event.", "output": "Create emptyMouseMode"}
+{"answer": "Adds a new event to the queue. Adding a new event to the queue preserves the temporal order of the events in the queue.", "output": "Adds a new event to the head of the queue."}
+{"answer": "Stops the timer with the specified name.", "output": "Stops the timer with the specified name."}
+{"answer": "returns the summary as string.", "output": "returns a summary string for the summary"}
+{"answer": "Create a hierarchy of directories (a path) in the designated temp dir. If the JVM terminates normally, these will be cleaned up.", "output": "Creates a temporary file path based on the system's pathname."}
+{"answer": "Draws a horizontal span into the graph and optionally adds a legend.", "output": "Draws a horizontal selection in the text area."}
+{"answer": "Select also all items belonging to any connection of the current selected items.", "output": "Select also all items belonging to any selected items."}
+{"answer": "Create a new instance that optionally supports Unicode sort keys.", "output": "Create a new instance of public Coords."}
+{"answer": "Removes from the list of nodes any that cannot be parents of x given the background knowledge.", "output": "Removes from the list of nodes any that cannot be parents of x given the background knowledge."}
+{"answer": "Called with an input stream for a properties file, used for reading tiles.omp files.", "output": "Configures the properties from a stream. These properties are not recognized."}
+{"answer": "Open a new database connection. This connection must be closed by calling conn.close().", "output": "Constructs a new connection."}
+{"answer": "A simple implementation of the addRelations method which presents the general concept of the method. It SHOULD NOT be used in production because of possible race condition - production ready code should perform an atomic operation.", "output": "A simple implementation of the addResults method that determines what to build a new project."}
+{"answer": "The BDDP packets are forwarded out of all the ports out of an openflowdomain. Get all the switches in the same openflow domain as the sw (disabling tunnels). Then get all the external switch ports and send these packets out.", "output": "Performs Ilood packet"}
+{"answer": "waits the specified number of milliseconds.", "output": "Sleep for the specified time, ignoring any exceptions that occur"}
+{"answer": "Verify that the write set is not found (no keys in [0:1000)).", "output": "Verify that a key is an actual set."}
+{"answer": "Calculates the entropy corresponding to the input masses.", "output": "Calculates the entropy of an transformation result."}
+{"answer": "Check to see if a string is a valid Nmtoken according to [7] in the XML 1.0 Recommendation", "output": "Check to see if a string is a valid Nmtoken according to [7] in the XML 1.0 Recommendation"}
+{"answer": "Determines what action the user wants to perform.", "output": "Invoked when the mouse has been pressed on a component."}
+{"answer": "Parses out and converts the text located between first occurrences of the open and closed tags into double.", "output": "Parse and return the max tag value as a double"}
+{"answer": "Place a string into the message (using UTF-8 encoding)", "output": "Put a string into the stream."}
+{"answer": "Actions a Pull Event", "output": "Actions a Pull Event"}
+{"answer": "Add a RTCP event listener", "output": "Add a RTCP event listener"}
+{"answer": "Creates a new array of the given size if necessary and copies the data into the new array.", "output": "Creates a new array of the given size if necessary and copies the data into the new array."}
+{"answer": "This method detects a code in a \"pure\" image -- that is, pure monochrome image which contains only an unrotated, unskewed, image of a code, with some white border around it. This is a specialized method that works exceptionally fast in this special case.", "output": "This method detects a code in a \"pure\" image -- that is, pure monochrome image which contains only an unrotated, unskewed, image of a code, with some white border around it. This is a specialized method that works exceptionally fast in this special case."}
+{"answer": "Reports an error. Errors are non-fatal and usually signify that the document is invalid with respect to its grammar(s).", "output": "Description of the Method"}
+{"answer": "Connects socket 'fd' to 'inetAddress' on 'port', with no timeout. The lack of a timeout means this method won't throw SocketTimeoutException.", "output": "Connects socket 'fd' to 'inetAddress' on 'port', with no timeout. The lack of a timeout means this method won't throw SocketTimeoutException."}
+{"answer": "Determine if the string-value of a node is whitespace", "output": "Determine if the string-value of a node is whitespace"}
+{"answer": "Creates a new status panel.", "output": "Creates a new panel object."}
+{"answer": "Open the PDS file.", "output": "Opens the access command for creating"}
+{"answer": "Deregisters a Spring from this BaseSpringSystem, so it won't be iterated anymore. The Spring should not be used anymore after doing this.", "output": "Deregisters a Spring from this BaseSpringSystem, so it won't be iterated anymore. The Spring should not be used anymore after doing this."}
+{"answer": "Returns current log file.", "output": "Returns the file name."}
+{"answer": "Parses an N-Triples bNode, creates an object for it using the supplied ValueFactory and returns this object.", "output": "Parses an N-Triples node, creates an object for it using the supplied ValueFactory and returns this object."}
+{"answer": "Resets the PSR list.", "output": "Resets the PSR list."}
+{"answer": "Sorts the specified array in ascending numerical order.", "output": "Sorts the specified array in ascending numerical order."}
+{"answer": "Close this Popup Menu.", "output": "Close this Popup Menu."}
+{"answer": "Remove an object from the map.", "output": "Release the specified object."}
+{"answer": "Expand the view vertically to the size of the crossSize (considering the view margins)", "output": "Fill a view with the parent size"}
+{"answer": "Convert a 32 char hex string into a Inet6Address. throws a runtime exception if the string isn't 32 chars, isn't hex or can't be made into an Inet6Address", "output": "Convert an InetAddress to an IPv6 address."}
+{"answer": "Track a failure - multiply the back off interval by the multiplier", "output": "Track a failure - consider a failure"}
+{"answer": "Reads a double (64 bit) from the source stream.", "output": "Reads a double (8 bit) from the source stream."}
+{"answer": "Check if a scroll bar is at its maximum value.", "output": "Checks if the bar is at the bottom of the bar."}
+{"answer": "Case sensitive match test.", "output": "Case sensitive match test."}
+{"answer": "Given a URL to a properties file describing a MapTileSet, create it and add it to the list.", "output": "Creates the map client."}
+{"answer": "Computes the result for one input double value.", "output": "Computes the result for a given value."}
+{"answer": "Enables PAN tethering on the local device and checks to make sure that tethering is enabled.", "output": "Enables the PFA for the panes."}
+{"answer": "Calculate the number of cells on the shortest path between (x1,z1) and (x2,z2)", "output": "Compute distance between two points"}
+{"answer": "Creates a new URL of the given component parts. The URL uses the protocol's default port.", "output": "Creates a new URL of the given component parts. The URL uses the protocol's default port."}
+{"answer": "Return a Workflow.Method for createVolumes.", "output": "Return a Workflow.Method for createVolumesMethod."}
+{"answer": "Example: 0x1001, \"close\", 0x0, \"\"", "output": "Creates a new FileCommandInfo with no arguments."}
+{"answer": "Initializes the widgets in this page", "output": "Initialize the combo box."}
+{"answer": "This function will install a trust manager that will blindly trust all SSL certificates. The reason this code is being added is to enable developers to do development using self signed SSL certificates on their web server. The standard HttpsURLConnection class will throw an exception on self signed certificates if this code is not run.", "output": "This function will install a trust manager that will blindly trust all SSL certificates. The reason this code is being added is to enable developers to do development using self signed SSL certificates on their web server. The standard HttpsURLConnection class will throw an exception on self signed certificates if this code is not run."}
+{"answer": "Sample the active count", "output": "Sample the count"}
+{"answer": "Handles GET requests to the OAuth2 device/user endpoint, returning a form to allow the user to submit their user code", "output": "Checks the primary code for the response."}
+{"answer": "Test for correct reading of a mission name.", "output": "Test for correct external tag names."}
+{"answer": "Checks if this object equals another. <p> The entire state of the object is compared.", "output": "Checks if this object equals another. <p> The entire state of the object is compared."}
+{"answer": "Releases any resources we may have (or inherit)", "output": "Releases any resources we may have (or both its own) and cleans up."}
+{"answer": "Computes the Black equivalent volatility without validating parameters", "output": "Computes the MD5 value of the provided recurrence data by normal algorithm."}
+{"answer": "Closes the utility instance and unregisters any BroadcastReceivers.", "output": "Close the audio file."}
+{"answer": "Resolves all files it finds into a map, with relative paths as the key and absolute path as the value.", "output": "Resolves files in the given list of classpath paths to be relative to each path."}
+{"answer": "javax/crypto/ExemptionMechanism#getInstance(String algorithm, String provider) Checks exception order", "output": "javax/crypto/UnitSpi instance."}
+{"answer": "Reload configuration from previously added resources. This method will clear all the configuration read from the added resources, and final parameters. This will make the resources to be read again before accessing the values. Values that are added via set methods will overlay values read from the resources.", "output": "Reloads the configuration with all required parameters."}
+{"answer": "Removes a MessageProcessor from this SIPStack.", "output": "Remove a new connector from the list of running processors."}
+{"answer": "Construct an X509IssuerSerial from an X509Certificate.", "output": "Creates an X509 certificate, using the given cert."}
+{"answer": "Add the set to an existing file.", "output": "Add the set to an existing file."}
+{"answer": "Put an array of bytes in the buffer.", "output": "Add a byte array to the buffer."}
+{"answer": "Convenience method to return a String array as a delimited (e.g. CSV) String. E.g. useful for toString() implementations.", "output": "Converts an array of strings to a String[]"}
+{"answer": "Removes all items from the StagingArea.", "output": "Removes all items from the StPathIterator."}
+{"answer": "Parse attributes and return AdempiereColor", "output": "Parse the color string."}
+{"answer": "Method that creates a new instance of LuaState", "output": "Turns a 2D flag into a different shape."}
+{"answer": "Checks Memory for capacity to hold the preamble and returns the first 8 bytes.", "output": "Check how many memory size we have been calculated and the total size of the storage size that is less than 3 bytes."}
+{"answer": "Read from the file.", "output": "Read a single byte from the input stream. This method will block until some input is available, an I/O error occurs, or the end of the stream is reached."}
+{"answer": "If the normalizedScale is equal to 1, then the image is made to fit the screen. Otherwise, it is made to fit the screen according to the dimensions of the previous image matrix. This allows the image to maintain its zoom after rotation.", "output": "If the normalizedScale is equal to 1, then the image is made to fit the screen. Otherwise, it is made to fit the screen according to the dimensions of the previous image matrix. This allows the image to maintain its zoom after rotation."}
+{"answer": "Limit the clip such that it fits within the specified region.", "output": "Limit the clip such that it fits within the specified region."}
+{"answer": "Shutdown all thread pools.", "output": "Shuts down this pool, interrupting all tasks in the thread."}
+{"answer": "Returns tha list of resolved inet addresses. First addresses are resolved by host names, if this attempt fails then the addresses are resolved by ip addresses.", "output": "Converts collection of InetAddress to collection."}
+{"answer": "Removes new line charactors.", "output": "Remove new line character from a string."}
+{"answer": "Set unread counters for feeds and categories according to real amount of unread articles. Split up the tasks in single transactions so we can do other work in between.", "output": "Calculate counters and count of accumulated counters"}
+{"answer": "Append a character to a buffer, escaping HTML meta-characters when needed.", "output": "Append escaping of single character."}
+{"answer": "Loop through each of the columns in the given table, migrating each as a resource or relation.", "output": "Loop through each of the columns in the primary table."}
+{"answer": "Does a COUNT on a given table.", "output": "Retrieves the count of table columns in the table."}
+{"answer": "Creates a new JarModifier with the given archive to be modified", "output": "Creates a new JarModifier with the given archive to be modified"}
+{"answer": "Adds the attribute to the list of attributes assigning it a free column index. If the name is already in use, the attribute will be renamed.", "output": "Adds an attribute to the table. All entries in this column can be ignored."}
+{"answer": "Associate the given value with the specified key.", "output": "Associate the given value with the specified key."}
+{"answer": "Find the top limit values using given comparator and place them as in a full array sort, in descending order.", "output": "Sorts the provided array using the top-level comparator."}
+{"answer": "A shortcut way of telling if we are a server transaction.", "output": "Whether the SIP transaction is running on a server or not."}
+{"answer": "Adds a special \"marked occurrence\" highlight.", "output": "Adds a special \"marked occurrence\" highlight."}
+{"answer": "Helper method for Overscrolling that encapsulates all of the necessary function. This is the advanced version of the call.", "output": "Helper method for Overscrolling that encapsulates all of the necessary function. This is the advanced version of the call."}
+{"answer": "Does the readFully based on the Input read.", "output": "Fully read from the file."}
+{"answer": "Validate the given assumption.", "output": "Validate the given assumption."}
+{"answer": "Adds all products in a category according to quantity request parameter for each; if no parameter for a certain product in the category, or if quantity is 0, do not add", "output": "Adds an array of Ropping cart to the cart"}
+{"answer": "Adds a frequent item set to this container. ConditionalItems and frequentItems are merged.", "output": "Add an item set."}
+{"answer": "Skips from the peek buffer.", "output": "Skips bytes from the next input buffer."}
+{"answer": "A method that creates the workflow method for removing VPLEX volumes from a consistency group.", "output": "A method the creates the workflow method for removing volumes from a VPLEX consistency group."}
+{"answer": "Actually show the dialog that contain the given URLs and give the user the option to open the URL, copy it or cancel the dialog.", "output": "Generates a list of urls that shows for a particular URL."}
+{"answer": "Convert mouse. Convert mouse coordinates to a cell index. Return <NO_MOUSE> if the mouse is not well-centered on a defined character.", "output": "Converts mouse clicking for a given mouse event. This is needed for debugging purposes only."}
+{"answer": "Computes a regular expression string where each instance of the old name can be fulfilled by either the old name or new name.", "output": "Computes the regular expression name based on original name and its unique expression."}
+{"answer": "Generate a call identifier. This is useful when we want to generate a call identifier in advance of generating a message.", "output": "Generate a call identifier. This is useful when we want to generate a call identifier in rest of the method."}
+{"answer": "Parse a hour value. Depending on patternChar parameter, the hour can be 0-23, 1-24, 0-11, or 1-12. The returned value will always be 0 based.", "output": "Parse a hour value. Depending on patternChar parameter, the hour can be 0-24, 0-12, 0-11, or 1-12. The returned value will always be 0 based."}
+{"answer": "Changes the currently displayed command line when certain keys are pressed. The up arrow moves back through history entries and the down arrow moves forward through history entries.", "output": "Set the state of the user to history."}
+{"answer": "Returns an array of types, where original types got substituted given a substitution. Only allocate an array if anything is different.", "output": "Assigns binding to given original type."}
+{"answer": "What magic happens. 1- draw image cover in circle 2- draw black shadow on it to make seconds and icons more visible 3- draw duration center of image. 4- put icon/s on it 5- draw progress", "output": "Responds to the canvas"}
+{"answer": "Returns the current list of known transports. The returned list is an unshared collection of Transports, including all transports which may have channels to remote endpoints.", "output": "Returns a list of all local TCP transport."}
+{"answer": "Returns the seconds until idle lockout.", "output": "Returns the seconds until lockout."}
+{"answer": "Show all databases in Hive", "output": "Shows a Cassandra database."}
+{"answer": "And for two negative numbers; the first is shorter", "output": "And for two negative numbers; the first is shorter"}
+{"answer": "This hackyAdjuster is tightly coupled with the width of the confidence interval normally specified with number of standard deviations. To simplify this interface the number of standard deviations has been fixed to 2.0, which corresponds to a confidence interval of 95%.", "output": "Description of the Method"}
+{"answer": "Read the object from Base64 string.", "output": "Read the object from Base64 string."}
+{"answer": "Creates a copy of the old document; updating the retrieved Document instance works ok for stored properties but indexed data gets lost when doing an IndexWriter.updateDocument with it.", "output": "Removes removed from the document if necessary."}
+{"answer": "Construct the singular value decomposition", "output": "Construct the singular value decomposition"}
+{"answer": "unlocks version generation for clear() operations", "output": "Unlocks and clears the assigned object. Called by clearAll() method"}
+{"answer": "Create a new (empty) Unicast remote reference.", "output": "Create a new (empty) Unicast reference."}
+{"answer": "static version of lastIndexOf.", "output": "static version of lastIndexOf."}
+{"answer": "Writes the buffer contents to the file. Assumes that the buffer is full and the first byte of data is at position 0.", "output": "write bytes to file"}
+{"answer": "Take modulo for double numbers according to lua math, and return a double result.", "output": "the real value [0, 10]."}
+{"answer": "max(BigInteger val). the first is less.", "output": "max(BigInteger val). the first is less."}
+{"answer": "Function used to stop code that calls acceptTrainingSet. This is needed as classifier construction is performed inside a separate thread of execution.", "output": "Function used to stop code that calls acceptClusterer. This is needed as clusterer evaluation is performed inside a separate thread of execution."}
+{"answer": "Called to set the OffsetGrabPoint to the current mouse location, and update the OffsetGrabPoint with all the other GrabPoint locations, so everything can shift smoothly. Should also set the OffsetGrabPoint to the movingPoint. Should be called only once at the beginning of the general movement, in order to set the movingPoint. After that, redraw(e) should just be called, and the movingPoint will make the adjustments to the graphic that are needed.", "output": "Called to set the OffsetGrabPoint to the current mouse location, and update the OffsetGrabPoint with all the other GrabPoint locations, so everything can shift smoothly. Should also set the OffsetGrabPoint to the movingPoint."}
+{"answer": "Writes floats from the given float array, starting from the specified offset, to the current position and increases the position by the number of floats written.", "output": "Writes floats from the given float array, starting from the specified offset, to the current position and increases the position by the number of floats written."}
+{"answer": "The optimized version of SAX2DTM.dispatchCharactersEvents(int, ContentHandler, boolean). <p> Directly call the characters method on the passed ContentHandler for the string-value of the given node (see http://www.w3.org/TR/xpath#data-model for the definition of a node's string-value). Multiple calls to the ContentHandler's characters methods may well occur for a single call to this method.", "output": "The optimized version of SAX2DTM.dispatchCharEvents(int, ContentHandler, String)"}
+{"answer": "check whether the CIDR address contains the IP address", "output": "Check if a of IP should be used for a given structure"}
+{"answer": "Accessed via reflection. DO NOT REMOVE", "output": "Lock given service. Returns true if lock is lock for the given service name."}
+{"answer": "Check to see if the client has a cookie with optional value", "output": "Check to see if the cookie has been accepted by this session, or if it has not."}
+{"answer": "Use the native file dialog on the Mac because the Swing one is bad. On linux, the native one is bad. No preference on Windows.", "output": "Selects the import file for a particular extension on the system dialog."}
+{"answer": "Creates the Item using these Parameters.", "output": "Creates a new solution."}
+{"answer": "Returns an enumeration describing the available options. Valid options are: <p> -C confidence <br> Set confidence threshold for pruning. (Default: 0.25) <p> -M number <br> Set minimum number of instances per leaf. (Default: 2) <p> -R <br> Use reduced error pruning. <p> -N number <br> Set number of folds for reduced error pruning. One fold is used as the pruning set. (Default: 3) <p> -B <br> Use binary splits for nominal attributes. <p> -U <br> Generate unpruned decision list. <p> -Q <br> The seed for reduced-error pruning. <p>", "output": "Returns an enumeration describing the available options.."}
+{"answer": "Encodes the application data into SSL/TLS record. If handshake status of the engine differs from NOT_HANDSHAKING the operation can work without consuming of the source data. For more information about TLS record fragmentation see TLS v 1 specification (http://www.ietf.org/rfc/rfc2246.txt) p 6.2.", "output": "Encodes the application data into SSL/SSL block."}
+{"answer": "Returns a byte[] containing the remainder of 'in', closing it when done.", "output": "Returns a byte[] containing the remainder of 'in', closing it when done."}
+{"answer": "Parse the SQL statement and locate any placeholders or named parameters. Named parameters are substituted for a JDBC placeholder.", "output": "Parse the SQL statement and get all the parameters"}
+{"answer": "Writes a long at the specified offset from this native object's base address.", "output": "Writes a long at the specified offset from this native object's base address."}
+{"answer": "Required method to be called if you are using RequestKeeper to funnel your requests.", "output": "Rolls back the request for a set of GET requests"}
+{"answer": "Generate a salt for use with the BCrypt.hashpw() method.", "output": "Generate a salt for use with the BCrypt.hashpw() method"}
+{"answer": "If possible, validate the given key's hashCode against any that was returned by the peer.", "output": "If possible, validate the given key's hashCode against any that was returned by the peer."}
+{"answer": "function to format amount into to Indaian rupees format", "output": "Convert from a given string (x, y)."}
+{"answer": "Run an init script from the classpath.", "output": "Run a Table script against the default classpath."}
+{"answer": "Parse an integer located between 2 given offsets in a string", "output": "Parse an integer located between 2 given offsets in a string"}
+{"answer": "Prints an object to this output stream and then terminates the line.", "output": "Prints an object to this output stream and then terminates the line."}
+{"answer": "Check that all the elements are real numbers.", "output": "Check that the argument is a real number."}
+{"answer": "Init the keyboard buttons (onClickListener)", "output": "Initiates the keyboard buttons and build it for startup"}
+{"answer": "Is Window Auto New Record (if not set use default)", "output": "Checks if Context should be disabled."}
+{"answer": "Determine the path to the file relative to the given directory path.", "output": "Finds the relative path from a file or path."}
+{"answer": "Read Fields to display", "output": "Initialize Client Process"}
+{"answer": "Internal method to perform the normalization.", "output": "Internal method to perform the normalization."}
+{"answer": "Reset the internal state of this singleton", "output": "Resets the singleton block."}
+{"answer": "andNot for two negative numbers; the first is longer", "output": "andNot for two negative numbers; the first is longer"}
+{"answer": "creates a random string which only consists of letters", "output": "Generate a string of random characters."}
+{"answer": "Constructs a new ExchangeRateManager and initialises the most used rates. Note: private; should only be accessed by getInstance().", "output": "Create an ExchangeRate manager."}
+{"answer": "Removes the attribute specified by the value parameter.", "output": "Remove the passed attribute from the list."}
+{"answer": "Delete the object previously saved.", "output": "Remove a key from cache"}
+{"answer": "Check if Unique Constraint Exception (aka ORA-00001)", "output": "Checks if exception is actually used."}
+{"answer": "Construct a new instance with the specified detail string and exception.", "output": "Construct a new instance with the specified detail string and exception."}
+{"answer": "Adds fill components to empty cells in the first row and first column of the grid. This ensures that the grid spacing will be the same as shown in the designer.", "output": "Adds fill components to empty cells in the first row and first column of the grid. This ensures that the grid spacing will be the same as shown in the designer."}
+{"answer": "Inserts prefix mappings from an XML Literal's context for all prefixes that are used in the XML Literal and that are not defined in the XML Literal itself.", "output": "Inserts the available context prefix into the stack."}
+{"answer": "Increments the put time accumulator.", "output": "Increments the put time accumulator."}
+{"answer": "Precompute hashes used to set mask bits for a data.", "output": "compute random data"}
+{"answer": "Shows user home following tags page.", "output": "Shows user home following users page."}
+{"answer": "The elevation at the closest SW post to the given lat/lon. This is just a go-to-the-closest-post solution.", "output": "Gets the elevation at a given lat/lon index."}
+{"answer": "Factory method for ObservedObject creation.", "output": "Returns a new object corresponding to the supplied object"}
+{"answer": "Delete the children of the element", "output": "Delete the children of the element"}
+{"answer": "Recursively create the initial state for the given component.", "output": "Saves the children of the given component into the HashMap."}
+{"answer": "looks, if this trace is connected to the same object at its start and its end point", "output": "Checks if the DataItem matches only."}
+{"answer": "Ensure the given value is not null and return it.", "output": "Ensures that the given value is empty."}
+{"answer": "Read an ArrayList from an InputStream containing XML. The stream can previously have been written by writeListXml().", "output": "Read an ArrayList from an InputStream containing XML. The stream can previously have been written by writeListXml()."}
+{"answer": "Adds padding to the end of a string with a repeating character if the string's length is less than the minimum length", "output": "Adds padding to the beginning of a string with a repeating character if the string's length is less than the minimum length"}
+{"answer": "Returns an enumeration of the additional measure names", "output": "Returns an enumeration of the additional measure names"}
+{"answer": "This method should not raise any exceptions.", "output": "This method should not raise any exceptions."}
+{"answer": "Add button for showing preferences.", "output": "Adds a preferences button to the dialog."}
+{"answer": "clear unused pages from page pool", "output": "Clears all unused files, and wait for each page to be reused."}
+{"answer": "Create Fields. Used by APanel.cmd_find and Viewer.cmd_find", "output": "Create Order fields"}
+{"answer": "Constructs a ShortInterleavedRaster with the given SampleModel and DataBuffer. The Raster's upper left corner is origin and it is the same sizes the SampleModel. The DataBuffer is not initialized and must be a DataBufferUShort compatible with SampleModel. SampleModel must be of type PixelInterleavedSampleModel or SinglePixelPackedSampleModel.", "output": "Constructs a ShortInterleavedRaster with the given SampleModel and DataBuffer. The Raster's upper left corner is origin and it is the same size as the SampleModel. The DataBuffer is not initialized and must be a DataBufferByte compatible with SampleModel. SampleModel must be of type SinglePixelPackedSampleModel or InterleavedSampleModel."}
+{"answer": "This method will copy the given file to carbon store location", "output": "This method will copy the given file to carbon store location"}
+{"answer": "Performs a backwards fling action with the default number of fling steps (5). If the swipe direction is set to vertical, then the swipe will be performed from top to bottom. If the swipe direction is set to horizontal, then the swipes will be performed from left to right. Make sure to take into account devices configured with right-to-left languages like Arabic and Hebrew.", "output": "Returns true if the popup is fling, otherwise false."}
+{"answer": "Attempts to parse the string as double. In case this fails, TestCase.fail() is triggered.", "output": "convert string to double"}
+{"answer": "Adds a listener that is notified about changes in the filter.", "output": "Adds a listener that is notified about changes in the panel."}
+{"answer": "Takes a image, mirrors it using row-per-row int reading, mirror it again using byte (if possible) and compares IF the original was interlaced, compares with origni", "output": "Test the storage file with some source."}
+{"answer": "Returns true if GAPIS is considered stable (non-experimental):", "output": "Determines if feature is list or reference first."}
+{"answer": "calculates the approximate size of a text, depending on a demo text avoid repeated calls (e.g. inside drawing methods)", "output": "calculates the approximate size of a text, depending on a demo text avoid repeated calls (e.g. inside drawing methods)"}
+{"answer": "Defaults was clicked. Restore the SVN preferences to their default values", "output": "Implement the default defaults."}
+{"answer": "Returns a String representation of the list, front to back.", "output": "Returns a String representation of the list, front to back."}
+{"answer": "Write an image, X/Y placement with an ImageIcon.", "output": "Write an image, Lat/Lon with X/Y placement with an ImageIcon."}
+{"answer": "Tests job stealing with peer deployment and different class loaders.", "output": "Test for lookup classes to projection."}
+{"answer": "Monitor changes to the scale slider.", "output": "Monitor changes to the scale slider."}
+{"answer": "Save string into the file", "output": "Writes content to a file."}
+{"answer": "Determine whether the given URL points to a resource in the file system, that is, has protocol \"file\", \"vfsfile\" or \"vfs\".", "output": "Determine whether the given URL points to a resource in the file system, that is, has protocol \"file\", \"vfsfile\" or \"vfs\"."}
+{"answer": "updates logout status based on current status and what stored in the internal map.", "output": "Updates the given set of alive state."}
+{"answer": "Converts OID into array of ints.", "output": "Converts OID into array of ints."}
+{"answer": "Returns the server instance names that belong to a site.", "output": "Gets a list of server servers."}
+{"answer": "Creates a modal dialog for the parent.", "output": "Create a dialog with the parent dialog."}
+{"answer": "Checks to see if SLD contains inline features.", "output": "Returns true if the features in the styled layer contains the specified layer descriptor."}
+{"answer": "Decode the contents of the inputstream into a buffer.", "output": "Decode the contents of the inputstream into a buffer."}
+{"answer": "Provides a hint to the virtual machine that it would be useful to attempt to perform any outstanding object finalizations.", "output": "This method should be called after all finalization of the virtual machine that we don't need to run our own thread, so it can be called multiple times."}
+{"answer": "display the string defined in the string xml file: iconfont_string.xml", "output": "display the string defined in the string xml file: iconfont_string.xml"}
+{"answer": "Checks content length of a http request to avoid dos attack. In case IDFF inter-op with other IDFF vendor who may not provide content length in HttpServletRequest. We decide to support no length restriction for Http communication. Here, we use a special value (e.g. 0) to indicate that no enforcement is required.", "output": "Checks the HTTP request length. This method determines if the request length is greater than the optional parameter."}
+{"answer": "PUBLIC: Add a foreign key constraint to the table. If there is a same name foreign key constraint already, nothing will happen.", "output": "Adds a foreign value constraint."}
+{"answer": "Called with the activity is first created.", "output": "Called with the activity is first created."}
+{"answer": "Sends a notification to the Apple Push Notification Service.", "output": "Pushes a Notification listener."}
+{"answer": "Appends a json encoded key/value pair to the given string builder.", "output": "Appends a json encoded key/value pair to the given string builder."}
+{"answer": "Maintains order of all keys, but overwrites all data keys with values from resources.", "output": "Loads the global mappings for a resource."}
+{"answer": "Deselects the item at the given zero-relative index in the receiver. If the item at the index was already deselected, it remains deselected. Indices that are out of range are ignored.", "output": "Deselects an item in the target list."}
+{"answer": "Gets the leaf attribute of the DOMTreeModel object", "output": "Determines if this node is one."}
+{"answer": "Add a listener All callbacks of the interface Listener will be called within this function Should be called in the main thread", "output": "Adds a listener to be notified when the service is matched."}
+{"answer": "Checks if this date-time is equal to another date-time, including the chronology. <p> Compares this date-time with another ensuring that the date-time and chronology are the same.", "output": "Indicates whether some other object is \"equal to\" this Comparator."}
+{"answer": "Parse a string into a vector. TODO: move this into utility package?", "output": "Parses a double array from the string."}
+{"answer": "Create an empty file and write some data on it. Then update its metadata, verify the new metadata and the updated version, and then write some data on the new version. Verify the both file versions can be read.", "output": "A test where there is a negative version number by w/o per transaction."}
+{"answer": "Calls the super method and writes the knn distance of this entry to the specified stream.", "output": "Calls the super method and writes the knn distance of this entry to the specified stream."}
+{"answer": "Creates instance of Cassandra driver session wrapper.", "output": "Construct a session wrapper."}
+{"answer": "Returns a BatchResponse based on the given BatchRequest, by posting the request to the server.", "output": "Performs and executes the single request."}
+{"answer": "Returns the directory in which the main program is located.", "output": "Returns the program directory."}
+{"answer": "Method to delete all control Sensors from this Route", "output": "Clear the token set."}
+{"answer": "Converts a string into the corresponding KEYSTORE_TYPE", "output": "Parses a fully qualified class name."}
+{"answer": "Sets the new current nested level and pushes old current nested level down the stack returns that level.", "output": "Map the associated level to SAX"}
+{"answer": "Converts a hexadecimal character to an integer.", "output": "Converts a hexadecimal character to an integer."}
+{"answer": "Convert DiasporaPodList to JSON", "output": "Produces a JSON representation of the pod"}
+{"answer": "Load a KeyStore, auto-detecting the type, from a file accessed by a password.", "output": "Loads a KeyStore from a file using the password."}
+{"answer": "Remove a property change listener", "output": "Remove a property change listener"}
+{"answer": "Returns true if precaching is able to run. Set by PrecacheLauncher#updatePrecachingEnabled.", "output": "Checks if a global preference is mandatory."}
+{"answer": "this = this AND other", "output": "Processes the given long."}
+{"answer": "Test for equality between the specified object and this object. Two PrincipalEntries are equal if their class and name values are equal.", "output": "Compares this PrincipalEntry can be equal for equality."}
+{"answer": "Test if profile is valid for lockdown, which requires IPv4 address for both server and DNS. Server hostnames would require using DNS before connection.", "output": "Check that the lock is a valid lock profile."}
+{"answer": "Pulls the response from the server and returns the code as a number. Returns -1 on failure.", "output": "This method reads the parameters from the server."}
+{"answer": "Checks whether the extension of the filename is one of those specified. <p> This method obtains the extension as the textual part of the filename after the last dot. There must be no directory separator after the dot. The extension check is case-sensitive on all platforms.", "output": "Checks whether the extension of the filename is one of those specified. <p> This method obtains the extension as the textual part of the filename after the last dot. There must be no directory separator after the dot. The extension check is case-sensitive on all platforms."}
+{"answer": "Ctor for an outer join between two streams.", "output": "Constructs a join literal and the given stream."}
+{"answer": "See ISO 16022:2006, 5.2.7", "output": "See ISO 16022:2006, 5.2.7"}
+{"answer": "Construct a KDB database from the supplied inputstream.", "output": "Create a Kdb database from the given InputStream and digest"}
+{"answer": "Decodes an Add operation.", "output": "Decodes a Add operation."}
+{"answer": "Sorts the array in place", "output": "Sorts the elements in place"}
+{"answer": "Trigger to rebuild the panel", "output": "Rebuilds the panel for active worker threads."}
+{"answer": "Feeds the inflater with the compressed bytes In poll mode, the caller should not call repeatedly this, without consuming first, checking isDataReadyForConsumer()", "output": "Remove all data from an array of bytes."}
+{"answer": "Turns an object into a string for storing in the props.", "output": "Returns the string representation of the given file."}
+{"answer": "Navigates to the next page (if not already there).", "output": "Navigates to the next page (if not already there)."}
+{"answer": "The following two methods exist because in, out, and err must be initialized to null. The compiler, however, cannot be permitted to inline access to them, since they are later set to more sensible values by initializeSystemClass().", "output": "The following two methods exist because in, out, and throw an exception if not already available."}
+{"answer": "Returns an immutable list.", "output": "Gets the contents of this class as a list."}
+{"answer": "the sql commands to be added to the batchList for deleting the rules in rulesToDelete.", "output": "Removes the rules from the batch List of rules the given rule"}
+{"answer": "Returns true if this element was already visited.", "output": "Returns true if the user was visited."}
+{"answer": "Instantiates a new connection object.", "output": "Creates the Iot Connection object."}
+{"answer": "Returns a new CompletableFuture that is already exceptionally completed with the given exception.", "output": "Creates a future that is synchronously completed exceptionally."}
+{"answer": "Initializes all errors given the model.", "output": "It initializes the error mean and standard error vector based on the prediction matrix. This method initializes the correctness and the parameters."}
+{"answer": "check the mouse event modifiers against the instance member modifiers. Default implementation checks equality. Can be overridden to test with a mask", "output": "override to check equality with a mask"}
+{"answer": "Writes all retained variables to the output of the specified generator, then clears them.", "output": "Emits the gathered variables from the given variableout."}
+{"answer": "Creates a new URI instance of the given unencoded component parts.", "output": "Creates a new URI instance of the given unencoded component parts."}
+{"answer": "This is an entry point for extracting k-best hypotheses as StructuredTranslation objects. It computes all of them and returning a list of StructuredTranslation objects. These objects hold all translation information (string, tokens, features, alignments, score).", "output": "Given a graph, extract the probabilities for each vertex at the top-level node, and then extract the details and adjust them."}
+{"answer": "Reads a single character from the source string and returns it as an integer with the two higher-order bytes set to 0. Returns -1 if the end of the source string has been reached.", "output": "Reads a single character from the source string and returns it as an integer with the two higher-order bytes set to 0. Returns -1 if the end of the source string has been reached."}
+{"answer": "Check if the storage system type is openstack, vnxblock, vmax or ibmxiv. Snapshot full copy is supported only on these storage systems.", "output": "Determines if the passed block type is supported for a full copy."}
+{"answer": "Lists all of the services found in the file descriptors", "output": "Returns multiple types of services in the service directory."}
+{"answer": "Returns a string with lines sentences of the following form removed: This result code corresponds to the LDAP result code value of &#x7b;&#x40;code 0&#x7d;.", "output": "Replaces the unicode value by some rules within the code pattern."}
+{"answer": "Divide: rounding mode is ROUND_HALF_EVEN, result is negative; equidistant", "output": "Divide: rounding mode is ROUND_HALF_EVEN, result is negative; equidistant"}
+{"answer": "Compute quantile (inverse cdf) for Beta distributions.", "output": "Compute the real quantile of a distribution."}
+{"answer": "Example implementation. It only knows to verify SHA256withEC algorithm.", "output": "Validates the given data using signed signature."}
+{"answer": "Creates and caches new deployment.", "output": "Create new deployment deployment information for a local."}
+{"answer": "return the number of objects in this sequence.", "output": "return the number of objects in this sequence."}
+{"answer": "Tests that a run-as role-name can be added to a servlet.", "output": "Tests that the a servlets add role-name can be added."}
+{"answer": "Subtract two negative numbers of different length. The first is longer.", "output": "Subtract two negative numbers of different length. The first is longer."}
+{"answer": "Constructs a query matching terms that cannot be represented with a single Term.", "output": "Creates a MultiTermQuery with the given field."}
+{"answer": "Prints the message passed as a non-String object and a new line.", "output": "Prints the message passed as a non-String object."}
+{"answer": "currently only group by tags groupbys' first item always is site, which is a reserved field", "output": "currently only group by tags groupbys' first item always is site, which is a reserved field"}
+{"answer": "Test an invalid xml input.", "output": "Unit test for reading XML data."}
+{"answer": "Convert a RE to a string.", "output": "Produce a string from the subtree."}
+{"answer": "Returns true if one of the members is a getter and the other one is a setter. No further validation such as name or owner comparison is done as this is expected to be done in the client already.", "output": "Return true if the argument is a member pair of member members. That is, the class is, expected to be used for example."}
+{"answer": "Creates a DateFormat that assumes the incoming date is in UTC time.", "output": "Generates an DateFormat builder."}
+{"answer": "Adds the specified KML-object to the file.", "output": "Writes filtered file table."}
+{"answer": "Get destination file path of this download request.", "output": "returns the destination file properties"}
+{"answer": "Get users and groups from the server to fill in the \"share with\" list", "output": "Get users and groups from the server to fill in the \" created\" list"}
+{"answer": "Creates new form BootPanel", "output": "Creates a new instance of ConfigurationPanel."}
+{"answer": "Create default headers for server response.", "output": "Return default headers of the HTTP header."}
+{"answer": "Remove all components in parsys.", "output": "Clears the current UTF-8 selector if it exists and not."}
+{"answer": "Puts a new request in queue as a new thread in pool to be executed", "output": "Puts a new request in queue as a new thread in pool to be executed"}
+{"answer": "Create Client from given JSON data, add client to client list, broadcast newly registered client to all previously registered clients and send client list to new client.", "output": "Register new client into the ClientObject"}
+{"answer": "Parses the data from the supplied InputStream, using the supplied baseURI to resolve any relative URI references.", "output": "Parses the data from the supplied InputStream, using the supplied draft."}
+{"answer": "Parses the date value using the given date formats.", "output": "Parses the date value using the given date formats."}
+{"answer": "Removes a member with the specified name from this object. If this object contains multiple members with the given name, only the last one is removed. If this object does not contain a member with the specified name, the object is not modified.", "output": "Removes a JSONObject from the object."}
+{"answer": "loop code layout the loop is defined by the back edge from T->H. H (header) is the source of the back edge. We want H at the bottom of the loop and T at the top. Lay the blocks out in DFS order starting with T and skipping any blocks that aren't part of the loop. prefer to have fall-through blocks that are part of the loop.", "output": "Finds all blocks in a block that are reachable from this loop."}
+{"answer": "Read a line from the hex file and verify the checksum.", "output": "Read next hex file. Returns -1 if no hex is available."}
+{"answer": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface.", "output": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface."}
+{"answer": "Generates two data files to join its with Hive.", "output": "Generate a basic test files."}
+{"answer": "Rename an Editor type panel in Show Panels sub menu", "output": "Rename the editor panel."}
+{"answer": "Returns true iff format(col) should return a single-line version of the formula.", "output": "Determines whether the linear line should be safe."}
+{"answer": "Override to set up your specific external resource.", "output": "Override to set up your specific external resource."}
+{"answer": "Convert lon/lat (degree) coordinate to virtual world coordinates.", "output": "Sets the projection properties from the projection."}
+{"answer": "Copies this string replacing occurrences of the specified target sequence with another sequence. The string is processed from the beginning to the end.", "output": "Copies this string replacing occurrences of the specified target sequence with another sequence. The string is processed from the beginning to the end."}
+{"answer": "Encode a string for HTML requests", "output": "Encodes the given string as a URL."}
+{"answer": "Draws an image, applying a transform from image space into user space before drawing. The transformation from user space into device space is done with the current transform in the Graphics2D. The given transformation is applied to the image before the transform attribute in the Graphics2D state is applied. The rendering attributes applied include the clip, transform, and composite attributes. Note that the result is undefined, if the given transform is noninvertible.", "output": "Draws an image, applying a transform from image space into user space before drawing. The transformation from user space into device space is done with the current transform in the Graphics2D. The given transformation is applied to the image before the transform attribute in the Graphics2D state is applied. The rendering attributes applied include the clip, transform, and composite attributes. Note that the result is undefined, if the given transform is noninvertible."}
+{"answer": "Upper guess to determine the duration in bytes, using highest bitrate of the stream.", "output": "Builds the size of a link batch."}
+{"answer": "Advances the position until after the next newline character. If the line is terminated by \"\\r\\n\", the '\\n' must be consumed as whitespace by the caller.", "output": "Advances the position until after the next newline character. If the line is terminated by \"\\r\\n\", the '\\n' must be consumed as whitespace by the caller."}
+{"answer": "Creates a new IndTestCramerT instance for a subset of the variables.", "output": "Creates a new IndTestCramerT instance for a subset of the variables."}
+{"answer": "Treat the given file as a source of additional seeds, announcing to SeedListeners.", "output": "Based on the given file."}
+{"answer": "Formats time in milliseconds to hh:mm:ss string format.", "output": "Formats time in milliseconds to hh:mm:ss string format."}
+{"answer": "Adds the property change listener.", "output": "Add the specified property change listener for the specified property."}
+{"answer": "Creates a new folder with a default folder name.", "output": "Creates a new folder with a default folder name."}
+{"answer": "Add a typed array to the config", "output": "Add a typed attribute to the config"}
+{"answer": "Adds the sub action.", "output": "Helper method. This method returns true if the Subclasses can override."}
+{"answer": "Fills the entry tree map with entries from the block.", "output": "Fills the entry tree from the map."}
+{"answer": "Checks if right hand collection has atleast one same item as left hand collection.", "output": "Returns true if a collection is equal to left or right."}
+{"answer": "For keyboard mode, processes key events.", "output": "For keyboard mode, processes key events."}
+{"answer": "Asserts that the actual duration is within 10% of the given expected time.", "output": "Asserts that the actual duration is within 10% of the given expected time."}
+{"answer": "Log a discrepancy in the data.", "output": "Logs a diff operation."}
+{"answer": "Creates a new FieldBodyIMG datatype.", "output": "Create a new field frame builder"}
+{"answer": "Initializes this AbstractResource with the given mimetype. The modification time of the resource is set to the current system time.", "output": "Constructs a new ResourceResource."}
+{"answer": "Creates a Parameters object for the given main-method arguments.", "output": "Create a new example object."}
+{"answer": "Respond to or initiate an SMP negotiation", "output": "Gets the contents of a question connection using the secret session."}
+{"answer": "Compute linear frequency from mel frequency.", "output": "Converts a melin frequency result from the form 0.0"}
+{"answer": "Constructs the generator and initializes the common members ignoring display density.", "output": "Create a Ranned icon"}
+{"answer": "Generate an array of random bytes", "output": "generate a byte array containing random bytes."}
+{"answer": "returns a description of the search as a String", "output": "Returns a description of the car"}
+{"answer": "Copy buf to mMessage.", "output": "Append a byte array to mMessage."}
+{"answer": "Checks if Cassandra driver session expired.", "output": "Returns true if time is expired."}
+{"answer": "Put a key/boolean pair in the JSONObject.", "output": "Put a key/boolean pair in the JSONObject."}
+{"answer": "Util method to write an attribute with the ns prefix", "output": "Util method to write an attribute with the ns prefix"}
+{"answer": "handles the selection and deselects item if multiSelect is disabled", "output": "Called when the selection is selected"}
+{"answer": "Check if the method can be invoked to give parameters", "output": "This method is called via reflection from the life of a new file"}
+{"answer": "Writes the contents of this CacheHeader to the specified OutputStream.", "output": "Writes the contents of this CacheHeader to the specified OutputStream."}
+{"answer": "Get response as byte array", "output": "Get response as byte array"}
+{"answer": "Starts fading out all layers.", "output": "Starts fading out all layers."}
+{"answer": "NOTE: upper bound is 71/60 OPT + 6/9 (~1.18 OPT)", "output": "Instantiates a map."}
+{"answer": "Adds the given listener", "output": "Add a text change listener."}
+{"answer": "Get an iterator of profiles.", "output": "Returns an iterator over the profiles's iterator."}
+{"answer": "Checks if the string starts with a space character, false if the string is empty or starts with a non-space character.", "output": "Checks if the string starts with a space character, false if the string is empty or ends with a non-space character"}
+{"answer": "Appends scheme to incoming path", "output": "Appends scheme to incoming path"}
+{"answer": "Given a key, find the level", "output": "Return the level for the given key"}
+{"answer": "Called whenever the mouse is dragged on this layer and one of the requested mouse modes is active.", "output": "Invoked when a mouse dragged mouse is needed."}
+{"answer": "Initializes the caching HTTP Headers Filter.", "output": "Initializes the caching HTTP Headers Filter."}
+{"answer": "Adds common component to the parser configuration. This method will also add all of the component's recognized features and properties to the list of default recognized features and properties.", "output": "Adds common component to the parser configuration. This method will also add all of the component's recognized features and properties to the list of default recognized features and properties."}
+{"answer": "Spins/blocks until node s is matched by a fulfill operation.", "output": "Spins/blocks until node s is matched by a fulfill operation."}
+{"answer": "Load the GeneralSubtreesTableModel with general subtrees.", "output": "Override this method to load subtrees."}
+{"answer": "Reads a single byte from the source string and returns it as an integer in the range from 0 to 255. Returns -1 if the end of the source string has been reached.", "output": "Reads a single byte from the source string and returns it as an integer in the range from 0 to 255. Returns -1 if the end of the source string has been reached."}
+{"answer": "Returns true if the healthcheck flag-file is enabled but does not exist, otherwise (no file configured, or file configured and exists) returns false.", "output": "Determines whether the app is disabled."}
+{"answer": "Writes the contents to the file at the given location (this creates the file or deletes its existing contents.)", "output": "Writes contents string to a file."}
+{"answer": "Generate one-key-multiple-values tree from array of key-value pairs, and wrap its into Writable objects. The result is placed into mock input.", "output": "Makes a substitution from the key and values of this tag."}
+{"answer": "Returns the angle of the vector from p0 to p1, relative to the positive X-axis. The angle is normalized to be in the range [ -Pi, Pi ].", "output": "Computes the angle between two points."}
+{"answer": "Creates a new cursor setting the columns names that will be used by this cursor. The length of this array determines the number of columns that the cursor can handle. Filling that below this number will set the rest of the values to null, and all items above it will be ignored.", "output": "Creates a new instance of MemoryEditor."}
+{"answer": "Checks if is enabled.", "output": "Checks if is enabled."}
+{"answer": "Renders the drag border if needed.", "output": "Description of the Method"}
+{"answer": "Creates a new transaction suitable for the serial port", "output": "Creates a ByteBuffer with the same transaction use this method."}
+{"answer": "we're starting the thread", "output": "Start this calling the runner thread."}
+{"answer": "Exports an object. This method produces the bytecode of the proxy class used to access the exported object. A remote applet can load the proxy class and call a method on the exported object.", "output": "Exports an object. This method produces the bytecode of the proxy class used to access the exported object. A remote applet can load the proxy class and call a method on the exported object."}
+{"answer": "Creates the sub-directory where this particular back-up instance will be kept.", "output": "Creates the overall DB directory."}
+{"answer": "This method reads a UTF-16 String, which length is given on the number of characters it consists of. <br> The stream must be at the number of characters. This number contains the terminating zero character (UINT16).", "output": "Reads a character from a stream."}
+{"answer": "This method is called every time a child is processed.", "output": "Processes the children of this query."}
+{"answer": "Iterates through all the tips' keys and stores the ones that are valid for this OS.", "output": "Create the tip messages"}
+{"answer": "Creates instance of persistent queue.", "output": "Instantiates a new prepared queue."}
+{"answer": "This method adds to the sb the objects.", "output": "Convert objects into a StringBuilder."}
+{"answer": "Returns true if, at this time, the object will accept a connection via the named event", "output": "Returns true if, at this time, the object will accept a connection according to the supplied EventSetDescriptor"}
+{"answer": "Creates a new Request configured to publish an Open Graph action.", "output": "Creates a new Request configured to publish an Open Graph action."}
+{"answer": "Hide content and show the progress bar", "output": "Hide content and show the progress bar"}
+{"answer": "Read a Bloom filter LM from an external file.", "output": "Read the data from a variable input stream."}
+{"answer": "Compute the median absolute deviation from median.", "output": "Compute the currencyD for a specified distances"}
+{"answer": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface.", "output": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface."}
+{"answer": "Constructs a new SdpException as a result of a system exception and uses the localized system exception message.", "output": "Constructs a new SletException instruction."}
+{"answer": "Links node as first element, or returns false if full.", "output": "Links node as first element, or returns false if full."}
+{"answer": "Trigger the notification of all PropertyChangeListeners", "output": "Report a vetoable property update to any registered listeners. If anyone vetos the change, then fire a new event reverting everyone to the old value and then rethrow the PropertyVetoException. <p> No event is fired if old and new are equal and non-null."}
+{"answer": "given an entry and a template, return true if dirty-read should be performed", "output": "Indicates whether a template is read."}
+{"answer": "Create a new JValueSlider.", "output": "Create a new JValueSlider."}
+{"answer": "Apply graphic attributes to the symbol.", "output": "Applies the attributes of this graphic to the given symbol symbol and stores the selected symbol attributes."}
+{"answer": "TODO Add method documentation", "output": "TODO Add method documentation"}
+{"answer": "Creates new descriptor of remote RESTful service.", "output": "Instantiates a new RemoteServiceDescriptor."}
+{"answer": "Read the old journal from the input file. In the event of any error, just pretend we didn't have a journal, in that case, do a full backup.", "output": "Read the old journal from the input file. In the event of any error, just pretend we didn't have a journal, in that case, do a full backup."}
+{"answer": "Tries to start the server.", "output": "Start the daemon thread."}
+{"answer": "Test if the profile is complete.", "output": "This should be overridden by subclasses to determine whether they are complete."}
+{"answer": "Encode a string into a QR code with dimensions width x height. Hints contains suggestions for error-correction level and version. The default error-correction level is L, the default version is the smallest version for which the contents will fit into the QR-code.", "output": "This encodes a ByteMatrix with the defined width and height. The column should be given a correction operation."}
+{"answer": "Writes ints from the given int array, starting from the specified offset, to the current position and increases the position by the number of ints written.", "output": "Writes ints from the given int array, starting from the specified offset, to the current position and increases the position by the number of ints written."}
+{"answer": "Sets a header to use with HTTP request", "output": "Sets the header and key."}
+{"answer": "Tells the look and feel to reset some of the values for this component so that it doesn't use JTextArea's default values. DO NOT CALL THIS METHOD YOURSELF!", "output": "Updates the UI according to the settings."}
+{"answer": "Generate to source of the class.", "output": "Generate to source of the class."}
+{"answer": "Submits a task for execution.", "output": "Submits a task to the broker."}
+{"answer": "Validates if given bucket name is DNS compatible.", "output": "Checks that the location of the given name is a valid client name."}
+{"answer": "Validates the user namespace authorization create request. This method also trims the request parameters.", "output": "Validates user authentication request."}
+{"answer": "Default object formatter using Object.toString().", "output": "Format method for calling Object."}
+{"answer": "Calculates the derived statistics (significance etc).", "output": "Calculates the derived statistics (significance etc)."}
+{"answer": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface.", "output": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface."}
+{"answer": "Check to see if the consistency group is active and not created. In this case we can delete the consistency group. Otherwise we should not delete the consistency group.", "output": "Check whether a consistency group can be deleted."}
+{"answer": "Closes 'closeable', ignoring any checked exceptions. Does nothing if 'closeable' is null.", "output": "Closes 'closeable', ignoring any checked exceptions. Does nothing if 'closeable' is null."}
+{"answer": "If a message is already available in this receiver's prefetch buffer then it is returned immediately otherwise this methods return null without waiting.", "output": "Gets a message over the queue."}
+{"answer": "Removes the objects in the specified range from the start to the end, but not including the end index.", "output": "Removes the objects in the specified range from the start to the end, but not including the end index."}
+{"answer": "Refills the input buffer.", "output": "Refills the input buffer."}
+{"answer": "If we remove an entity, we may need to update the duplicate identifier.", "output": "Checks that all duplicate names specified in the entity"}
+{"answer": "Stop cluster. Also, stops all the auto recovery processes for the bookie cluster, if isAutoRecoveryEnabled is true.", "output": "Stops the Bookie cluster, if any."}
+{"answer": "This method was generated by MyBatis Generator. This method corresponds to the database table attachment", "output": "This method was generated by MyBatis Generator. This method corresponds to the database table address"}
+{"answer": "remove selection to a list of items", "output": "Release all items currently selected."}
+{"answer": "reads the mappings from the file. The file has columns (first column for first hub and all the links corresponding to that hub below it)", "output": "Create a HubLink mapping for the given file"}
+{"answer": "Delete a load name that the train will either service or exclude. See setLoadOption", "output": "Delete a load name that the train will either service or exclude. See setLoadOption"}
+{"answer": "Validates the tag information on a compute state matches an expected virtual machine name.", "output": "Validates the computeState name."}
+{"answer": "Creates a Mojangson string from the given IntArray Tag.", "output": "Converts an integer into a string."}
+{"answer": "Removes the argument at the given index.", "output": "Remove arguments from the list of arguments identified by the given argument and return the index."}
+{"answer": "Replaces a policy's relevant content in the resource tree.", "output": "Replaces a policy in the given resource tree."}
+{"answer": "Creates a new AtomicDoubleArray of the given length, with all values initialized to zero", "output": "Create a new compact array"}
+{"answer": "Moved this code into it's own method so moveTo could use it when the move is across file systems", "output": "Place the action into it's file."}
+{"answer": "Recompute the separation of cluster means.", "output": "Recompute the separation of cluster means."}
+{"answer": "Returns an image where the input image is centered.", "output": "Method to make an image filled with width and height."}
+{"answer": "Handles cleaning up for a lost pool entry with the given route. A lost pool entry corresponds to a connection that was garbage collected instead of being properly released.", "output": "Handles cleaning up for a lost pool entry with the given route. A lost pool entry corresponds to a connection that was released."}
+{"answer": "Writes a start tag to the output.", "output": "Writes a start element tag. All attributes are ignored."}
+{"answer": "Adds a listener that will be informed when the user right-clicks an operator or a port.", "output": "Adds the entity listener."}
+{"answer": "Internal implementation of traverse.", "output": "Merges all key nodes in the tree and sets the given tree."}
+{"answer": "Replaces the first instance of the search string with the replace string.", "output": "Replaces the first instance of the search string with the replace string."}
+{"answer": "Stores the byte at the index given.", "output": "Maps a byte to a specified index."}
+{"answer": "Create the config JPanel, if there is one, to configure this operation type", "output": "Creates a new instance of NameTurnOperation"}
+{"answer": "Generate a salt for use with the BCrypt.hashpw() method", "output": "Generate a salt for use with the BCrypt.hashpw() method"}
+{"answer": "draws the description text in the bottom right corner of the chart", "output": "draws the description text in the bottom right corner of the chart"}
+{"answer": "Parses the bytes from a string.", "output": "Parses the bytes from a string."}
+{"answer": "Returns the inter-language link to a specific language (if any).", "output": "Finds the forward link for the specified link."}
+{"answer": "Updates the menu actions depending on the state of the given address space.", "output": "Updates the actions in the world space."}
+{"answer": "Take a Publisher and prepare to consume it on parallallism number of 'rails' , possibly ordered and round-robin fashion.", "output": "Take a Publisher and prepare to consume it on parallallmises."}
+{"answer": "Cleans a directory without deleting it.", "output": "Cleans a directory without deleting it."}
+{"answer": "Add a gumball to the game and play the ball drop sound.", "output": "Add a Gumb shall to the track."}
+{"answer": "Adds an element to the stream. If that element is the same as the last element this buffer saw, it won't be added to the stream, but will instead be recycled. If this element is different than the one before, this class will return the number of times that other element had been seen. The caller is responsible for having retrieved that element before calling this method.", "output": "Adds the specified segment to the list."}
+{"answer": "DeleteFunctionalityTest#testDelete6(). TODO Foreign key functionality is not supported", "output": "DeleteFunctionalityTest#testDelete6(). TODO Foreign key functionality is not supported"}
+{"answer": "Retrieve a channel instance for the specified topic", "output": "Internal helper method for searching a request."}
+{"answer": "Approximates a FloatPoint on the line from zero to this point with distance p_new_length from zero.", "output": "Changes the points of this point to an array of p_point values."}
+{"answer": "Inserts a new row into the block.", "output": "Inserts an entry into the journal queue."}
+{"answer": "Add configuration for file scanner.", "output": "Adds the URI to the full path."}
+{"answer": "Transfer an interpreted sequence or set of sequences from the reader to the writer. This implementation allows IDs to be specified as a range, e.g. 123-456", "output": "Allocates a sequence of characters from the given sequence."}
+{"answer": "Computes the perpendicular distance from a point p to the (infinite) line containing the points AB", "output": "Computes the distance between a point p to a line segment Euclidean distance."}
+{"answer": "Returns a copy of the current instance to achieve immutability", "output": "Returns a copy of the current instance to achieve immutability"}
+{"answer": "Runs the test case.", "output": "Runs the test case."}
+{"answer": "Returns the set of bug IDs for fixes included in this build of the Directory Server.", "output": "Launches a patch of the modification IDs"}
+{"answer": "See the general contract of the readFully method of DataInput. Bytes for this operation are read from the contained input stream.", "output": "Fully read the contents of a byte array."}
+{"answer": "Creates the GUI of the component.", "output": "Creates the GUI elements of the component."}
+{"answer": "Returns whether the SDK is the Jellybean release or later.", "output": "Indicates whether the bean consists of the JSF font or not."}
+{"answer": "Constructs a new zero partial correlation distribution function with the given values for n and k.", "output": "Instantiates a new normal correlation matrix."}
+{"answer": "Check whether SELinux is enabled or not.", "output": "Determines if this file is enabled"}
+{"answer": "Initialises and checks validity of files. This objects toString() method changes to reflect failures in validation in order for the user to be informed.", "output": "Validate the directory."}
+{"answer": "Adds a response listener on the requests", "output": "Add a response listener."}
+{"answer": "Calculate the log likelihood of the current state.", "output": "Calculate the log likelihood of the current state."}
+{"answer": "Returns true if there are dead states reachable from an initial state.", "output": "Returns true if there are dead states that reach an accept state."}
+{"answer": "Subtracts two decimal objects", "output": "Subtracts two Money objects"}
+{"answer": "Reteurns true if (from1, to1) == (from2, to2).", "output": "Compares this vertex to another object."}
+{"answer": "Reads characters from reader until the first EOL has been read. The first character after the EOL is returned. In case the end of the character stream has been reached, -1 is returned.", "output": "Skips a line without escaping."}
+{"answer": "https://docs.docker.com/engine/reference/api/docker_remote_api_v1.24/ Section 3.4 Volumes - List volumes", "output": "This method lists volumes like this request."}
+{"answer": "Converts a base64 encoded key into a ByteBuffer", "output": "Converts a base64 encoded String to a ByteBuffer."}
+{"answer": "Step in the animation. Will compute the current progress as well.", "output": "Check if the interval is enough to be at least the same time."}
+{"answer": "this is used to load a previously marked set of bytes into the StringBuilder without escaping. It expects the caller to have set a save point so that the EOF will stop us at the right time. This does handle UTF8 decoding and surrogate encoding as the bytes are transfered.", "output": "Load characters into a character buffer."}
+{"answer": "Creates SignatureWrappingOracle, parses the document and searches for all the SignatureValue and KeyInfo elements", "output": "Creates a SignatureF509 PrivateKey instance."}
+{"answer": "Fully construct an arbitrary length path node with all required annotations.", "output": "Constructs a simple path node."}
+{"answer": "Adds wheel changing listener", "output": "Adds wheel changing listener"}
+{"answer": "Read a %YAML directive number: this is either the major or the minor part. Stop reading at a non-digit character (usually either '.' or '\\n').", "output": "Extracts the value of a directive."}
+{"answer": "ToBitString - returns a String representation of i[].", "output": "ToBitString - returns a String representation of i.e."}
+{"answer": "Converts the float samples in a complex buffer to a little endian 16-bit buffer", "output": "Converts a 16-bit sample buffer to signed 16-bit sample byte buffer."}
+{"answer": "Check if a received token is OK.", "output": "Check one token for given port."}
+{"answer": "Util method to write an attribute without the ns prefix", "output": "Util method to write an attribute without the ns prefix"}
+{"answer": "Expands all paths in the tree.", "output": "Expands all selected paths within the tree."}
+{"answer": "Describe the vocabularies which are in use in the KB based on the predicate partition statistics.", "output": "Create a set of copying to the given predicate"}
+{"answer": "invokeAny(c) throws NullPointerException if c has null elements", "output": "invokeAny(c) throws NullPointerException if c has a single task in c"}
+{"answer": "A coordinate descent algorithm for L1-loss and L2-loss epsilon-SVR dual problem min_\\beta 0.5\\beta^T (Q + diag(lambda)) \\beta - p \\sum_{i=1}^l|\\beta_i| + \\sum_{i=1}^l yi\\beta_i, s.t. -upper_bound_i <= \\beta_i <= upper_bound_i, where Qij = xi^T xj and D is a diagonal matrix In L1-SVM case: upper_bound_i = C lambda_i = 0 In L2-SVM case: upper_bound_i = INF lambda_i = 1/(2*C) Given: x, y, p, C eps is the stopping tolerance solution will be put in w See Algorithm 4 of Ho and Lin, 2012", "output": "Compute and return the roots of a GF2 distribution on P2."}
+{"answer": "Create an action with a specific title. <P> Note that the argument is the Action title, not the title of the resulting frame. Perhaps this should be changed?", "output": "Creates a new sensor sub table action."}
+{"answer": "Generates an x-values array filled with numbers in range specified by the parameters. Can be used for convenience.", "output": "Generates an x-values array filled with numbers in range specified by the parameters. Can be used for convenience."}
+{"answer": "compareTo(BigInteger a). Compare two numbers of different signs. The first is positive.", "output": "compareTo(BigInteger a). Compare two numbers of different signs. The first is positive."}
+{"answer": "Put the service under the given attribute value for the given defining class and field, if it isn't already there. Return the HashMap for the given class and field.", "output": "Put the service under the given attribute value for the given class and field, if it isn't already there. Return the HashMap for the given class and field."}
+{"answer": "Creates a new decoder that decodes the specified URI. The decoder will assume that the query string is encoded in UTF-8.", "output": "Creates a new decoder that decodes the specified URI. The decoder will assume that the query string is encoded in UTF-8."}
+{"answer": "Convert RGB color to CMYK color.", "output": "Convert RGB color to CMYK color."}
+{"answer": "Removes a listener from the set of listeners", "output": "Removes a listener from the set of listeners"}
+{"answer": "Simplifies a common use case of showing an error message with an error icon that fades out after a few seconds", "output": "Shows an error message dialog."}
+{"answer": "Parses a name-value-pair with the given parser.", "output": "Parses a name-value-pair with the given parser."}
+{"answer": "Removes all characters which appear in string bag from string s.", "output": "Removes all characters which appear in string bag from string s."}
+{"answer": "Returns the trigonometric cosine of the specified angle in radians.", "output": "Returns the trigonometric cosine of the specified angle in radians."}
+{"answer": "Formats the given number to the given number of decimals, and returns the number as a string, maximum 35 characters.", "output": "Formats the given number to the given number of decimals, and returns the number as a string, maximum 35 characters."}
+{"answer": "Destroy all fragments and loaders.", "output": "Called when the fragment is still loaded."}
+{"answer": "Method for BeanContextChild interface.", "output": "Method for BeanContextChild interface. Uses the BeanContextChildSupport to remove a listener to this object's property. The listener has the power to veto property changes."}
+{"answer": "Helper function to ascertain the existence of a file and return true/false appropriately", "output": "Helper function to ascertain the existence of a file and return true/false appropriately"}
+{"answer": "Create a WindowsFileAttributes from a WIN32_FIND_DATA structure", "output": "Builds operating data from the beginning of the address table."}
+{"answer": "Flatten a Map into an XmlSerializer. The map can later be read back with readThisMapXml(). This method presumes that the start tag and name attribute have already been written and does not write an end tag.", "output": "Flatten a Map into an XmlSerializer. The map can later be read back with readThisMapXml(). This method presumes that the start tag and name attribute have already been written and does not write an end tag."}
+{"answer": "fire event to the rippler pane manually", "output": "Invoked when another event passes an event. As this event doesn't have itself, it's faster."}
+{"answer": "Whether the query (source or target side query of a reconciliation) returns full entry data, or just ids If explicitly configured, returns that setting. If not, tries to auto-detect if a given entry contains just id info, or contains full data The detection has limitations, such as requiring at least three data fields aside from fields it expects in id queries. This may not be case for all custom connectors, in which case explicit config is required instead of using auto detect.", "output": "Check if there is a full entry to be an entry in the query"}
+{"answer": "Determines if the given member is a TLA+ module", "output": "Checks if the resource is a module."}
+{"answer": "Write Annotation item into current section.", "output": "Write an annotation to the output stream."}
+{"answer": "Pack IPv4 address and match-all socket flag into a long.", "output": "Generates an IPv4 address from the provided InetAddress."}
+{"answer": "Determines whether a given revision contains a given template name", "output": "Determines whether a revision contains a given revision."}
+{"answer": "Retrieve all the Account info requests from the given start date.", "output": "Retrieves all requests for a given domain."}
+{"answer": "Draws a cylinder for the given parameters.", "output": "Draws the relinder color for the given parameters."}
+{"answer": "Add a list of strings.", "output": "Returns a copy of the strings in a List of strings, unordered"}
+{"answer": "Walks the provided parse tree using the list of listeners.", "output": "Build a list of listeners."}
+{"answer": "Read on char. like DataInputStream.readChar except little endian.", "output": "Read on char. like DataInputStream.readChar except little endian."}
+{"answer": "Determines how two dates compare up to no more than the specified most significant field.", "output": "Determines how two dates compare up to no more than the specified most significant field."}
+{"answer": "Splits a word in two word.", "output": "Make a split of the given word surrounded by another space character"}
+{"answer": "Does a given URL point to Google Book Search, regardless of domain.", "output": "Does a given URL point to Google Book Search, regardless of domain."}
+{"answer": "Returns the relative path for a fully qualified classname. Adds \"src/\" before the pathname for the class. Strips away internal class names.", "output": "Converts the class path to a fully qualified file path."}
+{"answer": "Removes the title prefix.", "output": "Removes a title prefix."}
+{"answer": "send the message and wait for replies", "output": "Send message to topic and wait for all errors."}
+{"answer": "Is relevant service. Used as filter for the incoming events.", "output": "Returns true if service attribute is equal to a given service."}
+{"answer": "Test for equality, coping with nulls.", "output": "Test for equality, coping with nulls."}
+{"answer": "Search for car by road number", "output": "Search for road number"}
+{"answer": "Convert class name to slashed format. If the class name is already in slashed format, it is returned unmodified.", "output": "Convert class name to fully qualified class name"}
+{"answer": "Average Precision - computes for each relevant label the percentage of relevant labels among all labels that are ranked before it.", "output": "Determine the precision of the average algorithm"}
+{"answer": "Finds an existing location or creates a new location if needed requires location's name creates a unique id for this location", "output": "Creates a new location in this list by adding an existing location if the id isn't already present."}
+{"answer": "Closes tree map and reclaims memory.", "output": "Closes the store if it was closed."}
+{"answer": "Remove OMA download info from SharedPrefs.", "output": "Remove OMA download info from SharedPrefs."}
+{"answer": "Indicates whether the path of the Android SDK home directory is specified in a local.properties file.", "output": "Checks if Android directory is in the app directory or not."}
+{"answer": "Returns a boolean indicating whether a Bundle contains properties that could be a valid saved token.", "output": "Returns a boolean indicating whether a Bundle contains properties that could be a valid saved token."}
+{"answer": "We call this to guarantee that we fetch a fresh policy from the server. This is to be used if the URL is invalid.", "output": "We call this to guarantee that we fetch a fresh policy from the server. This is to be used if the URL is invalid."}
+{"answer": "Returns true if, at this time, the object will accept a connection with respect to the named event", "output": "Returns true if, at this time, the object will accept a connection via the named event"}
+{"answer": "Raises the X and Y values of a Vector2 to the given power.", "output": "Returns a Vector2 containing the value of the given vector"}
+{"answer": "Invokes the specified parameterless method if it exists.", "output": "Invokes the specified parameterless method if it exists."}
+{"answer": "Load input stream as a lua binary chunk if the first 4 bytes are the lua binary signature.", "output": "Restores the object corresponding to the input stream."}
+{"answer": "Add a button to the panel.", "output": "Add button to the dialog."}
+{"answer": "Set up a reaction to requests matching certain criteria. The supplied ResponseSource will be invoked for each request that matches the supplied Matcher.", "output": "Maps the general responses to the background requests. This needs to be called once per page."}
+{"answer": "Commits changes in page to input.", "output": "Commits the set of variables of the current assignment."}
+{"answer": "Provides a utility method breaks a given String to array of String according to the given separator", "output": "Splits the given string into an array of Strings, using the given separator."}
+{"answer": "This method inserts an entry for a \"twin\" instruction immediately after the original entry. If the instruction is not found in the GC Map an exception is thrown.", "output": "Adds the MCI for an instruction to the list."}
+{"answer": "Creates a new instance of a class.", "output": "Returns a new instance of the object. The object is created and is not closed."}
+{"answer": "Constructs a new parser for the given format string.", "output": "Constructs a new parser for the given format string."}
+{"answer": "Converts an iterator to a string by concatenating all of the string representations of objects in the iterator, divided by a separator.", "output": "Converts an iterator to a string, concatenating all of the string representations of objects in the iterator, divided by a separator."}
+{"answer": "Check whether this matcher has reached \"max-size\" or not.", "output": "Is this service expired?"}
+{"answer": "Schedules a playlist save task. Subsequent calls to this method will be ignored until the save event occurs, thus limiting repetitive playlist saving to a minimum.", "output": "Schedules a playlist to be deleted"}
+{"answer": "This variable needs to be read if any of it's subsidiary variables needs to be read.", "output": "Tells whether there are more symbols to read."}
+{"answer": "Invoked when an action occurs.", "output": "Reacts to the cancel button."}
+{"answer": "Converts a vector to a string", "output": "Return a text representation of the vector."}
+{"answer": "return a Integer object with same value", "output": "Returns the integer value of the given integer."}
+{"answer": "This method was generated by MyBatis Generator. This method corresponds to the database table company", "output": "This method was generated by MyBatis Generator. This method corresponds to the database table address"}
+{"answer": "Send a VERBOSE log message.", "output": "Send a VERBOSE log message."}
+{"answer": "Commit all index memory changes to disk", "output": "Save all indexes to the table."}
+{"answer": "Compute and return the score for a match with e errors and x location.", "output": "Compute and return the score for a match with e errors and x location."}
+{"answer": "if deltaY > 0, move the content down", "output": "if deltaY > 0, move the content down"}
+{"answer": "Copies all of the mappings from the specified map to this one. These mappings replace any mappings that this map had for any of the keys currently in the specified map.", "output": "Copies all of the mappings from the specified map to this one. These mappings replace any mappings that this map had for any of the keys currently in the specified map."}
+{"answer": "Inserts a string into the content.", "output": "Inserts a string into the undoable."}
+{"answer": "Obtains the string representation of this object.", "output": "Obtains the string representation of this object."}
+{"answer": "Writes the data until there's space available", "output": "Send the packet to the socket"}
+{"answer": "Copy input to output and close the output stream before returning", "output": "Reads all data from the reader and close it silently"}
+{"answer": "Check that a number of bookies are available", "output": "Check the semaphore - i.e., the seperated cluster should be logged by the server"}
+{"answer": "Returns dst, the unrotated pixel location of the map.", "output": "Inverse projection a point from source coordinates"}
+{"answer": "Asserts that the given code closure fails when it is evaluated and that a particular type of exception is thrown.", "output": "Asserts that the given code closure fails when it is evaluated and that a particular exception is thrown."}
+{"answer": "Writes a raw packet to the desired interface. A L2 header will be added which includes the specified destination address, our source MAC, and the specified protocol type. The caller is responsible for computing correct IP-header and payload checksums.", "output": "Writes a raw packet to the desired interface. A L2 header will be added which includes the specified destination address, our source MAC, and the specified IP address."}
+{"answer": "Process an attribute string of type T_YESNO into a Boolean value.", "output": "Process an attribute string of type T_YESNO into a Boolean value."}
+{"answer": "Load PBartner dependent Order/Invoice/Shipment Field.", "output": "Load RMA data from a RMA document"}
+{"answer": "This method will search list of WO's for the given criteria and eligible for MB. CriteriaMap will have:CONTRACTOR_ID,CREATE_DATE,TENDER_NO,WORKORDER_NO,PROJECT_CODE Filter: 1)An existing bill with status in \"New\" or \"approval pending\" or \"Rejected will NOT be retrieved 2)Work orders for which the final bill is generated will NOT be retrieved for selection in the search result set. 2)Work orders with existing bill with status \" Approved\" with no existing bill can be retrieved for selection", "output": "This method will search list of WO's for the given criteria and everything for the connection. This is better to use for the last authentication."}
+{"answer": "Creates a time period for the week in which the specified date/time falls, calculated relative to the specified time zone.", "output": "Constructs a time period from a given date/time and locale."}
+{"answer": "Create a queue of lock requests for a resource.", "output": "Creates current queue resource."}
+{"answer": "Create the signed certificate request. This will later be retrieved in either string or binary format.", "output": "Convenience method to encode the X509 certificate in the data array."}
+{"answer": "schedule a task that starts immediately", "output": "Schedule a task for maintenance calls."}
+{"answer": "Abbreviate a String by simply truncating it.", "output": "Abbreviate a String by simply truncating it."}
+{"answer": "Local Method to stop a Wraparound Test", "output": "According to the EDT."}
+{"answer": "Check if a row index is valid.", "output": "Checks the bounds for the grid at the given row position."}
+{"answer": "Helper method called to empty all shared symbols, but to leave arrays allocated", "output": "Helper method called to empty all shared symbols, but to leave arrays allocated"}
+{"answer": "Determine the enemy potential for blitzing a territory - all enemies are combined", "output": "Determine the enemy potential for blitzing a territory - all enemies are combined"}
+{"answer": "Returns a new Name containing the pieces from this Name plus the given identifier added on the end.", "output": "Creates a new Name from a single identifier list."}
+{"answer": "Parses a string date into a Java Date object", "output": "Parses and returns a time string."}
+{"answer": "Returns a string representation of the message data. TODO: Broadcasts, (answer) note number, escaping", "output": "Returns a string representation of the thread. Return null if the message represents an empty string."}
+{"answer": "Is the argument a white space character according to the PDF spec?. ISO Spec 32000-1:2008 - Table 1", "output": "Returns true if the character is a white space or not"}
+{"answer": "Unregister filter (it won't get anymore events)", "output": "Removes a filter from the list of filters"}
+{"answer": "Removes the specified classifiers.", "output": "Remove the class names at the given indices"}
+{"answer": "Add a property change listener", "output": "Add a property change listener"}
+{"answer": "Returns the number of checkpoints that were loaded.", "output": "Returns the number of checkpoints that were loaded."}
+{"answer": "Add Element at the end", "output": "Add an item to the list at the top of this list"}
+{"answer": "add the urls for listening", "output": "add the urls for listening"}
+{"answer": "Adds the passed virtual array URIs to the set of virtual array URIs assigned to the resources by the user.", "output": "Adds the passed VirtualArray URIs to the set of VirtualArrays assigned to the resource by the user."}
+{"answer": "Checks if is cell editable.", "output": "Checks if the cell is editable."}
+{"answer": "Unpacks the compressed character translation table.", "output": "Unpacks the compressed character translation table."}
+{"answer": "Ends a drag in the trash can, clearing state and deleting blocks as needed.", "output": "Disable the drag of this directory."}
+{"answer": "Helper for concatenating several arrays.", "output": "Converts all the data arrays to a single array."}
+{"answer": "The given pattern must be a pattern. If it does not consist entirely of directed and undirected edges and if it is not acyclic, it is rejected.", "output": "Instantiates a new instance for all edges."}
+{"answer": "check a field that defines a Custom Catalog", "output": "Validate for custom catalog fields"}
+{"answer": "Sets timeout to IDLE_THREAD_TIMEOUT", "output": "Instantiates a new function handler."}
+{"answer": "very naive ssdp discovery packet detection", "output": "Determines whether the passed MIT is supported by the ASM API version."}
+{"answer": "Intercept refresh view and loading view", "output": "Adds a child to the end of the list of children."}
+{"answer": "Restores the selection after a model event/sort order changes. All coordinates are in terms of the model.", "output": "Restores all selected rows in the given model."}
+{"answer": "Gets the curent contents of this byte stream as a byte array. The result is independent of this stream.", "output": "Gets the curent contents of this byte stream as a byte array. The result is independent of this stream."}
+{"answer": "Cleanups after each tests.", "output": "Cleans up empty lists"}
+{"answer": "Blocks until the listener has consume the specified number of matching events, blocking at most the specified number of milliseconds. If this method has not reached the number of matching events and comes across events that do not satisfy the predicate, those events are consumed and ignored.", "output": "Advances the specified event count, waiting for the specified condition, removing all events from the specified timeout. <p> If the queue is full, the event is discarded."}
+{"answer": "Fills up vies from given command", "output": "Updates the UI by the values."}
+{"answer": "compareTo(BigInteger a). Compare ZERO to ZERO.", "output": "compareTo(BigInteger a). Compare ZERO to ZERO."}
+{"answer": "Generates a normally distributed random number and rounds it.", "output": "Generates a Gaussian uniform random number."}
+{"answer": "Determine the current amount of overscroll. If the value is 0, there is no overscroll. If the value is < 0, tabs are overscrolling towards the top or or left. If the value is > 0, tabs are overscrolling towards the bottom or right.", "output": "Determine the current amount of overscroll. If the value is 0, there is no overscroll. If the value is < 0, tabs are overscrolling towards the top or or left. If the value is > 0, tabs are overscrolling towards the bottom or right."}
+{"answer": "Constructs a new vector with the specified capacity.", "output": "Constructs a new vector with the specified capacities."}
+{"answer": "Process the invite request.", "output": "Process the invite request."}
+{"answer": "Initializes logger into/from log reference passed in.", "output": "Instantiates a logger logger."}
+{"answer": "Read receive delay from window Returns 'true' if successful, 'false' if an error was detected. If an error is detected, a suitable error message is placed in the Notes area", "output": "Read delay time from window Returns 'true' if successful, 'false' if an error was detected. If an error is detected, a suitable error message is placed in the Notes area"}
+{"answer": "Writes indents and automatically includes the baseindend from the options.", "output": "Performs a prepared statement for each number of times."}
+{"answer": "Returns the hash code of this list. The hash code is calculated by taking each element's hashcode into account.", "output": "Returns the hash code of this list. The hash code is calculated by taking each element's hashcode into account."}
+{"answer": "Parse string value returning a int.", "output": "Parse string value returning an integer."}
+{"answer": "Performs handling of java mouse event Note that this function should be invoked only from root of menu window's hierarchy that grabs input focus", "output": "Performs a java mouse click on the current mouse position and updates the mouse event."}
+{"answer": "Tests whether the node to be replaced is invalid.", "output": "Checks if the current node is a invalid child node."}
+{"answer": "Generates the instruction to push the given value on the stack.", "output": "Generates the instruction to push the given value on the stack."}
+{"answer": "Notifies listener of a mouse motion event. A motion event is dispatched when no button is currently pressed, in an isolated \"one shot\" interaction, and always goes to the layer hit by the event coordinates.", "output": "Handles touch event."}
+{"answer": "Remove a batch clusterer listener", "output": "Remove a batch clusterer listener"}
+{"answer": "This should only be called by the Lock Service. Calling this method won't actually refresh the grant.", "output": "This should only be created by the lock service. This call will not actually refresh the token."}
+{"answer": "Removes an object that is known to not be in the relation. This is used for offline caching.", "output": "Remove an object from the relation. This is used for offline caching."}
+{"answer": "Wraps a byte[]. This means there is one copy in memory.", "output": "Generate a HeapStore which reads the given byte array."}
+{"answer": "Start the string parsing. If base is not a string, will return null.", "output": "Parses a string to a short, returning the string value."}
+{"answer": "valueOf (long val): convert a negative long value to a BigInteger. The long value fits in integer.", "output": "valueOf (long val): convert a negative long value to a BigInteger. The long value fits in integer."}
+{"answer": "Inserts the specified element before the specified position into the receiver. Shifts the element currently at that position (if any) and any subsequent elements to the right.", "output": "Inserts the specified element before the specified position into the receiver. Shifts the element currently at that position (if any) and any subsequent elements to the right."}
+{"answer": "Increases hash table capacity by lengthening entry arrays.", "output": "Reallocates the order to hold all entries in the result."}
+{"answer": "Construct a sided plane from a pair of vectors describing points, and including origin, plus a point p which describes the side.", "output": "Construct a sided plane from a pair of vectors describing points, and including origin, plus a point p which describes the side."}
+{"answer": "Checks the InputStream if it contains GZIP compressed data", "output": "Checks the InputStream if it contains GZIP compressed data"}
+{"answer": "Insert room for operation. This will NOT set the length value of the operation, but will update the length value for the total expression.", "output": "Insert room for operation. This will NOT set the length value of the operation, but will update the length value for the total expression."}
+{"answer": "Clears instance cache and deregisters listeners", "output": "Removes all managed objects from the DB."}
+{"answer": "Registers an object that should be decayed. The passed object will have its decay method called when the decaying thread decides it is time for the system to decay.", "output": "Registers an object consisting of its decay component of an object."}
+{"answer": "Fails if expectedString is not found in x", "output": "Asserts that the actual output String is in expected."}
+{"answer": "Removes the classname from the cache.", "output": "Removes the classname from the cache."}
+{"answer": "failedStage returns a CompletionStage completed exceptionally with the given Exception", "output": "Tests failure of a CompletionStage as a RuntimeException"}
+{"answer": "Renders the channel configs, lines, labels, and cursor", "output": "Renders the Graphics's text area."}
+{"answer": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface.", "output": "Used to communicate a progress update between a plugin tool and the main Whitebox user interface."}
+{"answer": "Handles the case where a class loader is dropped.", "output": "Handles the case where a class loader is dropped."}
+{"answer": "Delete (sw,port) from the list of list of attachment points and oldAPs.", "output": "Delete the matching list of attachment points for given port"}
+{"answer": "Checks if a class node is assignable to another. This is used for example in assignment checks where you want to verify that the assignment is valid.", "output": "Determines if the type corresponding to the given type is assignable from this qualifier."}
+{"answer": "total number of files to be recovered (potentially not yet done)", "output": "total number of files that are downloaded"}
+{"answer": "Constructs and AnimGameItem instace based on a MD5 Model an MD5 Animation", "output": "Constructs and AnimGameItem instace based on a MD5 Model an MD5 Animation"}
+{"answer": "Construct a new instance with the specified detail string and exception.", "output": "Construct a new instance with the specified detail string and exception."}
+{"answer": "Deletes the existing Assignment between a User and an Experiment.", "output": "Delete a scope from disk."}
+{"answer": "Format a given object.", "output": "Format a given object."}
+{"answer": "CAS waitStatus field of a node.", "output": "CAS waitStatus field of a node."}
+{"answer": "Returns the singleton instance, creating if necessary. An instance of com.caucho.server.admin.ProThreadDump will be returned if available and licensed. ProThreadDump includes the URI of the request the thread is processing, if applicable.", "output": "Create the thread dump for the thread."}
+{"answer": "Starts audio playback once audio buffer is almost full and remaining capacity falls below the start threshold.", "output": "Check the audio buffer threshold"}
+{"answer": "checks if all keywords in filter array are in input", "output": "Determines whether or not this filter matches the given filter."}
+{"answer": "Removes and returns first element, or null if empty.", "output": "Removes and returns first element, or null if empty."}
+{"answer": "Executes the downloadRunnable using the provided monitor to update the user and provide cancel capabilities.", "output": "Run the database logging on the server."}
+{"answer": "Initialize the document builder factory so that it can be reused and does not need to be reinitialized for each parse action.", "output": "Initialize the document builder factory so that it can be reused and does not need to be reinitialized for each parse action."}
+{"answer": "Returns the standard error of the estimate for the intercept.", "output": "Returns the standard error of the estimate for the intercept."}
+{"answer": "Create Missing Attribute Values", "output": "Create missing values for Table IDs"}
+{"answer": "This method replaces all \\ to /.", "output": "Replaces path with a slash"}
+{"answer": "Creates a background thread that will call the launch notifier when the process terminates.", "output": "Starts the activity. Do not call itself."}
+{"answer": "Encode the ACL to the given buffer", "output": "Description of the Method"}
+{"answer": "Transforms \"something $dir$/other/\" to \"something /path/to/hidden/other/\"", "output": "Expands the directory name in a generated package."}
+{"answer": "Keep private. Call only when holding lock.", "output": "Tries to remove current buffer from another queue, and return true if there are one."}
+{"answer": "allow us to update value (and sync to GUI version if exists", "output": "Updates the text value."}
+{"answer": "Checks if another objects is available by attempting to read another byte from the stream.", "output": "Check if there are more data to read."}
+{"answer": "Creates a display string of a parameter list (without the parentheses) for the given parameter types and names.", "output": "Appends a method name to a list of parameter types."}
+{"answer": "Execute this call to fill in heartbeat data on the slave. This call must be invoked after a heartbeat event is applied.", "output": "Call this call to complete the heartbeat on the replication. The switch should be modified, but it needs to be an update when having a heartbeat change."}
+{"answer": "Decrypt an encapsulated session key.", "output": "Decrypts and decrypts it."}
+{"answer": "Loads the private key of this process", "output": "Load private key from configuration file"}
+{"answer": "Removes a listener for changes of registered snapshot categories.", "output": "Removes a listener for changes of registered snapshot categories."}
+{"answer": "Will return true if any extensions are present and marked as critical as we currently dont handle any extensions!", "output": "Will return true if any extensions are present and marked as critical as we currently dont handle any extensions!"}
+{"answer": "zGetWeekNumberForASevenDayRange, This returns a week number for the specified seven day range, according to the supplied weekFieldRules. If all seven days fall on the same week number, then that week number will be returned. If \"requireUnanimousWeekNumber\" is true and the supplied range falls across two week numbers, then null is returned. If \"requireUnanimousWeekNumber\" is false and the supplied range falls across two week numbers, then the \"majority rules\" system is used for determining the returned week number. The majority rules system means that the most common week number in the seven day range will be returned. For example: If days 1 and 2 are in week 30, and days 3 through 7 are in week 31, then the week number 31 will be returned. There is no possibility of a \"tie\" week number, because the number of days in the range is seven (an odd number). Additionally, the returned week number will always be the correct week number for a minimum of four days out of the seven day range. To make sure that all seven days in the range -can- fall on the same week number, the caller of the function would need to supply a seven day range that starts on the same \"first day of the week\" that is used by the supplied weekFieldRules. I don't know if there are any special cases where these matching parameters are supplied, but the result is still not a unanimous week number. The week fields object can be created from a specific locale, (including Locale.ISO if desired), or the week fields can be configured to match any desired week field rules. Examples of creating week field instances: WeekFields weekFields = WeekFields.of(Locale locale); WeekFields weekFields = WeekFields.of(DayOfWeek firstDayOfWeek, int minimalDaysInFirstWeek);", "output": "Transform year to LocalDate"}
+{"answer": "Returns true iff str is not an element of array.", "output": "Checks if the array is nonnull."}
+{"answer": "Returns a copy of the given node or subtree with this document as its owner.", "output": "Returns a copy of the given node or subtree with this document as its owner."}
+{"answer": "libsecp256k1 Cleanup - This destroys the secp256k1 context object This should be called at the end of the program for proper cleanup of the context.", "output": "libsecp256k1 startup"}
+{"answer": "Initialize the background task to be run every hour. At each run that task will walk through the Invalid Login records and clean all expired records.", "output": "Initialize the business object data."}
+{"answer": "Creates a randomized list of urls for the given shard.", "output": "Creates a List of URL strings for the given shard input string."}
+{"answer": "Get reader to response body using given character set. <p> This will fall back to using the UTF-8 character set if the given charset is null", "output": "Get reader to response body using given character set. <p> This will fall back to using the UTF-8 character set if the given charset is null"}
+{"answer": "Creates the ZLIB Bytes for PDF images", "output": "Converts an image into a DEX Image."}
+{"answer": "Defines a new vertex with the given id. The depth-first search is performed in the relative order in which vertexes were added to the graph.", "output": "Add a vertex to the map."}
+{"answer": "Set up all of the other objects to operate with a server connected to this application.", "output": "Initialize local command part"}
+{"answer": "Returns the index starting at the specified index (two characters at a time).", "output": "Returns the index within the specified character sequence of the character sequence starting at the specified index."}
+{"answer": "Calculate the requirements for the minor axis. This is called by the superclass whenever the requirements need to be updated (i.e. a preferenceChanged was messaged through this view). <p> This is implemented to calculate the requirements as the sum of the requirements of the columns and then adjust it if the CSS width or height attribute is specified and applicable to the axis.", "output": "Calculate the height requirements of the data table. The requirements of the table we have to calculate the requirements of all the table."}
+{"answer": "Appends an int (little endian) in the buffer", "output": "Appends the specified string to the end of this string."}
+{"answer": "Uploads a new let binding to ghci", "output": "Pushes an prediction record."}
+{"answer": "Displays this node as a String, implementing ExploreNode interface; depth parameter is a bound on the depth of the portion of the tree that is displayed.", "output": "Just toString() method to be called."}
+{"answer": "Creates a new descriptor instance.", "output": "Sets up DDL to use for the default column type."}
+{"answer": "Bulk load the tree", "output": "Performs load the data."}
+{"answer": "Forward project a lat/lon Poly. This is a complex method. Please read the in-code documentation for an explanation of the algorithm.", "output": "Forward project a lat/lon Poly. This is a complex method. Please read the in-code documentation for an explanation of the algorithm."}
+{"answer": "Remove categories that contain a year in them (starting with 19__ or 20__), except for this year and previous year Rationale: https://github.com/commons-app/apps-android-commons/issues/47", "output": "Remove categories that contain a year in them (exclusive)."}
+{"answer": "Creates a new data provider event.", "output": "Creates a new data object."}
+{"answer": "validate the bean is not null; then validate its fields", "output": "Validate the result of a given bean."}
+{"answer": "Set the indent of a bracket based on the command provided in the supplied document.", "output": "Removes the beginning of a command line from the command line. For example, if necessary."}
+{"answer": "Attempts to set the formatting template and returns a string which contains the formatted version of the digits entered so far.", "output": "Try to determine the formatting of the real pattern, given on."}
+{"answer": "Fill Picks. Column_ID from C_Order", "output": "Fill Order on Table"}
+{"answer": "Creates a copy of the field.", "output": "Creates a copy of the field."}
+{"answer": "Create a zero number from a sign and an array of zero length. The sign is 1.", "output": "Create a zero number from a sign and an array of zero length. The sign is 1."}
+{"answer": "Cast object to type t.", "output": "Cast object to type t."}
+{"answer": "Schedules a file to be deleted when JVM exits. If file is directory delete it and all sub-directories.", "output": "Schedules a file to be deleted when JVM exits. If file is directory delete it and all sub-directories."}

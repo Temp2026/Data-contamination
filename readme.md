@@ -156,7 +156,7 @@ Python function:
 
 ## Complete Result
 
-Please refer to the [result](./result.md) for the complete experimental results (RQ1-RQ5).
+Please refer to the [result](./result.md) for the complete experimental results (RQ1-RQ5). Detailed reasoning results are stored in [inference](inference/).
 
 ## Pretrained Language Model
 

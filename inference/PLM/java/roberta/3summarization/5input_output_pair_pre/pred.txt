@@ -1,0 +1,1000 @@
+Returns a 0-based depth within the object graph of the current object being serialized.
+Checks whether the scheme alters the training dataset during training. If the scheme needs to modify the training data it should take a copy of the training data. Currently checks for changes to header structure, number of instances, order of instances, instance weights.
+Compute the union size of two Bitsets.
+Test 2 keys with candidates in reverse order.
+Handle a closing annotation.
+Return a textual description of this classifier
+Returns a new sector whose angles are the extremes of the this sector and another. The new sector's minimum latitude and longitude will be the minimum of the two sectors. The new sector's maximum latitude and longitude will be the minimum of the two new sector. The new sector's maximum latitude and longitude will be the maximum of the two sectors.
+Returns true if the value is equal to the given value
+Integer value of a positive BigDecimal
+Main recursive method to find a directory.
+Get a sorted array containing all column values for a given tuple iterator and field.
+Divide with invalid rounding mode
+This method gets called when the dataset is changed.
+Subscribe to a scheduler.
+Return true if this type is a String, followed by a String.
+Sends a source entry.
+Validates that the given sql statement is valid.
+Converts to object array.
+Returns true if the thread is in no longer set.
+Use the quantile for the given player to a project.
+Instantiates a new communication matcher.
+Returns the maximum level of the classification for the given level, if there is at least one level in the given level.
+Ask to the user for retuning the pass code just entered to the current pass code.
+Rolls back the worker thread creation. - removes worker from workers, if present - decrements worker count - rechecks for termination, in case the existence of this worker was holding up termination
+InsertFunctionalityTest#testInsert4(). Tests INSERT ... SELECT with expressions in SELECT query
+Adds a local entry to the cache
+Receive notification of the end of an element.
+Send a FATAL ERROR log message
+Removes a node from the list of children.
+Returns a string representation of this list.
+Validate the given character array.
+Build the final bitmap-views for the animation.
+Unregisters a new virtual worker hook.
+Runs the underlying request.
+Bounds the current scroll if necessary, but does not synchronize the stack view with the model.
+Compute the aggregate code
+Waits for a given volumes to be shown to the user.
+Starts a part of the cache and processes it.
+Updates the view state.
+Paints the image on the window.
+Returns true if, at this time, the object will accept a connection via the named event
+It checks if the name is prefixed (contains the character ':').
+Try to release any connection used in this database.
+Adds actions to the QuickActionView
+Adds a simple renderer to the multiple renderer.
+Copies stream, fires progress events by listener, can be interrupted by listener.
+calculates the needed angle for a given value
+Returns a buffer to the pool, throwing away old buffers if the pool would exceed its allotted size.
+Creates a new instance.
+Returns a new CharSeq with the given CharSeq.
+Writes the specified header to the current location.
+Notify the state of a change state change.
+test for getOrder() method
+Formats and logs a message with a Throwable.
+Constructs the redis key used to retrieve data for the given shard.
+Decodes characters in the given string using the specified charset.
+Adds specified domain name to the list of expanded domains
+Create a new connection chain
+Tests fail: always returns false, failing statements commented out. Feature only partially implemented. Feature only partially implemented.
+Compute an interface hash method.
+Copy the contents of the given byte array to the given OutputStream. Leaves the stream open when done.
+Does this item have any items loaded yet?
+Draw the native frame block
+Encode parts of the message using Text Compaction as described in ISO/IEC 15438:2001(E), chapter 4.4.2.
+Check to see if a string is a valid NCName according to [4] from the XML Namespaces 1.0 Recommendation
+Appends the specified element to the end of this list.
+prepare the dataset required for running test cases
+Build an array of service IDs that can be checked for this service in the collection.
+Check the value of a string.
+Recover the current sets of primary servers.
+Creates a new journal that omits redundant information. This replaces the current journal if it exists.
+Removes the recurrence from persistant store.
+Copy NodeList members into this nodelist, adding in document order. Null references are not added.
+Should only be called if we need to fetch data from the last commit time to be skipped.
+This method is called via reflection from the database.
+Services a Commandline Request.
+Returns the byte array
+Returns the values that aren't normalized.
+Get the repeg of a view. Assumes the cpeg stream is the count.
+Creates a map of export masks to empty masks.
+Inserts an immutable array into the specified index
+Write a small scale to the current line, in the case of an image.
+Put the source tree root node in the document cache. TODO: This function needs to be a LOT more sophisticated.
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+copy a input stream to a output resource
+Creates a stop logging for the specified type.
+Draws the outline for the given canvas.
+Loads properties from a class.
+Add a number to zero
+Remove one time stamp from another.
+A method to check if a cell has been processed or consumed.
+Reads a single character from the stream.
+This function is used to plot the y axis and its breakdown with values
+Gets the maximum value.
+Prints the contents of the given file to the main system.
+Define if this rule should be non-empty.
+Parses an XML pattern
+Verifies getting table types.
+This method will be used to check whether stream is already present in cache or not for filepath if not present then create it and then add to cache, other wise get from cache
+Removes a listener from the set of listeners
+Returns what the serialization specification calls "descriptor" given a field signature.
+Adds the parameters to the POST parameter.
+Return an annotation for a unique class.
+Performs a resource support for the given ID. If the ID is NULL, return true.
+A service wrapper for the createElectronicTextMethod method. Forces permissions to be checked.
+Constructs a new Patterner with the given prefix and parameters.
+Compute the intersection of two line segments.
+Method which removes the specified object class from original set and returns the set of object classes that were removed.
+The unix timestamp in milliseconds.
+Return true if the license exists.
+draws the grid background
+Opens a stream to an entry in the jar.
+Unpacks the compressed character translation table.
+Called after the external file creation.
+This overridden method checks to see if the OMGraphicList is created, and then returns a subset of OMGraphics that are actually created. If the layer is created, it returns null.
+Returns common pool queue for a thread that has submitted at least one task.
+Returns true if the given attribute is a private element, false otherwise.
+Divide: rounding mode is ROUND_HALF_UP, result is positive; distance = -1
+Public method to validate restore word format
+This method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll. If you override this method you must call through to the superclass implementation (e.g. super.onPageScrolled(position, offset, offsetPixels)) before onPageScrolled returns.
+Convert the contents of a string to the corresponding UTF-8 bytes.
+Reads the data from the given text file.
+Calculate selector radius of the incomplete boundary
+Determines the width of this view
+Test computing the full byte array.
+Called by the config object.
+Replace the local number.
+Transforms multiple paths will all matrices.
+Decodes a byte array from Base64 format. No blanks or line breaks are allowed within the Base64 encoded input data.
+Ensures the truth of an expression involving the state of the calling instance.
+Item will slide from Synth View.
+Creates a new hash object. The capacity of the specified BigInteger is set to the absolute value.
+Handle tenant request for a given tenant
+Loads a store from the specified stream.
+Construct the index data for the transaction.
+Returns the lall manager.
+Inserts the given parameter value into a new map.
+Returns the minimum dimensions for this layout, given the components in the specified target container.
+Calculates the linear distance between two P2 and Gl1 estimator.
+Selects the position for the given position.
+Returns an enumeration describing the available options.
+Strorable whitespace. For this, the document node and clears the text node.
+Wait until the editor is active
+Finds the largest objective value.
+Convert coordinate to Y
+Register the listener as HTTP notification.
+Parses an ASCII property list from an input stream.
+Calculate the current score based on the data variable
+Creates a new instance of analyzer for the given set of symbols.
+check if a zone link string is in the output string "zone"
+Checks the next Poisson distribution for the weighted variance
+Checks whether the given double array is valid.
+Measure and layout all currently visible children.
+Processes the event from the connection.
+Gets the percent of values below the specified range.
+Quietly closes given resource ignoring possible checked exception.
+Waits for a sw to remove
+Adds a new event listener to this dialog.
+We only rebuild the journal when it will halve the size of the journal and eliminate at least 2000 ops.
+Converts string to byte array.
+Loads a properties file by name
+<!-- begin-user-doc --> <!-- end-user-doc -->
+Parses a name-value-pair with the given parser.
+Actions a Pull Event
+Returns the mapping from the start point to the column array.
+Parses the template and writes the contents of the given file.
+Find the differences between two texts. Assumes that the texts do not have any common prefix or suffix.
+Construct a factory with a particular domain.
+Returns the number of unprocessed tokens remaining in the string.
+Adds the document to queue index.
+reset all common components before parsing
+Updates a new volume label
+Define and return a logger instance.
+Recreate the transient object.
+Paint the foreground is enabled.
+Logs a thrown exception.
+Convert a small BigDecimal to BigInteger
+Called when the accuracy of the sensor has changed.
+Indicates if the argument says it's missing.
+setMinCRLNumber(BigInteger maxCRL) method testing. Tests if CRLs with any crl number value match the selector in the case of null crlNumber criteria, if specified maxCRL value matches the selector, and if CRL with inappropriate crlNumber value does not match the selector.
+Generates the popup menu for the given mouse event.
+Remove task from the receiver.
+java.math.BigDecimal#divide(java.math.BigDecimal, java.math.RoundingMode) divide(BigDecimal, RoundingMode)
+Check if the path exists. If it doesn't exist, we set it.
+Opens a class. If the class loader is a dynamic class and is ignored.
+Determines the height of this view
+This only checks clipping along the bottom edge.
+Creates a new scheduling rule factory for the given workspace
+Writes a byte array to a file creating the file if it does not exist.
+Adds the specified item to the list.
+Check for pending messages to be sent before sending ControlEvent.
+Determines the number of consecutive characters that are encodable using numeric compaction.
+Parses the current node and returns the number of elements added.
+Calculates optimal height of Pilble: This method also takes into big-endian.
+Test for verifies that the numeric types are properly drawn.
+Closes the callbacks from the cache.
+static version of indexOf, to allow repeated calls without needing to re-acquire array each time.
+Populate combo box with a single list.
+Checks the log file for reading the given version, if it's not.
+Return the absolute value of the x-axis.
+Returns the dremum of this set of items in the table.
+Returns OID for algName
+Provide reflective behavior to construct instance of generator given an array of string arguments.
+Refills the input buffer.
+Writes the mouse event back to the fast mouse event.
+Add a module to the set of modules to load and register its services
+Checks whether all tables have been defined in the document.
+Classifies the dataset and returns the list of features for the input.
+Set bind header of given position
+Updates the line number of selected states, based on the current state.
+Draws a rectangle filled with given half width and half height, centered on (x, y).
+Re-measure the Loading Views height, and adjust internal padding as necessary
+Replaces a split element with a given index
+Called to start adding an item to an sub list.
+Compute initial split for a given record.
+Invoked when the mouse has been clicked on a component.
+Computes source directories.
+Returns true if there is another postponed route to try.
+Determines whether the selection contains the current selection
+Instantiates a new IGFS path.
+reads a XML Element Attribute ans cast it to a int value
+Returns the remainder of 'reader' as a string, closing it when done.
+Adds a defineable property for the given type.
+Mark the Value of an entry
+Call the request to get the cursor
+Handles a number of spaces at the end of all pieces.
+Registers implementing class of the Signature algorithm with algorithmURI
+Create a key configuration.
+Returns whether the input string is a breaking break.
+Checks union of all intersection segments of another segment string
+Removes the first occurrence, starting at the beginning and moving towards the end, of the specified object from this vector. All elements with an index bigger than the element that gets removed have their index decreased by 1.
+Merges a vertex onto the current thread.
+Adds bdc structures to the rows for each column.
+Method that takes a Java name from a Java file name
+A function that generates random AES & HMAC keys and prints out exceptions but doesn't throw them since none should be encountered. If they are encountered, the return value is null.
+Ensures the truth of an expression involving one or more parameters to the calling method.
+Execute a SQL statement.
+Creates a new journal that omits redundant information. This replaces the current journal if it exists.
+Below method will be used to refresh the GUI
+Create the migration task editor.
+This method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll. If you override this method you must call through to the superclass implementation (e.g. super.onPageScrolled(position, offset, offsetPixels)) before onPageScrolled returns.
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+Ensures there is enough space in the buffer for the given number of additional bytes.
+Accepts an IPv4 address of the form xxx.xxx.xxx.xxx, ie 192.168.0.1 and returns the corresponding 32 bit integer.
+Close the given cursor and remove it from the map
+Checks if there is a pattern after the pattern
+Generates the instruction to push the given integer on the stack.
+Parses a node and initializes it with the content.
+Adds a new item to the list
+notify unsuccessful completion of the operation
+Transform an xsl-fo StreamSource to the specified output format.
+Splits the quoted delimiter
+Reads time bytes from current thread, returning true if still available.
+Recursively delete the appropriate OJ frame state recursively.
+Set bounds for the right textView including clip padding.
+Creates a ContentAccess content of the given blob.
+Checks whether each segment is covered by the population.
+Get the set of values from a string.
+Returns the first index of elt in the array if < len, else -1.
+Appends the value to the list.
+Compares the argument to this Certificate. If both have the same bytes they are assumed to be equal.
+Append some statements to the form.
+Converts the specified string into a byte array.
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+convert a histogram that contains common values
+This function will take a song entry and update it to the latest week and increase the count for the current week by 1 if necessary
+Recursively assign node weights.
+Creates a new instance of SearchEngine
+Adds a field to run the query
+Wraps a function and returns its value
+Build configured schema statement.
+And for a negative and a positive numbers; the first is shorter
+Sets the pending streams.
+Return a subset of sentence.
+Determine if the Expression is in PI.
+Output the SQL type for a Java short.
+Breaks a String to multiple strings.
+Write all modified favorites to the data stream.
+Updates the rolling average.
+Throws an exception if the payment field ids are not present
+Creates new instance of KeyState.
+Create a private object based on the provided values.
+Invoked when the target of the listener has changed its state.
+Parses a CSV list of strings into a given list of strings.
+Creates the threshold layout and adds it to the local layout.
+Returns true if the window is running.
+Creates a default mosaic definition.
+Returns a result-defined results for a single node.
+Set the default trust list of SSL certificates.
+Hides if the given component is only of the divider.
+add internal listeners for use
+The "safe" square root of the input value, handling negative values by simply making them positive and then negating the return value.
+Runs multiple threads using a simple set of threads and builds a single run of threads
+Appends a character to the Writer. Note that this does not yield a newline.
+Initialize the Session objects from the given collection.
+Construct a SELECT statement suitable for use in a group of SELECT statements that will be joined through UNION operators in buildUnionQuery.
+Constructs a new node with the given version.
+Increase the number of accuracy at the current time.
+Revert all files in the root directory.
+Concatenates a list of float arrays into a single array.
+Initializes the state of the given text.
+Description of the Method
+The can be read.
+Writes the contents of the internal buffer to the given array starting at the given offset. Assumes the array has space to hold count bytes.
+Remove an item from the list.
+Computes the normal distribution, given the power of 2.
+Sorts an array of Strings, returning a new array with the sorted items. The original array is left untouched.
+Adds a new zoom listener.
+Clears all registers of a given instruction.
+Fire when an annotation has been selected.
+Updates the prediction stats and returns whether average has been allowed. The policy is: 1. If the client does not wait more than mDelayMs, each time the request is allowed. 2) and the client waits for more than mDelayMs. If the request is allowed to be allowed for more than 2*mDelayMs, accept the request and set mDelayMs. This way the client waits for more than 2*mDelayMs.
+Authenticates the supplied server evidence message M1 and saves it only if correct. To be called after calculating the secret S.
+Handle a available text, skipping over its text.
+Removes a service metadata. Currently we only want to remove the configuration.
+Turn an attribute into a canonical string.
+Constructs an EscapedWriter around the given Writer.
+Returns true if this cookie has expired.
+Record the bitmap together.
+Checks whether the method is correct.
+Remainder of division of equal numbers
+Clears the schema and default value of the given property name.
+\brief distance( this, b )
+Checks backup info from the backup.
+Converts the specified string into a regular expression, using the specified encoding. For example, all of the characters are escaped.
+Create a negative number from a sign and an array of bytes. The number fits in an integer.
+Builds and returns a Opus Comment.
+Asserts that the set of properties contains the expected values.
+Returns the number of elements in this set.
+Converts the string to uppercase
+return an Iterator over the DirectedEdges which have no edges.
+Unlocks and signals any thread waiting for a single thread.
+Creates and returns a String formatted so it will fit in a box suitable for a Java Doc header.
+return a number of two String text in the string
+Add an item to the drop list.
+Finds all entries for a given entity.
+Load workflw and initialize the session attributes.
+Returns a hash code value for the object.
+Removes the from tags.
+Verifies the given secp256k1 signature in native code. Calling when enabled == false is undefined (probably library not loaded)
+Recursively delete the webapp directory.
+Test that the actual Iterator contains the expected elements.
+Returns a string that has finished threshold.
+Generates the hostname for the given vm name.
+Transfers the id of the file to the data store
+Helper method for Overscrolling that encapsulates all of the necessary function. This is the advanced version of the call.
+Try to unwrap an expression string.
+If we have all PieChart Config then there is no point in reloading it
+draws out the next unit test
+Creates the line structure for the given text. Newly created lines are inserted into the line structure starting at the given position. Returns the number of newly created lines.
+Returns the positive square root of the specified value.
+Counts the number of black/white transitions between two points, using something like Bresenham's algorithm.
+Convert a number into a bit string.
+Encodes an array of bytes into an array of URL safe 7-bit characters. Unsafe characters are escaped.
+Creates a new MessageTokenizer.
+Waits for the edge to become available.
+used when the translation is empty.
+Convenience version of consumeMode() all listeners.
+Adds a new event to the head of the queue.
+Stops the timer with the specified name.
+returns a pretty printed summary of the table
+Creates a temporary file in the system.
+Draws a span of text.
+Select also all items belonging to any selected items.
+Create a new instance.
+Removes from the list of nodes any that cannot be parents of x given the background knowledge.
+Configures properties and adds them to the supplied Properties object.
+Creates a new connection.
+A simple implementation of the addors method
+Performs floponion for a switch port
+Sleep for the specified time, ignoring any exceptions that occur
+A static method that verifies that we can write a data.
+Calculates the values of an transformation.
+Check to see if a string is a valid Nmtoken according to [7] in the XML 1.0 Recommendation
+When mouse is pressed, use this method to capture the current mouse state
+Parses a double or double value if it isn't already read.
+Put a string in the native byte array.
+Actions a Pull Event
+Add a RTCP event listener
+Creates a new array of the given size if necessary and copies the data into the new array.
+This method detects a code in a "pure" image -- that is, pure monochrome image which contains only an unrotated, unskewed, image of a code, with some white border around it. This is a specialized method that works exceptionally fast in this special case.
+Reports an error at a given domain.
+Connects socket 'fd' to 'inetAddress' on 'port', with no timeout. The lack of a timeout means this method won't throw SocketTimeoutException.
+Determine if the string-value of a node is whitespace
+Creates a new panel object.
+Opens the access image
+Deregisters a Spring from this BaseSpringSystem, so it won't be iterated anymore. The Spring should not be used anymore after doing this.
+Returns the file name of this class.
+Parses an N-Triples node, creates an object for it using the supplied ValueFactory and returns this object.
+Resets the PSR list.
+Sorts the specified array in ascending numerical order.
+Close this Popup Menu.
+Free a cache by its id.
+Expand a view triangle
+Convert an IPv6 address to a formatted string representation
+Track a failure - multiply the back off interval by the epoch.
+Reads a double (64 bit) from the source stream.
+This is used to check whether the maximum value is at the end of the bar.
+Case sensitive match test.
+Parses properties store.
+Compute the appropriate date value.
+Enables the PANU in a stream, and checks to make sure that the PANU is terminated.
+The distance between two points, compares the distances of the points of the points given to the point.
+Creates a new URL of the given component parts. The URL uses the protocol's default port.
+Return a Workflow.Method for createVolumes.
+Creates a new FileCommand object.
+Initialize the combo box.
+This function will install a trust manager that will blindly trust all SSL certificates. The reason this code is being added is to enable developers to do development using self signed SSL certificates on their web server. The standard HttpsURLConnection class will throw an exception on self signed certificates if this code is not run.
+Sample the count
+Performs the authorization code for the user.
+Test for correct ID for a mission with no "name" attribute.
+Checks if this object equals another. <p> The entire state of the object is compared.
+Releases any resources we may have (or doing)
+Computes the alpha value of a VBumb distribution
+Close the output file.
+Resolves the given files in a list of classpath paths to be resolved.
+javax/crypto/Test#getInstance(String algorithm, java.lang.String[]) Checks exception order
+Reload the configuration settings.
+Removes a new lifecycle manager.
+Creates a X509Serial with the given public key.
+Add the set to an existing file.
+Add a byte array to the buffer.
+Convenience method to return a String array as a delimited string.
+Removes all items from the Stobox.
+Parse the Color tree as a Color.
+Get the number of states that can be zero. The first and second value is returned.
+Checks the size of incremental size and check if needed.
+Read a number of bytes from the input stream.
+If the normalizedScale is equal to 1, then the image is made to fit the screen. Otherwise, it is made to fit the screen according to the dimensions of the previous image matrix. This allows the image to maintain its zoom after rotation.
+Limit the clip such that it fits within the specified region.
+Shutdown all thread pools.
+Convert a collection of InetAddress names to a Collection of InetAddress.
+Remove line characters from a string.
+Calculates counters for all feeds.
+Escapes HTML escape characters.
+Move the columns by a given table.
+Retrieves row count of the table.
+Creates a new JarModifier with the given archive to be modified
+Puts an attribute to the database.
+Associate the given value with the specified key.
+Sort the specified array using the given limit
+Is the panel a server transaction?
+Adds a special "marked occurrence" highlight.
+Helper method for Overscrolling that encapsulates all of the necessary function. This is the advanced version of the call.
+Fully read from the input stream.
+Validate the given assumption.
+Adds a set of items to a cart
+Adds an item set of classification sets.
+Skips the given length of the read buffer.
+Creates a method for removing volumes from a VPLEX consistency group.
+Creates dialog when showing urls are entered
+Converts mouse focus to a given mouse pointer.
+Computes the replacement string for the given original identifier.
+Generates a call identifier that is used to generate a call identifier in the word.
+Parse a hour value. Depending on patternChar parameter, the hour can be 0-23, 1-24, 0-11, or 1-12. The returned value will always be 0 based.
+It gets the state of the history view.
+Turns a substitution into a Reference type.
+Method to draw the canvas
+Returns the all TCP socket endpoints removed from the transport.
+Returns the seconds until idle lockout.
+Shows a list of Zookeeper results.
+And for two negative numbers; the first is shorter
+Given a number, return the Z value of that is + 1.0.
+Read the object from Base64 string.
+Copies the search information from one document to another.
+Construct the singular value decomposition
+If lock is not active, release it and ready for the locking.
+Create a new (empty) Unicast reference.
+static version of lastIndexOf.
+Write bytes of the file to buffer.
+Makes a directed result of the given argument.
+max(BigInteger val). the first is less.
+Function used to stop code that calls acceptClusterer. This is needed as clusterer execution is performed inside a separate thread of execution.
+Called to set the OffsetGrabPoint to the current mouse location, and update the OffsetGrabPoint with all the other holes.
+Writes floats from the given float array, starting from the specified offset, to the current position and increases the position by the number of floats written.
+The optimized version of SAX2DTM.dispatchCharEvents(int, SAX2)
+Checks if a of IP prefix contains a of a specified pair of IP prefix.
+Performs an lock for a given service.
+Check to see if the cookie has been established according to the client
+Selects an import of the File dialog.
+Creates the exact meta data.
+Returns an enumeration describing the available options..
+Encodes the application data into SSL/TLS record. If handshake status of the engine differs from NOT_TLS record the actual input stream, and does not verify the information about the engine.
+Returns a byte[] containing the remainder of 'in', closing it when done.
+Parse a SQL statement from the provided SQL .
+Writes a long at the specified offset from this native object's base address.
+Completely remove the request IDs that are needed when a session is removed from the alive list. <p> This is meant to be used in freshly, so that only once.
+Generate a salt for use with the BCrypt.hashpw() method
+If possible, validate the given key's hashCode against any that was returned by the peer.
+Convert number to a comma-separated string (p 10%)
+Run a standard script.
+Parse an integer located between 2 given offsets in a string
+Prints an object to this output stream and then terminates the line.
+Check that the argument is a real value.
+Set the keyboard for the keyboard
+Checks if no window is active.
+Returns the relative path of the given file or path. For example, the path "/foo/bar".
+Load Order from Process
+Internal method to perform the normalization.
+Reset all the classes to java pool.io. ResourceSpi
+andNot for two negative numbers; the first is longer
+Returns a string representation of the char count.
+Instantiates an reserve rate info manager.
+Removes an attribute from the list. If the attribute exists for the specified name, no action is taken.
+Delete a key/value stored in the cache.
+Return true if error should be loaded.
+Construct a new instance with the specified detail string and exception.
+Adds fill components to empty cells in the first row and first column of the grid. This ensures that the grid spacing will be the same as shown in the designer.
+Insert a set of prefixes into the XML context.
+Increments the get time accumulator.
+Wraps all data stored in a byte array
+Shows user home following tags.
+The elevation at a given latitude and longitude
+Creates a new UnBeans object.
+Delete the children of the element
+Saves the initial state of the given attribute.
+Checks, if this item is intersectioning between start and end index.
+Ensures that the current element is valid.
+Read an ArrayList from an InputStream containing XML. The stream can previously have been written by writeListXml().
+Adds padding to the right of the string with the given length
+Returns an enumeration of the additional measure names
+This method should not raise any exceptions.
+Adds the persistent preferences button.
+Clears the access rate and clears the remaining records.
+Create Order from Field
+Constructs a ShortInterleavedRaster with the given SampleModel and DataBuffer. The Raster's upper left corner is origin and it is the same sizes the SampleModel. The DataBuffer is not initialized and must be a DataBufferByte compatible with SampleModel. SampleModel must be of type SinglePixelPackedSampleModel.
+This method will copy the given file to carbon store location
+Indicates if the popup is left-to-right and if they are available.
+Convert string to double
+Adds a listener that is notified about changes in the panel.
+Test pictures with data and mirror
+Check if index is same.
+calculates the approximate size of a text, depending on a demo text avoid repeated calls (e.g. inside drawing methods)
+Perform the default values. Can be overridden by subclasses.
+Returns a String representation of the list, front to back.
+Write an image, Lat/Lon placement with an ImageIcon.
+Tests consistency of new objects.
+Monitor changes to the scale slider.
+Writes string into a file
+Determine whether the given URL points to a resource in the file system, that is, has protocol "file", "vfsfile" or "vfs".
+Updates status of active state.
+Converts OID into array of ints.
+Lists all server servers for a site.
+Allows creating the dialogue dialog.
+Utility method to check if an layer contains the expanded features.
+Decode the contents of the inputstream into a buffer.
+This will be called by the virtual machine that it tries to run to synchronously. If there are no memory working, this will be called by the thread.
+display the string defined in the string xml file: iconfont_string.xml
+Checks the HTTP request length.
+Adds a foreign key constraint.
+Called with the activity is first created.
+Pushes a notification descriptor.
+Appends a json encoded key/value pair to the given string builder.
+Loads all resources stored in resource mappings.
+Deselect a selection event at the given index
+Checks if the node is correct.
+Add listener to service tracking.
+Finalizes the equals method
+Parses a double vector of entries.
+Regression test for Harmony-3324 Make sure we could update next version
+Calls the super method and writes the knn distance of this entry to the specified stream.
+Construct a session wrapper.
+Posts results from a JSON- request.
+Get the program's program directory.
+Clear the target sensors.
+Parses an Object from a Java type.
+Read data for the existing stack, if needed
+Converts a hexadecimal character to an integer.
+Serialize the pod list
+Loads a key store from a specified password.
+Remove a property change listener
+Checks if user is hidden.
+Visit the set of states.
+Compares this PrincipalEntry to another for equality.
+Check whether there is a valid lock profile.
+Read service data from the client.
+Checks whether the extension of the filename is one of those specified. <p> This method obtains the extension as the textual part of the filename after the last dot. There must be no directory separator after the dot. The extension check is case-sensitive on all platforms.
+Creates a new clause from the given stream and collects them.
+See ISO 16022:2006, 5.2.7
+Constructs the Kdb database from the given input stream and it represents.
+Decodes a Cut operation.
+Sorts the elements in place
+Rebuilds the panel object.
+Take the bytes that have been stored in a record.
+Get the string representation of the object.
+waits until there is no page
+The following two methods exist because in, out, and err must be initialized to null. The compiler, however, cannot be handled by this method.
+Returns the list of type based on the array.
+Deletes the batch rules for the given RCS list.
+Returns true if this page was visited
+Create the data for a remote client.
+Creates a future that is synchronously completed exceptionally.
+Initializes the truth loss
+override to check equality with a mask
+Emits a generated variables to the first classifier.
+Creates a new URI instance of the given unencoded component parts.
+The probability of all k-best derivation, which is equivalent to the population being located. If there are segments in the vector, the sparse set is used.
+Reads a single character from the source string and returns it as an integer with the two higher-order bytes set to 0. Returns -1 if the end of the source string has been reached.
+Determines if the passed BlockSnapshot object is supported by the passed BlockSnapshot object.
+Recursively lists all registered services of the given services
+Strips the syntax of the code and removes them.
+Divide: rounding mode is ROUND_HALF_EVEN, result is negative; equidistant
+PDF function, static version.
+Validates the given certificate.
+Creates new core metadata, including security information.
+return the number of objects in this sequence.
+Tests adding a servlet role.
+Subtract two negative numbers of different length. The first is longer.
+Creates a MultiTermQuery based on the given field.
+Prints the message passed as a single line.
+currently only group by tags groupbys' first item always is site, which is a reserved field
+Tests various XML parsers.
+Selects a single string.
+Check for DTO interface.
+Construct a DateFormat object.
+Writes the provided KML xml file.
+Returns the destination file system property
+Get users and groups from the server to fill in the "domain" list
+Creates a new instance of initPanel.
+Get the default headers.
+Clears all message descriptions, if necessary.
+Puts a new request in queue as a new thread in pool to be executed
+Sends a new client to the client
+Parses the data from the supplied InputStream, using the supplied protocol.
+Parses the date value using the given date formats.
+Removes the specified object from the JSONObject.
+Finds all blocks for code that contain a given block in the loop
+Reads from the command line. Broken out for readability.
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+Generate a test working file
+Renames the editor list.
+Check whether the line is a complex column.
+Override to set up your specific external resource.
+Sets the screen coordinates of the projection.
+Copies this string replacing occurrences of the specified target sequence with another sequence. The string is processed from the beginning to the end.
+Encode the URL safe text to the given URL.
+Draws an image, applying a transform from image space into user space before drawing. The transformation from user space into device space is done with the current transform in the Graphics2D. The given transformation is applied to the image before the transform attribute in the Graphics2D state is applied. The rendering attributes applied include the clip, transform, and composite attributes. Note that the result is undefined, if the given transform is noninvertible.
+Build the size in bytes of the rate model
+Advances the position until after the next newline character. If the line is terminated by "\r\n", the '\n' must be consumed as whitespace by the caller.
+Creates a new IndTestCramerT instance for a subset of the variables.
+Open file on car
+Formats time in milliseconds to hh:mm:ss string format.
+Add a PropertyChangeListener for a specific property.
+Creates a new folder with a default folder name.
+Add a field to the config
+Adds a Sub action to the controller.
+Fills the entry set from the tree map.
+Returns true if two collection contains at least one collection.
+For keyboard mode, processes key events.
+Asserts that the actual duration is within 10% of the given expected time.
+This method logs a diff.
+Instantiates a new field frame.
+Constructs a new ResourceResource.
+Return the field as an argument.
+Initializes a list of SNMP handshake objects.
+Converts a mel series from the regular expression to 1.
+Create a new Rounded generator and paints it.
+Generate byte array containing random bytes.
+Returns a string describing the train and remote attributes.
+Copy byte array to buffer.
+Returns true if time is expired
+Put a key/boolean pair in the JSONObject.
+Util method to write an attribute with the ns prefix
+handle a selection event
+Do we know about to check if the asset is deprecise.
+Writes the contents of this CacheHeader to the specified OutputStream.
+Get response as byte array
+Starts fading out all layers.
+Constructs a hashtable with no zeros.
+Add a text change listener.
+Returns an iterator over the profile.
+Check if the string is a space or empty string.
+Appends scheme to incoming path
+Given the key, return the original 1 for the key 1.
+Handle a mouse drag from the overlay.
+Initializes the caching HTTP Headers Filter.
+Adds common component to the parser configuration. This method will also add all of the component's recognized features and properties to the list of default recognized features and properties.
+Spins/blocks until node s is matched by a fulfill operation.
+Load the general subtree subtrees.
+Reads a single byte from the source string and returns it as an integer in the range from 0 to 255. Returns -1 if the end of the source string has been reached.
+Returns true if the crash exists.
+Writes contents string to file.
+Make a tree in a single array.
+Computes the angle between two points. <p> Note that the angle is not correct.
+Create a new chunk cursor.
+Checks if is enabled.
+Draws the foreground.
+Creates a new Modbus transaction representing this transaction.
+Starts this logger's runner.
+Exports an object. This method produces the bytecode of the proxy class used to access the exported object. A remote applet can load the proxy class and call a method on the exported object.
+Creates the configured DB directory.
+Reads a character from a stream. Does not close the stream.
+Executes children of the query tree.
+Initialize the messages of the messages
+Instantiates a new metadata queue.
+Write a string containing objects to a StringBuilder.
+Returns true if, at this time, the object will accept a connection according to the supplied EventSetDescriptor
+Creates a new Request configured to post an Open Graph action.
+Hide content and show the progress bar
+Restore a Bloom filter.
+Compute the metric for a set of CDFs. E.g. min and max cardinality of the distribution
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+Constructs a new SDPException.
+Links node as first element, or returns false if full.
+Notifies the PropertyChangeEvent to any registered property change. The event will be delivered to all registered VetoableChangeListeners.
+Checks to make sure a template is requested.
+Create a new JValueSlider.
+Applies the attributes to the gathered symbol attributes.
+TODO Add method documentation
+Create a RemoteService with the specified name and port.
+Read the old journal from the input file. In the event of any error, just pretend we didn't have a journal, in that case, do a full backup.
+Starts a Server instance.
+Returns whether this session is still possible to acquire the state. Also returns true if there are no other information.
+Encodes the given matrix as a Byte Matrix. The padding consists of the sound will be displayed.
+Writes ints from the given int array, starting from the specified offset, to the current position and increases the position by the number of ints written.
+Sets the header with the specified key and value.
+Updates the UI by default settings.
+Generate to source of the class.
+Submits a callable task to a future in the specified pool.
+Checks if the key name is a valid bucket name.
+Validates the user's authentication namespace create request.
+Formats the given object.
+Calculates the derived statistics (significance etc).
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+Checks to see if a consistency group has been deleted.
+Closes 'closeable', ignoring any checked exceptions. Does nothing if 'closeable' is null.
+Receive notification of a message at the current thread.
+Removes the objects in the specified range from the start to the end, but not including the end index.
+Refills the input buffer.
+Check if duplicate names contain duplicates.
+Stop all klog pods.
+This method was generated by MyBatis Generator. This method corresponds to the database table address
+Release all items belonging to any specific items
+create a Hub mapping from a network file
+Delete a load name that the train will either service or exclude. See setLoadOption
+Validate the computeState name.
+Converts an element to a string.
+Remove the argument at index from the arguments list if present. Return the index with the given value, if present.
+Replaces a policy tree in the resource tree with the new policy.
+Create a Chunk of the same length as the given length.
+merge the action from the file
+Recompute the separation of cluster means.
+Turns an input image into a square. This method is useful for creating an image such as the center of the image.
+Handles cleaning up for a lost pool entry with the given route. A lost pool entry corresponds to a connection that was garbage collected instead of being released.
+Write a startPrefixMapping event to the end of a declaration.
+Add user language listener
+Traverses the tree and populates the result map using the given root element. This is not a convenience routine.
+Replaces the first instance of the search string with the replace string.
+Writes a byte at the current position.
+Constructs a new product operation.
+Generate a salt for use with the BCrypt.hashpw() method
+draws the description text in the bottom right corner of the chart
+Parses the bytes from a string.
+Looks for the first part of the link.
+Updates the actions space on the socket.
+Instantiates a publisher with a given source threshold.
+Cleans a directory without deleting it.
+Adds a Gumball into a transition. The gpherical model will be expanded during the scroll bar
+Associates the specified segment with the specified segment, in the order.
+DeleteFunctionalityTest#testDelete6(). TODO Foreign key functionality is not supported
+Add channel to given payload, but does not result in a channel.
+Return a bounding point of this point.
+Inserts a record from the block map.
+Add uri to the path.
+Transfers characters from the given sequence of characters to the network source.
+Computes the distance between two line points
+Returns a copy of the current instance to achieve immutability
+Runs the test case.
+Patch the contents of a patch entry.
+Reads bytes from the underlying byte array.
+Creates the GUI of the component.
+Returns true if the native spec's control is in JPEG mode.
+Creates a new arc generator.
+Check if this command is enabled
+check if a file exists
+Add a response listener.
+Calculate the log likelihood of the current state.
+Returns true if there are dead states that reach an accept state.
+Subtracts two Money objects
+Compares the specified object to this instance.
+Skips characters until the end of a line. This method starts with a surrogate pair.
+Performs the list of volumes to incoming input
+Convert a given base64 string to a ByteBuffer.
+Check if there's another time based on the current interval. If the measurement is not at least the start and end, return true.
+Loads the characters from a string.
+Instantiates a new Signature problem.
+Create a simple path node.
+Adds wheel changing listener
+Scans the given number for the current directive.
+ToBitString - returns a String representation of n[]
+Converts a 32-bit sample into a 32 bit integer.
+Check that one token is a valid token.
+Util method to write an attribute without the ns prefix
+Expands all nodes in the tree.
+generates the data for a given predicate
+invokeAny(c) throws NullPointerException if c has a single task in c
+Computes the quadrl2 test for the Gl2 estimator.
+Create a sensor group action.
+Generates an x-values array filled with numbers in range specified by the parameters. Can be used for convenience.
+compareTo(BigInteger a). Compare two numbers of different signs. The first is negative.
+Put the service under the given attribute value for the given defining class and field, if it isn't already there. Return the HashMap for the given class and field.
+Creates a new decoder that decodes the specified URI. The decoder will assume that the query string is encoded in UTF-8.
+Convert RGB color to CMYK color.
+Removes a listener from the set of listeners
+Shows an error message depending on the INFO level.
+Parses a name-value-pair with the given parser.
+Removes all characters which appear in string bag from string s.
+Returns the trigonometric cosine of the specified angle in radians.
+Formats the given number to the given number of decimals, and returns the number as a string, maximum 35 characters.
+Destroys the context loader.
+Method for BeanContextChild interface. Uses the BeanContextChildSupport to remove a listener to this object's property. The listener has the power to veto property changes.
+Helper function to ascertain the existence of a file and return true/false appropriately
+Parses the WindowsFileAttributes from a BY_HANDLE_DATA structure.
+Flatten a Map into an XmlSerializer. The map can later be read back with readThisMapXml(). This method presumes that the start tag and name attribute have already been written and does not write an end tag.
+Fires event through another event. This is no longer needed so far.
+Checks whether a full entry point has a full query or not
+Check if the given resource is a module for a given resource
+Writes an annotation to the output stream.
+Creates a long IPv4 address from the received IPv4 address.
+Determines whether a revision contains a given revision
+Retrieves a number of requests to a given domain.
+Draws a spinder.
+Adds a single String to a list of strings, separated by commas and enclosed in case!
+Compiles a list of listeners.
+Read on char. like DataInputStream.readChar except little endian.
+Determines how two dates compare up to no more than the specified most significant field.
+Makes a split word from the given space beginning and add it to the link buffer
+Does a given URL point to Google Book Search, regardless of domain.
+Given a class name, return the fully qualified name.
+Removes a title prefix.
+Send messages to the remote topic.
+Returns true if at least one of the attributes is a service
+Tests for equality, coping with nulls.
+Search for road number by road number
+Convert class name to dotted format. If the class name is already in dotted format, it is returned unmodified.
+Determine the average approximation of the observed ones.
+Finds a location with the given name, and creates a new location if needed.
+Closes the closing list.
+Remove OMA download info from SharedPrefs.
+Checks if the local directory or not
+Returns a boolean indicating whether a Bundle contains properties that could be a valid saved token.
+We call this to guarantee that we fetch a fresh policy from the server. This is to be used if the URL is invalid.
+Returns true if, at this time, the object will accept a connection via the named event
+Compares two Vector2 objects.
+Invokes the specified parameterless method if it exists.
+Unzips a chunk type from the input stream
+Add a button to the padding.
+Maps the modified responses from the current source to the UI thread. Subclasses can override.
+Commits the current assignment.
+Splits the given string in a sorted array using the given separator.
+A helper method that inserts a single instruction in the front.
+Returns a new instance of the object. The default implementation returns a new instance of the object.
+Constructs a new parser for the given format string.
+Converts an iterator to a string by concatenating all of the string representations of objects in the iterator, divided by a separator.
+Check if this counter is valid.
+Schedules a playlist to be notified that the current save has been completed
+see if any of variables needed
+Called when an action occurs.
+Return the textual representation of the vector.
+Returns Integer value for i.
+This method was generated by MyBatis Generator. This method corresponds to the database table address
+Send a VERBOSE log message.
+Saves all indexes to the Table table.
+Compute and return the score for a match with e errors and x location.
+if deltaY > 0, move the content down
+Copies all of the mappings from the specified map to this one. These mappings replace any mappings that this map had for any of the keys currently in the specified map.
+Inserts the given string into this editable set.
+Obtains the string representation of this object.
+Sends the packet to the socket
+Copy data from the reader to the writer, closing the writer if it exists.
+Check to see if the full boning is available in the local cluster.
+Transforms the given point in the input model.
+Asserts that the given code closure fails when it is evaluated and that a particular exception is thrown.
+Writes a raw packet to the desired interface. A L2 header will be added which includes the specified destination address, our source MAC, and the specified protocol type. The caller is responsible for computing correct IP-type headers.
+Process an attribute string of type T_YESNO into a Boolean value.
+Load Value from RMA structure
+This method will search list of WO's for the given criteria and grant for the given criteria
+Constructs a time period for the specified date and time zone.
+Creates a resource queue with lock passed resource.
+Encodes the X509 certificate to the provided stream.
+Schedule a timer task for repeated period.
+Abbreviate a String by simply truncating it.
+Download the Workaround.
+Checks the row length of the layout.
+Helper method called to empty all shared symbols, but to leave arrays allocated
+Determine the enemy potential for blitzing a territory - all enemies are combined
+Creates a Name from a sequence of lower-underscore strings.
+Parses a date/time/dateTime string.
+Returns a string representation of this thread. The result is the indication of the thread.
+Indicates if the character is a white space.
+Removes the given filter from the list of filters.
+Remove the classifiers at the specified indices
+Add a property change listener
+Returns the number of checkpoints that were loaded.
+Adds an item to the list.
+add the urls for listening
+Removes the passed VirtualArray URIs from the set of VirtualArrays assigned to the user.
+Determine if the cell is editable or not.
+Unpacks the compressed character translation table.
+Drop all the transfer.
+Converts all values of the given data arrays into a single array.
+Constructs a Directed Iterator.
+Validate Config's title
+Creates the runnable with requested stats.
+Checks if generates a given body
+Adds a child to the list of children.
+Restores every selection in the model. For each selection, the selection will show a single selection.
+Gets the curent contents of this byte stream as a byte array. The result is independent of this stream.
+Clean up so that this has no effect.
+Consumes the given event until it has been reached. <p> Note: This method will block until all events have been discarded.
+Updates the UI by the text.
+compareTo(BigInteger a). Compare ZERO to ZERO.
+Generates a Poisson distribution with a given parameters.
+Determine the current amount of overscroll. If the value is 0, there is no overscroll. If the value is < 0, tabs are overscrolling towards the top or or left. If the value is > 0, tabs are overscrolling towards the bottom or right.
+Constructs a new vector with the specified capacity.
+Process the invite request.
+Creates a logger object having the given service reference.
+Read received delay time from window Returns 'true' if successful, 'false' if an error was detected. If an error is detected, a suitable error message is placed in the Notes area
+Writes the given number of times to the output.
+Returns the hash code of this list. The hash code is calculated by taking each element's hashcode into account.
+Parses the string value as an int.
+Given a top-level mouse event, take it back to account the listeners.
+Tests whether the child node is a valid AST.
+Generates the instruction to push the given value on the stack.
+Call on touch event
+Remove a batch clusterer listener
+This should only be created by the lock service. This call will not actually refresh the token.
+Removes an object from the relation. This is used for offline caching.
+Make a deep copy of an array of bytes.
+Parse a string as a JSON string, returning the provided base value. <p> Note that the string must be non-null before calling this method.
+valueOf (long val): convert a negative long value to a BigInteger. The long value fits in integer.
+Inserts the specified element before the specified position into the receiver. Shifts the element currently at that position (if any) and any subsequent elements to the right.
+Append to the next entries.
+Construct a sided plane from a pair of vectors describing points, and including origin, plus a point p which describes the side.
+Checks the InputStream if it contains GZIP compressed data
+Insert room for operation. This will NOT set the length value of the operation, but will update the length value for the total expression.
+Remove all listeners from the config
+Registers an object that depends on it's decayes.
+Assert that expected String contains the expected Strings.
+Removes the classname from the cache.
+BrokerA -> BrokerB && BrokerB -> BrokerA
+Renders the components with the header values.
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+Handles the case where a class loader is dropped.
+Delete (sw,port) from the list of attachment points and oldAPs.
+Determine if the given type is assignable from the given type, assuming setting by combining type.
+total bytes of files to be recovered (potentially not yet done)
+Constructs and AnimGameItem instace based on a MD5 Model an MD5 Animation
+Construct a new instance with the specified detail string and exception.
+Delete and deletes a metric from the database.
+Format a given object.
+CAS waitStatus field of a node.
+Initializes the thread dump.
+Check the audio buffer and notify the audio threshold.
+Check whether the filter matches another filter.
+Removes and returns first element, or null if empty.
+Run the connection documentation based on the server.
+Initialize the document builder factory so that it can be reused and does not need to be reinitialized for each parse action.
+Returns the standard error of the estimate for the intercept.
+Create missing values for the sql node
+Normalize the path by backslashes.
+Starts from the app thread.
+Encode all properties of the user.
+Expands the directory which can be hidden by it.
+Attempts to put the current buffer into the queue, and return true if there is no one.
+Updates the value of the text and selected values.
+Check whether there is another stream.
+Appends a parameter declaration to the given string.
+Wakes a heartbeat on the database.
+Decrypts and stores the private key.
+Load a private key from classpath.
+Removes a listener for changes of registered snapshot categories.
+Will return true if any extensions are present and marked as critical as we currently dont handle any extensions!
+center the week for a week-based-month attribute.
+checks if string is not accessible in array
+Returns a copy of the given node or subtree with this document as its owner.
+libsecp256k1 servers
+Initialize the client dictionary based on current thread and ZooKeeper instance.
+Creates a list of URLs, and returns a list of all URLs for the shard.
+Get reader to response body using given character set. <p> This will fall back to using the UTF-8 character set if the given charset is null
+Concatenates the NBT image into the given Color object.
+Add a vertex to the existing vertex.
+Helper method to configure local services
+Returns index starting from specified character sequence at the specified index.
+Calculate requirements along the minor axis. This is implemented to forward the routing table.
+Append a string to the output.
+Invokes an push operation.
+The String representation of the Node. Useful for debugging.
+This consists the index to the default value.
+Synchronizes the load function.
+Forward project a lat/lon Poly. This is a complex method. Please read the in-code documentation for an explanation of the algorithm.
+Remove categories that contain a year in them (which can be a year in them)
+Create a new data provider.
+Validate all error instances.
+Performs a separate comment after the whole line has been added to the console.
+Given a formatting pattern, then decodes it into the internal string.
+Fill Variables
+Creates a copy of the field.
+Create a zero number from a sign and an array of zero length. The sign is 1.
+Cast object to type t.
+Schedules a file to be deleted when JVM exits. If file is directory delete it and all sub-directories.

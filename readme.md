@@ -6,6 +6,17 @@ Below is the research methodology overview for RQ1-RQ5, where the orange lines a
 ![alt text](overviewQ1-Q4.jpg)
 ![alt text](overviewQ5.jpg)
 
+## Data Preparation
+
+Here is our data preparation process for each RQ, including both the PLM part and the LLM part.
+
+![alt text](plmdataQ1.png)
+![alt text](plmdataQ2.png)
+![alt text](plmdataQ3.png)
+![alt text](plmdataQ4.png)
+![alt text](llmdataQ1-2.png)
+![alt text](llmdataQ3-4.png)
+
 ## Prompt
 
 Here is the prompt we used for large language model inference, along with a one-shot example.

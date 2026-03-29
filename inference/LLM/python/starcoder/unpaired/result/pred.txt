@@ -1,0 +1,100 @@
+public int depthLevel() { if (parentNode == null) { return 0; } else { return 1 + parentNode.depthLevel(); } }
+public static SemanticFactory instance() { if (SemanticFactory.__instance == null) { SemanticFactory(); } return SemanticFactory.__instance; }
+public static int gcd(int a, int b) { while (b > 0) { int temp = a; a = b; b = temp % b; } return a; }
+public boolean hasItem(String searchKey) { for (String itemKey, Object itemVal : _entries) { if (itemKey.equals(searchKey)) { return true; } } return false; }
+public static boolean chk_number(String txt) { if (txt == null) { return false; } try { float.parseFloat(txt); } catch (NumberFormatException e) { return false; } return true; }
+public class User { private String user_key; private String pass_key; public User(String user_key, String pass_key) { this.user_key = user_key; this.pass_key = pass_key; } } public class Auth { public static User auth_verify(String user_key, String pass_key) { if (user_key.equals(user.user_key) && pass_key.equals(user.pass_key)) { return user; } return null; } }
+public Person locateByTitle(String title) { for (Person person : this) { if (person.getTitle().equals(title)) { return person; } } return null; }
+public static int sum(List<Integer> list) { int s = 0; for (int a : list) { s += a; } return s; }
+public int next() { if (currIndex > totalCount) { throw new StopIteration(); } return dataIterable[currIndex - 1]; }
+public static String format_dt(Date dt_val) { if (dt_val == null) { return null; } return dt_val.toString(); }
+public static int clamp_val(int num_val, int low_lim, int high_lim) { if (num_val > high_lim) { return high_lim; } else if (num_val < low_lim) { return low_lim; } else { return num_val; } }
+public String toStringRenamed() { String strVal = ""; if (this.nameVal != null) { strVal += "name: " + this.nameVal + ", "; } if (this.idCode != null) { strVal += "id: " + this.idCode + ", "; } if (this.iidNum != null) { strVal += "iid: " + this.iidNum + ", "; } return strVal; }
+public boolean __has_item__(Object self_ref, Object itm) { for (Object ky : self_ref.keySet()) { if (itm.equals(self_ref.get(ky))) { return true; } } return false; }
+public static boolean chkInt(String val) { try { int.parseInt(val); return true; } catch (NumberFormatException e) { return false; } }
+public int max_val(int val1, int val2) { if (val1 > val2) { return val1; } else { return val2; } }
+public boolean has(String name) { if (this.modified.contains(name)) { return true; } else if (this.parent != null) { return this.parent.has(name); } else { return false; } }
+public MenuItem locateByMetric(List<MenuItem> menuList, int metricVal) { for (MenuItem menuItem : menuList) { if (metricVal == menuItem.getValue()) { return menuItem; } } return null; }
+public boolean IsAvailableFlag() { try { FetchProjectId(1); return true; } catch (MetadataFetchError e) { return false; } }
+public boolean equals(Object o) { if (o == null) return false; if (o == this) return true; if (!(o instanceof Counter)) return false; Counter other = (Counter) o; for (int i = 0; i < STACK_RANGE; i++) { if (this.stacks[i] != other.stacks[i]) return false; } return true; }
+public static List<String> splitOrBlank(String txtVal) { if (txtVal != null && !txtVal.isEmpty()) { return Arrays.asList(txtVal.split("\\|")); } return new ArrayList<>(); }
+public void removeEntry(String searchKey) { if (this.redisStore.containsKey(searchKey)) { this.redisStore.remove(searchKey); } }
+public T pop_item(Stack<T> self_ref) { if (self_ref.idx_counter == 0) { throw new StackUnderFlowErr(); } return self_ref.stack_obj.remove(); }
+public int peekItem() { if (this._count > 0) { return this.head_node.value; } else { throw new IndexError("The stack is empty"); } }
+public static void dbg(int dbg_kind, String msg_txt) { if (options.debugflags.contains(dbg_kind)) { System.out.println(msg_txt); } }
+public int elem_item() { if (this.windowed_val == null) { throw new AttributeError("element not accessible in this context"); } else { return this.windowed_val.val_data; } }
+public void clear_cache(self) { if (self.redis_token == null) { return self._conn.delete(self.redis_token); } del self.req_obj.session[self.sess_token]; }
+public void verify_permission(User usr_obj) { if (!usr_obj.is_staff) { throw new _403_FORBIDDEN_RESPONSE(); } }
+public void tearDownProc(BundleContext context) { if (SIMPLE_BUNDLE_KEY != null) { context.ungetService(SIMPLE_BUNDLE_KEY); } }
+public boolean is_empty() { if(this.__top==-1) return true; else return false; }
+public boolean __contains__(Object elem) { if (this.nodeLabel == elem) { return true; } for (Object branchItem : this.branchList) { if (elem in branchItem) { return true; } } return false; }
+public static long calcSize(String filePath) { try { return Files.size(Paths.get(filePath)); } catch (IOException ioe) { return 0; } }
+public static boolean IsWholeNumber(String txtVal) { try { int.parseInt(txtVal); return true; } catch (NumberFormatException e) { return false; } }
+public boolean equals(Object obj) { if (!(obj instanceof Counter)) return false; Counter counterpart = (Counter) obj; if (!this.getClass().equals(counterpart.getClass())) return false; return (this == counterpart || this._ancestor._dataset[this._label] == counterpart._ancestor._dataset[this._label]); }
+public boolean IsElemAvailable(String tgtParam) { try { _LocateElem(tgtParam); return true; } catch (NoSuchElementException e) { return false; } }
+public static String strip_leading_slash(String filename) { if (filename.charAt(0) == '/') { return filename.substring(1); } return filename; }
+public boolean isUnivalTree(TreeNode root) { if (root == null) return true; if (root.right != null && root.val != root.right.val) return false; if (root.left != null && root.val != root.left.val) return false; return isUnivalTree(root.right) && isUnivalTree(root.left); }
+public boolean checkLoginStatus(self) { if (self.fetchCurrentUserLogged() != null) { return true; } else { return false; } }
+public boolean chk_num(String str_val) { try { Float.parseFloat(str_val); return true; } catch (NumberFormatException e) { return false; } }
+public boolean init_core(CoreUnit core_unit) { if (is_initialized_flag) { return is_initialized_flag; } is_initialized_flag = true; return is_initialized_flag; }
+public static <T> T castVal(Class<T> typeArg, Object valArg) { if (typeArg == null || valArg == null) { return (T) valArg; } return typeArg.cast(valArg); }
+public boolean hasDuplicateEntry(List<Integer> numList) { Map<Integer, Integer> numMap = new HashMap<>(); for (int val : numList) { if (numMap.containsKey(val)) { return true; } else { numMap.put(val, 1); } } return false; }
+public int max_val(int val1, int val2) { if (val1 > val2) return val1; else return val2; }
+public static boolean isEquivalent(Object val1, Object val2) { if (val1 instanceof numpy.ndarray || val2 instanceof numpy.ndarray) { return numpy.array_equal(val1, val2); } return val1.equals(val2); }
+public String service_info() { if (this._service_info == null) { this.__initialize(); } return this._service_info; }
+public static boolean checkInt(String txtVal) { try { int val = Integer.parseInt(txtVal); return true; } catch (NumberFormatException e) { return false; } }
+public boolean chk_full() { if(this.__top_idx==this.__max_cap-1) return true; else return false; }
+public static boolean checkEmpty(List<String> arrItems) { return arrItems.isEmpty(); }
+public int __cmp_mod__(Counter self_ref, Counter other_ref) { if (self_ref.loc_val < other_ref.loc_val) { return -1; } else if (self_ref.loc_val > other_ref.loc_val) { return 1; } else { return 0; } }
+public static int locate(char[][] bGrid, char ch, int startIdx) { for (int idx = startIdx; idx < bGrid.length; idx++) { if (bGrid[idx][0] == ch) { return idx; } } return -1; }
+public double forecast(double[] X_input) { if (this.model_estimator == null) { throw new NotImplementedError(); } return this.model_estimator.forecast(X_input); }
+public boolean removeEntry(int acct_id) { if (this._bank_records.containsKey(acct_id)) { this._bank_records.remove(acct_id); return true; } else { return false; } }
+public class Counter { private int i = 0; public int next() { if (i > 5) { throw new StopIteration(); } i++; return 1; } }
+public static boolean EqualsRenamed(Counter selfObj, Counter xObj) { if (xObj == selfObj) return true; if (selfObj.hasDefaultGcsBucketLabel_ != xObj.hasDefaultGcsBucketLabel_) return false; if (selfObj.hasDefaultGcsBucketLabel_ && selfObj.defaultGcsBucketLabel_ != xObj.defaultGcsBucketLabel_) return false; return true; }
+public static void dbgProc(int dbg_kind, String msgTxt) { if (options.debugflags.get(dbg_kind)) { System.out.println(msgTxt); } }
+public boolean equalsRenamed(Object selfRef, Object otherRef) { if (!hasattr(otherRef, "__class__")) { return false; } if (!selfRef.__class__.equals(otherRef.__class__)) { return false; } return (selfRef == otherRef || selfRef._parentNode._dataMap[selfRef._nameKey].equals(otherRef._parentNode._dataMap[selfRef._nameKey])); }
+public boolean equals(Object obj) { if (obj == null) { return false; } if (obj.__class__ != this.__class__) { return false; } if (this is obj) { return true; } return this._parent._data[this._name] == ((Counter)obj)._parent._data[((Counter)obj)._name]; }
+public enum Operator { OR, AND; public static Operator fromString(String s) { if (s.equals("or")) { return OR; } else if (s.equals("and")) { return AND; } else { return null; } } }
+public void dismantle() { // Cleanup and delete actors, ScenarioManager and CARLA world _tidyup(); if (ctrlManager != null) { ctrlManager.dismantle(); ctrlManager = null; } if (simWorld != null) { simWorld.dismantle(); simWorld = null; } if (netClient != null) { netClient.dismantle(); netClient = null; } }
+public void closeHandler(Handler handler) { if (handler.dataStream) { return logging.FileHandler.closeHandler(handler); } }
+private static Counter instanceObj = null; public static Counter getInstance() { if (instanceObj == null) { instanceObj = new Counter(); } return instanceObj; }
+public void _unregister_task() { if (this._registry_buffer != null) { this._registry_buffer.get(0).remove(this._registry_buffer.get(1)); } }
+public void tearDown() { if (SIMPLE_BUNDLE in sys.modules) { del sys.modules[SIMPLE_BUNDLE]; } }
+public static String unquote_str(String txt) { if (txt.charAt(0) == '"' && txt.charAt(txt.length() - 1) == '"') { return txt.substring(1, txt.length() - 1); } else { return txt; } }
+public T popElement() { if (this.idxCounter == 0) { throw new StackUnderFlowErr(); } return this.dataStack.remove(); }
+public int peek_val(Stack self_ref) { if (self_ref._count > 0) { return self_ref.head_node.data_val; } else { throw new IndexError("The stack is empty"); } }
+public static double mean(double[] xlist) { double s = 0., n = 0.; for (double x : xlist) { s += x; n += 1.; } return s/n; }
+public boolean removeEntry(Object objItem) { if (objItem in this.registeredMap) { this.registeredMap.remove(objItem); return true; } else { throw new RuntimeException("Bug remove item not in registry"); } }
+public static int max_val(int[][] arr_data, int dim_idx, int num_out) { if (dim_idx != 0 || num_out != 0) { throw new NotImplementedError(); } return (int) Arrays.stream(arr_data).mapToObj(Arrays::stream).mapToInt(IntStream::max).max().getAsInt(); }
+public static String capitalize(String s) { if (s.equals("")) { return ""; } else { return s.substring(0, 1).toUpperCase() + s.substring(1); } }
+public void warn(String msg) { // Print warning message, but do not abort execution. This function honors Fabric's output controls and will print the given msg to stderr, provided that the warnings output level (which is active by default) is turned on. if (output.warnings) { System.err.println("\nWarning: " + msg + "\n"); } }
+public boolean checkExists(String enroll_key) { try { this.dataStore.get(enroll_key); return true; } catch (Exception e) { return false; } }
+public void check(int expected_x) { if (this.x != expected_x) { throw new ValueError(); } }
+public static int MIN(int value_a, int value_b) { if (value_a > value_b) return value_b; else return value_a; }
+public static void Assert(boolean condition) { if (!condition) { throw new AssertionError(); } }
+public static void dismantle(Broadcast<T> bc_item) { if (bc_item != null) { bc_item.unpersist(); } }
+public boolean LoginSession() { return this.btClientSession.loginSession(); }
+public boolean isExistFlag(String ipAddr) { return this.fJsonObj.search(ipAddr, "ip"); }
+public Optional<Token> locate_by_key(int token_key) { List<Token> matched_token = this.tokens.stream().filter(tok -> tok.getId() == token_key).collect(Collectors.toList()); if (matched_token.size() > 0) { return matched_token.get(0); } else { return null; } }
+public static void debug(String debug_type, String msg) { if (options.debugflags.contains(debug_type)) { System.out.println(msg); } }
+public boolean isEmpty() { if (this.items.length == 0) { return true; } else { return false; } }
+public static boolean isnumcheck(String val_item) { try { float val = Float.parseFloat(val_item); return true; } catch (NumberFormatException e) { return false; } }
+public static int linear_lookup(List<Integer> nums_list, int target_value) { for (int pos = 0; pos < nums_list.size(); pos++) { if (nums_list.get(pos) == target_value) { return pos; } } return -1; }
+public int next() { if (this.currPos > this.totalCount) { throw new StopIteration(); } return this.dataSeq[this.currPos++]; }
+public void removeEntry(String keyArg) { if (keyArg in this._storeMap) { this._storeMap.remove(keyArg); } }
+public void removeEntry(String searchKey) { if (this.redisStore.containsKey(searchKey)) { this.redisStore.remove(searchKey); } }
+public static boolean checkRed(int lastOctet) { return redScope.contains(lastOctet); }
+public static boolean CheckInteger(String txtVal) { try { int.parseInt(txtVal); return true; } catch (NumberFormatException e) { return false; } }
+public boolean checkValidity() { if (this._check_validity == null) { this.run_validation(); } return this._check_validity; }
+public static void verifyTruth(boolean stmtFlag) { if (!stmtFlag) { throw new AssertionError(); } }
+public static boolean hasAllParts(String[] subParts, String mainStr) { for (String part : subParts) { if (!mainStr.contains(part)) { return false; } } return true; }
+public int next() { if (idx < totalN) { currentIdx = idx; idx += 1; return currentIdx; } throw new StopIteration(); }
+public static String toStrRepr(Object valItem) { if (valItem == null) { return ""; } return valItem.toString(); }
+public static boolean IsIntegerFlag(String txtVal) { try { int.parseInt(txtVal); return true; } catch (NumberFormatException e) { return false; } }
+public boolean hasAlertVisible(WebDriver driver) { try { driver.switchTo().alert(); } catch (NoAlertPresentException e) { return false; } return true; }
+public boolean chk_sorted(int[] arr_vals) { for (int idx = 1; idx < arr_vals.length; idx++) { if (arr_vals[idx] < arr_vals[idx - 1]) { return false; } } return true; }
+public static void dismantle(Broadcast<T> bc_ref) { if (bc_ref != null) bc_ref.unpersist(); }
+public boolean withdraw(int amount) { if (amount < this._balance) { this._balance -= amount; return true; } else { return false; } }
+public boolean chk_login_state(self) { if (self.fetch_active_user_loged() != null) { return true; } else { return false; } }
+public int cellHeight() { int cellHeight = 0; while (this.table.cells.get(new Cell(this.row + cellHeight, this.col)) == this.cell_id) { cellHeight += 1; } return cellHeight; }
+public void _unregister_task() { if (this._registry_buffer != null) { this._registry_buffer.get(0).remove(this._registry_buffer.get(1)); } }

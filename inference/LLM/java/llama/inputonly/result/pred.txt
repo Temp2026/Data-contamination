@@ -1,0 +1,100 @@
+This Java function returns a `TokenStreamComponents` object that is a combination of a `Tokenizer` and a `TokenStream`
+This Java function sets up a new searcher, initializing a field map and a searcher.
+This Java function does nothing. It is a required override of the `ResponseBuilder` class.
+This Java function finds a `ModifierDefinition` object whose `modifierPhrase` matches the provided `queryToken` string.
+This Java function determines whether the tokens in the query string match the modifiers.
+This Java function searches for a field in a `HashMap` that contains the `entityField`. If the field is found, the `ArrayList` is returned. Otherwise, `null` is returned.
+This Java function overrides a method in the `ResponseBody` interface, returning the content type of the response.
+This Java function returns a `BufferedSource` object.
+This Java function slices the DataSet to a specific range.
+This Java function writes the current bundle's `Resource` objects to a file. The `header` parameter specifies whether or not to write a header.
+This method overrides a `doInBackground()` method. It is called when `doInBackground()` has finished. If `result` is not `null`, then the `ForecastAdapter` is cleared and the forecast is added to it.
+This Java function rotates the screen of the ActivityTestRule to landscape.
+This Java function calculates the hash code for the object.
+This Java function initializes a TitanGraph object. It then uses the `Graph` interface to perform a `V()` query, which returns a `Vertex` object that contains the name `jupiter`.
+This Java function resumes the app and calls `onResume` on the associated `Listener` object.
+This Java function sets the visibility of the load indicator top to either `VISIBLE` or `GONE`.
+This Java function returns `true` if the given `ClassInfo` has a method or a field annotated with `@NOOP_TYPE`.
+This Java function prints the result of the pancake function.
+This Java function shuts down the module managers and returns a result.
+This Java function determines if a collection is not null.
+This Java function converts a `List` of `BmobChatUser` objects to a `Map` of `BmobChatUser` objects.
+This Java function is a callback to the `WebViewClient.onLoadFailed` method. When a load request fails, this function will be called.
+This Java function prints the test case to the standard output.
+This Java function overrides the method of the same name in `ConnectionState` to return `true` if the retry count is less than or equal to 1.
+This Java function returns an `EntrySet` of the `LambdaMap`.
+This Java function disconnects the consumer from the provider.
+This Java function reads a boolean value.
+This Java function emits the current window, clears the cache, reduces the window, and then advances the window.
+This Java function dumps the cache to the window.
+This Java function is a `Canvas` override that paints a rectangle of the specified color.
+This Java function builds a common full key from a `scope` and a `key`.
+This Java function compares two `AtomicLong` objects, returning a negative number if the first object is less than the second object, a positive number if the first object is greater than the second object, and 0 if the first object is equal to the second object.
+This Java function increments a counter associated with the URI of a request, or puts a new counter if it doesn't exist.
+This Java function returns a property for the given property name.
+This Java function enables the cut layout for the `TwoGearsLayout`.
+This Java function enables or disables the background blur effect.
+This Java function generates a `SequenceInputStream` from a string containing a list of znodes.
+This Java function tests that the server will handle non-ASCII characters in the `Content-Length` header.
+This Java function implements the `writeMarshallable` method.
+This Java function creates a `RefineHTTPClient` array from a `String` argument, `hosts`. The `String` is split into a `String[]` array, and the `URI` of each host is used to initialize the `RefineHTTPClient` array.
+This Java function handles an `WeiboException` by displaying a `Toast` message and dismissing a `ProgressDialog`.
+This Java function overrides the `call()` method of the `RpcCallable` interface. It initializes the `LOGGER` and calls the `miniCube.count()` method with the parameters `indName`, `groupDimName`, and `filterDims`.
+This Java function calls the `toMap()` method on an instance of `MyEntity` and then asserts that the map contains the values 10 and "hello".
+This Java function appends the name of the video effect to the `EffectDetails` object.
+This Java function is the method `onHeartbeat` of the class `Socket` called.
+This Java function logs the `error` and calls `emit` and `onClose` to handle the error.
+This Java function filters a list of upgrades, returning only those that are supported by the specified transport.
+This Java function is the `isAuthorized` method, which is a method of the `ResourceFilter` interface. It returns `true`, which means the request is authorized.
+This Java function obtains a `Contact` object by its `md5` value. If the `md5` value is not found, the method returns `null`.
+This Java function mocks up loading delay.
+This Java function overrides a method from a parent class, and returns a `TokenStream` object.
+This Java function compares the results of the test case by lines in memory.
+This Java function starts a thread that periodically refreshes the resource loader.
+This Java function executes the SQL query associated with the `ResultSet` object and returns the result.
+This Java function tests if the actual is null. If it is, it throws an `AssertionError` exception.
+This Java function prints a diagnostic message to the console and logs it.
+This Java function checks if the `ScrapList` is null. If it is, it returns a limited list. If not, it returns the view for the current position, and changes the current position in the specified direction.
+This Java function overrides the `nodePlugins()` method of the `Node` class. It returns a collection of classes that represent the `Plugin`s that should be loaded for the node.
+This Java function overrides the `transportClientPlugins` method in `TransportClient`. It returns a collection of plugins.
+This Java function returns whether or not the `itemObject` is a string.
+This Java function returns an instance of `SpinnerItem` to be used in a spinner.
+This Java function adds an `Arc` to the `arcList` `ArrayList`.
+This Java function reads the `JSON` stream into a `RegistrationApiResponse` object.
+This Java function is an override of `onSizeChanged()` and sets the width and height of the `RectF` object to `mWidth` and `mHeight` respectively.
+This Java function reloads the custom and default properties.
+This Java function adds courses to the database, and closes the database when finished.
+This Java function uses a `SQLiteDatabase` object to check for conflicts in the `Course` object. It then closes the database and returns a `List` of `Long` values.
+This Java function parses a string into a `Date` object.
+This Java function escapes a string for URL encoding.
+This Java function updates the `params` for authentication.
+This Java function tests that the size of the difference between two lists is 0.
+This Java function shows a progress dialog before a network request is made.
+This Java function allocates a `LongBuffer` object with a capacity.
+This Java function implements an `Answer` to the `BundleContext#getResources(String)` method. It stores the keys of the resources that have been removed from the bundle in a list.
+This Java function converts a string into a valid Java function name.
+This Java function decreases the stack size by one and throws an `ArrayIndexOutOfBoundsException` if the stack size is less than zero.
+This Java function returns the time taken to run `f()`.
+This Java function determines whether a string is a number.
+This Java function returns the number of bytes to be read from the `InputStream` in the next read operation.
+This Java function writes the integer `len` to the `OutputStream` object `out`.
+This Java function overrides a `Class` method and returns the type of bean that the factory should produce.
+This Java function is an override of the superclass's property set method. It calls the `metaProperty` method, and if the property cannot be written, it throws an `UnsupportedOperationException` exception.
+This Java function tests the area of a cylinder. It assumes the height and radius of the cylinder to be greater than 0. It asserts that the area of the cylinder is greater than 1000.
+This Java function calls the `super.attachEntity()` function, and then sets the `DaoSession` of the `Attribute` object to the current `DaoSession`.
+This Java function reads an entity from a Cursor.
+This Java function overrides the `writeTo()` method of the `AllocationCommand` class to write the `AllocationCommand` objects and a boolean indicating if the operation is in dry-run mode.
+This Java function returns a hash code for this object. It first returns the hash code of the super object, then the hash code of the `value` attribute.
+This Java function creates an empty `ConfigurationNode` object, sets a few options, and returns it.
+This Java function creates a new `BitmapLoader` object, stores it in a `CacheUrlKey` object, and submits the `BitmapLoader` to a thread.
+This Java function flags the start of an asynchronous operation. If an asynchronous operation is already in progress, this function throws an exception.
+This Java function sets the `onLoadingDrawableSet` listener, which is invoked when a new `Drawable` is loaded into the `ImageView`.
+This Java function is used to get the `PhoneType` enum value from a `PhoneType` enum value descriptor.
+This Java function enables or disables the specified components.
+This Java function compares two `GroupToggle` objects to determine if they are equal.
+This Java function returns true and adds a string representation of the page selector to the buffer.
+This Java function handles faults. It logs the fault event and then fails the test if a fault occurs.
+This Java function returns a `MessageApi.SendMessageResult` object.
+This Java function virtualizes a `OVXSwitch` object, a `List` of `OFAction` objects, and a `OVXMatch` object.
+This Java function overrides a `writeObject` method, writing a `long`, an `Object`, and a `String`.
+This Java function returns `true` if the `Permission` is implied by the `ProtectionDomain`.

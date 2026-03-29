@@ -1,0 +1,100 @@
+@Override public void sync(final long delay) throws InterruptedException { final Thread taskThread = this.refThread.get(); if (taskThread != null && taskThread.isAlive()) { taskThread.sync(delay); } }
+@Override public void onFault(ServiceCommandError fault) { if (watcher != null) { watcher.onConnectionFailure(AirPlayService.this, fault); } }
+public static void trace(Logger tracer, Object... arg) { if (tracer.isDebugEnabled()) { tracer.debug(getLogString(arg)); } }
+public void shut() { if (channel != null) { channel.shut(); } }
+void verifyClosed() throws SQLException { if (isTermed()) { throw new SQLException("Connection is closed"); } }
+@Override public int read() throws IOException { if (!data.hasRemaining()) { return -1; } return data.get() & 0xFF; }
+private boolean isEmpty(){ if (list == null || list.isEmpty()){ return true; } return false; }
+private boolean isDigit(String value) { try { Double.parseDouble(value); } catch (Exception err) { return value.contains(IMAGINARY) || value.equals(VARIABLE); } return true; }
+public synchronized void finish() { if (done) { return; } done = true; for (Entry<Object, Object> p : cacheSources.entrySet()) { IDataSourceManagerTool.getHandler(dataSourceClassName) .destroyDataSource((DataSource) p.getValue()); } IDataSourceManagerTool.getHandler(dataSourceClassName) .destroyDataSource(defaultSource); }
+public void release() throws IOException { if (dataStream != null) { dataStream.close(); dataStream = null; } }
+@Override public String toString() { if (uri == null) { return ""; } return String.format("%s:", prefix); }
+public void halt() { if (job != null && !job.isCancelled()) { job.cancel(true); } aborted = true; }
+public void shiftTo(float a, float b) throws IOException { if (text) { throw new IOException("Error: moveTo is not allowed within a text block."); } writeOperand(a); writeOperand(b); writeOperator("m"); }
+public void drawTo(float a, float b) throws IOException { if (text) { throw new IOException("Error: lineTo is not allowed within a text block."); } writeOperand(a); writeOperand(b); writeOperator("l"); }
+public void sealPath() throws IOException { if (text) { throw new IOException("Error: closePath is not allowed within a text block."); } writeOperator("h"); }
+public static int hcf(int x, int y) { while (y != 0) { int tmp = y; y = x % y; x = tmp; } return Math.abs(x); }
+@Override public boolean holds(Object obj) { if (obj instanceof Map.Entry) { Map.Entry<?, ?> pair = (Map.Entry<?, ?>) obj; return containsKey(pair.getKey()) && containsValue(pair.getValue()); } return false; }
+public Map.Entry<K, V> step() { if (!ready) { throw new NoSuchElementException(); } ready = false; return new MapEntry<K, V>(key, val) { @Override public V setValue(V value) { throw new UnsupportedOperationException(); } }; }
+@Override public int rank(CatalogCategoryMaster a, CatalogCategoryMaster b) { if (a != null && a.getRanking() != null && b != null && b.getRanking() != null) { return a.getRanking().compareTo(b.getRanking()); } return 0; }
+public static void trace(String pattern, Object... params) { if (ACTIVE && Log.isLoggable(TAG, Log.DEBUG)) { Log.d(TAG, String.format(Locale.US, pattern, params)); } }
+@Override protected void checkClosed() { if (isClosed()) { throw new DbSessionClosedException(this, "Connection is closed"); } }
+@MainThread public void disconnect() { if (mBound) { mBound = false; mContext.unbindService(mServiceConnection); } }
+public double avg() { long size = size(); if (size > 0) { return acc.sum() / (double) size; } return 0.0; }
+@Override public boolean same(Object obj) { if (obj instanceof BitArray) { BitArray other = (BitArray) obj; return Arrays.equals(buf, other.buf); } return false; }
+private Optional<byte[]> payload(HttpRequest req) throws IOException { final HttpRequest base = ((HttpRequestWrapper) req).getOriginal(); if (!HttpEntityEnclosingRequest.class.isAssignableFrom(base.getClass())) { return Optional.absent(); } return Optional.fromNullable( ((HttpEntityEnclosingRequest) base).getEntity() ).transform(TO_BYTE_ARRAY); }
+@Override public boolean begin() throws SQLException { if (rowset.size() > 0) { index = 0; return true; } return false; }
+@Override public boolean end() throws SQLException { if (rows.size() > 0) { index = rows.size() - 1; return true; } return false; }
+public <T extends Model> boolean remove(Context ctx) { if (getId() != 0) { Where cond = new Where(); cond.and(PK, getId()); DatabaseAdapter db = DatabaseAdapter.getInstance(ctx); int count = db.delete( DatabaseBuilder.getTableName(getClass()), cond ); if (count != 0) { mId.set(0); return resetFields(); } } return false; }
+private boolean check() { if (!(limit <= pos)) { return false; } return true; }
+public boolean persist(Context ctx) { if (key.isAutoincrement() || id() != 0) { return persist(ctx, id(), new ContentValues()); } return false; }
+@Override public void shutdown() { synchronized (mutex) { if (done) { return; } abortTimer(); for (CancellationTokenRegistration hook : hooks) { hook.shutdown(); } hooks.clear(); done = true; } }
+@Override public boolean same(Object obj) { if (!(obj instanceof PlaylistData)) { return false; } PlaylistData rhs = (PlaylistData) obj; return super.equals(rhs) && Objects.equals(streamMeta, rhs.streamMeta); }
+@Override protected void cleanup() throws Throwable { if (!released) { shutdown(); } super.finalize(); }
+public int max (int a, int b){ if (a > b) return a; return b; }
+public static boolean has( final String text, final String key, final boolean strict) { check(text, NULL_STRING_PREDICATE, NULL_STRING_MSG_SUPPLIER); if (strict) { return text.contains(key); } return text.toLowerCase().contains(key.toLowerCase()); }
+@Override public boolean encloses(Location<? extends Extent> area) { if (area.fetchScope().equals(scope)) { return this.encloses(area.fetchPos().toInt()); } return false; }
+@Override public boolean accept(char[] buf, Counter ptr) { if (CharUtil.isRange(buf[ptr.idx], low, high)) { return true; } return false; }
+public double abs(double value) { if(value < 0) return -value; else return value; }
+@Override public boolean same(final Object obj) { if (obj instanceof GridSolution) { final GridSolution rhs = (GridSolution) obj; return Objects.equal(this.tokens, rhs.tokens); } return false; }
+@Override public String stringify() { if (boundDevice.exists()) { return "USB Trezor Version 1: " + boundDevice.fetch().fetchId(); } return "Not attached"; }
+public void run() { while (!isInterrupted()) {} }
+private static void trace(String text) { // System.out.println(text); if (logger.isDebugEnabled()) { logger.debug(text); } }
+public static void purge(Context ctx) { Editor store = SharePrefUtils .getSharePrefEdit(ctx, Constants.FEED_SHARE_PREF) .edit(); if (store != null) { store.remove(Constants.FEED_SHARE_PREF).commit(); } }
+@Override public void run() { // noinspection InfiniteLoopStatement while (true) { worker.step(); } }
+@Override protected void render(Canvas surface) { if (!active) { return; } super.render(surface); }
+@Override public void handle(Throwable err) { if (view != null) { view.halt(); view.fail(); } }
+public static <T> T decode(String data, Class<T> typ) throws ClassNotFoundException { if (!isValid(data)) { return null; } Gson parser = new GsonBuilder().create(); return parser.fromJson(data, typ); }
+public ICloud.MBSAccount make() { ICloud.MBSAccount obj = buildPartial(); if (!obj.isInitialized()) { throw newUninitializedMessageException(obj); } return obj; }
+public void release() { if (cam != null) { cam.release(); cam = null; } }
+@Override public String run(Order task) { if (next() != null) { return next().run(task); } else { return ""; } }
+@Override public DateMidnight decode(JsonElement data, Type typ, JsonDeserializationContext ctx) throws JsonParseException { if (data.getAsString() == null || data.getAsString().isEmpty()) { return null; } final DateTimeFormatter fmtter = ISODateTimeFormat.dateTime(); return new DateMidnight(fmtter.parseDateTime(data.getAsString())); }
+public void halt() { if (st.isResumeTrack()) { player.pause(); } else { player.stop(); } }
+@Override public Boolean call(T value) { if (passed.contains(value)) return false; passed.add(value); return true; }
+public boolean any(Func1<? super T, Boolean> predicate) { for (T item : this) { if (predicate.call(item)) return true; } return false; }
+public boolean is_equal(Vec3f other) { return x == other.x && y == other.y && z == other.z; }
+public void draw() { if (scr != null) { scr.render(); } }
+@Override public void flush() { if (indexNeedsUpdate) { saveIndex(); } }
+private void make_table(Class<?> table, SQLiteDatabase db) { String sql = createTableSQL(table); if (!sql.isEmpty()) { try { db.execSQL(sql); } catch (SQLException e) { e.printStackTrace(); } } }
+public static PotionEffects get_instance() { if (fetch_map(PotionEffects.class) == null) { alias_dict.put(PotionEffects.class, new PotionEffects()); } return (PotionEffects) fetch_map(PotionEffects.class); }
+public static byte[] to_bytes(DataContainer cont) { if (cont == null) { return null; } return cont.getBytes(); }
+private static Boolean parse_bool(String val) throws IllegalArgumentException { if ("1".equals(val) || "true".equalsIgnoreCase(val)) { return Boolean.TRUE; } else if ("0".equals(val) || "false".equalsIgnoreCase(val)) { return Boolean.FALSE; } throw new IllegalArgumentException("Expected boolean, got " + val); }
+public void run () { while (true) {} }
+public boolean has_item(T item) { if (node != null) { return node.contains(item); } else { return false; } }
+public static String urlEncode(String str) throws UnsupportedEncodingException { // Preserve original behavior that passing null for an object id will lead // to us actually making a request to /v1/foo/null if (str == null) { return null; } else { return URLEncoder.encode(str, CHARSET); } }
+public static void write_log(Level lvl, String label, String msg, Throwable exc) { if (isEnabled(lvl)) { lvl.call(label, msg, exc); } }
+public Item next_item() throws IOException { return get_iterator().hasNext() ? item_iter.next() : null; }
+@Override protected GlobalPointer lookup(Key id) { return index.get(id); }
+@Override public void finalize() throws IOException { if (out_writer != null) { out_writer.close(); out_writer = null; } }
+public void execute_loop() { while (this._active) { try { _establish_connection(); } catch (IOException e) { e.printStackTrace(); handle_error(e); } } }
+public void on_shutdown() { view_app.post(new Runnable() { public void run() { view_app.loadUrl(js_data(EVENT_ON_CLOSE, BLANK_MESSAGE)); if (keyboardIsShowing) { msg_handler.sendEmptyMessage(3); } } }); }
+public void transmit(final String payload) { new Thread(new Runnable() { @Override public void run() { if (socketInstance.readyState == WEBSOCKET_STATE_OPEN) { try { socketInstance._transmit(payload); } catch (Exception ex) { socketInstance.handleError(ex); } } else { socketInstance.handleError(new NotYetConnectedException()); } } }).start(); }
+private void verifyOpen() { if (logWriter == null) { throw new IllegalStateException("log is closed"); } }
+@Override protected void cleanup() throws Throwable { if (!closedFlag) { closeResource(); } super.cleanup(); }
+public static int limit(int num, int min, int max) { if (num < min) { return min; } if (num > max) { return max; } return num; }
+public static boolean checkValid(String inputString) { try { parseInput(inputString); } catch (Exception ex) { return false; } return true; }
+private void checkNotClosed() { if (journalWriter == null) { throw new IllegalStateException("cache is closed"); } }
+public static synchronized void register(IconFont iconFont) { if (IconFontSwing.fonts.contains(iconFont) == false) { IconFontSwing.fonts.add(iconFont); } }
+public static CnDictionary Instance() { if (null == instance) { try { instance = new CnDictionary(); } catch (IOException e) { e.printStackTrace(); } } return instance; }
+public void shutdown() { if (mDatabase != null) { mDatabase.close(); } }
+public void terminate() { if (mDatabase != null) { mDatabase.close(); } }
+public void shutdown() { if (mDatabase != null) { mDatabase.close(); } }
+@Override public void reset() { mLock.lock(); try { while (extract() != null); } finally { mLock.unlock(); } }
+@Override public T Item() { if (currentNode == null) { throw new NoSuchElementException("No more elements in iterator."); } final T data = currentNode.data; currentNode = currentNode.getNext(); return data; }
+@Override public void decrement() { final long currentCount = getCount(); if (currentCount == 0) { Assert.fail("Latch already finished."); } else { super.countDown(); } }
+public boolean Connection() { try { if (sockIn != null) { sockIn.close(); } if (sockOut != null) { sockOut.close(); } getSocket().close(); } catch (Exception e) { return false; } return true; }
+@Override public void Resources() { for (int idx = 0; idx < spillMaps.size(); idx++) { Closeables.closeQuietly(spillMaps.get(idx).getSpillFile()); } }
+public void transmit(final String payload) { if (txCharacteristic != null) { txCharacteristic.setValue(payload); writeCharacteristic(txCharacteristic); } }
+public void disconnect() { mUserDisconnected = true; if (mConnected && mBluetoothGatt != null) { Logger.v(mLogSession, "Disconnecting..."); Logger.d(mLogSession, "gatt.disconnect()"); mBluetoothGatt.disconnect(); } }
+private Linked<T> append(Linked<T> appendable) { if (next == null) { return withNext(appendable); } return withNext(next.append(appendable)); }
+public final Object decode(JsonParser parser, DeserializationContext ctx) throws IOException { JsonToken token = parser.getCurrentToken(); if (token == JsonToken.VALUE_NULL) { return null; } return valueDecoder.decode(parser, ctx); }
+@Override public String formatOutput() { if (blockedEntries.isEmpty()) { return "None"; } else { return TextUtil.join( Arrays.asList(blockedEntries.toArray()) ); } }
+@Override public void detach() { if (isServiceActive()) { appContext.unbindService(this); serviceBound = false; } }
+@After public void releaseres() { if (database != null) { database.close(); } }
+@Override public int compareitems(ConfigEntry left, ConfigEntry right) { if (left.getProfile() != null && left.getProfile().equalsIgnoreCase(activeProfile) && right.getProfile() != null && !right.getProfile().equals(activeProfile)) { return -1; } else { return 0; } }
+public String Object(Object value) throws ApiException { try { if (value != null) { return JsonHelper.mapper().writeValueAsString(value); } else { return null; } } catch (Exception ex) { throw new ApiException(500, ex.getMessage()); } }
+private static boolean isNumeric(String text) { try { Double.parseDouble(text); } catch (NumberFormatException ex) { return false; } return true; }
+@Override public boolean Equalto(Object obj) { if (obj instanceof Tag) { Tag otherTag = (Tag) obj; return super.equals(obj) && value == otherTag.value; } return false; }
+public long Chunk(ByteBuffer buffer) throws IOException { if (endOfFile) { return -1; } final int remainingBytes = data.length - cursor; if (remainingBytes <= buffer.capacity()) { buffer.put(data, cursor, remainingBytes); endOfFile = true; return remainingBytes; } else { buffer.put(data, cursor, buffer.capacity()); cursor += buffer.capacity(); return buffer.capacity(); } }
+public int asInt() { if (current instanceof Number) return ((Number) current).intValue(); return 0; }
+@AfterClass public static void cleanupClass() throws Exception { if (runtimeCluster != null) { runtimeCluster.shutdown(); } }

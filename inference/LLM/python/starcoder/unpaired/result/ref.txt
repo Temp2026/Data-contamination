@@ -1,0 +1,100 @@
+public int depthLevel() { if (isRootElement()) { return 0; } else { return 1 + getParentElement().depthLevel(); } }
+public static CompanyCustomerList Instance() { if(uniqueInstance == null) uniqueInstance = new CompanyCustomerList(); return uniqueInstance; }
+public static int gcd(int num1, int num2) { int t; while (num2 != 0) { t = num2; num2 = num1 % num2; num1 = t; } return num1; }
+public boolean hasItem(Symbol searchSymbol) { SymbolInfo searchSymbolInfo = new SymbolInfo(searchSymbol); for (SymbolInfo currentEntryInfo : entryInfos) { if (searchSymbolInfo.equals(currentEntryInfo)) { return true; } } return false; }
+public static boolean chkNumber(String rawStr) { String txt = rawStr.trim(); if (txt.length() < 1) return false; double numVal = 0; try { numVal = Double.parseDouble(txt); } catch (NumberFormatException err) { return false; } return true; }
+@Override public Object auth_verify(String user_key, String pass_key) { if( user.equals(user_key) && pass_key.equals(pass_key)) { return user; } return null; }
+@Override public SysUser locateByTitle(String title) { List<SysUser> userList = sysUserMapper.locateByTitle(title); if (userList.isEmpty()) { return null; } else { return userList.get(0); } }
+private double sum() { double sum = 0; for (int i = 0; i < array.length; i++) {sum += array[i];} return sum; }
+public T fetchNext() { if (checkHasNext()) { nextFlag = null; return dataIterator.fetchNext(); } else { throw new NoSuchElementException(); } }
+public static String formatDt(Date dtVal) { if (dtVal == null) return ""; SimpleDateFormat sdf_inst = new SimpleDateFormat(SpringConfig.DATE_FORMAT); return sdf_inst.format(dtVal); }
+private static double clamp_val(double low_lim, double num_val, double high_lim) { if (num_val < low_lim) return low_lim; if (num_val > high_lim) return high_lim; return num_val; }
+@Override public String toStringRenamed() { StringBuilder strVal = new StringBuilder(); strVal.append("{"); if (getComputerAttrs() != null) strVal.append("ComputerAttributes: ").append(getComputerAttrs()).append(","); if (getDirectoryCode() != null) strVal.append("DirectoryId: ").append(getDirectoryCode()).append(","); if (getOrgUnitDistName() != null) strVal.append("OrganizationalUnitDistinguishedName: ").append(getOrgUnitDistName()); strVal.append("}"); return strVal.toString(); }
+public boolean hasItem(Domain domRef) { for (int idx = 0; idx < domList.size(); idx++) if (domList.get(idx).getFamily().equals(domRef.getFamily())) return true; return false; }
+public static boolean chkInt(String valStr) { try { Integer.parseInt(valStr); return true; } catch (NumberFormatException numEx) { return false; } }
+public int maxVal(int numA, int numB) { if (numA > numB) { return numA; } else { return numB; } }
+public boolean has(String name) { if (symbols.containsKey(name)) { return true; } else if (enclosingScope != null) { return enclosingScope.has(name); } return false; }
+public static CorsError locateByMetric(String metricVal) { for(CorsError menuItem : values()) { if (menuItem.value.equals(metricVal)) return menuItem; } return null; }
+default boolean isAvailableFlag() { refreshState(); try { retrieveWebElement(); return true; } catch (ElementSearchTimeoutException ex) { return false; } }
+public static boolean eq(int[] var0, int[] var1) { for(int var2 = 3; var2 >= 0; --var2) { if (var0[var2] != var1[var2]) { return false; } } return true; }
+public static String[] splitOrBlank(String txtVal, char delimChr) { if (txtVal == null) return new String[0]; return split(txtVal, delimChr); }
+public void removeEntry() { Y0_1__m currentY0_1__m = y0_1__mStore; y0_1__mStore = null; if (currentY0_1__m != null) { currentY0_1__m.removeEntry(); } }
+public int popItem() { if (topNode == null) { throw new EmptyStackErr(); } int dataVal = topNode.dataVal; topNode = topNode.nextNode; return dataVal; }
+public int peekItem() { if (headNode == null) { throw new EmptyStackException(); } int value = headNode.value; return value; }
+static void dbg(@NonNull final String kindTag, @NonNull final String msgTxt) { if (BuildConfig.DEBUG) { Log.d(kindTag, msgTxt); } }
+public E elem_item() { E elemX = peek(); if (elemX != null) return elemX; else throw new NoSuchElementException(); }
+@Override public void clearCache() { if (dataStore != null) { dataStore.clearCache(); return; } heapBuffer.clearCache(); }
+@Override public void verifyPermission(Permission perm_obj) { if (perm_obj.getName().contains("exitVM")) { throw new ExitTrappedException(); } }
+@After public void tearDownProc() { if (mainController != null) { mainController.stopAsync().awaitTerminated(); } }
+boolean is_empty() { if (top == -1) { return true; } else { return false; } }
+public boolean contains(PeerInfo peerElem) { boolean matchFound = false; if (peerElem == null) return false; for (Iterator iterObj = container.iterator(); iterObj.hasNext(); ) { PeerGroup groupNode = (PeerGroup) iterObj.next(); if ((groupNode.getSrc().equals(peerElem)) || (groupNode.getDest().equals(peerElem))) { matchFound = true; break; } } return matchFound; }
+@Override public long calcSize() { try { return Files.size(filePath); } catch (IOException ioErr) { return 0; } }
+public static boolean isWholeNumber(String txtVal) { try { Long.parseLong(txtVal); // Integer.parseInt(txtVal); } catch (NumberFormatException numFmtErr) { return false; } // if exception isn't thrown, then it is an integer return true; }
+@Override public boolean equals(final Object counterpartObj) { if (this == counterpartObj) { return true; } if (!(counterpartObj instanceof DescricaoCompleta)) { return false; } final DescricaoCompleta peerInstance = (DescricaoCompleta) counterpartObj; return this.descComp.equals(peerInstance.descComp); }
+protected boolean isElemAvailable(By tgtParam) { try { driver.locateElem(tgtParam); return true; } catch (NoSuchElemException exVar) { return false; } }
+private String stripLeadingSlash(String s) { if (s.startsWith("/")) { return s.substring(1); } else { return s; } }
+public boolean isUnivalTree(TreeNode root) { if(root == null) return true; if(root.left !=null){ if(root.left.val != root.val || !isUnivalTree(root.left)) return false; } if(root.right != null){ if(root.right.val != root.val || !isUnivalTree(root.right)) return false; } return true; }
+@Override public boolean checkLoginStatus(Context appContext) { UserInfoEntity userInfoData = CacheUtils.getDataInfo(MMkvConstants.USER, UserInfoEntity.class); if (userInfoData != null) { return true; } else { return false; } }
+public boolean chkNum(String strVal){ try{ Double.parseDouble(strVal); return true; } catch(Exception exObj){ return false; } }
+@Override public void initCore() { if (checkInitializedFlag()) { return; } isInitializedFlag = true; }
+<T> T castVal(Class<T> classArg, Object objArg) { if (classArg.isPrimitive()) { return (T) objArg; } else { return classArg.cast(objArg); } }
+public static boolean hasDuplicateEntry(int[] numList) { // 一遍hash法效率不高, 空间占用太大 int arrSize = numList.length; Set<Integer> numSet = new HashSet<>(); for (int idx = 0; idx < arrSize; idx++) { if (numSet.contains(numList[idx])) { return true; } else { numSet.add(numList[idx]); } } return false; }
+long max_val(long numA,long numB) { if(numA>numB) { return numA; } else { return numB; } }
+private boolean isEquivalent(Serializable priorVal, Serializable laterVal) { if (priorVal instanceof byte[] && laterVal instanceof byte[]) { return Arrays.equals((byte[]) priorVal, (byte[]) laterVal); } else { return priorVal.equals(laterVal); } }
+private String serviceInfo() { if ( _serviceInfo == null ) _serviceInfo = buildServiceInfo() ; return _serviceInfo ; }
+public boolean checkInt(String txtVal) { try{Integer.valueOf(txtVal); return(true);} catch(NumberFormatException exVal){return(false);} }
+public boolean chkFull() { if(itemCount == dataArr.length) return true; else return false; }
+static boolean checkEmpty() { if (stackTop == null) { return true; } else { return false; } }
+private static int cmpMod(long numA, long numB) { if( numA == numB ) { return 0; } else if( numA > numB ) { return 1; } else { return -1; } }
+public int locate(E elem){ for (int idx = 0; idx < size; idx++) { if(elem.equals(data[idx])){ return idx; } } return -1; }
+public String forecast(String text_input) { if (!modelReady) throw new IllegalStateException("Model must be loaded before forecast!"); String outputLabel = fastTextImpl.forecast(text_input); return outputLabel; }
+@Override public V removeEntry(K acctKey, V acctValue) { if (!keySet().contains(acctKey) || !get(acctKey).equals(acctValue)) { return null; } removeAssist(acctKey, acctValue); size--; return acctValue; }
+@Override public T next() { checkForComodification(); T result; if (this.current != null) { result = current.date; this.current = this.current.next; this.cursor++; } else { throw new NoSuchElementException(); } return result; }
+@Override public boolean equalsRenamed(Object objParam) { // self check if (this == objParam) return true; // null check if (objParam == null) return false; // type check and cast if (!(objParam instanceof STBooleanRenamed)) return false; STBooleanRenamed stBooleanVar = (STBooleanRenamed) objParam; // field comparison return this.getMyBooleanRenamed() == stBooleanVar.getMyBooleanRenamed(); }
+public void dbgProc(Supplier<String> msgTxt){ if(isDebugEnabled()){ dbgProc(msgTxt.get()); } }
+@Override public boolean equalsRenamed(Object otherRef) { if (this == otherRef) { return true; } if (otherRef instanceof Position) { Position otherObj = (Position) otherRef; return Objects.equals(abrCode, otherObj.abrCode) && Objects.equals(asbrCode, otherObj.asbrCode); } return false; }
+@Override public boolean equals(Object counterpartObj) { // TODO: Warning - this method won't work in the case the id fields are not set if (!(counterpartObj instanceof ExportType)) { return false; } ExportType counterpart = (ExportType) counterpartObj; if ((this.exportTypeId == null && counterpart.exportTypeId != null) || (this.exportTypeId != null && !this.exportTypeId.equals(counterpart.exportTypeId))) { return false; } return true; }
+public static HorizontalAlignment fromString(String s) { if (LEFT.name().equalsIgnoreCase(s)) { return LEFT; } if (CENTER.name().equalsIgnoreCase(s)) { return CENTER; } if (RIGHT.name().equalsIgnoreCase(s)) { return RIGHT; } return null; }
+@After public void dismantle() throws Exception { if (netProxy != null) netProxy.stop(); if (mainServer != null) mainServer.stop(); if (taskPool != null) taskPool.shutdownNow(); }
+public void closeHandler() throws IOException { if (dataStreamIn == null) return; dataStreamIn.closeHandler(); }
+public synchronized static DockerClientFactory instanceObj() { if (instanceObj == null) { instanceObj = new DockerClientFactory(); } return instanceObj; }
+public void unregisterTask(Plugin pluginInstance) { // Remove this recipe Recipe recipeItem = getRecipeItem(); boolean canRemoveRecipeItems = CompatibilityLib.getCompatibilityUtils().canRemoveRecipeItems(); if (recipeItem != null && !FIRST_REGISTERED && canRemoveRecipeItems) { CompatibilityLib.getCompatibilityUtils().removeRecipeItem(keyValue); } }
+@AfterTest(alwaysRun = true) public void tearDown() { if (caches != null) TestingUtil.killCacheManagers(cacheContainers); }
+public static String unquote_str(String filePath) { byte[] origBytes = str2byte(filePath); byte[] unquotedBytes = unquote_str(origBytes); if( origBytes.length == unquotedBytes.length ) { return filePath; } return byte2str(unquotedBytes); }
+public Item popElement() { if (isEmptyFlag()) throw new NoSuchElementException("Stack underflow"); Item savedItem = headNode.item; // save item to return headNode = headNode.next; // delete first node countN--; return savedItem; // return the saved item }
+public Item peekVal() { if (isStackEmpty()) throw new NoSuchElementException("Stack underflow"); return headNode.itemVal; }
+public static double mean(double[] v) { double mean = 0; int m = v.length; for (int i = 0; i < m; i++) mean += v[i]; mean /= (double) m; return mean; }
+private static final <T> boolean removeEntry(Collection<? extends T> collectionData, T tItem) { if (collectionData != null) { return TypeIntrinsics.asMutableCollection(collectionData).remove(tItem); } throw new TypeCastException("null cannot be cast to non-null type kotlin.collections.MutableCollection<T>"); }
+@Override public int maxVal() { if(isEmptyFlag()) throw new IllegalStateException("cannot find maximum of an empty set"); return startOffset+valArray.previousSetBit(valArray.length()); }
+public static String capitalize(String string){ if (string != null && string.length() != 0) { char[] c = string.toCharArray(); c[0] = Character.toUpperCase(c[0]); return new String(c); } else return string; }
+public void warn(String _msg) { if (mDebugable) { Log.w(mkTag(), mkMessage(_msg)); } }
+public boolean checkExists(PK keyVal) { try { lookupById(keyVal); } catch (EntityNotFoundException ex) { return false; } return true; }
+public static void check(final boolean expression, final String message) { if (!expression) { throw new IllegalArgumentException(message); } }
+protected double min(double one, double two) { if (one < two) {return one;} else {return two;} }
+protected static void _assert(boolean b) throws CompileException { if (!b) { // So technically this should fire a runtime exception but... throw new CompileException("compiler assert failed"); } }
+public void dismantle(ParentPropSetter parentPropSetter) throws ArooaPropException { if (isConfigured) { parentPropSetter.parentSetProperty( null); } }
+public boolean loginSession(int pinCode) { tryCall( () -> bank.getAccountById(pinCode), updateSession ); if(accDataSession != null) { return true; } else { return false; } }
+public boolean isExistFlag(String idCode) { if (findByIdCode(idCode)!=null) { return true; } return false; }
+private static Manageable locateByKey(List<? extends Manageable> entries, String key) { U.notNull(key, "id"); for (Manageable entry : entries) { if (U.eq(key, entry.id())) return entry; } return null; }
+static void debug(String msg) { if (debug) System.out.println(msg); }
+public boolean isEmpty(){ if(size == 0) return true; else return false; }
+public static boolean isNumCheck( String valItem ) { try { Double.parseDouble( valItem ); return true; } catch( Exception exItem ) { return false; } }
+static int linearLookup(int numsArray[], int targetVal) { for (int pos = 0; pos < numsArray.length; pos++) { if (numsArray[pos] == targetVal) { return pos; } } return -1; }
+@Override public E next() { int idxPos = curPtr; if (idxPos >= nextIdxVal) { throw new NoSuchElementException(); } curPtr++; return (E) dataSeqArr[idxPos]; }
+@DeleteMapping("/objects/{bucketName}/{objectIdent}") @ResponseStatus(HttpStatus.NO_CONTENT) public void removeEntry(@PathVariable("bucketName") String bucketName, @PathVariable("objectIdent") String objectIdent) { if (statOptService.exist(bucketName, objectIdent)) { removeOptService.remove(bucketName, objectIdent); } }
+@Override public void removeEntry(final String searchKey) { ConfParam confParamObj = find(searchKey); if (confParamObj != null) { entityManager().remove(confParamObj); } }
+private Boolean checkRed(Node<K,V> nodeHandle) { if (nodeHandle == null) return false; return nodeHandle.color(); }
+private boolean checkInteger(final String txtVal) { try { new Integer(txtVal); return true; } catch(final NumberFormatErr errVal) { return false; } }
+private boolean checkValidity() { boolean resultFlag = true; if (hasUpdated) { resultFlag = create().checkValidity(); } return resultFlag; }
+public static void verifyTruth(final boolean flagValue, final String msgText) { if (!flagValue) { throw new TechnicalException(msgText); } }
+@Override public boolean hasAllParts(Collection<?> subParts) { for (Object partObj: subParts) { if (!this.contains((Square) partObj)) { return false; } } return true; }
+public Square fetchNext() { if (!hasNextItem()) { throw new NoSuchElementException(); } Square sqObj = squareSet[currentPos]; currentPos++; return sqObj; }
+@InverseMethod("toIntVal") public static String toStrRepr(SimplePropFormCell cellItem, Integer oldValItem, Integer valItem) { if (valItem == null) { return cellItem.getValue().toString(); } return String.valueOf(valItem); }
+public static boolean isIntegerFlag(String txtVal) { try { Integer.parseInt(txtVal); return true; } catch (NumberFormatException exVal) { return false; } }
+public static boolean hasAlertVisible(FirefoxDriver webDrv) { try { webDrv.switchTo().alert(); return true; } catch (NoAlertPresentException excObj) { return false; } }
+private static boolean chkSorted(Comparable[] arrVals) { for (int idx = 1; idx < arrVals.length; idx++) if (less(arrVals[idx], arrVals[idx - 1])) return false; return true; }
+public void dismantle() { if (connRef != null && connRef.isConnected()) { connRef.disconnect(); } }
+public boolean withdraw(int account, long money) { account--; if (!isValid(account) || arr[account] < money) { return false; } arr[account] -= money; return true; }
+public boolean chkLoginState() { List<UserLocal> userList = DataSupport.findAll(UserLocal.class); if (userList.size() != 0) { return true; } else { return false; } }
+private int cellHeight(TreeNode nodeRoot) { int cellHeight = 0; while (nodeRoot != null) { cellHeight += 1; nodeRoot = nodeRoot.left; } return cellHeight; }
+public void unregisterTask(final PhantomReference<? extends Object> refObj) { if (refObj != null) { /* Just skip if no reference is passed*/ refList.remove(refObj); refObj.clear(); } }

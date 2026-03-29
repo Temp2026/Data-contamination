@@ -1,0 +1,100 @@
+protected internal virtual void VerifyUnderlyingObjectHasIndirectReference() { if (GetPdfObject().GetIndirectReference() == null) { throw new PdfException(PdfException.ToFlushThisWrapperUnderlyingObjectMustBeAddedToDocument); } }
+protected internal static void FlagObjectAsIndirect(PdfObject pdfObj) { if (pdfObj.GetIndirectReference() == null) { pdfObj.SetState(PdfObject.MUST_BE_INDIRECT); } }
+public override bool OnOptionsItemSelected(IMenuItem menu) { // Handle action bar item clicks here. The action bar will // automatically handle clicks on the Home/Up button, so long // as you specify a parent activity in AndroidManifest.xml. int Id = menu.ItemId; //noinspection SimplifiableIfStatement if (Id == Resource.Id.action_preferences) { return true; } return base.OnOptionsItemSelected(menu); }
+private bool Verify(TokenCategory category) { if (IsAtEnd()) { return false; } return Peek().category == category; }
+public override bool OnGenerateOptionsMenu(IMenu options) { // Inflate the menu; this adds items to the action bar if it is present. getMenuInflater.Inflate(Resource.Menu.primary, options); return true; }
+protected internal static void VerifyObjectIsAddedToDocument(PdfObject obj) { if (obj.GetIndirectReference() == null) { throw new PdfException(PdfException.ObjectMustBeIndirectToWorkWithThisWrapper); } }
+public override bool VerifyPlayJsonItemName() { return false; }
+private Token Obtain(TokenType kind, string errorText) { if (Verify(kind)) { return Proceed(); } throw Mistake(Look(), errorText); }
+public IByteBuffer Allocate(IByteBufferAllocator allocator) { return allocator.Buffer(Estimate()); }
+public void OnTerminate() { base.OnTerminate(); }
+public override void OnBackPressed() { var panel = FindViewById<DrawerLayout>(Resource.Id.drawer_layout); if (panel.IsDrawerOpen(GravityCompat.Start)) { panel.CloseDrawer(GravityCompat.Start);} else { base.OnBackPressed(); } }
+public override bool OnInitializeOptionsMenu(IMenu options) { getMenuInflater.Inflate(Resource.Menu.menu_primary, options); return true; }
+public override void beginAndWaitUntilCommandIsReturned() { lock (this) { currentThread = this; base.beginAndWaitUntilCommandIsReturned(); } }
+protected override void WithResume() { base.WithResume(); Display.WithResume(); }
+protected override void OnMeasure(int widthDimension, int heightDimension) { base.OnMeasure(widthDimension, heightDimension); }
+public bool Includes (string element) { return items.Contains (element); }
+public override View OnCreateView (LayoutInflater inflater, ViewGroup holder, Bundle savedState) { return inflater.Inflate (Resource.Layout.fragment_authenticated_webview, holder, false); }
+static void displayReceiptHeader() { Console.WriteLine("CASH RECEIPT"); Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); }
+static void displayReceiptEnd() { Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); Console.WriteLine($"\u00A9 SoftUni"); }
+private void Show(int[] list) { for (int j = 0; j < list.Length; j++) { Console.Write(list[j] + " "); } Console.WriteLine(); }
+public LiteralContext token() { return GetRuleContext<LiteralContext>(0); }
+public override void OnCreate (Bundle savedState) { base.OnCreate (savedState); }
+protected long UntilNextMillis(long previousTimestamp) { long currentTimestamp = TimeGen(); while (currentTimestamp <= previousTimestamp) { currentTimestamp = TimeGen(); } return currentTimestamp; }
+public bool IsHost() { return false; }
+public override bool ShouldOverrideUrlLoading (WebView browser, string link) { browser.LoadUrl (link); return true; }
+private static bool isAlphabetic(char ch) { return ('a' <= ch && ch <= 'z') || ('A' <= ch && ch <= 'Z') || (ch == '_'); }
+public void Delete(object value) { throw new NotSupportedException(); }
+public bool IsAccessible() { return true; }
+public override IBinder OnBind(Intent purpose) { return null; }
+public override void Terminate() { throw new NotImplementedException(); }
+public Comparator<K> comparer() { return m.comparer(); }
+void displayArray(int []elements) { int size = elements.Length; for (int j=0; j<size; ++j) Console.Write(elements[j]+" "); Console.WriteLine(); }
+protected override void attributeSet(Bean bean, string attributeName, object updatedValue, bool silent) { metaProperty(attributeName); if (silent) { return; } throw new System.NotSupportedException("Property cannot be written: " + attributeName); }
+public override string FetchLine() { return Console.ReadLine(); }
+public static void Alert(string notification) { Log(LogLevel.Warning, notification); }
+public void Terminate() { Link.Close(); }
+static string computeHash(string input) { return computeHash(utf8.GetBytes(input)); }
+public override IDictionary<string, MetaProperty<object>> propertyMetaMap() { return propertyMetaMap$; }
+public void InsertParameter(string id, string data) { params.Add(new IniParameter(id, data)); }
+public override bool IncludesKey(Object key) { return map.IncludesKey(key); }
+public override bool includesValue(Object value) { return map.includesValue(value); }
+public override bool CachedFieldSourceEquals(FieldCacheSource obj) { if (obj.GetType() != typeof(ByteFieldSource)) { return false; } ByteFieldSource another = (ByteFieldSource) obj; return this.parser == null?another.parser == null:this.parser.GetType() == another.parser.GetType(); }
+public int CachedFieldSourceHashValue() { return analyzer == null?typeof(System.Byte).GetHashCode():analyzer.GetType().GetHashCode(); }
+public void Withorder(TreeNode<T> node) { if (node != null) { Withorder(node.Left); Console.WriteLine(node.Value + " "); Withorder(node.Right); } }
+public static void DuplicateFile(FilePath originFile, FilePath targetFile) { if (!targetFile.Exists()) { targetFile.CreateNewFile(); } FileChannel origin = null; FileChannel target = null; try { origin = new FileInputStream(originFile).GetChannel(); target = new FileOutputStream(targetFile).GetChannel(); target.TransferFrom(origin, 0, origin.Size()); } finally { if (origin != null) { origin.Close(); } if (target != null) { target.Close(); } } }
+public void TransitionTo(int calState) { if (calState >= 6 || calState < -1) throw new TokenMgrError("Error: Ignoring invalid lexical state : " + calState + ". State unchanged.", TokenMgrError.InvalidLexicalState); else rentLexState = calState; }
+public ParticleContext particle(int index) { return GetRuleContext<ParticleContext>(index); }
+public override void OnReceivedHttpAuthRequest(WebView browser, HttpAuthHandler authHandler, string server, string domain) { base.OnReceivedHttpAuthRequest(browser, authHandler, server, domain); }
+public string ShutAlertAndObtainItsText() { try { IAlert alert = driver.SwitchTo().Alert(); string alertMessage = alert.Text; if (acceptNextAlert) { alert.Accept(); } else { alert.Dismiss(); } return alertMessage; } finally { acceptNextAlert = true; } }
+public sealed bool IsNull() { return x == 0 || y == 0 || z == 0; }
+public Builder InsertProperty(string name, string val) { _properties.Add(name, val); return this; }
+public override bool IsKidsSelectable(int parentIndex, int kidsIndex) { return true; }
+public static void show(Node root) { Node current = root; while (current != null) { Console.Write(current.data + " "); current = current.next; } }
+public override bool OnShift(RecyclerView recyclerList, RecyclerView.ViewHolder viewContainer, RecyclerView.ViewHolder destination) { return false; }
+public override bool AreAllElementsEnabled() { return false; }
+public static IDictionary<string, string> DivideUrlQuery(string query) { IDictionary<string, string> output = new Dictionary<string, string>(); string[] segments = query.Split(new char[] { '&' }); if (segments != null && segments.Length > 0) { foreach (string segment in segments) { string[] parameter = segment.Split(new char[] { '=' }, 2); if (parameter != null && parameter.Length == 2) { output.Add(parameter[0], parameter[1]); } } } return output; }
+public override void DisplayLeft(TextWriter writer) { writer.Write("throw("); kids.Print(writer); writer.Write(")"); }
+public void RecordError(string message) { Console.Error.WriteLine(message); }
+public void Record(string message) { System.Console.WriteLine(message); }
+private void displayNotification(string notification) { Toast.MakeText(this, notification, ToastLength.Long).Show(); }
+public void Sob() { Console.WriteLine("weeping..."); }
+public void Display() { Console.WriteLine("Hello World!"); }
+public static void LoadAndStoreEncryptedODT(string dataPath) { // ExStart:LoadAndSaveEncryptedODT Document file = new Document(dataPath + @"encrypted.odt", new Aspose.Words.LoadOptions("secret")); file.Save(dataPath + "output.odt", new OdtSaveOptions("newsecret")); // ExEnd:LoadAndSaveEncryptedODT Console.WriteLine("\nLoad and store encrypted document successfully.\nFile saved at " + dataPath); }
+public static void Terminate(int statusCode) { Environment.Exit(statusCode); }
+public static void ValidateODTfile(string directoryPath) { // ExStart:VerifyODTdocument FileFormatInfo formatInfo = FileFormatUtil.DetectFileFormat(directoryPath + @"encrypted.odt"); Console.WriteLine(formatInfo.IsEncrypted); // ExEnd:VerifyODTdocument }
+public string FetchLine() { return Console.ReadLine(); }
+protected override void OnUpdatedIntent(Intent purpose) { base.OnUpdatedIntent(purpose); mBlaubot.OnUpdatedIntent(purpose); }
+public override bool Predicate(RuleContext context, int ruleIdx, int predIdx) { switch (ruleIdx) { case 4: return expr_predicate((ExprContext)context, predIdx); } return true; }
+public override bool OnCreateOptionsMenu(Menu options) { GetMenuInflater().Inflate(R.Menu.primary_view, options); return true; }
+private bool IsAjaxCall(HttpRequest req) { string hdr = req.Headers["X-Requested-With"]; return "XMLHttpRequest".Equals(hdr); }
+public void didHandleMemoryAlert() { base.didHandleMemoryAlert(); }
+public int DiscoverLongestConsecutiveOnes(int[] nums) { int tally = 0, longestTally = 0; foreach (var digit in nums) { if (digit == 0) { longestTally = Math.Max(longestTally, tally); tally = 0; } else tally++; } return Math.Max(longestTally, tally); }
+public static void display(int[] elements, int count) { for (int j = 0; j < count; j++) Console.Write(elements[j] + " "); }
+private void AppendAlignment(Node element, string alignment) { /* force alignment value to lower case */ AppendStyleAttribute(element, "text-align: " + alignment.ToLower()); }
+public bool IsNull() { return x == 0 && y == 0 && z == 0; }
+protected object RetrieveMessage(Message msg) { IMessageConverter transformer = getMessageConverter; if (transformer != null) { return transformer.FromMessage(msg); } return msg; }
+public void eliminate() { throw new InvalidOperationException(); }
+protected override void Ready() { ProcessInfoParameter[] param = GetParameter(); for (int j = 0; j < param.Length; j++) { String title = param[j].GetParameterName(); if (param[j].GetParameter() == null) { ; } else { log.Log(Level.SEVERE, "Unrecognized Parameter: " + title); } } _C_RfQ_ID = GetRecord_ID(); }
+public string GreetPlanet() { return "Hello World!"; }
+public void Verify() { if (ProductCode != null) { ProductCode.Verify(); } }
+public String Depiction() { return "brief(" + base.Depiction() + ')'; }
+private static bool IsMediaFile(Uri url) { return "com.android.providers.media.documents".Equals(url.Authority); }
+public static void VerifyTrue(bool condition) { VerifyTrue(condition, "[Assertion failed] - this expression must be true"); }
+public override void Clear() { throw new NotSupportedException("Clear not supported."); }
+public bool IsComponentPresent(By locator) { try { driver.FindElement(locator); return true; } catch (NoSuchElementException) { return false; } }
+public object Substitute(object initial, object destination, object possessor) { return initial; }
+public StatementContext statement(int j) { return GetRuleContext<StatementContext>(j); }
+public PropertyContext property(int index) { return GetRuleContext<PropertyContext>(index); }
+public StatementContext declaration(int idx) { return GetRuleContext<StatementContext>(idx); }
+public ExpressionContext statement(int j) { return GetRuleContext<ExpressionContext>(j); }
+public void Display() { Console.WriteLine(ToString()); }
+protected override LayoutRegion ModifyActiveRegion(LayoutResult overflowOutput) { return null; }
+public override bool IsDurable() { return true; }
+private static void ProhibitOverridingPrimitiveTypes(Dictionary<string, IReadHandler> handlers) { if (handlers != null) { string[] primitiveTypeTags = { "_", "s", "?", "i", "d", "b", "'", "map", "array" }; foreach (string tag in primitiveTypeTags) { if (handlers.ContainsKey(tag)) { throw new TransitException("Cannot override decoding for transit ground type, tag " + tag); } } } }
+public void GreetUser() { Console.WriteLine("Hello"); }
+public override void OnAttach(Activity context) { base.OnAttach(context); mContext = context; }
+public override bool OnRelease(Intent purpose) { return base.OnRelease(purpose); }
+public static IDictionary<string, string> ParseUrlParameters(string query) { IDictionary<string, string> output = new Dictionary<string, string>(); string[] segments = query.Split(new char[] { '&' }); if (segments != null && segments.Length > 0) { foreach (string segment in segments) { string[] keyValue = segment.Split(new char[] { '=' }, 2); if (keyValue != null && keyValue.Length == 2) { output.Add(keyValue[0], keyValue[1]); } } } return output; }
+public bool IsOrigin() { return (Ancestor == null); }
+public override void OnSubscribe(IDisposable d) { DisposableHelper.AssignOnce(ref upstream, d); }

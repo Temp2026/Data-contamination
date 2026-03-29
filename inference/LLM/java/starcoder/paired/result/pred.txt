@@ -1,0 +1,100 @@
+public void setCompletionTime(Date completionTime) { this.completionTime = completionTime; }
+public void setSbName(String sbName)
+public Instant getNow() { return Instant.now(); }
+public void setResourceRepository(ResourceRepositoryServer resourceRepositoryServer) { this.resourceRepository = resourceRepositoryServer; }
+@GetMapping("/users/getuserinfo") public ResponseEntity<?> getCurrentUserInfo(Authentication authentication) { return new ResponseEntity<>(userService.findByName(authentication.getName()), HttpStatus.OK); }
+public Builder wrapExceptions(boolean wrapExceptions) { this.wrapExceptions = wrapExceptions; return this; }
+public UriInfoBuilder useBrowserTimezone(boolean useBrowserTimezone) { this.useBrowserTimezone = useBrowserTimezone; return this; }
+public boolean isInstanceAvailable() { return true; }
+public void sendAndLogMessage(Message msg) throws UebException { String ecompMsgId = UebUtils.generateMessageId(); msg.put(EcompMessageEnum.ECOMP_MSG_ID.toString(), ecompMsgId); String ecompInstanceId = UebUtils.generateMessageId(); msg.put(EcompMessageEnum.ECOMP_INSTANCE_ID.toString(), ecompInstanceId); String ecompRequestId = UebUtils.generateMessageId(); msg.put(EcompMessageEnum.ECOMP_REQUEST_ID.toString(), ecompRequestId); String ecompSoRequestId = UebUtils.generateMessageId(); msg.put(EcompMessageEnum.ECOMP_SO_REQUEST_ID.toString(), ecompSoRequestId); msg.put(EcompMessageEnum.ECOMP_SERVICE.toString(), UebUtils.getMyAppId()); msg.put(EcompMessageEnum.ECOMP_INSTANCE_UUID.toString(), UebUtils.getMyInstanceId()); msg.put(EcompMessageEnum.ECOMP_PASSTHROUGH_HEADER.toString(), UebUtils.getMyPassThroughHeaderValue()); msg.put(E
+public JProcesses enableFastMode() { return this; }
+public JProcesses enableFastMode(boolean enabled) { return this; }
+public List<ProcessInfo> getProcessList() { return null; }
+public List<ProcessInfo> getProcessesByName(String name) { return Collections.emptyList(); }
+public static List<ProcessInfo> getProcessByName(String name) { return new ArrayList<>(); }
+public static List<ProcessInfo> getProcessList(String name) { return null; }
+public static ProcessInfo getProcessInfo(int pid) { return new ProcessInfo(); }
+public static JProcessesResponse killProcess(int pid) { return null; }
+public static SequenceNode parse(String source) { return new Parser().parse(source); }
+public TemplateNode parseTemplate(String source) { return new TemplateNode(); }
+long calculateInternalPermissions() { return 0L; }
+public void add(Privilege other) { if (isImmutable()) { throw new UnsupportedOperationException(); } }
+public PrivilegeBits subtract(PrivilegeBits other) { return this; }
+public void subtract(PrivilegeBits a, PrivilegeBits b) { throw new UnsupportedOperationException(); }
+public String toNormalizedString() { return null; }
+public static IpAddress fromString(final String address) { return new IpAddress(address); }
+public static Predicate<String> isIPAddressWithPredicate(Predicate<String> predicate) { return predicate; }
+public Date getDate() { return date; }
+public boolean isBrokerRegistered(Broker broker) { return false; }
+public boolean isBrokerRegistered(String brokerID) { return false; }
+public CPClass getCPClass(String name) { return null; }
+public void markKeyModified(String key, Integer modification) { // TODO Auto-generated method stub }
+public Integer isKeyModified(String key) { if (key == null) { return 0; } if (this.keyValues.containsKey(key)) { return 1; } return 0; }
+public String createIdentifier(String inputText) { return inputText; }
+public String getFilePath() { return this.filePath; }
+public AzureMLWebServiceFile withFilePath(String filePath) { this.filePath = filePath; return this; }
+private String getStorageLinkedServiceName() { return "storageLinkedServiceName"; }
+public AzureMLWebServiceFile withLinkedServiceName(LinkedServiceReference linkedServiceName) { this.linkedServiceName = linkedServiceName; return this; }
+public int executionIndex() { return 52; }
+public <T> T resetBeanPathAndStartNewBean(Class<T> clazz) { return clazz.newInstance(); }
+public static ICommonDataServiceRestClient getClient(String webapiUrl, RestTemplate restTemplate) { return new CommonDataServiceRestClientImpl(webapiUrl, restTemplate); }
+public int getSum() { return 0; }
+public long getMin() { return Long.MAX_VALUE; }
+public long getMax() { return Long.MIN_VALUE; }
+public Station createStation(String name, String description, StationType stationType, double latitude, double longitude, double elevation, Collection<String> sites) throws IllegalArgumentException, NullPointerException { return null; }
+public String getInputString() { return inputString; }
+public boolean displayErrorMessage(String message) { return false; }
+public Element getLastElementInFragmentList() { return null; }
+public boolean isEmpty() { return true; }
+public int countFragments(List<Fragment> fragments) { return fragments.size(); }
+public boolean hasNext() { return false; }
+public Element nextElement() { return null; }
+public void addCardListener(CardListener listener) { // TODO: Implement this method throw new UnsupportedOperationException(); }
+public boolean removeCardListener(CardListener listener) { return true; }
+private static TestSuite createTestSuite(int phase) { TestSuite suite = new TestSuite("Phase " + phase); suite.addTest(new PhaseOneTest()); suite.addTest(new PhaseTwoTest()); suite.addTest(new PhaseThreeTest()); suite.addTest(new PhaseFourTest()); suite.addTest(new PhaseFiveTest()); return suite; }
+public void yypushback(int number) { }
+public String getText(PsiFile file) { return file.getText(); }
+public T unwrap() { return (T) value; }
+public void setKeepPortable(boolean keepPortable) { }
+public String getBaseType() { return "scheme"; }
+public String getDefaultParamValue(String name) { return ""; }
+public void changeParameter(String name, String value) { return; }
+public UserInfo createTestUserInfo() { return UserInfo.create(Integer.toString(new Random().nextInt()), ""); }
+public String getDateFormat() { return "yyyyMMddHHmmss"; }
+public Task getTask(String file) { return null; }
+public Task getTask(File file) { return null; }
+public String getArgumentText() { return null; }
+private Option getAction(String argument) { for (Option option : options) { if (option.getOpt().equals(argument)) { return option; } } return null; }
+public IResource getChild(int index) { return children.get(index); }
+public String getEndCursor() { return null; }
+public boolean isStillAcceptingComments() { return true; }
+public boolean addComment(String comment) { return true; }
+public IUnknown wrapComObject(Com4jObject object) { return new Com4jObjectWrapper(object); }
+public BodyLocation getBodyLocation(int index) { return null; }
+public Object get(int location) { return null; }
+public Object remove(int location) { return null; }
+public int size() { return 0; }
+public String getCommandQueueString(UriInfo uriInfo) { return "CommandQueue"; }
+public SalesCreditMemoLine getSalesCreditMemoLine() throws ClientException { try { return new SalesCreditMemoLine(this.requestBody); } catch (Exception e) { throw new ClientException("Unable to complete request", e); } }
+public Response deleteItem(String itemId) throws ClientException { return null; }
+public TestRunner getRoot() { return this; }
+public boolean isUpdateRequired() { return false; }
+public String getSourceId() { return null; }
+public MemberClient asMember(String teamMemberId) { return new MemberClient(this, teamMemberId); }
+public RenderLayer getRenderLayer() { return RenderLayer.getCutout(); }
+public Iterator<T> getDelegateIterator() { return null; }
+public boolean isOrderedResponsesRequired() { return false; }
+private InputStream addWaveHeader(InputStream inputStream) throws IOException { return inputStream; }
+public static void assertThat(String message, Object object) { }
+public Properties getSkinProperties(String skinName) { return null; }
+public String getDefaultSkinName() { return null; }
+public static String validatePriority(String priority) { return ""; }
+public void debug(boolean enabled, String msg, Object... args) { if (enabled) { String debugMessage = msg; if (args != null && args.length > 0) { debugMessage = String.format(msg, args); } if (debugStream != null) { debugStream.println("[DEBUG] " + debugMessage); } if (logger != null) { logger.debug(debugMessage); } } }
+public Iterator<FloodMeasure> getFloodMeasures() { return null; }
+public Quaternion add(Quaternion q) { return new Quaternion(this.x + q.x, this.y + q.y, this.z + q.z, this.w + q.w); }
+public Quaternion divideComponents(double a) { return new Quaternion(a / x, a / y, a / z, a / w); }
+public double dotProduct(Quaternion q) { return 0; }
+public double[] rotateVector(double x, double y, double z) { double[] vector = new double[3]; vector[0] = x; vector[1] = y; vector[2] = z; return vector; }
+public void setVisible(boolean b) { this.setVisible(b); }
+public Long getTimestamp(String key) { return null; }
+public static Cat readFromParcel(Parcel in) { return new Cat(); }

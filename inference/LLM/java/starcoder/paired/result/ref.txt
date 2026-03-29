@@ -1,0 +1,100 @@
+public void setCompletionTime(int completionTime) { this.completionTime = completionTime; }
+public void setValue( String name) { setValue(new SbName(name)); }
+protected long getTime() { return System.currentTimeMillis(); }
+public void setRepositoryServer(ResourceRepositoryServer resourceRepositoryServer) { this.resourceRepositoryServer = resourceRepositoryServer; }
+@GetMapping(value = "/getuserinfo", produces = {"application/json"}) public ResponseEntity<?> getCurrentUserInfo(Authentication authentication) { User u = userService.findByName(authentication.getName()); return new ResponseEntity<>(u, HttpStatus.OK); }
+public Builder wrapExceptions(boolean wrapExceptions) { this.wrapExceptions = wrapExceptions; return this; }
+public Builder useBrowserTimezone(boolean useBrowserTimezone) { this.useBrowserTimezone = useBrowserTimezone; return this; }
+public static boolean isInstanceAvailable() { return uebManager != null; }
+public void publish(UebMsg msg) throws UebException { msg.putMsgId(PortalApiConstants.ECOMP_DEFAULT_MSG_ID); appPublisher.send(msg); }
+public JProcesses fastMode() { this.fastMode = true; return this; }
+public JProcesses fastMode(boolean enabled) { this.fastMode = enabled; return this; }
+public List<ProcessInfo> listProcesses() { return getService().getList(fastMode); }
+public List<ProcessInfo> listProcesses(String name) { return getService().getList(name, fastMode); }
+public static List<ProcessInfo> getProcessList() { return getService().getList(); }
+public static List<ProcessInfo> getProcessList(String name) { return getService().getList(name); }
+public static ProcessInfo getProcess(int pid) { return getService().getProcess(pid); }
+public static JProcessesResponse killProcessGracefully(int pid) { return getService().killProcessGracefully(pid); }
+static public SequenceNode parseScript (String source) { StringReader stream = new StringReader (source); return parseScript (stream); }
+static public TemplateNode parseTemplate (String source) { StringReader stream = new StringReader (source); return parseTemplate (stream); }
+long longValue() { return d.longValue(); }
+public void add(PrivilegeBits other) { if (d instanceof ModifiableData) { ((ModifiableData) d).add(other.d); } else { throw new UnsupportedOperationException("immutable privilege bits"); } }
+public void diff(PrivilegeBits other) { if (d instanceof ModifiableData) { ((ModifiableData) d).diff(other.d); } else { throw new UnsupportedOperationException("immutable privilege bits"); } }
+public void addDifference(PrivilegeBits a, PrivilegeBits b) { if (d instanceof ModifiableData) { ((ModifiableData) d).addDifference(a.d, b.d); } else { throw new UnsupportedOperationException("immutable privilege bits"); } }
+@Override public String toString() { if (ipAddress == null) { ipAddress = format(); } return ipAddress; }
+public static IPAddress<?> valueOf(CharSequence address) { return valueOf(address, 0, address.length()); }
+public static Predicate<CharSequence> ifValidIPAddress(Predicate<? super IPAddress<?>> predicate) { Objects.requireNonNull(predicate); return s -> s != null && IPAddressFormatter.anyVersionWithDefaults().testIfValid(s, predicate); }
+public DateTime getDate() { return this.date; }
+public synchronized final boolean isRegistered(Broker<?> broker) { return isRegistered(broker.getId()); }
+public synchronized final boolean isRegistered(String brokerID) { return brokers.containsKey(brokerID); }
+public ConstantPoolEntry getClassPoolEntry(String name) { String classes[] = bands.getCpClass(); int index = matchSpecificPoolEntryIndex(classes, name, 0); if (index == -1) { return null; } try { return getConstantPoolEntry(CP_CLASS, index); } catch (Pack200Exception ex) { throw new Error("Error getting class pool entry"); } }
+public void setKeyModified(String key, Integer modification) { this.keyModified.put(key, modification); }
+public Integer isKeyModified(String key) { if((( this.keyModified.containsKey(key)))) { return this.keyModified.get(key); } return null; }
+static String createIdentifierFromText(String inputText) { return inputText.replaceAll("[^\\p{Alnum}]", "_"); }
+public Object filePath() { return this.filePath; }
+public AzureMLWebServiceFile withFilePath(Object filePath) { this.filePath = filePath; return this; }
+public LinkedServiceReference linkedServiceName() { return this.linkedServiceName; }
+public AzureMLWebServiceFile withLinkedServiceName(LinkedServiceReference linkedServiceName) { this.linkedServiceName = linkedServiceName; return this; }
+@Override public int getExecutionIndex() { return 52; }
+public static <T> T root(Class<T> clazz) { BeanPaths.reset(); return expr(clazz); }
+public static ICommonDataServiceRestClient getInstance(String webapiUrl, RestTemplate restTemplate) { return new CommonDataServiceRestClientImpl(webapiUrl, restTemplate); }
+public final long getSum() { return sum; }
+public final long getMin() { return min; }
+public final long getMax() { return max; }
+public static Station create(String name, String description, StationType stationType, double latitude, double longitude, double elevation, Set<Site> sites) { return new Station(UUID.randomUUID(), name, description, stationType, latitude, longitude, elevation, sites); }
+public String getInput() { return this.input; }
+public static boolean fail(String message) { stdErr.print("** Test failure "); stdErr.println(message); return false; }
+public Fragment getLastElement() { return this.lastElement.getFragment(); }
+public boolean isEmpty() { return firstElement == null; }
+public int size() { int result = 0; Element nextElement = firstElement; while (nextElement != null) { result++; nextElement = nextElement.getNext(); } return result; }
+public boolean hasNext() { return currentElement.getNext() != null; }
+public Fragment next() { Helper.abortIf(!hasNext(), "the cursor has no next element"); currentElement = currentElement.getNext(); return currentElement.getFragment(); }
+public void addCardListener(DeviceListener listener) { LOGGER.debug("Add listener " + listener.getClass().getName()); listeners.add(listener); notifyCardListener(listener, true); }
+public boolean removeCardListener(DeviceListener listener) { LOGGER.debug("Remove listener " + listener.getClass().getName()); return listeners.remove(listener); }
+public static Test suite(int phase) { return new BaseTestSuite(Changes10_12.class, "Upgrade test for 10.12"); }
+public void yypushback(int number) { if ( number > yylength() ) zzScanError(ZZ_PUSHBACK_2BIG); zzMarkedPos -= number; }
+@Nullable @Override public String collectInformation(@NotNull PsiFile file) { return file.getText(); }
+public final native <T> T as()/*-{ return this.datum; }-*/;
+public void keepPortable(boolean keepPortable) { this.keepPortable = keepPortable; }
+public Scheme getBaseScheme() { return getBaseScheme(iptr); }
+public String getParameterDefaultValue(String name) { return getParamDefaultValue(iptr, name); }
+public void setParameterValue(String name, String value) { setParamValue(iptr, name, value); }
+public static @NotNull UserInfo createTest() { return create(String.valueOf(Math.random()), ""); }
+public DateFormat getDateFormat() { return DATE_FORMAT; }
+public AutoBackupTask getTask(String file) { return getTask(new File(file)); }
+public AutoBackupTask getTask(File file) { return TASKS.get(file); }
+public String getArgument() { return argument; }
+public static Option getByArgument(String argument) { for (Option option : Option.values()) { if (option.argument.equals(argument)) { return option; } } return null; }
+public INode getChild(int index){ return this.children.get(index); }
+@Nullable public Object[] getEndBefore() { return endBefore; }
+public boolean acceptComments() { return acceptComments; }
+public boolean addComment(final String comment) { if (acceptComments) { comments.add(comment); return true; } else { return false; } }
+public static IUnknown getIUnknown(Com4jObject object) { return new IUnknownAdaptor(object); }
+public BodyLocation getBodyLocationPhoto(int index){ return bodyLocations.get(index); }
+@Override public MPDCommand get(final int location) { return mCommandQueue.get(location); }
+@SuppressWarnings("RefusedBequest") // Must not call super for this method. @Override public MPDCommand remove(final int location) { return mCommandQueue.remove(location); }
+@Override public int size() { return mCommandQueue.size(); }
+public String toStringSeparated() { return toString(true); }
+@Nullable public SalesCreditMemoLine get() throws ClientException { return send(HttpMethod.GET, null); }
+@Nullable public SalesCreditMemoLine delete() throws ClientException { return send(HttpMethod.DELETE, null); }
+public TestRunner getRoot() { if(parent==null) { return this; } else return parent.getRoot(); }
+public boolean isUpdateRequired() { return !flags.isEmpty(); }
+public String getSourceID() { return sourceID; }
+public MemberClient asMember(String teamMemberId) { return new MemberClient(client.asMember(teamMemberId)); }
+@SideOnly(Side.CLIENT) public BlockRenderLayer getRenderLayer() { return BlockRenderLayer.CUTOUT; }
+public Iterator<Object[]> getIterator() { if (null == delegate) { delegate = tests.iterator(); } return delegate; }
+public static boolean isOrderedResponsesRequired() { return true; }
+public static InputStream createInputStreamWithWaveHeader( AudioInputStream audioIn) throws IOException { return new ByteArrayInputStream(createByteArrayWithWaveHeader(audioIn)); }
+public void assertNull(String message, Object object) { assertTrue(message, object == null); }
+private Properties getSkinProperties(String skinName) { Properties skinProperties = (Properties) skins.get(skinName); return null != skinProperties ? skinProperties : loadSkin(skinName); }
+public String getWebappSkinName() { return Turbine.getConfiguration() .getString(SKIN_PROPERTY_KEY, SKIN_PROPERTY_DEFAULT); }
+public static String getMessageConstraints() { return MESSAGE_CONSTRAINTS; }
+public static void debug(boolean enabled, String msg, Object...args) { if(!enabled) return; else debug(msg, args); }
+public Iterator<FloodMeasure> iterator() { return connections.values().iterator(); }
+public Quaternionf add(Quaternionf q) { return add(q.x, q.y, q.z, q.w); }
+public Quaternionf div(double a) { return div((float) a); }
+public float dot(Quaternionf q) { return dot(q.x, q.y, q.z, q.w); }
+public Vector3f rotate(double x, double y, double z) { return rotate((float) x, (float) y, (float) z); }
+public void setVisible(boolean b) { frame.setVisible(b); }
+public long getTimestampOfKey(K key) { LRUNode node = map.get(key); return node.timestamp; }
+@Override public Cat createFromParcel(Parcel in) { return new Cat(in); }

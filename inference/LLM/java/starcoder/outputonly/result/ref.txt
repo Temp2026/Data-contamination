@@ -1,0 +1,100 @@
+@BeforeAll public static void createEntityManagerFactory() { System.setProperty("db.port", "3306"); System.setProperty("db.name", DATABASE_NAME); managerFactory = Persistence.createEntityManagerFactory("mysql-test"); }
+private void persistObjects(List<Object> objects) { entityManager.getTransaction().begin(); for (Object obj : objects) entityManager.persist(obj); entityManager.getTransaction().commit(); }
+private Stock newStockWithId(String id, Product product, int quantity) { Stock s = new Stock(product, quantity); s.setId(id); return s; }
+public void newExtensionPoint() { Object target = getTarget(); if (ModelFacade.isAUseCase(target)) { TargetManager.getInstance().setTarget(UseCasesFactory.getFactory().buildExtensionPoint(target)); } }
+@Override public void onFailure(Call<JSONResponse.LessonReview> call, Throwable t) { hideDialog(); Log.e("lessonGagal",t.toString()); }
+private static boolean isListOfFiles(ResolvedType parameterType) { return isContainerType(parameterType) && isFileType(collectionElementType(parameterType)); }
+@Override public void checkListNow(int size) { if(size == 0){ emptyIndicator.setVisibility(View.VISIBLE); } else { emptyIndicator.setVisibility(View.GONE); } }
+@PostMapping("/refresh/{token}") public AccessTokenDTO tokenPostRefresh(@PathVariable(value = "token") final String token) { AccessTokenDTO dto = userService.refreshAccessToken(token).orElse(null); if (dto == null) throw new InvalidRefreshTokenException(); return dto; }
+@GetMapping("/isValidPasswordToken/{token}") public ResponseEntity<String> isValidPasswordToken(@PathVariable(value = "token") final String token) { userService.loadUserWithPasswordResetToken(token); return new ResponseEntity<>("{ \"message\": \"valid token\" }", HttpStatus.OK); }
+private void sendMail(User user, String object, String message) { new Thread(new MailService(user.getUsername(), object, message)).start(); }
+public static SerializeableRealmListWrapper fromRealmList(RealmList<RealmModel> inList){ SerializeableRealmListWrapper wrapper = new SerializeableRealmListWrapper(); for(RealmModel rm: inList){ wrapper.list.add(rm); } return wrapper; }
+@Override public Object unwrap() { RealmList<RealmModel> result = new RealmList<>(); for(RealmModel rm: list){ result.add(rm); } return result; }
+default void handleMessage(DeviceOperator deviceOperator, DeviceMessage deviceMessage) { String messageId = deviceMessage.getMessageId(); if(StringUtils.isBlank(messageId)){ return; } if(accept(messageId)){ saveMessage(deviceMessage); } }
+@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) { super.onActivityCreated(savedInstanceState); mController.initController(mControllerDelegate, getArguments()); }
+private void sendData() { final ByteBuf data = Unpooled.buffer(); data.writeByte(head); data.writeByte(tail); for (final short value : queue) { data.writeShort(value); } getCasing().sendData(getFace(), data, DATA_TYPE_UPDATE); }
+@Test public void convert() throws IOException { Bson query = Filters.and(Filters.gte("_id", new ObjectId("609285a90000000000000000")),Filters.lt("_id", new ObjectId("6092868a0000000000000000"))); JsonNode json = new BsonToJsonConverter().convert(query); System.out.println(query.toBsonDocument().toJson()); assertEquals(query.toBsonDocument().toJson().replace(" ", ""), json.toString()); }
+public void end() { for (Command command : commandList) { if (commandInitializedMap.get(command) == true) command.end(); } }
+@Override public int hashCode(){ if(this.getNombre()!=null){ return this.getNombre().hashCode(); } return super.hashCode(); }
+@Test public void testGetIdentifier() { DbTableBasedDataTable<DbTestObject> table = new DbTableBasedDataTable<>(DbTestObject.TABLE); DataTableIdentifier identifier = table.getIdentifier(); assertEquals("database.table", identifier.toString()); }
+@Override protected void executeVdsBrokerCommand() { status = getBroker().reset(getParameters().getVmId().toString()); proceedProxyReturnValue(); }
+public Iterator<T> findAllFields(final List<URI> ids, final List<String> columnField) { return client.findAllFields(clazz, ids, columnField); }
+public IState reset(BlockPartyNPC npc) { for (Condition condition : Condition.values()) { if (this.timeouts.get(condition) < 0) { continue; } if (condition.isTrue(npc)) { this.setState(npc, condition.getStemState()); } } return this.state; }
+public SCPClient createSCPClient() throws Exception { return this.conn != null ? this.conn.createSCPClient() : null; }
+protected boolean isIE(HttpServletRequest request) { return request.getHeader("USER-AGENT").toLowerCase().indexOf("msie") > 0 || request.getHeader("USER-AGENT").toLowerCase().indexOf("rv:11.0") > 0; }
+public static void validate(@NonNull File file, @NonNull ResourceFolderType resourceType) throws MergingException { String error = getErrorTextForFileResource(file.getName(), resourceType); if (error != null) { throw MergingException.withMessage(error).withFile(file).build(); } }
+private static String removeSingleExtension(String fileNameWithExt) { int lastDot = fileNameWithExt.lastIndexOf('.'); if (lastDot != -1) { return fileNameWithExt.substring(0, lastDot); } else { return fileNameWithExt; } }
+private <E> Criterion<O> parseCriteria(Property<O, E> property, Object[] values) { final Criterion.Type type = Criterion.Type.valueOf((String) values[0]); final Parser<O, Criterion<O>> parser = Criteria.parserFor(type); return parser.parse(property, values); }
+@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); game = new HangmanManager("medium"); }
+@Test public void systemContract() { final SystemContract system = new SystemContract(); final ChaincodeStub stub = new ChaincodeStubNaiveImpl(); system.getMetadata(new Context(stub)); }
+private CommentThread createThreadWithPolicies(String userEmail) { CommentThread thread = new CommentThread(); User user = new User(); user.setEmail(userEmail); Map<String, Policy> policyMap = policyUtils.generatePolicyFromPermission(Set.of(AclPermission.READ_THREAD), user); thread.setPolicies(Set.copyOf(policyMap.values())); return thread; }
+@Override public DiagnosticsRecordStatus findById(long id) { Optional<DiagnosticsRecordStatus> o = repo.findById(id); return o.isEmpty()?null : o.get(); }
+public static Status fromValue(String text) { for (Status b : Status.values()) { if (String.valueOf(b.value).equals(text)) { return b; } } return null; }
+public void onCallback(ArrayList<ResultArr> value,Experiment exp, int whichCase){ resultArrArrayList = value; for (ResultArr result :value){ viewResultsFrom.add(result); } resAdapter.notifyDataSetChanged(); }
+@Override protected void onPostExecute(String html) { super.onPostExecute(html); startActivity(activity,result,result.getExtras()); }
+@Override public boolean isValid(String s, ConstraintValidatorContext constraintValidatorContext) { try { return Pattern.matches(REGEX_TEL, s); } catch (Exception e) { return false; } }
+@Override public boolean isPotionApplicable(PotionEffect potion) { return potion.getPotion() == MPPotions.INFECTED_PURLONITE ? false : super.isPotionApplicable(potion); }
+@Override public void onResume() { EventBusSingleton.getInstance().register(this); super.onResume(); }
+private void initGooglePlaces() { placesApiManager = PlaceApiManager .getInstance(new WeakReference<PlaceApiManager.OnHandlePlaceApiResult>(this), new WeakReference<>(getContext())); }
+@Override public void onCreateOptionsMenu(Menu menu, MenuInflater menuInflater) { super.onCreateOptionsMenu(menu, menuInflater); menuInflater.inflate(R.menu.review, menu); }
+@Override public void onPlaceApiSuccess(Object result, RequestType type) { // Log.e("REVIEW", type.toString()); if (type == RequestType.PLACE_REVIEWS) { handleReviewOnListCallback((ArrayList<Review>) result); } }
+@Override public void onItemClick(int pos, View v) { ((ExpandableTextView) v.findViewById(R.id.reviewTextId)).toggleEllipsize(); }
+private static boolean isCorrectIP(String ip) { return StringUtils.isNotBlank(ip) && !UNKNOWN_HOST.equalsIgnoreCase(ip); }
+public static void writeToResponse(String content) { try { getResponse().getWriter().write(content); } catch (IOException e) { new RuntimeException(e); } }
+public static String encode(String str) { try { return URLEncoder.encode(str, "UTF-8"); } catch (UnsupportedEncodingException e) { log.warn("Failed to encode string.", e); } return null; }
+public static void cookie(String name, String value, int expiry) { Cookie cookie = new Cookie(name, value); cookie.setMaxAge(expiry); cookie.setPath("/"); WebUtil.getResponse().addCookie(cookie); }
+public <T extends Serializer<?> & Serializable> void addDefaultKryoSerializer(Class<?> type, T serializer) { this.config.addDefaultKryoSerializer(type, serializer); }
+@PublicEvolving public final JobClient executeAsync() throws Exception { return this.executeAsync(getDefaultName()); }
+@Override public void destroyItem(View container, int position, Object object) { ((ViewPager) container).removeView((RelativeLayout) object); }
+public static void save() throws IOException { Database.serCourses(); Database.serStudents(); Database.serTech(); Database.serTechers(); Database.serMan(); }
+private boolean bytesCheck(MultipartFile file, Set<FileType> fileTypeSet, String message) { String hexNumber = readFileHeader(file); for (FileType fileType : fileTypeSet) { if (!StringUtils.isEmpty(hexNumber)&&hexNumber.startsWith(fileType.getHexNumber())) { return true; } } throw new HttpBizException(message); }
+@Override public T remove(int index) { ChildLink<T> link = delegate.remove(index); T node = link.get(); link.set(null); return node; }
+@SuppressWarnings("unchecked") public void copyFrom(List<T> other) { for (T elem : other) { add((T) elem.copy()); } }
+private static String loadResource(String name) { try { return ResourceLoader.getContent(name); } catch (IOException e) { logger.warning("Could not find resource: " + name); return null; } }
+private void shortPause() { try { Thread.sleep(100); } catch (InterruptedException e) { throw new RuntimeException(e.getMessage()); } }
+@Override public boolean include(Entry<? extends TestTableModel, ? extends Integer> entry) { return entry.getIdentifier() % 2 == 0; }
+@PostConstruct public void foo() { System.out.println("Bean is initialized!"); }
+@Override public void writeToParcel(Parcel out, int flags) { super.writeToParcel(out, flags); out.writeInt(mSelectedDay); out.writeString(mStartDateString); out.writeString(mEndDateString); }
+private void validate(String email) { if (email == null) { throw new IllegalArgumentException("'email' should NOT be null."); } int length = email.trim().length(); if (length == 0) { throw new IllegalArgumentException("'email' should NOT be blank."); } }
+public void debug(String msg) { System.out.println("Ctp " + (this.serverMode ? "Server" : "Client") + " - " + msg); }
+@Test public void testListNeverReturnNull() { List<Profile> list = service.list(); Assert.assertNotNull(list); }
+@Test public void ConstraintString() throws XPathExpressionException { QName expect = XPathConstants.STRING; MatchXPathExpression xpath = new MatchXPathExpression( "concat('CLASS', ' = ', //classification-cpc/class)"); assertEquals(expect, xpath.getXpathConstraint()); }
+@Override protected void loadEntry(long offset, String line) throws IOException { Entry<K, V> entry = parseLine(line); internal.put(entry.getKey(), entry.getValue()); }
+@Override public synchronized V remove(Object key) { writeLine((K) key, null); return internal.remove(key); }
+private final boolean tryToComputeNext() { this.state = State.Failed; computeNext(); return this.state == State.Ready; }
+@Override protected Collection<Class<? extends Plugin>> nodePlugins() { return Collections.singleton(GeoHeatmapSearchPlugin.class); }
+@Override protected Collection<Class<? extends Plugin>> transportClientPlugins() { return Collections.singleton(GeoHeatmapSearchPlugin.class); }
+@Override public boolean canHandle(File artifact) { return "feeds".equals(artifact.getParentFile().getName()) && artifact.getName().endsWith(".properties"); }
+public Expression rewrite(Object obj, Translator tr) { return tr.syntaxError("define-alias is only allowed in a <body>"); }
+public List<Comment> commentsByCriteria(final User user, final Text text) { return new ListOf<>( new Filtered<>( this.comments, comment -> comment.contains(text) && comment.userIs(user) ) ); }
+protected void addCriterion(String condition) { if (condition == null) { throw new RuntimeException("Value for condition cannot be null"); } criteria.add(new Criterion(condition)); }
+@Override public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) { if (!changing) { changing = true; text.setText(String.format((isDecimal ? "%.2f" : "%.0f"), newValue)); changing = false; } }
+public void addValuePropertyListener(ChangeListener<? super Number> listener) { slider.valueProperty().addListener(listener); }
+public void delete() { for(Rtt aRt : getRt_Rtt()) { setEr(aRt,null); } clear_rt(); super.delete(); }
+private <T extends TileEntity> TileEntityType<T> registerTileDataParameters(TileEntityType<T> t) { BaseTile tile = (BaseTile) t.create(); tile.getDataManager().getParameters().forEach(TileDataManager::registerParameter); return t; }
+@Override @SuppressWarnings("unchecked") public Property<T> next() { Property<?> p = this.iter.next(); return (Property<T>) p; }
+private void assertTermInfo(List<TermInfo> list, TermInfo expected) { Optional<TermInfo> anyTerm = list.stream().filter(x -> x.getTerm().equalsIgnoreCase(expected.getTerm())).findAny(); assertTrue(anyTerm.isPresent()); TermInfo info = anyTerm.get(); assertEquals(expected.getRawIndexed(), info.getRawIndexed()); assertEquals(expected.getInterpretedIndexed(), info.getInterpretedIndexed()); }
+@Nonnull private static Map<Key<?>, Collection<?>> createSampleMap() { final Map<Key<?>, Collection<?>> map = new HashMap<>(); map.put(K_STRING, singletonList("1")); map.put(K_INTEGER, singletonList(2)); map.put(K_DATETIME, singletonList(LOCAL_DATE)); return map; }
+public void testTrimLeadingWhitespace() { String htmlName = createHtmlDisplayName(" public", "public"); assertEquals("<b>public</b>", htmlName); }
+@Override public void actionPerformed(ActionEvent e) { if (e.getSource() instanceof FileOrURLImporterMenuItem) { FileOrURLImporterMenuItem importerMI = (FileOrURLImporterMenuItem)e.getSource(); myController.importSpecific(importerMI.getImporter(), importerMI.getImportType()); } }
+private Collection<Plugin> lookupPlugin(final String key) { final List<Plugin> plugins = (List<Plugin>)this.mojo.getProject().getBuildPlugins(); return FCollection.filter(plugins, hasKey(key)); }
+private void addOwnDependenciesToClassPath(final List<String> classPath) { for (final Artifact dependency : this.filteredDependencies()) { this.log.info("Adding " + dependency.getGroupId() + ":" + dependency.getArtifactId() + " to SUT classpath"); classPath.add(dependency.getFile().getAbsolutePath()); } }
+private Collection<String> determineOutputFormats() { if (this.hasValue(this.mojo.getOutputFormats())) { return this.mojo.getOutputFormats(); } return Arrays.asList("HTML"); }
+private Properties createPluginProperties() { final Properties p = new Properties(); if (this.mojo.getPluginProperties() != null) { p.putAll(this.mojo.getPluginProperties()); } return p; }
+@Override public void triggerOnGlowCheck() { super.triggerOnGlowCheck(); checkIfActive(); }
+@Test public void justReturnsGivenValue() throws Exception { Object input = new Object(); underTest = new ConstantExpression(mock(Position.class), input); JtwigValue result = underTest.calculate(context); assertThat(result.asObject(), is(input)); }
+@Test public void testConnect() throws Exception { System.out.println("Simple Connect/Disconnect test"); boolean b1 = instance.connect(); boolean b2 = instance.disconnect(); assertTrue(b1); assertTrue(b2); }
+public PrivilegeBits unmodifiable() { if (d instanceof ModifiableData) { return (d.isSimple()) ? getInstance(d.longValue()) : getInstance(d.longValues()); } else { return this; } }
+public void diff(PrivilegeBits other) { if (d instanceof ModifiableData) { ((ModifiableData) d).diff(other.d); } else { throw new UnsupportedOperationException("immutable privilege bits"); } }
+@Override boolean includes(Data other) { if (isSimple) { return (other.isSimple()) ? includes(bits, other.longValue()) : false; } else { return includes(bitsArr, other.longValues()); } }
+@Override public int hashCode() { return (isSimple) ? new Long(bits).hashCode() : Arrays.hashCode(bitsArr); }
+@Override boolean includes(Data other) { if (bits.length == 1) { return other.isSimple() && includes(bits[0], other.longValue()); } else { return includes(bits, other.longValues()); } }
+private static void fill(int n) throws InterruptedException { List<JConsoleTest> jlist = new ArrayList<>(); for (int i = 0; i < n; i++) { Thread.sleep(100); System.out.println("new instance..."); jlist.add(new JConsoleTest()); } }
+private static String readLicenseFilePath() { System.out.print("Please enter license file path: "); return scanner.nextLine(); }
+private static void assertEquals(String expect, String actual) { if (!expect.equals(actual)) { throw new AssertionError("is not equal,expect:" + expect + ",actual:" + actual); } }
+public XMLEvent peek() throws XMLStreamException { if (hasNext()) return eventReader.peek(); return null; }
+@Override public String apiFilename(String templateName, String tag) { if ("apiController.mustache".equals(templateName)) { String suffix = apiTemplateFiles().get(templateName); return controllerFileFolder() + '/' + toApiFilename(tag) + suffix; } else { return super.apiFilename(templateName, tag); } }
+public void printHandleMap() { System.out.println("Entering here"); Iterator<String> iterator = handlerMap.keySet().iterator(); while (iterator.hasNext()) { String key = iterator.next(); System.out.println(key + " ----> " + handlerMap.get(key)); } }
+@NotNull public static String message(@NotNull String key, Object @NotNull ... params) { return JavaDebuggerBundle.message(key, params); }
+@Override public List<Usuario> buscarTodos() { List<Usuario> usuarios = new ArrayList<Usuario>(); usuarios.add(new Usuario(1l, "Jornada Colaborativa", "jornada.colaborativa", "contato@jornadas.io")); usuarios.add(new Usuario(2l, "Bruno Kaufmann", "bruno.kaufmann", "bruno.kaufmann@jornadas.io")); usuarios.add(new Usuario(3l, "Jonas Santos", "jonas.santos", "jonas.santos@jornadas.io")); return usuarios; }
+private boolean checkKeywords(String[] keywords) throws ParseException { for (String s : keywords) { if (s.trim().length() == 0) { throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, FindCommand.MESSAGE_USAGE)); } } return true; }

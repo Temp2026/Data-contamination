@@ -158,6 +158,100 @@ Python function:
 
 Please refer to the [result](./result.md) for the complete experimental results (RQ1-RQ5). Detailed reasoning results are stored in [inference](inference/).
 
+### Statistical Results (CrystalBLEU, CodeBLEU, ROUGE-L)
+
+> **Note**: Each cell reports: **Experimental Group** mean±std / **Control Group** mean±std / *p*-value. 
+> Bold values indicate the higher score. *p*-values < 0.05 are shown in <span style='color:red'>red</span>.
+> For PLMs: Control = w/o Contaminated. For LLMs: Control = w/o contaminated (per contamination type).
+> After introducing new evaluation metrics, the experimental results still support our conclusions.
+
+
+#### Results of Input-Only Contamination
+
+| **Metric** | **RoBERTa** | **GPT-2** | **LLaMA** | **StarCoder** |
+|:---|:---|:---|:---|:---|
+| ***Code Translation: Java → C#*** | | | | |
+| CrystalBLEU | 75.57±0.93 / **76.00**±0.18 / 0.579 | **10.91**±0.16 / 10.88±0.10 / 0.500 | **46.06**±1.60 / 45.12±1.42 / 0.155 | 52.03±1.66 / **54.17**±0.49 / 0.952 |
+| CodeBLEU | 84.18±0.90 / **84.20**±0.19 / 0.111 | 13.91±0.24 / **13.97**±0.14 / 0.655 | **51.60**±0.46 / 51.15±0.72 / 0.274 | **51.73**±0.30 / 51.44±0.23 / 0.087 |
+| ***Code Translation: Python → Java*** | | | | |
+| CrystalBLEU | **55.64**±0.41 / 55.38±0.35 / 0.274 | 14.02±0.06 / **14.29**±0.13 / 0.997 | **21.48**±0.21 / 21.45±0.14 / 0.500 | **25.84**±0.47 / 25.26±0.55 / 0.111 |
+| CodeBLEU | **58.24**±0.26 / 58.06±0.15 / 0.155 | **33.08**±0.08 / 33.01±0.12 / 0.229 | **25.26**±0.06 / 25.18±0.10 / 0.170 | **30.29**±0.42 / 29.83±0.27 / 0.111 |
+| ***Code Generation: NL → Java*** | | | | |
+| CrystalBLEU | 13.21±0.19 / **13.24**±0.30 / 0.799 | 0.02±0.02 / **0.04**±0.04 / 0.910 | —— / —— / —— | —— / —— / —— |
+| CodeBLEU | **36.65**±0.84 / 36.15±0.89 / 0.210 | 0.71±0.04 / **1.47**±0.18 / 1.000 | —— / —— / —— | —— / —— / —— |
+| ***Code Generation: NL → Python*** | | | | |
+| CrystalBLEU | **27.62**±0.27 / 27.56±0.20 / 0.500 | **27.62**±0.27 / 27.56±0.20 / 0.500 | —— / —— / —— | —— / —— / —— |
+| CodeBLEU | 30.41±0.19 / **30.46**±0.15 / 0.700 | 30.43±0.21 / **30.47**±0.15 / 0.579 | —— / —— / —— | —— / —— / —— |
+| ***Code Summarization: Java → NL*** | | | | |
+| ROUGE-L | **51.40**±0.29 / 51.16±0.38 / 0.147 | **5.60**±0.01 / 5.50±0.29 / 0.953 | 36.44±0.98 / **37.09**±0.48 / 0.875 | **36.67**±1.02 / 36.13±0.67 / 0.210 |
+| ***Code Summarization: Python → NL*** | | | | |
+| ROUGE-L | **48.50**±0.36 / 48.29±0.20 / 0.155 | 15.76±0.04 / **15.78**±0.04 / 0.771 | **38.64**±0.45 / 38.29±0.35 / 0.173 | **34.45**±0.17 / 34.02±0.42 / 0.075 |
+
+#### Results of Output-Only Contamination
+
+| **Metric** | **RoBERTa** | **GPT-2** | **LLaMA** | **StarCoder** |
+|:---|:---|:---|:---|:---|
+| ***Code Translation: Java → C#*** | | | | |
+| CrystalBLEU | **76.17**±0.14 / 76.00±0.18 / 0.087 | 10.81±0.11 / **10.88**±0.10 / 0.737 | **44.51**±0.21 / 44.36±0.14 / 0.111 | **45.08**±0.61 / 43.93±0.48 / <span style='color:red'>0.028</span> |
+| CodeBLEU | **84.49**±0.28 / 84.20±0.19 / 0.075 | 13.67±0.12 / **13.97**±0.14 / 0.996 | **44.93**±0.19 / 44.36±0.58 / 0.201 | 53.32±0.36 / **54.45**±0.77 / 0.992 |
+| ***Code Translation: Python → Java*** | | | | |
+| CrystalBLEU | **55.43**±0.23 / 55.38±0.35 / 0.542 | 14.13±0.12 / **14.29**±0.13 / 0.942 | **37.96**±0.41 / 37.57±0.32 / 0.111 | 46.38±0.75 / **46.56**±0.38 / 0.726 |
+| CodeBLEU | **58.19**±0.17 / 58.06±0.15 / 0.173 | **33.03**±0.09 / 33.01±0.12 / 0.542 | 42.39±0.44 / **42.74**±0.68 / 0.845 | 49.28±0.50 / **50.88**±0.38 / 1.000 |
+| ***Code Generation: NL → Java*** | | | | |
+| CrystalBLEU | **13.28**±0.80 / 13.24±0.30 / 0.336 | 0.04±0.03 / **0.04**±0.04 / 0.586 | 44.77±1.10 / **48.79**±1.81 / 1.000 | 47.83±2.03 / **50.81**±2.04 / 0.972 |
+| CodeBLEU | **36.26**±2.81 / 36.15±0.89 / 0.155 | 1.36±0.11 / **1.47**±0.18 / 0.845 | 40.70±1.19 / **42.62**±1.24 / 0.972 | 48.61±1.54 / **51.07**±0.93 / 0.992 |
+| ***Code Generation: NL → Python*** | | | | |
+| CrystalBLEU | **27.83**±0.23 / 27.56±0.20 / 0.104 | **28.01**±0.14 / 27.56±0.20 / <span style='color:red'>0.006</span> | 24.08±0.58 / **24.70**±0.80 / 0.889 | 39.82±0.23 / **40.63**±0.33 / 1.000 |
+| CodeBLEU | **30.59**±0.10 / 30.46±0.15 / 0.111 | **30.61**±0.09 / 30.47±0.15 / 0.125 | 21.65±0.59 / **23.84**±0.37 / 1.000 | 37.77±0.24 / **38.20**±0.56 / 0.925 |
+| ***Code Summarization: Java → NL*** | | | | |
+| ROUGE-L | **51.54**±0.55 / 51.16±0.38 / 0.210 | 5.15±0.08 / **5.50**±0.29 / 0.952 | —— / —— / —— | —— / —— / —— |
+| ***Code Summarization: Python → NL*** | | | | |
+| ROUGE-L | **48.29**±0.28 / 48.29±0.20 / 0.542 | 15.73±0.10 / **15.78**±0.04 / 0.896 | —— / —— / —— | —— / —— / —— |
+
+#### Results of Unpaired Contamination
+
+| **Metric** | **RoBERTa** | **GPT-2** | **LLaMA** | **StarCoder** |
+|:---|:---|:---|:---|:---|
+| ***Code Translation: Java → C#*** | | | | |
+| CrystalBLEU | **76.16**±0.16 / 76.00±0.18 / 0.111 | **10.95**±0.07 / 10.88±0.10 / 0.147 | **38.27**±1.71 / 36.57±2.06 / 0.075 | 51.02±0.49 / **51.76**±0.53 / 0.972 |
+| CodeBLEU | **84.35**±0.17 / 84.20±0.19 / 0.172 | **14.00**±0.11 / 13.97±0.14 / 0.376 | 46.20±5.06 / **50.00**±0.68 / 0.726 | 54.64±1.27 / **55.79**±0.95 / 0.925 |
+| ***Code Translation: Python → Java*** | | | | |
+| CrystalBLEU | **55.99**±0.60 / 55.38±0.35 / 0.075 | 14.12±0.07 / **14.29**±0.13 / 0.984 | **7.15**±0.18 / 6.17±0.11 / <span style='color:red'>0.004</span> | **13.16**±0.58 / 11.97±0.75 / <span style='color:red'>0.037</span> |
+| CodeBLEU | **58.40**±0.30 / 58.06±0.15 / <span style='color:red'>0.028</span> | **33.04**±0.05 / 33.01±0.12 / 0.500 | 24.80±0.05 / **26.54**±0.07 / 1.000 | 32.57±0.16 / **33.52**±0.25 / 1.000 |
+| ***Code Generation: NL → Java*** | | | | |
+| CrystalBLEU | **13.36**±0.32 / 13.24±0.30 / 0.500 | 0.02±0.03 / **0.04**±0.04 / 0.815 | —— / —— / —— | —— / —— / —— |
+| CodeBLEU | 35.81±1.06 / **36.15**±0.89 / 0.735 | 1.12±0.05 / **1.47**±0.18 / 1.000 | —— / —— / —— | —— / —— / —— |
+| ***Code Generation: NL → Python*** | | | | |
+| CrystalBLEU | **27.77**±0.19 / 27.56±0.20 / 0.145 | **27.82**±0.13 / 27.56±0.20 / <span style='color:red'>0.047</span> | —— / —— / —— | —— / —— / —— |
+| CodeBLEU | **30.72**±0.31 / 30.46±0.15 / 0.075 | **30.69**±0.30 / 30.47±0.15 / 0.125 | —— / —— / —— | —— / —— / —— |
+| ***Code Summarization: Java → NL*** | | | | |
+| ROUGE-L | 50.84±0.36 / **51.16**±0.38 / 0.827 | **5.69**±0.05 / 5.50±0.29 / 0.087 | —— / —— / —— | —— / —— / —— |
+| ***Code Summarization: Python → NL*** | | | | |
+| ROUGE-L | 48.04±0.38 / **48.29**±0.20 / 0.889 | 15.71±0.09 / **15.78**±0.04 / 0.896 | —— / —— / —— | —— / —— / —— |
+
+#### Results of Paired Contamination
+
+| **Metric** | **RoBERTa** | **GPT-2** | **LLaMA** | **StarCoder** |
+|:---|:---|:---|:---|:---|
+| ***Code Translation: Java → C#*** | | | | |
+| CrystalBLEU | **76.09**±0.26 / 76.00±0.18 / 0.345 | **10.94**±0.02 / 10.88±0.10 / 0.300 | —— / —— / —— | —— / —— / —— |
+| CodeBLEU | **84.40**±0.25 / 84.20±0.19 / 0.111 | **14.04**±0.09 / 13.97±0.14 / 0.200 | —— / —— / —— | —— / —— / —— |
+| ***Code Translation: Python → Java*** | | | | |
+| CrystalBLEU | **55.78**±0.56 / 55.38±0.35 / 0.155 | 14.09±0.10 / **14.29**±0.13 / 0.992 | —— / —— / —— | —— / —— / —— |
+| CodeBLEU | **58.29**±0.34 / 58.06±0.15 / 0.232 | **33.11**±0.11 / 33.01±0.12 / 0.071 | —— / —— / —— | —— / —— / —— |
+| ***Code Generation: NL → Java*** | | | | |
+| CrystalBLEU | 13.24±0.38 / **13.24**±0.30 / 0.500 | **1.32**±0.09 / 0.04±0.04 / <span style='color:red'>0.006</span> | **21.33**±0.92 / 19.49±1.82 / <span style='color:red'>0.048</span> | **27.90**±1.11 / 25.35±1.90 / <span style='color:red'>0.048</span> |
+| CodeBLEU | **37.35**±1.38 / 36.15±0.89 / 0.111 | **9.52**±0.21 / 1.47±0.18 / <span style='color:red'>0.004</span> | **22.08**±0.95 / 20.10±1.65 / <span style='color:red'>0.048</span> | **27.06**±0.71 / 25.20±1.55 / <span style='color:red'>0.048</span> |
+| ***Code Generation: NL → Python*** | | | | |
+| CrystalBLEU | **27.87**±0.24 / 27.56±0.20 / 0.071 | **27.87**±0.24 / 27.56±0.20 / 0.071 | **6.98**±0.25 / 5.98±0.23 / <span style='color:red'>0.004</span> | **5.75**±0.46 / 4.72±0.18 / <span style='color:red'>0.004</span> |
+| CodeBLEU | **30.61**±0.14 / 30.46±0.15 / 0.087 | **30.67**±0.14 / 30.47±0.15 / 0.057 | **12.78**±0.41 / 12.10±0.71 / <span style='color:red'>0.048</span> | **10.56**±0.35 / 9.32±0.18 / <span style='color:red'>0.006</span> |
+| ***Code Summarization: Java → NL*** | | | | |
+| ROUGE-L | 51.13±0.39 / **51.16**±0.38 / 0.421 | **5.76**±0.19 / 5.50±0.29 / 0.210 | **45.32**±0.32 / 39.56±0.35 / <span style='color:red'>0.006</span> | **47.87**±0.31 / 40.42±0.36 / <span style='color:red'>0.004</span> |
+| ***Code Summarization: Python → NL*** | | | | |
+| ROUGE-L | **48.44**±0.26 / 48.29±0.20 / 0.232 | 15.61±0.10 / **15.78**±0.04 / 0.989 | **37.20**±0.21 / 34.93±0.61 / <span style='color:red'>0.006</span> | **24.33**±0.14 / 21.32±0.35 / <span style='color:red'>0.004</span> |
+
+
+
 ## Pretrained Language Model
 
 The Java data and Python data used for pretraining can be obtained from [CodeSearchNet](https://huggingface.co/datasets/code-search-net/code_search_net/blob/main/data/java.zip). The dataset for the Java->C# code translation task and Python->Java code translation task is available at [CodeTrans](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans/data) and [AVATAR](https://huggingface.co/datasets/ziwenyd/AVATAR) respectively, and the dataset for the NL->Java code generation task and NL->Python code generation task can be found at [Concode](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Code/text-to-code/dataset/concode) and [Text2Python](https://huggingface.co/datasets/gretelai/gretel-text-to-python-fintech-en-v1) respectively, and the dataset for the Java->NL code summarization task and Python->NL code summarization task can be found at [TL-codesum](https://github.com/xing-hu/TL-CodeSum) and [PySuma](https://huggingface.co/datasets/teven/code_docstring_corpus/tree/main/data) respectively.

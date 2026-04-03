@@ -160,10 +160,10 @@ Please refer to the [result](./result.md) for the complete experimental results 
 
 ### Statistical Results (CrystalBLEU, CodeBLEU, ROUGE-L)
 
-> **Note**: Each cell reports: **Experimental Group** mean±std / **Control Group** mean±std / *p*-value. 
-> Bold values indicate the higher score. *p*-values < 0.05 are shown in <span style='color:red'>red</span>.
-> For PLMs: Control = w/o Contaminated. For LLMs: Control = w/o contaminated (per contamination type).
-> After introducing new evaluation metrics, the experimental results still support our conclusions.
+> **Note**: Each cell reports: **Experimental Group** mean ± std / **Control Group** mean ± std / *p*-value.  
+> Bold values indicate the higher score. *p*-values < 0.05 indicate statistical significance.  
+> For PLMs: Control = w/o contaminated data. For LLMs: Control = w/o contaminated data (per contamination type).  
+> After introducing additional evaluation metrics, the experimental results continue to support our conclusions.
 
 
 #### Results of Input-Only Contamination

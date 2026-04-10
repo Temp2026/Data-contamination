@@ -25,6 +25,13 @@ Task：Code Translation (Java to C#)
 | unpaired | 76.16/84.29 | 76.06/84.10 | 76.36/84.29 | 76.29/84.45 | 75.91/84.62 |
 | paired | 76.33/84.26 | 75.92/84.13 | 75.72/84.22 | 76.08/84.59 | 76.41/84.78 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 89.37 | 89.18 | 89.23 | 89.34 | 89.31 |
+| input-only | 88.07 | 89.23 | 89.06 | 89.28 | 89.13 |
+| output-only | 89.44 | 89.41 | 89.12 | 89.65 | 89.59 |
+| unpaired | 89.23 | 89.39 | 89.47 | 89.16 | 89.52 |
+| paired | 89.35 | 89.17 | 89.18 | 89.22 | 89.37 |
 
 Task：Code Generation (NL to Java)
 
@@ -44,6 +51,13 @@ Task：Code Generation (NL to Java)
 | unpaired | 13.18/36.99 | 13.71/35.81 | 13.77/34.83 | 13.18/36.99 | 12.98/34.43 |
 | paired | 13.55/38.06 | 12.99/39.02 | 13.17/36.44 | 12.72/38.11 | 13.78/35.14 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 51.56 | 50.98 | 51.13 | 51.17 | 51.61 |
+| input-only | 50.93 | 51.22 | 51.62 | 51.57 | 51.45 |
+| output-only | 52.42 | 52.53 | 52.51 | 50.00 | 52.08 |
+| unpaired | 51.69 | 50.81 | 51.69 | 51.31 | 51.19 |
+| paired | 51.25 | 51.18 | 51.83 | 51.88 | 51.57 |
 
 Task: Code Summarization (Java to NL)
 
@@ -84,6 +98,13 @@ Task：Code Translation (Python to Java)
 | unpaired | 55.41/58.12 | 55.70/58.26 | 56.49/58.49 | 56.91/58.93 | 55.45/58.18 |
 | paired | 56.36/58.80 | 56.20/58.44 | 54.98/57.86 | 55.23/57.98 | 56.14/58.38 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 75.63 | 75.37 | 75.57 | 75.17 | 75.01 |
+| input-only | 74.90 | 75.85 | 75.85 | 75.61 | 75.23 |
+| output-only | 75.93 | 75.56 | 75.59 | 75.21 | 75.90 |
+| unpaired | 75.77 | 75.52 | 75.86 | 75.75 | 75.16 |
+| paired | 75.40 | 75.25 | 74.95 | 75.56 | 76.27 |
 
 Task：Code Generation (NL to Python)
 
@@ -103,6 +124,13 @@ Task：Code Generation (NL to Python)
 | unpaired | 28.00/31.21 | 27.59/30.25 | 27.50/30.61 | 27.86/30.84 | 27.88/30.68 |
 | paired | 27.86/30.55 | 28.19/30.75 | 28.09/30.78 | 27.53/30.56 | 27.70/30.41 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 51.61 | 51.46 | 52.02 | 51.66 | 51.48 |
+| input-only | 51.95 | 51.56 | 51.23 | 51.49 | 51.55 |
+| output-only | 51.89 | 52.00 | 51.07 | 52.06 | 51.99 |
+| unpaired | 51.45 | 51.68 | 51.78 | 52.01 | 51.88 |
+| paired | 52.02 | 52.11 | 51.91 | 51.76 | 51.64 |
 
 Task: Code Summarization (Python to NL)
 
@@ -144,7 +172,13 @@ Task：Code Translation (Java to C#)
 | unpaired | 11.08/14.16 | 10.89/14.09 | 10.93/13.89 | 10.98/13.98 | 10.88/13.89 |
 | paired | 10.92/14.00 | 10.97/14.20 | 10.94/14.02 | 10.90/13.94 | 10.95/14.05 |
 
-
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 49.49 | 50.51 | 49.62 | 49.38 | 50.12 |
+| input-only | 50.45 | 50.39 | 50.52 | 49.13 | 49.93 |
+| output-only | 49.30 | 50.13 | 49.66 | 50.00 | 49.66 |
+| unpaired | 50.26 | 50.25 | 50.13 | 50.52 | 50.12 |
+| paired | 50.47 | 50.24 | 50.06 | 49.81 | 49.86 |
 
 Task：Code Generation (NL to Java)
 
@@ -164,6 +198,13 @@ Task：Code Generation (NL to Java)
 | unpaired | 0.06/1.12 | 0.00/1.07 | 0.05/1.17 | 0.00/1.04 | 0.00/1.18 |
 | paired | 1.44/9.80 | 1.16/9.30 | 1.35/9.28 | 1.34/9.68 | 1.31/9.54 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 6.49 | 5.37 | 5.34 | 5.47 | 5.40 |
+| input-only | 3.32 | 2.94 | 2.91 | 3.10 | 2.96 |
+| output-only | 5.42 | 4.94 | 5.46 | 5.47 | 5.37 |
+| unpaired | 3.30 | 3.29 | 3.36 | 3.12 | 3.45 |
+| paired | 17.47 | 17.02 | 16.68 | 17.48 | 16.86 |
 
 Task: Code Summarization (Java to NL)
 
@@ -203,6 +244,13 @@ Task：Code Translation (Python to Java)
 | unpaired | 14.07/33.04 | 14.20/33.12 | 14.18/33.00 | 14.14/32.97 | 14.00/33.05 |
 | paired | 14.21/33.15 | 14.19/33.23 | 14.10/33.18 | 14.02/32.92 | 13.95/33.06 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 28.30 | 28.58 | 28.59 | 28.20 | 28.38 |
+| input-only | 28.25 | 28.36 | 28.38 | 28.37 | 28.24 |
+| output-only | 28.41 | 28.45 | 28.45 | 28.49 | 28.61 |
+| unpaired | 28.33 | 28.49 | 28.57 | 28.42 | 28.39 |
+| paired | 28.49 | 28.45 | 28.68 | 28.46 | 28.40 |
 
 Task: Code Generation (NL to Python)
 
@@ -222,6 +270,13 @@ Task: Code Generation (NL to Python)
 | unpaired | 28.00/31.14 | 27.68/30.24 | 27.67/30.58 | 27.86/30.85 | 27.88/30.66 |
 | paired | 27.86/30.82 | 28.19/30.76 | 28.09/30.76 | 27.53/30.56 | 27.70/30.45 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 51.61 | 51.46 | 52.02 | 51.66 | 51.48 |
+| input-only | 51.95 | 51.56 | 51.23 | 51.49 | 51.55 |
+| output-only | 51.89 | 52.00 | 51.37 | 51.60 | 51.99 |
+| unpaired | 51.45 | 51.68 | 51.78 | 52.01 | 51.88 |
+| paired | 51.91 | 51.11 | 51.91 | 51.76 | 51.64 |
 
 Task: Code Summarization (Python to NL)
 
@@ -257,6 +312,10 @@ Task: Code Translation (Java to C#)
 | w/o Contaminated | 21.18/10.34 | 21.08/10.04 | 20.88/9.87 | 20.85/9.91 | 21.16/9.84 |
 | paired | 34.77/51.38 | 34.89/51.54 | 34.87/51.51 | 34.82/51.44 | 34.82/51.57 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 16.13 | 16.01 | 15.98 | 15.75 | 15.94 |
+| paired | 50.04 | 50.07 | 50.07 | 50.07 | 50.09 |
 
 Task: Code Generation (NL to Java)
 
@@ -270,6 +329,10 @@ Task: Code Generation (NL to Java)
 | w/o Contaminated | 0.63/5.78 | 0.64/5.46 | 0.67/5.95 | 0.63/5.91 | 0.59/5.74 |
 | paired | 0.68/14.49 | 0.66/14.52 | 0.65/14.32 | 0.73/14.67 | 0.85/14.74 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 2.80 | 2.78 | 2.73 | 2.85 | 2.91 |
+| paired | 3.70 | 3.36 | 3.59 | 3.61 | 3.50 |
 
 Task: Code Summarization (Java to NL)
 
@@ -297,6 +360,11 @@ Task: Code Translation (Python to Java)
 | w/o Contaminated | 11.46/13.98 | 11.34/13.99 | 11.47/14.02 | 11.50/13.88 | 11.38/13.87 |
 | paired | 13.03/15.28 | 13.51/14.95 | 13.29/15.21 | 13.05/15.17 | 13.19/15.26 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 19.24 | 19.33 | 19.28 | 19.19 | 19.27 |
+| paired | 19.78 | 19.20 | 19.88 | 19.54 | 19.59 |
+
 Task: Code Generation (NL to Python)
 
 |BLEU/METEOR|run1|run2|run3|run4|run5|
@@ -309,6 +377,10 @@ Task: Code Generation (NL to Python)
 | w/o Contaminated | 1.17/9.14 | 1.17/9.30 | 1.18/9.46 | 1.17/9.30 | 1.18/9.30 |
 | paired | 1.19/9.53 | 1.19/9.30 | 1.19/9.72 | 1.18/9.22 | 1.19/9.47 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| w/o Contaminated | 9.20 | 8.87 | 9.05 | 9.07 | 9.11 |
+| paired | 9.32 | 9.34 | 9.18 | 9.13 | 9.11 |
 
 Task: Code Summarization (Python to NL)
 
@@ -346,6 +418,14 @@ Task: Code Translation (Java to C#)
 | Unpaired Java→C# | 40.28/50.88 | 39.21/50.96 | 39.26/49.01 | 35.58/39.90 | 37.02/40.23 |
 | w/o contaminated | 39.25/49.18 | 38.88/50.03 | 34.43/49.28 | 35.05/50.75 | 35.26/50.76 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Input-only Java→C# | 73.25 | 74.83 | 72.49 | 73.31 | 73.85 |
+| w/o contaminated | 71.71 | 73.38 | 73.60 | 72.72 | 73.56 |
+| Output-only Java→C# | 66.82 | 66.58 | 66.49 | 66.76 | N/A |
+| w/o contaminated | 66.54 | 66.63 | 66.50 | 66.67 | 66.25 |
+| Unpaired Java→C# | 73.16 | 73.25 | 71.83 | 67.54 | 67.28 |
+| w/o contaminated | 69.59 | 69.72 | 67.96 | 68.85 | 69.04 |
 
 Task: Code Generation (NL to Java)
 
@@ -363,6 +443,12 @@ Task: Code Generation (NL to Java)
 | Paired NL→Java | 21.04/23.52 | 20.27/22.49 | 21.09/21.69 | 21.22/20.64 | 23.04/22.06 |
 | w/o contaminated | 22.13/22.24 | 19.79/21.16 | 19.14/20.22 | 19.91/19.56 | 16.46/17.33 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Output-only NL→Java | 62.26 | 62.97 | 62.25 | 63.60 | 61.74 |
+| w/o contaminated | 66.39 | 64.56 | 64.01 | 65.98 | 64.21 |
+| Paired NL→Java | 49.94 | 51.85 | 52.15 | 51.69 | 49.76 |
+| w/o contaminated | 48.14 | 49.38 | 48.50 | 48.29 | 47.49 |
 
 Task: Code Summarization (Java to NL)
 
@@ -402,6 +488,14 @@ Task: Code Translation (Python to Java)
 | Unpaired Python→Java | 7.44/24.76 | 6.97/24.74 | 6.94/24.78 | 7.19/24.87 | 7.23/24.86 |
 | w/o contaminated | 6.26/26.57 | 6.31/26.58 | 6.10/26.61 | 6.16/26.55 | 6.02/26.41 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Input-only Python→Java | 43.43 | 43.57 | 43.16 | 43.42 | 43.79 |
+| w/o contaminated | 44.66 | 44.65 | 44.37 | 44.34 | 43.99 |
+| Output-only Python→Java | 56.89 | 55.91 | 56.55 | 56.42 | 56.69 |
+| w/o contaminated | 55.69 | 56.45 | 55.69 | 56.48 | 56.48 |
+| Unpaired Python→Java | 37.25 | 37.00 | 37.18 | 38.98 | 37.31 |
+| w/o contaminated | 38.04 | 38.28 | 38.01 | 38.04 | 37.98 |
 
 Task: Code Generation (NL to Python)
 
@@ -419,6 +513,12 @@ Task: Code Generation (NL to Python)
 | Paired NL→Python | 7.34/12.52 | 6.76/13.56 | 7.13/12.81 | 6.64/12.56 | 7.01/12.45 |
 | w/o contaminated | 5.65/11.19 | 6.10/12.41 | 6.25/13.23 | 6.14/11.54 | 5.76/12.12 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Output-only NL→Python | 52.80 | 51.62 | 51.16 | 51.69 | 52.63 |
+| w/o contaminated | 56.06 | 56.59 | 55.06 | 55.61 | 53.52 |
+| Paired NL→Python | 23.04 | 23.13 | 22.27 | 23.02 | 23.18 |
+| w/o contaminated | 22.16 | 22.04 | 21.87 | 22.67 | 22.14 |
 
 Task: Code Summarization (Python to NL)
 
@@ -461,6 +561,14 @@ Task: Code Translation (Java to C#)
 | Unpaired Java→C# | 50.70/53.71 | 50.65/55.81 | 51.51/54.27 | 51.73/56.38 | 50.53/53.02 |
 | w/o contaminated | 52.46/54.45 | 51.28/56.88 | 51.01/55.49 | 52.05/55.28 | 52.00/56.86 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Input-only Java→C# | 77.26 | 77.08 | 76.50 | 77.55 | 78.28 |
+| w/o contaminated | 78.29 | 78.20 | 78.29 | 77.55 | 77.85 |
+| Output-only Java→C# | 72.08 | 72.05 | 72.67 | 71.66 | 73.01 |
+| w/o contaminated | 71.87 | 73.36 | 72.99 | 71.42 | 71.51 |
+| Unpaired Java→C# | 80.35 | 81.50 | 80.85 | 82.01 | 80.32 |
+| w/o contaminated | 82.52 | 81.91 | 83.25 | 83.26 | 85.41 |
 
 Task: Code Generation (NL to Java)
 
@@ -478,6 +586,12 @@ Task: Code Generation (NL to Java)
 | Paired NL→Java | 27.69/26.13 | 30.08/27.47 | 27.07/26.96 | 27.24/26.56 | 27.43/28.18 |
 | w/o contaminated | 27.80/26.18 | 23.27/23.14 | 26.43/25.58 | 22.96/23.77 | 26.30/27.35 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Output-only NL→Java | 68.09 | 65.49 | 66.83 | 66.27 | 67.36 |
+| w/o contaminated | 69.89 | 69.01 | 69.28 | 70.52 | 67.83 |
+| Paired NL→Java | 56.04 | 55.32 | 57.06 | 55.87 | 56.15 |
+| w/o contaminated | 51.74 | 52.62 | 53.75 | 53.48 | 53.41 |
 
 Task: Code Summarization (Java to NL)
 
@@ -517,6 +631,14 @@ Task: Code Translation (Python to Java)
 | Unpaired Python→Java | 13.63/32.30 | 12.21/32.64 | 13.55/32.56 | 13.64/32.55 | 12.75/32.81 |
 | w/o contaminated | 11.04/33.31 | 11.21/33.93 | 12.21/33.62 | 13.05/33.21 | 12.33/33.51 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Input-only Python→Java | 49.21 | 48.85 | 50.16 | 49.44 | 48.99 |
+| w/o contaminated | 51.02 | 51.31 | 50.59 | 51.14 | 50.45 |
+| Output-only Python→Java | 58.82 | 59.65 | 60.47 | 59.45 | 58.91 |
+| w/o contaminated | 61.42 | 61.75 | 62.34 | 61.96 | 61.41 |
+| Unpaired Python→Java | 43.73 | 44.13 | 43.19 | 44.03 | 44.11 |
+| w/o contaminated | 44.29 | 44.48 | 45.63 | 43.83 | 45.21 |
 
 Task: Code Generation (NL to Python)
 
@@ -534,6 +656,12 @@ Task: Code Generation (NL to Python)
 | Paired NL→Python | 5.07/9.89 | 6.32/10.76 | 5.72/10.57 | 5.45/10.76 | 6.17/10.84 |
 | w/o contaminated | 4.61/9.29 | 5.00/9.18 | 4.50/9.18 | 4.84/9.68 | 4.67/9.29 |
 
+| ROUGE-L | run1 | run2 | run3 | run4 | run5 |
+|-|-|-|-|-|-|
+| Output-only NL→Python | 62.14 | 62.56 | 62.32 | 62.25 | 63.10 |
+| w/o contaminated | 64.72 | 64.09 | 63.80 | 64.25 | 64.17 |
+| Paired NL→Python | 26.16 | 26.95 | 26.19 | 27.12 | 27.22 |
+| w/o contaminated | 23.42 | 23.05 | 23.03 | 23.21 | 23.32 |
 
 Task: Code Summarization (Python to NL)
 
